@@ -1,4 +1,4 @@
-# PAMGaurd website
+# PAMGuard website
 PAMGuard website development area
 
 Development area for PAMGuard website. 
