@@ -1,0 +1,21 @@
+---
+title: "<u>P</u>assive <u>A</u>coustic <u>M</u>onitoring <u>Guard</u>ianship"
+listing: 
+  id: threepanels
+  type: grid
+  sort: dispord
+  contents: 
+    - "mainpagetable/*.qmd"
+---
+
+World leading software systems for the Detection, Classification, and Localization of marine mammal sounds.
+
+::: {#threepanels}
+:::
+
+Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas.
+
+![](./images/1334226697SpermWhaleTails.png)
+
+
+**[Download PAMGuard](downloadsurvey.qmd)**

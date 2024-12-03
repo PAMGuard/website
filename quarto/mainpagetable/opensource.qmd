@@ -1,0 +1,17 @@
+---
+title: "Open Source Software"
+image: images/githubsmall.png
+dispord: 3
+description: "PAMGuard software is all open source meaning you're free to modify the 
+  code and to use it in any way you want."
+---
+
+![Our code is all on GitHub where it can freely accessed](./images/githublarge.png)
+
+We're proud of what we do and are quite happy for you to access all of the PAMGuard source code. Not only can you see exactly how our algorithms work, but you're free to modify and improve them and to then distribute modified versions.
+
+PAMGuard is available under the [GNU GPL3 Open Souce software License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+If you want to know more about open source, and why it's important read this [blog post](https://www.turing.ac.uk/blog/open-source-software-why-it-matters-and-how-get-involved) from the Alan Turing Institute.
+
+Previous: [Read about data visualisation](offline.qmd)

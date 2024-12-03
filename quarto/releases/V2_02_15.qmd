@@ -1,0 +1,41 @@
+---
+title: Version 2.02.15
+description: Windows and Mac
+date: 2024-12-03
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.15");
+      });
+    </script>
+---
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.13951593.svg)](https://doi.org/10.5281/zenodo.13951593)
+
+Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.14). Zenodo. https://doi.org/10.5281/zenodo.13951593
+
+[Windows Installer: Setup-Pamguard_2_02_15.exe](https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.exe)
+
+### New Features
+
+Added ability to export click events to the exporter.
+
+Updates to deep learning module to deal with group detections.
+
+New icons and graphical user interface style for Mac.
+
+
+### Bug Fixes
+
+Fixed important timing bug that affected offline analysis when there was a gap in data, causing certain binary files before the gap to be closed with an incorrect end time. 
+
+Fixed issue #177 with clip generator dialog always reverting to first available input source. 
+
+Removed unnecessary text output from DL classifier module. 
+
+Fixed units on spectrogram displays for air based measurements.
+
+[Release notes for all versions](../releasenotes.qmd)
+

@@ -1,0 +1,16 @@
+---
+title: "Porpoise Click Detection"
+image: ./images/porpoise.png
+description: "A simple configuration for a boat based porpoise survey"
+---
+
+![PAMGuard Configuration](./images/porpoise.png)
+
+### Porpoise Click Detection
+A simple configuration for a boat based porpoise survey comprising modules to collect basic
+navigation data from GPS and a Click Detector  setup to detect in the porpoise frequency range. 
+
+### Usage Notes
+NMEA Collection should be changed to your own source, at the moment it is simulated. If you are using a sound card with more than two channels, or other than the primary sound card, Sound Acquisition should be edited to reflect this. 
+
+[Download Porpoise.psfx](./psfx/Porpoise.psfx)

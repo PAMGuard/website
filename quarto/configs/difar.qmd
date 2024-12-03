@@ -1,0 +1,16 @@
+---
+title: "DIFAR Localization"
+image: ./images/difar.png
+description: "Localisation of low frequency tonal sounds using DIFAR sonobuoys"
+---
+
+
+![PAMGuard Configuration](./images/difar.png)
+
+## DIFAR Localization
+
+This configuration contains example classification and analysis parameters for Antarctic blue whale tonal and FM calls. Classification and analysis of other sounds from other species can be configured in the DIFAR Localisation Settings. NMEA Collection should be changed to your own source, in this configuration file it is simulated. If you are using a sound card with more than two channels, or other than the primary sound card, Sound Acquisition should be edited to reflect this.
+
+Modules: NMEA Collection, GPS Processing, Map, Sound Acquisition, Decimator, FFT Engine, DIFAR Localisation, User Comments, Database, Binary Storage
+
+[Download DifarBasic.psfx](./psfx/DifarBasic.psfx)

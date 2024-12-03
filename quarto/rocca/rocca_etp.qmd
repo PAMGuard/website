@@ -1,0 +1,13 @@
+---
+title: "Eastern Tropical Pacific"
+image: ./images/etp.png
+description: "This is a Random Forest classifier model, and can classify 7 different species and 1 genus: Globicephala macrorhynchus, Pseudorca crassidens, Steno bredanensis, Stenella attenuata, Stenella coeruleoalba, Stenella longirostris, Tursiops truncatus, Delphinus species. For details see the full description in the download zip file"
+---
+
+## Eastern Tropical Pacific Species Classifier
+
+This is a Random Forest classifier model, and can classify 7 different species and 1 genus: Globicephala macrorhynchus, Pseudorca crassidens, Steno bredanensis, Stenella attenuata, Stenella coeruleoalba, Stenella longirostris, Tursiops truncatus, Delphinus species. For details see the full description in the download zip file
+
+<a href="https://drive.google.com/file/d/1tXJu18ODXX7qTuvivGXvF7m08JCA3gP4/view?usp=drive_link" target="roccadown">Download ETP Classifier</a>
+
+[Back to ROCCA Classifiers](rocca.html)

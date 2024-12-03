@@ -1,0 +1,27 @@
+---
+title: "Northwest Atlantic"
+image: ./images/nwa.png
+description: "The Northwest Atlantic classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys in the northwest Atlantic Ocean. 9 different species are included in the classifier files."
+---
+
+## Northwest Atlantic Classifier
+
+The Northwest Atlantic classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys in the northwest Atlantic Ocean. 9 different species are included in the classifier files:
+
+```         
+Delphinus delphis (Dd)
+Grampus griseus (Gg)
+Globicephala macrorhynchus (Gm)
+Stenella attenuata  (Sa)
+Steno bredanensis (Sb)
+Stenella coeruleoalba (Sc)
+Stenella clymene (Scl)
+Stenella frontalis (Sf)
+Tursiops truncatus (Tt)
+```
+
+Full details can be found in the pdf document contained in the zip file.
+
+<a href="https://drive.google.com/file/d/16aJz5tu-uPZ8xUiOxZUCvWKNZKDXnyHx/view?usp=drive_link" target="roccadown">Download Northwest Atlantic Classifier</a>
+
+[Back to ROCCA Classifiers](rocca.html)

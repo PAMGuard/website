@@ -1,0 +1,20 @@
+---
+title: "Data Visualisation"
+image: images/Screenshot 2021-06-11 at 15.30.05.png
+dispord: 2
+description: "Process data back at the lab, using the same algorithms and displays that can be used for real time monitoring"
+---
+
+![The PAMGuard datamap allows rapid navigation through large datasets](./images/datamap_screenshot.jpg)
+
+When processing data back at the lab, PAMGuard can process data at many times real time. 
+This is great for processing data from autonomous recorders or for reprocessing
+old data from ship based surveys with the latest algorithms.
+
+The PAMGuard Viewer allows you to scroll through the detection data and further annotate
+the automatic detections. 
+
+
+Next: [Read about open source](opensource.qmd)
+
+Previous: [Read about real time operation](realtime.qmd)

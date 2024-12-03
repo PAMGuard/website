@@ -1,0 +1,25 @@
+---
+title: "Video Range (legacy)"
+image: images/videorange.jpg
+author: Douglas Gillespie
+description: "Older and simpler version of the video range measurement module"
+---
+
+## Video Range
+
+Earlier version of Video Range module from about 2016, SVN revision 3281 before the more complicated landmark based features were added.
+
+The module uses camera and video images to measure angles from the horizon in order to measure distances to animals at the surface.
+
+### References
+
+Leaper, Russell, and Jonathan Gordon. "Application of photogrammetric methods for locating and tracking cetacean movements at sea." J. Cetacean Res. Manage. 3, no. 2 (2001): 131-141.
+
+Gillespie, Douglas, Russell Leaper, Jonathan Gordon, and Kelly Macleod.
+"An integrated data collection system for line transect surveys." *J. Cetacean Res. Manage.* 11, no. 3 (2010): 217-227.
+
+### Downloads
+
+[Source Code](https://github.com/douggillespie/VideoRange_Legacy)
+
+[Built Module](https://github.com/douggillespie/VideoRange_Legacy/releases/tag/V_1_0)

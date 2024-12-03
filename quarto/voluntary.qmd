@@ -1,0 +1,20 @@
+---
+title: "Voluntary Contribution"
+---
+
+Information on the 2016 voluntary contribution system. 
+
+<h1><strong>The PAMGuard Voluntary Contribution System</strong></h1>
+
+<p>PAMGuard maintenance and support is provided through the <a href="http://www.smru.st-andrews.ac.uk/" target="_blank">University of St Andrews</a> by a team of specialists. Historically the maintenance and support function has been supported through direct E&amp;P industry funding via the IOGP Sound and Marine Life Joint Industry Programme. It is anticipated this will cease in late 2016 and transition to a self-funding mechanism.</p>
+
+<h2><strong>What is the PAMGuard voluntary contribution?</strong></h2>
+<p>The self-funding mechanism will be operated through user Contribution.&nbsp; It is expected to/will replace previous direct funding from the oil industry, received through the <a href="http://www.soundandmarinelife.org/" target="_blank">IOGP Sound and Marine Life Joint Industry Programme (JIP). </a></p>
+<p>Funds are used by the PAMGuard team to provide basic support to industry users, fix any reported bugs and to provide general maintenance (for instance, ensuring compatibility with new Windows and Java versions).</p>
+<p><strong><span style="text-decoration: underline;">The contribution is currently set at $5 per day - </span></strong>This amount was decided upon through consultation with PAM equipment/service providers and JIP/industry representatives. It is anticipated that this will acheive our <span style="text-decoration: underline;"><strong>financial target for the each year of US$77,000</strong></span>.</p>
+<h2><strong>Who is expected to contribute? </strong></h2>
+<p>We expect to receive contributions from owners of PAM equipment that employs the PAMGuard software to detect, classify and localize marine life. Consultation with PAM stakeholders, suggest this will maximise the potential of receiving contributions from multiple E&amp;P activities, across geographic regions being conducted by multiple companies.</p>
+<p>Currently, these arrangements are being implemented within the oil &amp; gas industry, particularly for seismic surveys, but we hope that it will be adopted by other offshore users, including the renewable energy sector, in the near future.</p>
+<p>It is left to the discretion of individual companies whether to pass the contribution cost through the supply chain so that it is ultimately born by the companies commissioning activities offshore.</p>
+<p>The contribution is voluntary, so companies have a choice not to participate, or only to contribute when working for clients who are prepared to contribute.</p>
+<p>&nbsp;</p>

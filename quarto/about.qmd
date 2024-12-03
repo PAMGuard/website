@@ -1,0 +1,21 @@
+---
+title: "About PAMGuard"
+---
+
+Marine mammals, whales and dolphins in particular, are highly vocal. This means that it's often easier to hear them, than it is to see them. This is particularly true at night or in poor weather.
+
+## Vision
+
+The PAMGuard project started in 2006, intending to address the fundamental limitations of existing cetacean passive acoustic monitoring (PAM) software by creating an integrated software infrastructure that is open source and available to all PAM users for the benefit of the marine environment.
+
+The PAMGuard software provides a suite of Detection, Classification, and Localization algorithms developed specifically for the many types of sounds made by different species. The algorithms are backed up by a powerful user interface that allows a human operator to view sounds in real time, confirm the output of the automatic detectors, and mark out sounds manually when automatic detection is not possible.
+
+## Application
+
+PAMGuard can process data from hydrophones (under water microphones) in real time, or can process archived data stored in sound files.
+
+PAMGuard is widely used around the world for mitigation monitoring, density estimation surveys, and to find animals for visual studies, such as photo-id.
+
+## It's not just about whales
+
+PAMGuard is also used to study terrestrial animals, including bats, birds, and gibbons.

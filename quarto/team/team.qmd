@@ -1,0 +1,10 @@
+---
+title: "Meet the team"
+listing: 
+  type: grid
+  image-height: 300px
+---
+
+PAMGuard is mostly developed and maintainted by a small team working 
+at the [Sea Mammal Research Unit](https://www.smru.st-andrews.ac.uk/index.html)
+at the [University of St Andrews](https://www.st-andrews.ac.uk/) in Scotland.

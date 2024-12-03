@@ -1,0 +1,36 @@
+---
+title: "Getting Started with PAMGuard"
+dispord: 1
+description: "This tutorial will introduce some basic PAMGuard concepts, showing you how to use a range of PAMGuard detectors for clicks, whistle, and baleen whale sounds and to use PAMGuard displays."
+image: ./getstartedfiles/pgclickdet1.png
+---
+
+![It all started with Sperm Whales, so you can too](./getstartedfiles/pgclickdet1.png "It all started with Sperm Whales, so you can too")
+
+### Getting Started with PAMGuard
+
+The purpose of this tutorial is to provide a basic overview of how to use PAMGuard, including adding and configuring plug-in modules.
+
+The main learning outcomes are:
+
+1.  Loading and running PAMGuard configurations
+2.  Navigating the Graphical User Interface (GUI)
+3.  Basic Map familiarisation
+4.  Running and configuring a Click Detector module
+5.  Adding and configuring User Display panels
+6.  Adding, configuring and running a Whistle Detector
+7.  Using “Ishmael” modules for Energy Sum, Spectrogram Correlation and Matched Filter detectors.
+8.  Overlaying detector graphics on display panels
+9.  Adding and configuring FFT Engines 10.Using spectrogram and radar displays to view detection information
+
+These learning outcomes can be achieved through a series of exercises that now follow.
+
+The exercises can be seen as a guide, so you’re encouraged to experiment with PAMGuard as you work through each one.
+
+### Downloads
+
+Detailed tutorial documentation is in [PAMGUARD Training Tutorial 2024.pdf](./getstartedfiles/PAMGUARD%20Training%20Tutorial%202024.pdf)
+
+Sample audio files and map files can be downloaded at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13851130.svg)](https://doi.org/10.5281/zenodo.13851130)
+
+A Zipped archive of PAMGuard configuration files to use with the tutorial are [here](./getstartedfiles/configurationfiles.zip)

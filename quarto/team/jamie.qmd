@@ -1,0 +1,16 @@
+---
+title: "Dr Jamie Macaulay"
+image: ./images/jamie.jpg
+description: "PAMGuard Developer"
+---
+
+![Jamie Macaulay](./images/jamie.jpg) 
+
+[Dr Jamie Macaulay](https://www.st-andrews.ac.uk/biology/people/jdjm/) 
+got involved in Passive Acoustic research when he was a physics undergraduate at 
+the University of St Andrews. 
+
+He then moved over to the school of biology and 
+completed his PhD on the bahaviour of harbour porpoise in tidal rapids. 
+
+

@@ -1,0 +1,143 @@
+---
+title: "Develop PAMGuard Modules"
+---
+
+## Writing PAMGuard Modules
+
+### Overview
+
+Most of the functionality of PAMGuard is implemented in a series of modules which either
+process data in some way and / or provide a display and / or provide graphic overlays for other built in displays.
+
+There are two types of module:
+
+1. [Core modules](coremodules.html), which are of interest and beneficial to the wider PAMGuard community.  
+These should be extensively tested and fully documented, and will be integrated directly 
+into the PAMGuard code base and included with each PAMGuard release.
+    
+2. [External plug in modules](pluginmodules.html), which are developed for specific projects and have limited use.  
+These modules are bundled into a single jar file and reside in the plugins subfolder.  PAMGuard searches this folder 
+during startup and loads any properly-implemented java packages that it finds.  External plug-in modules are downloaded 
+separately from the PAMGuard installer, and can be hosted on the PAMGuard website and/or the developer’s own website.
+
+All PAMGuard modules are subclasses of [PamControlledUnit](api/PamController/PamControlledUnit.html);
+
+To make a module, first create a new package to store the java classes.  
+All classes should be contained within new packages (i.e. do not create new 
+classes in existing PAMGuard core packages).  Create a subclass of PamControlledUnit, 
+adding to the subclass the various components described below. Then, either add your 
+new module to the PAMGuard data model (for a core mdoule) or bundle your code into a jar file and distribute (for an external module).
+
+Available components of a PAMGuard module are
+
+    An Interface to pass PAMGuard information about the modules
+    A Process that modifies data in some way
+    A Tab panel display
+    A Side panel display
+    A Display Menu
+    A Detection menu
+    A File menu
+    Graphic Overlays
+    Plug in display panels
+
+All components of a PAMGuard module are optional except for the main PamControlledUnit class. 
+The table shows [existing modules](coremodules.html).
+
+### The Constructor
+
+Although the default constructor for PamControlledUnit is
+
+public PamControlledUnit(String unitType, String unitName)
+
+you must provide a constructor in your sub class that takes just the unitName, e.g.
+
+public class MyDetectorController extends PamControlledUnit {
+  public MyDetectorController(String unitName) {
+    super("My detector", unitName);
+	  etc...
+
+Pamguard will search for and use this single parameter constructor when creating modules and adding them to the Pamguard data model.
+
+### Pamguard Processes
+
+Pamguard Processes are subclasses of [PamProcess](api/PamguardMVC/PamProcess.html). 
+A PamProcess will subscribe to one or more PamDataBlock(s). A PamProcess will generally also create one or more new PamDataBlock(s). When new data arrive from the PamDataBlock, the process will manipulate those data in some way and create information that is added to the output data blocks.
+
+Each Pamguard module may have any number of processes, for example, most displays do not have a process at all. The whistle detector, on the other hand, has separate processes for peak detection and whistle linking.
+
+To add a process to a plug in, use the addPamProcess function in PamControlledUnit.
+
+### PAMGuard Tab Panels
+
+PAMGuard Tab panels are added as separate tabs on the main PAMGuard GUI display. 
+A tab panel may contain graphics or tables to display information of any type.
+
+Each PAMGuard module may only have a single tab panel per plug in. however, since the developer can put anything they like into that one tab panel, it is of course possible to place a tab panel in that one tab panel and for the inner tab panel to contain multiple tabs !
+
+To add a tab panel to a plug in, use the setTabPanel function in PamControlledUnit.
+
+### Detection Menu
+
+A process that requires a detection menu should override the function createDetectionMenu function in PamControlledUnit.
+
+Note that a new detection menu may be created multiple times as modules are added and removed from the PAMGuard system. Therefore the implementation of createDetectionMenu should contain only a minimum amount of code required to make the actual menu and should avoid calling constructors for additional objects.
+
+Detection menus will automatically be incorporated as sub-menus in PAMGuard's main detection menu. They will also be shown as separate menu items in the main menu bar when the tab panel (if one exists) for the module is selected.
+
+### Display Menu
+
+A process that requires a display menu should override the function createDisplayMenu function in PamControlledUnit.
+
+Note that a new display menu may be created multiple times as modules are added and removed from the PAMGuard system. Therefore the implementation of createDisplayMenu should contain only a minimum amount of code required to make the actual menu and should avoid calling constructors for additional objects.
+
+Display menus will automatically be incorporated as sub-menus in PAMGuard's main display menu. They will also be shown as separate menu items in the main menu bar when the tab panel (if one exists) for the module is selected.
+
+### File Menu
+
+A process that requires a display menu should override the function createFileMenu function in PamControlledUnit.
+
+Note that a new display menu may be created multiple times as modules are added and removed from the PAMGuard system. Therefore the implementation of createFileMenu should contain only a minimum amount of code required to make the actual menu and should avoid calling constructors for additional objects.
+
+File menus will automatically be incorporated as sub-menus in PAMGuard's main file menu.
+
+### PAMGuard Side Panels
+
+Sets the side panel for the PamControlledUnit Side panels are shown down the left hand side of the main PAMGuard GUI and are always visible, irrespective of which tab is being viewed on the main tabbed display.
+
+Side panels are generally used to display summary information for the PamControlledUnit or to provide quick access controls.
+
+To add a side panel to a plug in, use the setSidePanel function in PamControlledUnit.
+
+
+### Output Data Blocks
+
+Most Pam Processes will produce now data in one form or another. Data are stored as PamDataUnits in PamDataBlock(s).
+
+In general, the PamDataBlock(s) are created at the same time as the PamProcess. 
+PamDataUnits are then added to the PamDataBlock(s)as and when they become available.
+
+For some processes, such as the FFT Engine, PamDataUnits will be added to the output PamDataBlock at regular intervals. For other processes, such as the Click Detector new PamDataUnits will be only be added if and when detections are made.
+
+
+### Graphic Overlays
+
+As well as creating their own tab panel and side panels, PamProcess output can be overlaid on pre-existing PAMGuard displays.
+
+Displays that currently support graphic overlays are (as of December 2006)
+
+    The Map
+    Spectrograms
+    Radar Displays
+
+For details of how to make graphic overlays in PAMGuard see [How to make graphic overlays](./books/HowToMakeOverlays.html)
+
+
+### Display Panels
+
+Sound data are often viewed on a scrolling Spectrogram Display.
+
+PAMGuard modules can provide additional scrolling display panels which can be added to the bottom of the spectrogram display in order to show data that are not suitable for display in a graphic overlay.
+
+Scroll speed of module panels is controlled by the spectrogram display so that the module panel data remain in line with the spectrogram data.
+
+For details on how to make display panels see [How to make display panels](./books/HowToMakePluginDisplays.html)

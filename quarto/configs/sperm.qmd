@@ -1,0 +1,16 @@
+---
+title: "Sperm Whale Detection"
+image: ./images/sperms.png
+description: "Sperm Whale click detection"
+---
+
+![PAMGuard Configuration](./images/sperms.png)
+
+### Sperm Whale Detection
+
+Simple sperm whale detector using data input from the system sound card.
+
+### Usage Notes
+NMEA Collection should be changed to your own source, at the moment it is simulated. If you are using a sound card with more than two channels, or other than the primary sound card, Sound Acquisition should be edited to reflect this. 
+
+[Download SpermWhales.psfx](./psfx/SpermWhales.psfx)

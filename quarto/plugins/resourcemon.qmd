@@ -1,0 +1,16 @@
+---
+title: "Resource Monitor"
+image: images/resourcemon.png
+author: Douglas Gillespie
+description: "Provides additional monitoring of PAMGUard memory usage"
+---
+
+## Resource Monitor
+
+Provides additional monitoring of PAMGuard memory usage in the side bar. 
+
+### Downloads
+
+[Source Code](https://github.com/douggillespie/resourcemonitor)
+
+[Built Module](https://github.com/douggillespie/resourcemonitor/releases/tag/V1.0.2)

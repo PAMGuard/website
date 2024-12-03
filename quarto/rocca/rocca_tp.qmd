@@ -1,0 +1,29 @@
+---
+title: "Temperate Pacific"
+image: ./images/tp.png
+description: "The Temperate Pacific classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys in the temperate Pacific Ocean. 11 different species are included in the classifier files."
+---
+
+## Temperate Pacific Classifier
+
+The Temperate Pacific classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys in the temperate Pacific Ocean. 11 different species are included in the classifier files:
+
+```         
+Berardius bairdii (Bb)
+Delphinus capensis (Dc)
+Delphinus delphis (Dd)
+Grampus griseus (Gg)
+Globicephala macrorhynchus (Gm)
+Lagenorhynchus obliquidens (Lo)
+Orcinus orca (Oo)
+Physeter macrocephalus  (Pm)
+Stenella coeruleoalba (Sc)
+Tursiops truncatus (Tt)
+Ziphius cavirostris (Zc)
+```
+
+Full details can be found in the pdf document contained in the zip file.
+
+<a href="https://drive.google.com/file/d/1SsG15oGLUbTkKpeRpN73ELrfEF02VSPL/view?usp=drive_link" target="roccadown">Download Temperate Pacific Classifier</a>
+
+[Back to ROCCA Classifiers](rocca.html)

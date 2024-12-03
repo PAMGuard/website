@@ -1,0 +1,16 @@
+---
+title: "Clicks and Whistles"
+image: ./images/clicksandwhistles.png
+description: "Simultaneous detection of sperm whale clicks and dolphin whistles"
+---
+
+![PAMGuard Configuration](./images/clicksandwhistles.png)
+
+### Clicks and Whistles
+A configuration that runs two different detectors at once. The first detects clicks
+from sperm whales and the second runs a tonal noise detector. 
+
+### Usage Notes
+NMEA Collection should be changed to your own source, at the moment it is simulated. If you are using a sound card with more than two channels, or other than the primary sound card, Sound Acquisition should be edited to reflect this. 
+
+[Download SpermWhalesAndWhistles.psfx](./psfx/SpermWhalesAndWhistles.psfx)

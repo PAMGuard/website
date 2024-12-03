@@ -1,0 +1,29 @@
+---
+title: "Tritech Sonar Processing"
+author: Douglas Gillespie
+image: ./images/gemini720is.jpg
+description: "Acquisition and processing of data from Tritech Gemini sonars."
+---
+
+## Tritech sonar Processing
+
+Acquires and processed data in real time or from files from 
+[Tritech Gemini Multibeam Sonars](https://www.tritech.co.uk/products)
+1. Acquire data directly from Tritech Gemini sonars
+2. Run track detectors in real time on the sonar data
+3. process data from Tritech GLF data files offline
+4. view and annotate detection data using the PAMGuard viewer.
+
+### References
+
+Douglas Gillespie, Gordon Hastie, Jessica Montabaranom, Emma Longden, Katie Rapson, Anhelina Holoborodko, and Carol Sparling. "Automated detection and tracking of marine mammals in the vicinity of tidal turbines using multibeam sonar." Journal of Marine Science and Engineering 11, no. 11 (2023): 2095.
+
+
+### Downloads
+
+For further information see the release notes on [GitHub](https://github.com/douggillespie/TritechAcquisitionPlugin/releases)
+
+[Source Code](https://github.com/douggillespie/TritechAcquisitionPlugin)
+
+[Built Module](https://github.com/douggillespie/TritechAcquisitionPlugin/releases/tag/V1.41)
+

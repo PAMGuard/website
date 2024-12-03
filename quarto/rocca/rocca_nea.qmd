@@ -1,0 +1,24 @@
+---
+title: "Northeast Atlantic"
+image: ./images/nea.png
+description: "This folder contains two Random Forest classifiers (one for clicks and one for whistles) for six commonly occurring northeast Atlantic delphinid species. These classifiers were trained with data collected from dipped hydrophones and towed hydrophone arrays deployed in combined visual and acoustic surveys. Only recordings of single species groups that had visual confirmation of species identity and were at least 4 nmi from any other species were included in the training dataset."
+---
+
+## Northeast Atlantic Classifier
+
+This folder contains two Random Forest classifiers (one for clicks and one for whistles) for six commonly occurring northeast Atlantic delphinid species. These classifiers were trained with data collected from dipped hydrophones and towed hydrophone arrays deployed in combined visual and acoustic surveys. Only recordings of single species groups that had visual confirmation of species identity and were at least 4 nmi from any other species were included in the training dataset.
+
+```         
+Delphinus delphis (Dde)
+Grampus griseus (Ggr)
+Globicephala melas (Gme)
+Lagenorhynchus albirostris (Lal)
+Orcinus orca (Oor)
+Tursiops truncatus (Ttr)
+```
+
+Full details can be found in the pdf document contained in the zip file.
+
+<a href="https://drive.google.com/file/d/1wxxkkgMBGMfkHl-u_iY7-8gwQXHBYamP/view?usp=drive_link" target="roccadown">Download Northeast Atlantic Classifier</a>
+
+[Back to ROCCA Classifiers](rocca.html)

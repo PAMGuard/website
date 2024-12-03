@@ -1,0 +1,63 @@
+---
+title: Version 2.02.13
+description: Windows only
+date: 2024-08-27
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.13");
+      });
+    </script>
+---
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.13378951.svg)](https://doi.org/10.5281/zenodo.13378951)
+
+Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard/PAMGuard: PAMGuard Version 2.02.13 (V2.02.13). Zenodo. https://doi.org/10.5281/zenodo.13378951
+
+[Windows Installer: Setup-Pamguard_2_02_13.exe](https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.13/Setup-Pamguard_2_02_13.exe)
+
+## New Features
+
+Deep Learning Classifier. Major upgrade to support for Deep Learning models in PAMGuard. See online help for details.
+
+Click detector: Remembers locations of displays and doesn’t continually reset them.
+
+Help for Matched Click Classifier.
+
+Project information dialog. This allows capture of essential project information to store with your data. See menu item Settings/Project information.
+
+‘Effort’ management system. New map options allow colouring of track line by ‘effort’ from various other modules. This is currently the acquisition system (so the track will change colour when PAMGuard is running), the binary store system (likely the same as the acquisition) or data from Logger forms. This system will be extended to other modules in the near future.
+
+Added a new exporter which allows users to export data to .mat (MATLAB, Python), .RData (open in R) or .wav files (open in Sonic Visualiser, Audacity etc.) Tethys Database
+
+Many users will be aware that we’re integrating an interface to the [Tethys Database](https://tethys.sdsu.edu/) into PAMGuard. Some basic features are available for testing. If interested, please contact the PAMGuard support team.
+
+## Bug Fixes
+
+Linking clicks to offline clicks table. We had a database that had become corrupted so added code to relink offline clicks to their corresponding clicks from binary data.
+
+Drawing non-acoustic data: Data that were not associated with any hydrophones, e.g. visual sightings in Logger forms were not drawing on the map. This fixed and PAMGuard will use the vessels GPS position as reference.
+
+Lookup tables: fix feature which was causing table entries to repeat.
+
+Click Train Detector: Add exception handlers to avoid errors as PAMGuard stops / restarts.
+
+Group Detection starts and ends: Check data integrity function fixed and now inserts correct times of start and ends of events into database.
+
+Clip generator. Changes to ensure PAMGuard keeps audio data long enough to make clips. In some circumstances data were being discarded too early so clips could not be created.
+
+Acquisition “Skip initial seconds” feature, designed to remove high sample levels e.g. from calibration tones at start of a soundtrap recording was not working with the click detector. This is fixed but replacing all data with 0’s and still sending data. Note that this may lead to artificially low noise measures at the start of a file.
+
+Data reprocessing options. Updated to ensure that the option "Start normally. Note risk of overwriting!" is always available. Also improved code naming binary files to attempt to push them to exact times, rather than a couple of seconds after the hour.
+
+improved code naming binary files to attempt to push them to exact times, rather than a couple of seconds after the hour.
+
+Updated icons to improve display on high definition screens.
+
+SAIL Daq Card. Automatic restart when DAQ card stalls (happening increasingly often with latest Windows updates)
+
+Fixed various bugs in CPOD and FPOD displays and importer. Updated CPOD help file.
+
+[Release notes for all versions](../releasenotes.qmd)

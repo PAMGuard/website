@@ -1,0 +1,30 @@
+---
+title: "Hawaiian Islands"
+image: ./images/haw.png
+description: "The Hawaiian Islands classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys around the Hawaiian Islands. 12 different species are included in the classifier files."
+---
+
+## Hawaiian Islands Classifiers
+
+The Hawaiian Islands classifier package consists of three different random forest classifier model files, trained with data collected using towed hydrophone arrays during combined visual and acoustic surveys around the Hawaiian Islands. 12 different species are included in the classifier files:
+
+```         
+Feresa attenuata (Fa)
+Grampus griseus (Gg)
+Globicephala macrorhynchus (Gm)
+Pseudorca crassidens (Pc)
+Peponocephala electra (Pe)
+Physeter macrocephalus  (Pm)
+Stenella attenuata  (Sa)
+Steno bredanensis (Sb)
+Stenella coeruleoalba (Sc)
+Stenella longirostris (Sl)
+Tursiops truncatus (Tt)
+Ziphius cavirostris (Zc)
+```
+
+Full details can be found in the pdf document contained in the zip file.
+
+<a href="https://drive.google.com/file/d/1DQzwmEwXLP85x6L-wJU49Br8_dmo1xcE/view?usp=drive_link" target="roccadown">Download Hawaiian Islands Classifier</a>
+
+[Back to ROCCA Classifiers](rocca.html)

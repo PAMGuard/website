@@ -1,0 +1,23 @@
+---
+title: Version 2.02.06
+description: Windows and Mac
+date: 2022-11-17
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.06c");
+      });
+    </script>
+---
+
+[Windows Installer: Setup-Pamguard_2_02_06.exe](https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.06/Setup-Pamguard_2_02_06.exe)
+
+[Mac Installer: PAMGuard_v2_02_06.dmg](https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.06/PAMGuard_v2_02_06.dmg)
+
+Interim release with additional simulator for lowish frequency baleen whales (200Hz to 1kHz) Bug fix of static objects.
+
+
+
+[Release notes for all versions](../releasenotes.qmd)

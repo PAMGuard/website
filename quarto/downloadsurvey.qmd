@@ -1,0 +1,20 @@
+---
+title: "Download PAMGuard"
+---
+
+Before downloading PAMGuard please fill out a short survey (2 minutes)
+
+We will use this data to understand who is using PAMGuard, with a view to trying to improve support and training, particularly to users from the global South. We may publish summary statistics and use those in publications and fund raising applications.
+
+All data will be stored on secure servers and individual data will not be shared with any third parties under any circumstances.
+
+If you provide an email address, this will be used to send out notifications of new releases / important updates. A maximum level of email traffic will be around 10 emails per year. If you're interested in more regular updates, please follow us on Facebook.
+
+You are not obliged to answer any of the questions on the form. If you wish your data to be deleted at any time, please email us at [pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk).
+
+After filling out the survey, you'll be directed to the download page: [Take me to the survey](https://standrews.eu.qualtrics.com/jfe/form/SV_d6bOYU2Yj1Qvo0K).
+
+I've already done the survey / I don't want to: [Just take me to the downloads.](./releases/download.html)
+
+![](./images/pamguardstats.png)
+PAMGuard downloads 2012 - 2024

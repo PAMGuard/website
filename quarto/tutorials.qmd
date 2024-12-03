@@ -1,0 +1,21 @@
+---
+title: "PAMGuard Tutorials"
+listing: 
+  type: grid
+  id: tutorial_listing
+  fields: [image, title, description]
+  sort: dispord
+  contents: 
+    - "tutorials/*.qmd"
+---
+
+PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard.
+
+The tutorials all use freely available pre-recorded sound files and will run on any [compatible
+computer](systemreq.qmd) without the need for specialist equipment. 
+
+::: {#tutorial_listing}
+:::
+
+Subject to [funding](funding.qmd), we're currently trying to expand these to cover more areas
+of what PAMGuard can do. 

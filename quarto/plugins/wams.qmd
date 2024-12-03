@@ -1,0 +1,19 @@
+---
+title: "NMMF WAMS Plugin"
+image: images/wamsChart.PNG
+author: Mike Oswald
+description: "Provides a simple way to monitor a detector and/or multiple alarms, and generate reports summarizing activity over specific time periods"
+---
+
+## NMMF WAMS Plugin
+
+The NMMF WAMS plugin provides a simple way to monitor a detector and/or multiple alarms, and generate reports summarizing activity over specific time periods. Information is saved to the database and can be displayed in table and chart form on User Display modules.
+
+### References
+Brittany L Jones, Michael Oswald, Samantha Tufano et al. Introducing NMMF WAMS, an open-source PAMGuard plug-in, and some pilot data for its use as a welfare acoustic monitoring system, 12 August 2020, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-55999/v1](https://doi.org/10.21203/rs.3.rs-55999/v1)
+
+### Downloads
+
+[Source Code](https://github.com/douggillespie/WAMS)
+
+[Built Module](https://github.com/douggillespie/WAMS/releases/tag/V3.0.0)

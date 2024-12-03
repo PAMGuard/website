@@ -1,0 +1,20 @@
+---
+title: "Workshop Demo Detector"
+image: images/demodetector.png
+author: Douglas Gillespie
+description: "Simple detector designed to demonstrate main PAMGuard developer
+      environment, using as many PAMguard features as possible, but in a
+      really simple way."
+---
+
+## Workshop Demo Detector
+
+Simple detector designed to demonstrate main PAMGuard developer environment, using as many PAMGuard features as possible, but in a really simple way.
+
+The detector is a very simple in-band energy detector. It will subscribe to a block of FFT (spectrogram) data and measure the background noise in a given frequency band over some time period and compare the signal to that background measure. If the SNR is \>threshold a detection starts, if it's below threshold it stops again.
+
+### Downloads
+
+[Source Code](https://github.com/PAMGuard/PluginDemoDetector)
+
+[Built Module](https://github.com/PAMGuard/PluginDemo/releases/tag/V2.0.0)

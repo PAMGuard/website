@@ -1,0 +1,2331 @@
+---
+title: "Release Notes"
+---
+
+
+Version 2.02.15 December 2024
+=============================
+
+First official release for Mac OS11+, ARM Processors
+
+New Features
+------------
+
+Added ability to export click events to the exporter.
+
+Updates to deep learning module to deal with group detections.
+
+New icons and graphical user interface style for Mac.
+
+Bug Fixes
+---------
+
+Fixed important timing bug that affected offline analysis when there was a gap in data, causing certain binary files before the gap to be closed with an incorrect end time.
+
+Fixed issue #177 with clip generator dialog always reverting to first available input source.
+
+Removed unnecessary text output from DL classifier module.
+
+Fixed units on spectrogram displays for air based measurements.
+
+Version 2.02.14 October 2024
+============================
+
+New Features
+------------
+
+Rocca update: Ability to specify whether strong whistle/encounter threshold is applied as an absolute value, or as the difference between the highest and second-highest votes.
+
+Tethys: Export of Group3D Localiser data
+
+Bug Fixes
+---------
+
+Ishmael Matched Filter detector. Improved correlation algorithm to use correct data normalisation (and a faster FFT).
+
+Ishamel detector graphics. Improved graphics (spectrogram plugins) to work when scrolling the spectrogram and to have better automatic scaling.
+
+Folder processing: At startup, while PAMGuard catalogues the sound files, a progress bar is shown. This doesn’t change anything, or speed up the process, but does at least let the user know what’s happening (Issue 156).
+
+No sound card ? If no sound cards are present on your computer (or if no headphones are attached, even though a sound card is present) when processing files offline, PAMGuard will still slow the analysis rate as it would if a soundcard were present.
+
+Click Detector click selection on the display. Fixed issue with wrong click being selected when display was highly zoomed in (Issue 158).
+
+File processing. Sometimes only processing last file when reprocessing data (issue 162).
+
+Added ability for exporter to read annotations. Added ability to export CPOD and FPOD data.
+
+Fixed various bugs in CPOD and FPOD displays and importer. Updated CPOD help file.
+
+Version 2.02.13 August 2024
+===========================
+
+New Features
+------------
+
+Deep Learning Classifier. Major upgrade to support for Deep Learning models in PAMGuard. See online help for details.
+
+Click detector: Remembers locations of displays and doesn’t continually reset them.
+
+Help for Matched Click Classifier.
+
+Project information dialog. This allows capture of essential project information to store with your data. See menu item Settings/Project information.
+
+‘Effort’ management system. New map options allow colouring of track line by ‘effort’ from various other modules. This is currently the acquisition system (so the track will change colour when PAMGuard is running), the binary store system (likely the same as the acquisition) or data from Logger forms. This system will be extended to other modules in the near future.
+
+Added a new exporter which allows users to export data to .mat (MATLAB, Python), .RData (open in R) or .wav files (open in Sonic Visualiser, Audacity etc.)
+
+Tethys Database
+---------------
+
+Many users will be aware that we’re integrating an interface to the [Tethys Database](https://tethys.sdsu.edu/) into PAMGuard. Some basic features are available for testing. If interested, please contact the PAMGuard support team.
+
+Bug Fixes
+---------
+
+Linking clicks to offline clicks table. We had a database that had become corrupted so added code to relink offline clicks to their corresponding clicks from binary data.
+
+Drawing non-acoustic data: Data that were not associated with any hydrophones, e.g. visual sightings in Logger forms were not drawing on the map. This fixed and PAMGuard will use the vessels GPS position as reference.
+
+Lookup tables: fix feature which was causing table entries to repeat.
+
+Click Train Detector: Add exception handlers to avoid errors as PAMGuard stops / restarts.
+
+Group Detection starts and ends: Check data integrity function fixed and now inserts correct times of start and ends of events into database.
+
+Clip generator. Changes to ensure PAMGuard keeps audio data long enough to make clips. In some circumstances data were being discarded too early so clips could not be created.
+
+Acquisition “Skip initial seconds” feature, designed to remove high sample levels e.g. from calibration tones at start of a soundtrap recording was not working with the click detector. This is fixed but replacing all data with 0’s and still sending data. Note that this may lead to artificially low noise measures at the start of a file.
+
+Data reprocessing options. Updated to ensure that the option "Start normally. Note risk of overwriting!" is always available. Also improved code naming binary files to attempt to push them to exact times, rather than a couple of seconds after the hour.
+
+improved code naming binary files to attempt to push them to exact times, rather than a couple of seconds after the hour.
+
+Updated icons to improve display on high definition screens.
+
+SAIL Daq Card. Automatic restart when DAQ card stalls (happening increasingly often with latest Windows updates)
+
+Version 2.02.10 January 2024
+============================
+
+New Features
+------------
+
+**Importing modules** from other configurations: New options from file menu allowing import of specific modules, or module settings from other configurations. E.g. if you had three similar configurations and had set one of them up with a new detector, or got the click classifier settings set up just right in one of those configurations, you can import the additional modules or the click detector settings easily into the other configurations.
+
+**Improved SUD (soundtrap compressed files) file performance** when scrolling through audio data in Viewer mode.
+
+**Viewer Launch** by right clicking on sqlite database and selecting “open with / PAMGuard ViewerMode” launcher menu option.
+
+Bug Fixes
+---------
+
+**Logger Forms**
+
+Boolean (logical true/false, yes/no) data were not showing correctly in Viewer mode. Now fixed
+
+Data selectors for plotting on map were not working, also fixed
+
+Bearing localizer running offline was not correctly saving updated bearings to the database. Now fixed.
+
+**ROCCA Classifier fixes**
+
+Allow Rocca to run without classifiers: Fixed bug that threw an error if no classifier files were  specified in Rocca Params dialog
+
+Fix memory issue with RoccaContourDataBlocks not being released for garbage collection
+
+Set RoccaContourDataBlock objects to null and stop PamObserver Timer to
+
+force release
+
+Fix problem tracing whistles in Rocca spectrogram pop-up: Whistle and raw data were being cleared before the user had time to trace out the whistle, causing PAMGuard to throw an exception.  Both were already being cleared when the pop-up window is closed, so no need to do it here.
+
+**DIFAR Module**: Bug crashing the module with null pointer errors fixed.
+
+**Whistle Detector**: Fixed bug which caused the detector to slow to almost zero speed when large complex sounds with many branches were detected.
+
+**Click Detector Offline Event Marking**: Fixed problem of events not being correctly deleted and also of clicks not being correctly reassigned to different events.
+
+**Screen Position**: When using multiple monitors, if you move a configuration to a computer with a different monitor layout, the GUI should work out if it’s opening on a screen area which no longer exists and move itself onto the primary monitor.
+
+**File Folder Processing**: Previous version had a bug which caused files to not always be sorted into the correct order for processing. This caused some instability in some detectors, causing memory leaks when new data arrived with time stamps earlier than already processed data in memory. This is now fixed – files are ow correctly sorted alphabetically by file name, i.e. not including the name of the folder containing the files.
+
+Version 2.02.09 June 2023
+=========================
+
+Bug Fixes
+---------
+
+Time zone displays: Fixed some bugs associated with options to have PAMGuard display times in local time, rather than UTC. This was affecting times typed into the scroll bars of displays which were reading local time, even when set to use UTC.
+
+Version 2.02.08 May 2023
+========================
+
+Bug Fixes
+---------
+
+ROCCA Memory Leak: A memory leak in ROCCA, which mostly occurred when processing large datasets of many offline files, has been fixed.
+
+Data Map: “Scroll To Data” pop-up menu, which didn’t always scroll to the correct place, is now fixed.
+
+Bearing Localiser offline: If reprocessing bearings, the localizer was not correctly loading required raw or FFT data to input to the cross correlation algorithm. This is now fixed so that you can reprocess bearings in viewer mode.
+
+Map files: Added additional exception handlers to handle corrupt map files.
+
+New Features
+------------
+
+Restart Options: When you restart processing of offline files, if output data already exist (binary data of within database tables) you will be asked if you want to overwrite the data, cancel, or try to continue from where to left off.
+
+Updated SoundTrap sud file interface so that PAMGuard now extracts and stores the Click Detector settings from the sud files and stores them within the PAMGuard configuration. This does not affect processing, but is important for record keeping.
+
+GPS options to use any valid RMC or GGA string. Not all GPS receivers output their RMC data as GPRMC – e.g. some may output as GNRMC. A new option allows the GPS module to use any string, whatever the first two characters of the string name may be.
+
+Version 2.02.07 January 2023
+============================
+
+Bug Fixes
+---------
+
+Use of localization sensor and orientation data for static hydrophones had a bug whereby it would continually ‘forget’ angle offsets applied to static hydrophones in viewer mode. This is now fixed.
+
+Click tool bar: Correctly shows event selection options even if no species classification options are in place.
+
+Fixed Landmarks: Earlier versions were ‘losing’ these every time PAMGuard started or new data were loaded in viewer mode. Now fixed.
+
+ROCCA: Fixed (another) memory leak which caused PAMGuard to crash when processing large data sets with the ROCCA classifier.
+
+Ishmael Modules: Fixed bug which occasionally caused crashes when processing many files offline.
+
+PAMDog: Fixed bug in watchdog program which was trying to start PAMGuard before modules were fully loaded. The watchdog now correctly waits until modules are loaded before attempting to start PAMGuard processing.
+
+New Features
+------------
+
+New sound type for simulated sounds which generates random chirps between around 200 and 800Hz, roughly the frequency you’d expect sound from higher frequency baleen whales, such as humpbacks, to vocalise at.   
+
+Hiding tool tips. A menu item to permanently turn off all tool tips, or tap the ‘Esc’ key to turn them off for 6 seconds if they are getting in the way, particularly when trying to interact with displays using the mouse.
+
+Version 2.02.06 November 2022
+=============================
+
+Bug Fixes
+---------
+
+Two memory leaks:
+
+A memory leak has been found which seems to mostly occur in Viewer mode. Some data on background noise measurements are not being cleared from memory, so memory will eventually run out. This could happen after browsing a lot of data, but was most likely when reprocessing files offline, for example running click classifiers. This is now fixed.
+
+Also fixed a memory leak in the ROCCA whistle classification module.
+
+New Features
+------------
+
+SoundTrap SUD file reading. If you’re using SoundTrap autonomous recorders from Ocean Instruments, you no longer need to decompress the SoundTrap files prior to processing. This will save time and a lot of disk space. Extraction of clicks from the inbuilt SoundTrap Click detector can also happen while processing SUD file data with other detectors, thereby streamlining the whole processing chain. Read the online Help for details.   
+
+Version 2.02.05 October 2022
+============================
+
+Click Train Detector Features and Bug Fixes
+-------------------------------------------
+
+**Features**
+
+Changes to GUI to make dialog shorter for low DPI screens.
+
+Complete rewrite of the classification system to have nested classifiers which can be enabled or disabled.
+
+Changes to classification GUI to accommodate the new classification system.
+
+Addition of data selectors to the minimum number of clicks accepted by the classifier. This allows the click-by-click classifier and the click train detector to be used to together to improve classification accuracy.
+
+**Bug fixes**
+
+Click detection bug fix in kernel which improved click fragmentation.
+
+Bug fix to database were JSON data from classifier was being trimmed.
+
+**Documentation**
+
+Comprehensive help file including description of the algorithm, screen grabs and examples.
+
+Bug fixes
+
+Other Features
+--------------
+
+Help documentation for Backup Manager
+
+Help documentation for Matched Click Classifier
+
+Database logging of offline tasks (such as click re-classification, bearing calculation, etc.)
+
+Data selector for Whistle Classifier module
+
+Variable sound output level when using National Instruments devices for sound playback.
+
+Speed improvement when processing flac audio files.
+
+Bug Fixes
+---------
+
+Soundtrap DWV import. Will now generate binary files even if DWV file doesn‚’t exist (which is correct behavior in quiet conditions when no clicks were detected).
+
+Spectrogram. Changes to stop occasional crashing when restarting processing of wav files.
+
+Sizing of dialogs on ultra high definition monitors so that data fields are sized correctly.
+
+Fixed a memory leak in ROCCA
+
+Fixed issues with options in Click Detector bearing time display which (when using planar and 3D arrays) allow you to plot relative to the array, the vessel, or North.
+
+Version 2.02.03 February 2022
+=============================
+
+Some minor bug fixes following our migration to GitHub. Note that the older Bug numbers only refer to bugs reported on the SVN site. New bugs and issues are logged on GitHub at [https://github.com/PAMGuard/PAMGuard/issues](https://github.com/PAMGuard/PAMGuard/issues). GitHub issue number are referred to with a # symbol
+
+#6 Threading Hydrophone Locator: was not working correctly in the latest release V2.02.02. The problem was particularly apparent in Viewer mode but may have given false array locations in normal mode under some circumstances. This has been fixed
+
+#11 Matched Click Classifier: fixed bug which caused crash running in real time. Added template names based on file names.
+
+#13 Merging files when offline processing file folders: Had an error introduced in last release which caused it to fail to recognise gaps between files, meaning that some output data (i.e. after a gap) would have an incorrect time stamp. This did not affect data if the ‘merge contiguous files’ option was not selected.
+
+#14 Logger forms data were not plotting correctly. This was due to the required data selection functions not being fully implemented. This is now fixed and it should be possible to select what to plot based on selections from drop down lists within any form.
+
+Note that updates have also been made to the Matlab interface to PAMGuard binary files, which has now also been migrated to GitHub at [https://github.com/PAMGuard/PAMGuardMatlab](https://github.com/PAMGuard/PAMGuardMatlab).
+
+Version 2.02.02 October 2021
+============================
+
+Minor bug fix to V2.02.01 which would cause the TF FX display to crash if no data were displayed.
+
+See major release notes for V 2.02.01 below.
+
+Bug 495: TD FX display throws NullPointerException if user has removed all data units and then moves mouse over display area.
+
+Version 2.02.01 October 2021
+============================
+
+**If you are upgrading from a PAMGuard core release (1.15.xx), PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.**
+
+This version of PAMGuard has been bundled with Java 16 (OpenJDK release), so you will not need to install a java runtime engine separately. PSFX files generated in previous beta releases (2.xx.xx) should be compatible with this version, and vice-versa. PSF files generated in core releases (1.15.xx) can be loaded in this version, but will be converted to PSFX files when PAMGuard exits.
+
+File Format Change
+------------------
+
+Changes have been made to the binary file format to support the output of additional noise outputs for certain detectors (See below). Binary files created with this version will not be compatible with earlier versions 2.01.### and below. This version will read and may convert earlier format binary files.
+
+**Localisation Modules**
+
+Bearing and Group 3D localization modules have been thoroughly tested and a number of bugs rectified. Documentation has been developed and is available in the online help. Further, a number of example configurations have been generated, configuration files for these are available in the PAMGuard downloads area [here](http://www.PAMGuard.org/downloads.php?cat_id=3).
+
+**Detection Group Localiser**
+
+This module has been renamed “Detection Grouper”, so as to avoid confusion with the Group 3D localizer. This is because the Detection Grouper is more for organizing data into groups to be localized than it is for doing localization.
+
+**Minor Bug Fixes**
+
+1\.       Bug   490. Error when trying to select File in Sound Acquisition.
+
+2\.       Bug   491. LTSA spectrogram frequency axis does not update when changing the params
+
+3\.       Bug   492. Data Model does not update button//tooltip text when underlying data changes
+
+4\.       Bug   493. Click Detector does not work when using the 'skip x seconds' option in Sound Acquisition dialog
+
+5\.       Bug   494. Detection Group Localiser data unit end time did not adjust when the last member was remove
+
+6\.       Bug   495. TD FX display throws NullPointerException if user has removed all data units and then moves mouse over display area
+
+**Upgrades**
+
+1\.        Added SIDE module for detector/operator analytics
+
+2\.        Upgrade database system to work with MySQL 8.0
+
+3\.        Improvements to datamap display, to ensure even small images will be shown
+
+4\.        Allow Clip Generator to create both a binary record and a wav file
+
+5\.        Implemented a Backup Manager for backing up multiple types of data to multiple locations\]
+
+6\.        Upgrades to how PAMGuard lets the user enter custom date formats in the Sound Acquisition dialog
+
+7\.        Extended XML-output support to all of the modules
+
+8\.        Updates to the simulated sounds in the Sound Acquisition module
+
+9\.        Upgrades to the Symbol Manager framework, to give more control over colours and symbols
+
+10\.        Added an option to hide the ship on the map
+
+11\.        Update Rocca module to allow operation without a classifier (in case all you need are the measurements)
+
+12\.        Update whistle and moan detector to better handle small stubs or spurs coming off the side of whistles
+
+13\.        Extend the Hyperbolic Localiser to handle 2D planar arrays (previously limited to 3D volumetric arrays)
+
+14\.        new CPOD features
+
+15\.        Better interpolation of data by the Decimator when decimating/upsampling by a non-integer amount
+
+16\.        Noise Level Outputs - as an aid to performance diagnosis, some detectors (currently the GPL, Click Detector and Whistle and Moan Detector) are outputting additional noise metrics to their binary output files. These can be read with the [PAMGuard Matlab library](https://sourceforge.net/projects/PAMGuard/files/Matlab/) and used to diagnose system performance in varying noise conditions. Improved displays within PAMGuard for these noise metrics will be included in a future release.
+
+17\.        An implementation of the Generalized Power Law Detector, developed by Tyler Helble (\[Helble et al., ‘A generalized power-law detection algorithm for humpback whale vocalizations’, The Journal of the Acoustical Society of America, vol. 131, no. 4, pp. 2682–2699, 2012) is now available. For details, see the online help
+
+18\.        A Deep Learning module for sound classification is now available. This allows users to deploy a large variety of deep learning models natively in PAMGuard. For details, see the [online help](https://github.com/macster110/PAMGuard_DeepLearningSegmenter/blob/master/deep_learning_help.md).
+
+Latest Version 2.01.05 October 2020
+===================================
+
+**If you are upgrading from a PAMGuard core release (1.15.xx), PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.**
+
+This version of PAMGuard has been bundled with Java 13 (release 13.0.1). PSFX files generated in previous beta releases (2.xx.xx) should be compatible with this version, and vice-versa. PSF files generated in core releases (1.15.xx) can be loaded in this version, but will be converted to PSFX files when PAMGuard exits.
+
+**Bug Fixes**
+
+1\.       Bug   474. Click Detector Classifier fails when trying to use amplitude range for classification.
+
+2\.       Bug   476. Array Manager dialog throws exception if there is only 1 hydrophone.
+
+3\.       Bug   478. Ishmael Detector auto-scaling graphics does not work well.
+
+4\.       Bug   479. Increase number of characters in fixed landmark module from 50 to 256.
+
+5\.       Bug   481. Depending on Windows Security settings, PAMGuard may not be able to access dll library (such as NMEA).
+
+6\.       Bug   482. Concurrency problem when hydrophone interpolation method is not set to "Use Latest Value".
+
+7\.       Bug   483. Radar display loses it's params when new modules are added.
+
+8\.       Bug   484. Datagram Display error.
+
+9\.       Bug   485. 3D Group Localiser limited by millisecond times when dealing with closely-spaced hydrophones.
+
+10\.       Bug   486. UDF tables not getting copied over to new database properly.
+
+11\.       Bug   487. Database module not working with newer version of MySQL
+
+12\.       Bug   488. Incorrect 0-peak and peak-peak calculations in Filtered Noise Measurement module.
+
+**Upgrades**
+
+1\.        Speed up adding subdetections to superdetections.
+
+2\.        Added new system of scrolling to data in Spectrogram, using CTRL+arrow keys to move to previous/next displayed data unit.
+
+3\.        Implemented new Effort Monitoring System to track on/off-effort information
+
+4\.        Added ability to receive NMEA over UDP multicast in addition to UDP broadcast
+
+5\.        Added logger form annotation to Spectrogram Annotation module.
+
+6\.        Better auto-scaling in Ishmael Detector graphics window.
+
+7\.        Change to Windows temporary folder location, to get around Windows Security settings that were preventing some modules from working properly.
+
+Version 2.01.04 August 2020
+===========================
+
+**If you are upgrading from a PAMGuard core release (1.15.xx), PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.**
+
+This version of PAMGuard has been bundled with Java 13 (release 13.0.1). PSFX files generated in previous beta releases (2.xx.xx) should be compatible with this version, and vice-versa. PSF files generated in core releases (1.15.xx) can be loaded in this version, but will be converted to PSFX files when PAMGuard exits.
+
+**Bug Fixes**
+
+1\.       Bug   451. Small time offset was being applied when post-processing wav files.
+
+2\.       Bug   453. Adding a new spectrogram display causes PAMGuard to throw exception
+
+3\.       Bug   455. Cepstrum creating data units using channels it should not be using
+
+4\.       Bug   456. Under certain conditions, the Ishmael detection plugin that is shown at the bottom of the spectrogram can disappear about 500 msec behind the current time.
+
+5\.       Bug   457. PAMGuard throws exception in Viewer mode when trying to load a data unit that has more than 1 annotation
+
+6\.       Bug   458. Contour lines on map disappear when user zooms in
+
+7\.       Bug   459. Rocca does not save wav clip properly when WMD is source
+
+8\.       Bug   460. Click Detector BT Display vertical axis shows all zeroes when zooming out
+
+9\.       Bug   461. Fix pam symbol drawing - bit of a mix up between width and right edge
+
+10\.       Bug   462. Fix time offset bug in Decimator. Was putting data times a chunk out of synch.
+
+11\.       Bug   463. Changed start sample in the data unit to be actual start sample and not the end sample.
+
+12\.       Bug   464. Click Train Detector multiplying instead of dividing for long tracks.
+
+13\.       Bug   465. Matched click classifier peak search was not working.
+
+14\.       Bug   466. Bug in IIR filter which was not correctly handling odd numbered band pass or band stop filters.
+
+15\.       Bug   467. Fix bug in triggered recordings that was messing up the amount of time.
+
+16\.       Bug   468. User Display tab does not disappear when the module is removed.
+
+17\.       Bug   469. Mark Observers may not work properly in TD Displays
+
+18\.       Bug   470. Datagram not displaying colours properly, hanging while scrolling.
+
+19\.       Bug   471. Beamformer, LTSA and Cepstrum data not displaying data properly in Spectrogram.
+
+20\.       Bug   472. Viewer mode crashing when generating a Datagram from very large binary files.
+
+21\.       Bug   473. ReportGenerator throwing exception when trying to generate report.
+
+**Upgrades**
+
+1\.        Add functionality for bluetooth headsets.
+
+2\.        Add user-facing option to adjust the startup delay for the time-correction (Global Time module). This provides a workaround to speed up analysis of thousands of wav files (i.e. by setting startup delay to 0 instead of default value of 2000 ms).
+
+3\.        Add support for RS Aqua time format.
+
+4\.        Add 15 minute data load option to viewer mode.
+
+5\.        Add 3D map for target motion module.
+
+6\.        Add option to alarm module to attach screenshots of all frames to email alerts.
+
+7\.        Add Beamformer and Bearing Localiser modules
+
+8\.        Added Global Medium Manager, to switch between air and water mediums
+
+9\.        Added global hotkeys to Logger module.
+
+10\.        Added channel display to noise one band measurement display.
+
+11\.        Added Azigram module, to work in conjunction with Difar.
+
+12\.        Added beaked whale to sim sounds
+
+13\.        Added ctrl-p hotkey to print-screen button.
+
+14\.        Update simulated daq so that it generates new random noise correctly on each call rather then recycling old data. Makes the output more spectrally flat.
+
+14\.        Changes to FX Display to make it more intuitive - menu options, button placement, etc.
+
+Version 2.01.03 February 2020
+=============================
+
+**If you are upgrading from a PAMGuard core release (1.15.xx), PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.**
+
+This version of PAMGuard has been bundled with Java 13 (release 13.0.1). PSFX files generated in previous beta releases (2.xx.xx) should be compatible with this version, and vice-versa. PSF files generated in core releases (1.15.xx) can be loaded in this version, but will be converted to PSFX files when PAMGuard exits.
+
+**Bug Fixes**
+
+1\.        Bug 433. Custom storage options were being lost when PAMGuard restarted.
+
+2\.        Bug 434. PAMGuard Viewer mode was having problems importing settings from psfx file.
+
+3\.        Bug 435. Logger forms subtabs not working.
+
+4\.        Bug 436. Bug in Serial Port interface was occassionally causing PAMGuard to crash without error message.
+
+5\.        Bug 437. Right whale detector crashing if no input was set.
+
+6\.        Bug 438. Text not showing in tabs in Night colour mode.
+
+7\.        Bug 439. Can no longer access Spectrogram settings once you've selected a Click Detector as Mark Observer
+
+8\.        Bug 440. Measurement Computing Cards not enumerating properly.
+
+9\.        Bug 441. Plot coordinate calculations incorrect in PamAxis.
+
+10\.        Bug 442. BT Display does not change click symbol color when Colour By Superdetection is selected.
+
+11\.        Bug 443. NI playback crashing immediately if a device is not present.
+
+12\.        Bug 444. Bug in data selector which caused it to mess up history of recent psf files.
+
+13\.        Bug 445. Overlay data in FX spectrogram display gets out of sync with underlying spectrogram image.
+
+14\.        Bug 446. Multiple PamDataBlocks with same name turn on/off together in Spectrogram display.
+
+15\.        Bug 447. Viewer mode throws exception when trying to load beamformer localisations
+
+16\.        Bug 448. Detection Group Localiser data units not being loaded in Viewer mode.
+
+17\.        Bug 449. Rocca Encounter Stats output file calculating incorrect values.
+
+18\.        Bug 450. Ishmael Detectors subscribing to FFTDataBlock twice, meaning they process each data unit 2x doubling the output.
+
+**Upgrades**
+
+1\.        Added functionality to TD display to allow users to manually classify clicks.
+
+2\.        Added option in Sound Acquisition settings dialog to override filename time stamp and use PC local time instead.
+
+3\.        Add option to Whistle & Moan Detector data selector to only display whistles that have super-detections.
+
+4\.        Functionality to clone hydrophone streamers.
+
+5\.        Added automatic log file - all messages to the console will now be written to a txt file as well. File is stored in user.home/PAMGuard folder - look under the Help menu item for a shortcut to open the folder.
+
+6\.        Implemented a simple UDP output for PAMGuard alarms.
+
+7\.        Changes to Spectrogram Mark Observers, to allow individual channels to be selected instead of the spectrogram panel as a whole.
+
+8\.        Change to use long module names in dialogs instead of short, to make it easier to know the difference between output data blocks when using the same module multiple times.
+
+9\.        Added a few new options to the Click Detector Sweep Classifier.
+
+10\.        Add option to the Map module's Plot Overlay Options dialog, to show events occuring in the future (_look ahead_) instead of the default display of events which have already occurred. Can make it easier to match up the map with clicks seen in the Click Detector display.
+
+Beta Version (with Java 12) 2.01.01 July 2019
+=============================================
+
+**Upgrades**
+
+1\.        This version of PAMGuard has been upgraded to make it compatible with Java 12. psfx files generated in previous beta releases should be compatible with this version, and vice-versa.
+
+2\.        Java 12 is better at handling Windows scaling issues on high-DPI displays. Beyond that, users should not notice much of a difference between this version and previous beta releases.
+
+Beta Version 2.00.17 June 2019
+==============================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 427. Soundtrap import not closing binary files properly if BCL files do not contain off-effort 'E' line
+
+2\.        Bug 428. Decimator crashing in viewer mode
+
+3\.        Bug 429. Click Bearings at 180 degrees
+
+4\.        Bug 430. Rocca calculates inflection point parameters incorrectly
+
+5\.        Bug 431. Error when trying to mark section of spectrogram to send to Bearing Calculator module
+
+6\.        Bug 432. MySQL database interface - connection problems
+
+**Upgrades**
+
+1\.        New display for Gebco Netcdf bathymetry maps.
+
+2\.        Difar enhancements based on recent field testing.
+
+3\.        Click Train Detector upgrades, including localisation capabilities.
+
+4\.        Updates to the Ishmael detectors.
+
+Beta Version 2.00.16 May 2019
+=============================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 413. Binary file crashing during load, after a system failure. Failure could cause the file to become corrupt, which caused a crash during subsequent load
+
+2\.        Bug 414. Whistle Classifier module may not classify properly when analyzing multiple audio files.
+
+3\.        Bug 415. Click Detector could throw an Out Of Memory error when processing a large dataset.
+
+4\.        Bug 416. Bearing Localiser was not using the FFT information from it's Source, as it should have been.
+
+5\.        Bug 418. Rocca module was not classifying clicks properly when in Viewer mode.
+
+6\.        Bug 419. Radar display not showing correct symbol in key.
+
+7\.        Bug 420. The Click Classifier set was not getting updated properly in Viewer mode.
+
+8\.        Bug 421. Alarm module resetting the simple count too quickly
+
+9\.        Bug 422. Soundtrap import causing memory problems with large datasets.
+
+10\.        Bug 423. TD display FX scrolls extremely slowed when super detections were present.
+
+11\.        Bug 424. PAMGuard would occasionally freeze when processing offline files.
+
+12\.        Bug 425. Rocca crashing if Click Detector is used as source but the Click Classifier is not configured properly.
+
+13\.        Bug 426. Clip Generator could cause memory issues when a large number of files were being analyzed.
+
+**Upgrades**
+
+1\.        Upgrades to the Group Localiser, including better error estimation.
+
+2\.        Click Train Detector upgrades, including ability to import time chunks from csv file for batch processing.
+
+3\.        Better display of microseconds in dialogs.
+
+4\.        Added adaptive noise filter to Ishmael Detectors.
+
+5\.        Many upgrades to the Sound Playback module, including a high-pass filter, gain control, and the ability to mix wavefrom and envelope data together to listen to high-frequency clicks and dolphin whistles at the same time.
+
+6\.        New Analog Array Sensors module, to read data from 3-axis accelerometers.
+
+6\.        Send Email option added to Alarm module.
+
+7\.        Added ability to scale the PAMGuard display (go to _Help > Set Display Scaling Factor_ to adjust the scale). This, in conjunction with the built-in Windows Display Scaling feature, will hopefully help with issues sometimes found when using 4k/UHD/high-DPI displays. At the moment this does not fix the JavaFX components, but we're working on that.
+
+Beta Version 2.00.15 January 2019
+=================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 401. AIS graphics in Viewer crashing.
+
+2\.        Bug 402. Fixed problem with data from old access database not importing correctly
+
+3\.        Bug 403. Seismic Veto throwing ClassCastException when downstream of a Signal Amplifier and the multithreading options are changed. Fixed.
+
+4\.        Bug 406. PAMGuard resetting UID values in binary files.
+
+5\.        Bug 408. Map Key icon not updated when colouring by channel. Fixed.
+
+6\.        Bug 409. Fixed Click Detector not showing the correct input source in the dialog
+
+7\.        Bug 410. Bug in Difar module, manually editing sonobuoy compass corrections.
+
+8\.        Bug 411. Incorrect matching of GPS data sources for calibration in Difar module.
+
+9\.        Bug 412. Fixed problem with ship always centering on map.
+
+**Upgrades**
+
+1\.        Improvement to Range Rings in Map display.
+
+2\.        Improvement in click train detector speed.
+
+3\.        Added table of compass calibration to the Sonobuoy Manager, and option to use magnetic variation as initial calibration.
+
+4\.        Matched template classifier extended to handle multiple templates.
+
+5\.        New methods for handling and logging time offsets from the PC clock based either on GPS NMEA data or on pings of an NTP time server.
+
+6\.        Improvements to Difar module graphics - easier reading, better visibility at night.
+
+7\.        Added print screen button to capture/save all PAMGuard screens to file and log the information to the database.
+
+8\.        Updates to the Ishmael module.
+
+9\.        Added option to the WarnOnce dialog to hide a warning for the current PAMGuard session, but not forever.
+
+Beta Version 2.00.14c October 2018
+==================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 338. Problem displaying coastlines and bathymetric contours around the dateline (+/- 180 longitude) in the map.
+
+2\.        Bug 397. Clip Generator not able to find raw data when clips were taken from many channels.
+
+3\.        Bugs 398 and 399. Click Detector, FFT Engine and Filter modules were losing source during startup, if the source selected was not the first raw data source in the list.
+
+4\.        Bug 400. Spectrogram display running out of memory.
+
+**Upgrades**
+
+1\.        Added decimal degrees option to latitude/longitude dialog.
+
+2\.        Added option in the Click Delay parameters to restrict the number of initial samples used in the calculation. This can be useful for cleaning up delays in the presence of echoes and small time delays.
+
+3\.        Increased upsampling to 2, 3 or 4 times.
+
+4\.        Can now change units and scale type in level meter display.
+
+Beta Version 2.00.14 September 2018
+===================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 381. Logger form loses controls when the order is changed.
+
+2\.        Bug 382. Click species check boxes get cleared in toolbar when the Click Classification dialog is closed
+
+3\.        Bug 383. Spectrogram max frequency resetting to incorrect value the first time the spectrogram dialog is opened.
+
+4\.        Bug 385. Bug in offline toolbar which will crash if the classifier dialog is opened and then closed with no classifiers specified.
+
+5\.        Bug 386. Click Detector Sweep Classifier sometimes keeping changed settings even when user tries to cancel or discard changes
+
+6\.        Bug 387. Map was stopping displaying data based on the start time of data units. Have changed this to last updated time so that click events will display if they have been recently modified. Otherwise, long events get lost from the display.
+
+7\.        Bug 388. Spectrogram annotations not working properly in beta branch. Would make and store mark, but not store snr or notes. Both now fixed for both online and offline operations. Have also added some options controlling SNR measurement period.
+
+8\.        Bug 389. Multiple annotations of the same class would not be stored to the database if they had the same class. This was affecting the Spectrogram Annotation module which has now been given two text type annotations.
+
+9\.        Bug 391. Click Detector not registering change in multi-threading option.
+
+10\.        Bug 392. Click Detector throwing exception if multi-threading is turned off and the Basic Sweep Classifier is testing the amplitude range.
+
+11\.        Bug 393. Rocca module not calculating energy, duty cycle, and windowRMS values when manually picking contour points.
+
+12\.        Bug 394. Occasional divide-by-0 error in Spectrogram Display time scale.
+
+13\.        Bug 395. Problem with hydrophone locator was resulting in an incorrect x position for hydrophone 0.
+
+**Upgrades**
+
+1\.        Better way of coupling scrollers in User Display panels - see new options in main menu.
+
+2\.        Added Matched Template Click Classifier. Classifies clicks based on an ideal template to match and a template to reject. An example of this is to classify beaked whale clicks in an environment with dolphin clicks.
+
+3\.        Added zoom in/out to Raw Data plugin display in spectrogram.
+
+4\.        Added ability to read differential GPS data.
+
+5\.        Added check for duplicate settings in the psf file when exiting PAMGuard. If duplicate settings are found, user is given the option to leave them in the psf or get rid of them. Duplicate settings are ignored by PAMGuard, but can cause the psf file to grow large over time.
+
+6\.        New features in PAMGuard Beta mean that psf files created with new versions are not compatible wth earlier versions and all configuration data may be lost if an attempt is made to open newly created psf files with older versions. We have therefore changed the file extension of psf files to .psfx in new Beta releases. Beta releases will still load the older psf files, but when the configuration is saved, the original psf file will remain untouched and data will be written to a psfx file with the same directory and name.
+
+Beta Version 2.00.13 June 2018
+==============================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 367. When adding a click to an event that already contained that click, the click was being duplicated in the subtable.
+
+2\.        Bug 368. Whistles from the Whistle & Moan Detector no longer show up on the FX display overlay.
+
+3\.        Bug 369. Map options not showing up in viewer mode when right-clicking on map.
+
+4\.        Bug 370. Rocca crashing when receiving detections from Whistle and Moan Detector.
+
+5\.        Bug 371. Rocca loses FFT channel selection when opening params dialog.
+
+6\.        Bug 372. Rocca database record incorrectly lists Whistle Classifier file for Clicks.
+
+7\.        Bug 373. Incorrect GPS headings in the database are propagated through PAMGuard and cause problems with mapping and TMA.
+
+8\.        Bug 374. Bearing Errors in Target Motion-3D Loc' calculations.
+
+9\.        Bug 375. Low Frequency Clicks not working.
+
+10\.        Bug 376. Error when using a serialised data map which spans a period of time in which Pamguard modules have changed.
+
+11\.        Bug 377. changes to click events in Viewer Mode not getting saved to database.
+
+12\.        Bug 378. TMA dialog not displaying current Model type, and unclear when event not selected.
+
+13\.        Bug 379. Channel boxes were being cleared whenever the Decimator settings window was opened.
+
+**Upgrades**
+
+1\.        Soundtrap module - bug fixes and more intuitive user interface when importing Soundtrap data. Also changed the default date/time format to ISO8601 standard.
+
+2\.        A number of upgrades and fixes to the Localiser algorithms, including expanding to work with whistles.
+
+3\.        Added option to export all settings and parameters as an XML-formatted file. Note that this required changes to the structure of the Array Manager, and as such any settings (psf) files created with this version of PAMGuard cannot be used in older versions. Older psf files can be loaded with this version, but will be converted.
+
+4\.        Many updates to the Video Range module. Will currently only work with landmarks.
+
+Beta Version 2.00.12c March 2018
+================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1\.        Bug 355. PAMGuard crashed when database module was present and Rocca tried to load classifier
+
+2\.        Bug 356. Ishmael Localiser losing raw audio before it had time to localise
+
+3\.        Bug 357. Difar storing Tracked Group latitude in both GroupLatitude and GroupLongitude database columns
+
+4\.        Bug 358. Clip Generator not storing overlapping detections properly
+
+5\.        Bug 359. PAMGuard crashes when selecting auto-scale option in Noise Monitor module
+
+6\.        Bug 360. LTSA not loading in viewer mode
+
+7\.        Bug 362. Bug in maximum likelihood bearing estimator grid search
+
+8\.        Bug 363. Rocca throwing exception if user boxes a whistle close to the beginning of a file
+
+9\.        Bug 364. LTSA bug - get correct fft length and hop into datablock and output stream
+
+10\.        Bug 365. Lose spectrogram settings when converting data from Core to Beta versions
+
+11\.        Bug 366. Rocca manual whistle contour extraction throws error when trying to classify a boxed whistle
+
+**Upgrades**
+
+1\.        During conversion from Core to Beta versions, if there are any problems matching database units to binary store units the UID values will now be set to negative numbers instead of leaving them null. The user is warned about this and encouraged to manually fix the database.
+
+Beta Version 2.00.12 January 2018
+=================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1.       Bug 334. Fixed problem of GPS dialog occasionally resizing PAMGuard window.
+
+2.       Bug 336. Files were being corrupted if the limit file size option was set to a lower value in viewer than it has been when data were collected - would truncate files being rewritten after change.
+
+3.       Bug 341. Temporary objects created in the Rocca module were not being discarded, and could cause memory issues in large datasets.
+
+4.       Bug 342. Rocca was not properly loading a previously-saved EncounterStats file.
+
+5.       Bug 343. Fixed threading issue between Rocca and Click Detector.
+
+6.       Bug 346. Click Classifier not properly checking frequency ranges for invalid entries.
+
+7.       Bug 347. PAMGuard crashes when loading a Sound Acquisition module when Java 7 is installed on computer. Caused by JFLAC library, which has been recompiled to correct issue.
+
+8.       Bug 348. Map plot overlay menu not updating.
+
+9.       Bug 349. Clip Generator overlay graphics sometimes crashing on map.
+
+10.       Bug 354. Whistle Classifier was crashing if user accidentally entered invalid parameters. Have added diagnostics to prevent this.
+
+**Upgrades**
+
+1\.        User is now able to specify Soundtrap date/time format
+
+Beta Version 2.00.11 October 2017
+=================================
+
+PAMGuard Version 2 contains major updates. You should read and understand the notes listed for [Beta Version 2.00.10](#_Latest_Beta_Version_2.00.10) before proceeding with installation and use of this version.
+
+**Bug Fixes**
+
+1.       Bug 322. Fixed problem with Log event average and click templates not showing.
+
+2.       Bug 323. Difar module. Fixed a couple of small bugs in the DIFAR system which caused it to not work if old configuratins were used.
+
+3.       Bug 324. Occassional crashing in the AIS Module, as reported by user. Added warnings and more robust error handling.
+
+4.       Bug 325. Fixed bug in complex addition/subtraction methods.
+
+5.       Bug 328. Fixed bug in NMEA data flow which caused a Null pointer exception.
+
+6.       Bug 330. Problem with certain FLAC files not being read properly. Upgraded jFLAC library to fix.
+
+7.       Bug 332. Fixed problem with secondary maps (those not in the main display) not displaying detections.
+
+8.       Bug 333. Fixed problem with data end times rounding incorrectly.
+
+**Upgrades**
+
+1\.        Added sound playback and other useful information to bar on FX display
+
+2\.        Updates/bug fixes to the landmark module.
+
+3\.        Added a simulated white noise source which can be moved around in the same way as other sources.
+
+4\.        Reworked annotation system, and added annotations to binary storage
+
+5\.        Added 3D rotation to map display. Hold down the shift key while clicking and dragging on the map to see this in action.
+
+6\.        Added database logging and other updates to the Click Detector trigger function
+
+7\.        Added circular movement option to source simulation
+
+Beta Version 2.00.10 June 2017
+==============================
+
+PAMGuard Version 2 contains major updates. You should read and understand these notes before proceeding with installation and use of this version. These changes have been funded under contract to NOAA Fisheries, contract no. WE-133F-16-SE-1126.
+
+### Binary File Structural Changes
+
+The Binary File structure has changed to accommodate additional information for each unit of data stored. This means that any data generated with PAMGuard Version 2.00.00 and above will not be compatible with older versions of PAMGuard. If you open older data sets with the PAMGuard Viewer the older data will be converted to the new format (see below for details).
+
+The most significant change in the binary file format is the addition of a Unique Data Identifier (UID) to each unit of data. This is intended to aid in offline analysis by making it easier for the user to link what they are seeing on different PAMGuard displays and also to link with any data post processed in Matlab or other custom analysis software. UID’s are also added to PAMGuard database tables.
+
+#### Converting Old Data
+
+If old data are opened with the PAMGuard viewer they will automatically be converted. For safety, the original binary files will not be overwritten and the new data will be placed in a new folder on your computer with the same path as the old data, but suffixed with ‘\_WithUID’, e.g. if your binary data were previously stored in the folder C:\\MySurvey\\binarydata the new data will be written to C:\\MySurvey\\binarydata\_WithUID.
+
+The additional UID column will be added to all database tables and populated with unique values. For data which are stored in both the binary files and in database tables, the same UID’s will be used in both data stores.
+
+### New Displays
+
+A new time based scrolling display has been added to PAMGuard which can display multiple types of data on the same time axis. It can for instance be used to display bearings to whistles on a bearing-time type display similar to that commonly used in the click detector. Composite display graphs containing data from more than one detector are also possible. For details, see the PAMGuard help file (Displays / Time Display FX). Note that this display is only available if you are running Java 8 or later.
+
+### Event Marking and the Detection Group Localiser
+
+A new system of event marking which can be used both online and offline has been added to PAMGuard. Details are in the PAMGuard help file (Displays/Display Marking). Data can be selected on the Map, the Spectrogram Display and the new Time Display FX in a similar way and sent to other PAMGuard modules. The new marking and data selection system works with the new Detection Group Localiser. The Detection Group Localiser extends the functionality which always existed in the click detector to other types of data (e.g. Whistles) so that they can be grouped and tracked using target motion analysis in a similar way. Details of the Detection Group Localiser are in the PAMGuard help files (Localisation/Detection Group Localiser).
+
+### Display Colours
+
+A new system for handling display colours has been implemented across all PAMGuard displays. This gives greater flexibility to the user to control how data units are shown. For instance, you might simply want to show clicks in blue and whistles in green. However, for clicks and whistles that have been assigned to a Detection Group, you may want to colour them by the colour assigned to the group.
+
+### Using Old PAMGuard Configurations
+
+Old PAMGuard configurations will work with the new version. However please note the following:
+
+1.                   New classes will be added to the configuration files, so they will no longer work with older PAMGuard versions.
+
+2.                   Display colour options will be lost and most data displayed on the map may default to black. This is due to the above changes to how colours are managed. Changing back to the colours of your choice is relatively simple through the PAMGuard GUI.
+
+Older Versions
+==============
+
+Version 1.15.11 May 2017
+========================
+
+**Bug Fixes**
+
+1.       Bug 317. Rocca Module Data Purging. The ROCCA module was not performing data purging when using classifiers developed for Hawaii/Temperate Pacific/North Atlantic datasets. This has been corrected.
+
+2.       Bug 320. PAMGuard stopped reading Click Detector Event data from database when target motion analysis information was encountered. Corrected.
+
+3.       Bug 321. Problem reading Soundtrap 4 files. Fixed.
+
+**Upgrades**
+
+1.       Added Copy-to-Clipboard button to Warning dialogs, to store error messages and stack trace information on the Windows clipboard. This information can then be easily pasted into emails, text documents, etc when contacting PAMGuard support.
+
+2.       Enhancements and bug fixes made to Difar module during 2017 ACE voyage.
+
+3.       Rocca Module: added StartHr, ProportionWhists and ProportionClicks parameters to Event classifier
+
+4.       The installer now allows the user to enter command line switches/parameters to be included in \*.ini files.
+
+Version 1.15.10 March 2017
+==========================
+
+**Bug Fixes**
+
+1.       Bug 308. Map Overlay Control. Storage of data saying what get's plotted on each map and for how long became corrupted and the list grew to a ridiculous size. Code has been put in place to a) stop it happening again and b) to repair any configuration files which are corrupted. Corrupted files will be slow to load, slow to save and will be > several megabytes in size. It may be necessary to delete the PAMGuardSettings table in any databases since these too may have become oversized which will slow down viewer mode PAMGuard start-up.
+
+2.       Bug 309. Rocca would crash when the user would press the classify button after the contour was recalculated. This has been corrected.
+
+3.       Bug 310. When exiting Viewer mode, PAMGuard queries the user whether they are sure they want to exit without saving even though they selected _Save and Exit_. Corrected, and added an _Exit without Save_ option.
+
+4.       Bug 311. When double-clicking on a psf file to start PAMGuard, the working directory is set as the location of the psf and not as the installation folder. The library subfolder (\\lib or \\lib64) uses a relative path from the working folder, and therefore is set incorrectly. This has been fixed.
+
+5.       Bug 314. If PAMGuard is started by double-clicking on a psf, nothing happens when the user selects save as new configuration. This has been fixed.
+
+6.       Bug 315. code searched for file in working folder, which is the installation folder when starting PAMGuard using a shortcut link. But when double-clicking on a psf, the working folder is the location of the psf. This has been fixed.
+
+7.      Bug 316. Another error reading metadata for Dtag and SoundTrap files has occurred due to a format change in dTag metadata. This has been fixed.
+
+Version 1.15.09 January 2017
+============================
+
+**BugFixes**
+
+1.        Bug 306. Certain methods have been querying AcousticDataUnit.getDuration and expecting to receive a response in milliseconds. However, getDuration actually returns the number of samples.  This has been corrected.
+
+**Plug-Ins**
+
+A major change in this version of PAMGuard is how plug-ins are managed. PAMGuard now has the ability to dynamically load plug-in modules (saved as jar files) at runtime. This will greatly simplify the process of testing and distributing newly developed modules, since only a small jar file will be required rather than a new bespoke PAMGuard installation.
+
+Module code development remains largely unchanged, in most cases simply requiring the addition of an interface class.  Instructions for the development of new modules utilizing the plug-in system can be found [here](http://www.PAMGuard.org/16_HowtomakePlug-Ins.html).  Plug-in modules can be downloaded from the PAMGuard website here, but developers are encouraged to host and maintain their own modules.
+
+Modules of interest to the general PAM community will remain as part of the core PAMGuard installation. However, specialized modules which are useful to only a small number of users have been removed and are available as a separate download. The following modules have been removed:
+
+1.            Resource Monitor
+
+2.            WILD ArcGIS Interface
+
+3.            Workshop Demo Detector
+
+4.            Echo Detector and IPI Demo (bundled together, due to dependencies)
+
+**Other Changes**
+
+The installer has been updated to handle both 64 bit and 32 bit installations. PAMGuard psf files are now registered in the Windows Registry, so double-clicking on a psf file should run PAMGuard in normal mode (as opposed to Viewer or Mixed modes). Note that the Windows Registry can only hold a single executable reference for psf files; therefore, for users with multiple installations of PAMGuard, double-clicking on a psf will run the most-recently installed version of PAMGuard on the system.
+
+Version 1.15.08 November 2016
+=============================
+
+This release contains one bug fix.
+
+**Bug Fixes**
+
+1.        Bug 307. Unpacker for Sound trap dwv files was not working correctly. This is now fixed.
+
+Version 1.15.07 November 2016
+=============================
+
+This release contains two bug fixes.
+
+**Bug Fixes**
+
+1.       Bug 303. Some ASIO sound cards not working with either ASIO system in PAMGuard. For the PAMGuard ASIO system, this was due to a data format used by some sound cards never being properly implemented. For the “New ASIO system” which is based on jAsioHost, the unpacking of that format contained a bug which returned incorrect numbers, so data were swamped with noise. Both systems are now fixed. By preference, users should use the PAMGuard ASIO system since the JAsioHost based system seems to drop samples when many channels are running at high sample rate.
+
+2.       Bug 305. Date and Time not being correctly extracted from wav files created using SoundTrap recorders. Fixed by correctly finding and unpacking information in the accompanying xml log files that come with SoundTrap files.
+
+Version 1.15.06 November 2016
+=============================
+
+This release contains bug fixes from release 1.15.05, mostly concerning the new target motion analysis methods. Bugs were found in several places in the system, affecting calculations using all three methods: Least Squares, 2D Simplex and 3D Simplex. To the best of our knowledge, all issues are now resolved.
+
+**Bug Fixes**
+
+1.          Bug 291. Click Detector Click Classifier: If this is set to "none" the click detector will freeze / crash and will put the psf file into a state where it will never load again. Incredibly, this bug seems to have been in place for several years and no one has come across it until now. It's fixed.
+
+2.          Bug 292. Incorrect labels on Target Motion panel in viewer - 3D algorithm was labelled as 2D.Fixed
+
+3.          Bug 293. Errors displayed in the click detector target motion panel were wrong in the graphics for the Simplex localisers and wrong in the tabulated data for the least square model. Both fixed.
+
+4.          Bug 294. Click classifier was crashing when the 'min amplitude' option was used. This is fixed.
+
+5.          Bug 295. If a click has a total length of a single sample, the code attempting to estimate the time delay between channels would crash. This is now fixed. This could only occur if both pre sample and post sample were set to 0 in the click detector, which is generally not a good idea, so this bug may have been there for some time, it's just that no one noticed before. Fixed
+
+6.          Bug 296. Context menu popping up in click detector when marking clicks in Viewer mode. This has been fixed so that in viewer mode, the menu will only appear when you right click on the display.
+
+7.          Bug 297. Airgun display was not correctly showing itself at fixed locations, but always following the vessel track. This is now fixed.
+
+8.          Bug 299. Threading Hydrophone locator. Bug found in hydrophone heading calculation has been fixed.
+
+9.          Bug 300. GUI Tab panel selections were not being restored correctly when PAMGuard displays were split across multiple frames. Fixed.
+
+10.      Bug 301. Multiple errors in the target motion module have been fixed.
+
+11.      Bug 302. Target motion calculations taking too long when many clicks are included in a track. Mostly a problem when using automatic click train id. Fixed by setting an optional maximum number of clicks to use in a track.
+
+Version 1.15.05 September 2016
+==============================
+
+**Bug Fixes**
+
+1.        Bug 273. Sound files in viewer data map. These were not being correctly catalogues in the datamap when using the PAMGuard viewer which meant that PAMGuard was not correctly loading sound data during offline analysis. This is now fixed.
+
+2.        Bug 287. Slow database. This has been solved by setting the default behavior of the database to have Auto Commit set to 'off'
+
+3.        Bug 288. Fixed problem of missing help file image
+
+4.        Bug 290. Click bearings on spectrogram display plug in were reversed if the first hydrophone was behind the second hydrophone in the configuration. This is now fixed so that it displays the same bearings as the main click detector display.
+
+**Target Motion Analysis**
+
+A major piece of work has been undertaken to improve the Target Motion tracking with PAMGuard. Details are available in the online help. Users of the Click Detector will notice the following changes:
+
+1.       There is now a choice of least squares and Simplex based algorithms for real-time animal tracking. The improved algorithms also provide better error information both for display on the map and for storage in the database.
+
+2.       The number of data streams associated with the click detector has been tidied up so that there are a) All Click, b) Tracked Clicks (those which are part of an event) and c) Events.
+
+3.       When tracking online, all the click marking information is written to the same database tables as are used for offline target motion analysis. This means than when reviewing data offline, the tracks created in real time are now available for review and further analysis.
+
+4.       A number of user options are now available for automatic click train identification and tracking.
+
+5.       The automatic click train identification is now using the same internal structures as the manual tracking, so it's possible to combine automatic and manual tracking.
+
+6.       Improved options are available to the user, via the click detector bearing time display, to correct and relabel clicks / entire click trains.
+
+Developers will hopefully find that the target motion code has been improved in a way which will make it much easier to provide target motion localization for other detection types (e.g. whistles) in the future.
+
+**Other Features**
+
+_Logger Form Design_
+
+A GUI driven system for designing Logger forms has been released. Currently, this feature has no online help, but is reasonably intuitive compared to the old method of typing directly into the database.
+
+_Improved Number handling_
+
+Users have often found that PAMGuard can be 'jumpy', i.e. the spectrogram does not scroll smoothly, but pauses for a second every few seconds. This is caused by the Java garbage collector cleaning up unused objects in memory. With 64 bit versions, which allow for more memory, some of these pauses were becoming quite long (due to the increased amount of memory that needed to be cleaned up). In some circumstances, these pauses were making data acquisition systems unstable. We have therefore entirely rewritten the way in which PAMGuard handles arrays of spectrogram data (complex numbers) so that instead of large numbers of small Java objects there are now fewer, larger, simpler java objects. These reduce processing delays for garbage collection and give an overall speed improvement, but will otherwise not be noticed by users.
+
+_Click Detector RainbowClick file output_
+
+This feature has been removed since it has been obsolete for several years. Users should use the PAMGuard binary storage system for Click Detector data.
+
+Version 1.15.04 July 2016
+=========================
+
+**Bug Fixes**
+
+A number of bug fixes and code improvements have been made since V 1.15.03:
+
+1.        Bug 272. File types: Some File Open / File Save dialogs were allowing selection of all file types. e.g. Save Configuration As, Section of whistle classifier training file, Map file Selection, These have now been changed so that only the correct type of file can be selected.
+
+2.        Bug 274. GPS Memory leak. A Memory leak associated with GPS data collection has been found which could cause PAMGuard to run out of memory after a day or two's operation. This has now been fixed.
+
+3.        Bug 275. Painting of thumbnail on the Map display time slider. Have fixed a small problem in the graphical display. The visibility of components on this slider has also been improved and a log time scale option is available to facilitate in map data display.
+
+4.        Bug 276. The default hydrophone sensitivity was -201dB re 1V/uPa. This was supposed to be used with a default preamp gain of 30dB. For some reason gain was no longer being added. We have therefore set a default sensitivity of -170dB and left gain at zero. This is more typical of many hydrophones in use today. 
+
+5.        Bug 277. Text fields in classifier dialog were not large enough to display times greater than 10ms. We have increased length of text fields in the dialog.
+
+6.        Bug 278. Have future proofed against potential binary file format changes in future releases. New PAMGuard releases will always be able to open older binary files, however, with previous PAMGuard releases if a newer file format was opened, then PAMGuard was unable to check that the file format was newer and would attempt to read the files and might even corrupt them. Now it will recognise that it cannot open the files, display appropriate error messages and not attempt to read the files. NOTE that at this time there are no planned file format changes and that this is purely a future proofing exercise.
+
+7.        Bug 279. GUI Resizing: The whole PAMGuard GUI would suddenly resize to something very small when a dialog is opened. This has been traced to improper use of a common dialog component SourcePanel which tries to repack its parent Window. Some programmers had inadvertently set it to repack the main PAMGuard GUI instead. This has been Fixed.
+
+8.        Bug 280. Recorder control option to automatically restart recording were causing confusion. It was working in that the recorder would return to its previous state, but it was sometimes difficult for users to set it so that recording would always start as soon as PAMGuard started. More sensible and easy to understand options have been developed in a new options dialog.
+
+9.        Bug 281. Click classification dialog has grown too big to fit on the screen. The options have now been split across three tabbed panes which solves the problem.
+
+10.     Bug 282. Quiet clicks causing too many false classifications. An additional option has been added to the click classifier to limit a class to a range of amplitude.
+
+11.     Bug 283. The spectrogram display was not displaying data in Viewer mode. This has been traced to a problem in offline data mapping and has been fixed.
+
+Version 1.15.03 April 2016
+==========================
+
+A single bug fix concerning import from Access databases to SQLite.
+
+1.       Bug 271. Problem 1 was that the incorrect settings were being imported into the new database. Problem 2 was that indexing of imported click events in the new database was incorrect. Both these issues have now been fixed.
+
+Version 1.15.02 March 2016
+==========================
+
+A number of small bug fixes following release of 1.15.00.
+
+**Bug Fixes**
+
+1.       Bug 266. Clip generator crashed in viewer when the path for output files was not defined even if files were not being created. Fixed.
+
+2.       Bug 267. Click detector not calculating correct bearings when multiple hydrophone pairs with different separations were used. Fixed.
+
+3.       Bug 268. ROCCA module was not saving WAV file clips. Fixed.
+
+4.       Bug 269. Whistle and Moan detector paired bearing localiser was not working. This localizer searches for matching whistles on pairs of hydrophones. Bearings from each pair are crossed to create a localization. Fixed.
+
+5.       Bug 270. Improved file names display in PAMGuard Viewer offline data map and datagram creation.
+
+Version 1.15.00 February 2016
+=============================
+
+Beta Version 1.15.00 64 bit and Core version 1.15.00 32 bit. Both using identical Java core software but linking to different libraries for control of sound input devices.
+
+This is the first release of a 64 bit version of PAMGuard. As with the 32 bit version a number of C language libraries are required to interface to external sound cards and other data acquisition devices. These have been extensively tested on several different computers, but may not be as stable as the 32 bit versions. Please report any problems immediately to the PAMGuard team.
+
+**Other Changes**
+
+Updated the configuration file WMM.COF for World Magnetic Model to the latest 2015-2020 version. See https://www.ngdc.noaa.gov/geomag/WMM/soft.shtml
+
+Small changes to the ROCCA classification module:
+
+1.      Remove white spaces and parenthesis characters from RoccaContourStats header row
+
+2.       Report 'N/A' for min time between detections, if there is only 1 detection
+
+3.       Add ability to load standard notes and use in RoccaParameters dialog window
+
+4.       Fixed Rocca multi-threading problem which caused Click Detector to send same click multiple times
+
+**Bug Fixes**
+
+1.       Bug 253. Database import fails when Access database contains queries. Fixed.
+
+2.       Bug 254. Lookup lists failing in imported SQLite databases. This was caused by the system 'padding' topic's with blank spaces and is now fixed.
+
+3.       Bug 256. Map not updating. Graphics updating was only happening when new GPS data arrived and therefore didn't update when using static hydrophones. Fixed so that graphics update correctly.
+
+4.       Bug Sound recorder missing a few samples between files. The sound recorder wav file output system has been rewritten in a much simpler form and now won't lose samples between consecutive files when new files are started automatically. It will also start new files on integer second or minute boundaries when file durations are set to a maximum fixed value.
+
+5.       Bug 262. Access to SQLite database conversion. This would fail when tables were present which were not created by PAMGuard.  Fixes have been put in place for spaces in the table name or for not having an 'Id' column. Fixes have not been implemented for spaces in a column name or use of a reserved word as a column name, however if either of these problems do exist it will no longer crash but issue a clear warning and carry onto the next table.
+
+Version 1.14.00 Beta, September 2015
+====================================
+
+The format of configuration files has changed for version 1.14.00. Older configurations will load with this new version, but configurations saved with 1.14.00 may not open correctly with earlier versions.
+
+PAMGuard Versions 1.14.00 and above will work with Java 8. PAMGuard will continue to work with Java 7, but support for Java 7 will be removed entirely during 2016. This means that the Microsoft Access Database interface will no longer be available. Version 1.14.00 will continue to support Microsoft Access so long as you don't upgrade your Java version to Java 8.
+
+An alternative database interface has been provided in the form of SQLite which has been extensively tested with all PAMGuard modules. Limited connectivity to MS Access databases using the open source UCanAccess database connection is provided in Viewer mode which will allow users to convert old Access databases to SQLite or MySQL depending on preference. See the PAMGuard help file for further details.
+
+**Other Changes**
+
+1.       Feature Request 45. Module settings import. Functions have been provided which enable users to import the settings for individual modules into new configurations. See the help file for details.
+
+2.       Feature Request 45. Click classification settings export / import. Click classification settings can be exported individually to files and imported into other click detector configurations. See the help file for details.
+
+3.       GPS Loading into PAMGuard Viewer. This has been modified so that the rules governing GPS data collection and storage also apply when loading data from the database. For instance, if you've stored all GPS data, you've probably got a record every second in the database which can create memory overflows if you try to load a lot of data in the viewer. You can now tell PAMGuard to only load a data point every n seconds which will reduce the number of points loaded. Useful when making large scale overview maps of a survey.
+
+4.       Sound Trap tools module. This is a development module for users of the [Ocean Instruments](http://www.oceaninstruments.co.nz/) Sound Trap who have it configured to run automatic click detection. This feature is currently in its development phase and is of little relevance to most users.
+
+**Bug Fixes**
+
+1.        Bug 246. AIS Data Unpacking. Bug in AIS data unpacker fixed.
+
+2.        Bug 247. Fixed Landmark display. Landmarks were not displaying in the viewer. This is now fixed.
+
+3.        Bug 248. Crash in hydrophone array manager. Bug in array manager would crash PAMGuard when the click detector was configured with more channels than the sound acquisition system (almost impossible to achieve, but someone managed it).
+
+4.        Bug 249. Corrected bugs in Rocca analysis of click events.
+
+5.        Bug 250. DIFAR module was crashing if it attempted to triangulate between more than two simultaneous bearings. Fixed.
+
+6.        Bug 251. Fixed error in DIFAR intensity calculation.
+
+7.        Bug 252. Bug which plotted bearings to whistle and moan detections from the front hydrophone rather than the central position between hydrophones now fixed.
+
+Version 1.13.05 Beta, July 2015
+===============================
+
+**Changes**
+
+1.       Improved options for plotting clicks on the map in viewer mode - can now select clicks by the type of event they are part of (when marked as part of an offline event).
+
+**Bug Fixes**
+
+The following bugs have been fixed for this release.
+
+1.        Bug 231. PAMGuard freezing when starting viewer mode. (Caused by an infinite loop in the map module). Fixed.
+
+2.        Bug 232. Incorrect click length calculation in ROCCA module. Fixed.
+
+3.        Bug 233. ROCCA not analysing correct clicks in Viewer mode. Fixed.
+
+4.        Bug 234. Hydrophone import of .paf files crashing. Fixed.
+
+5.        Bug 235. Target motion analyser crashes when changing default bearing line length. Fixed.
+
+6.        Bug 236. Whistle classifier crashing during batch training just prior to writing results files. Fixed.
+
+7.        Bug 237. Logger forms not saving data to database after sound acquisition starts. Fixed.
+
+8.        Bug 238. Viewer mode out of memory error. Have adjusted memory allocation to allow more memory for the database interface. Hopefully Fixed.
+
+9.        Bug 239. Fixed bug in the DIFAR module that was incorrectly preventing cross-fixes for some calls.
+
+Details of these bugs can be found at [https://sourceforge.net/p/PAMGuard/bugs](https://sourceforge.net/p/PAMGuard/bugs)
+
+Version 1.13.04 Beta, June 2015
+===============================
+
+**Changes**
+
+1.              Spectrogram annotation marks. A simple system for marking spectrograms during real time analysis has been incorporated. To use it, add the module, in the spectrogram settings, select the annotation marks in the 'Mark Observers' tab of the spectrogram configuration dialog, and also right click on the spectrogram and select to display the annotations. Annotations are saved to the database so you will also need a database module in your configuration.  
+
+2.              A new system for important warning messages has been implemented. Warnings such as failure to connect to the GPS or a database error will now appear at the top of the main PAMGuard display.
+
+3.              File and Folder audio input systems now have an optional repeat button which is useful when using PAMGuard for demonstration purposes.
+
+4.              The sound File and Folder audio input systems now have an optional time zone setting. Note that PAMGuard analysis should still all be taking place in UTC and that this option is intended to allow the conversion of file times which were not recorded as UTC into UTC and not the other way around. Use the option with caution !
+
+5.              The Open Office Database system has been removed from the list of available options since it is not reliable. If you require a free database solution we recommend you use the MySql Community Server [http://dev.mysql.com/downloads/mysql/](http://dev.mysql.com/downloads/mysql/)
+
+6.              Changed Rocca Measurement menu item to open a window containing click events, instead of a submenu listing click events.  Using a window simplifies multiple event selections
+
+7.              The DIFAR module has received numerous improvements and bugfixes after 6 weeks of field testing.
+
+**Bug Fixes**
+
+The following bugs have been fixed for this release.
+
+1.              Bug 220 Sample counts were wrapping and causing PAMGuard to report incorrect times after 2^31 samples.
+
+2.              Bug 223. Click detector null clicks (This primarily only affected offline file analysis).
+
+3.              Bug 225. Display of remaining recording time. Was only displaying hours, minutes and seconds. Now correctly displays the number of remaining days.
+
+4.              Bug 226. Spectrogram Mark Observer list doesn't refresh when modules added or removed.
+
+5.              Bug 227. Logger forms not working with MySQL. Several minor issues with the MySQL interface generally and in particular with the logger forms module have been resolved.
+
+6.              Bug 228. Occasional crashing when training the whistle classifier.
+
+7.              Bug 229. Fixed bug in Viewer Mode which caused Rocca to crash when analyzing click event containing unclassified clicks
+
+8.              Bug 230. Click Bearing Display. With a two hydrophone system, clicks calculated to have a bearing of exactly 180 degrees would be displayed at 0 degrees on the bearing time display.
+
+Details of these bugs can be found at [https://sourceforge.net/p/PAMGuard/bugs](https://sourceforge.net/p/PAMGuard/bugs)
+
+Version 1.13.03 Beta, March 2015
+================================
+
+**Changes**
+
+Small changes have been made to the ROCCA whistle classifier module: Added Sampling Rate, Number of Channels and Geographic Location to the Rocca contour output file.  Number of Channels and Geographic Location can be specified by the user in the Rocca Parameters dialog Notes tab.
+
+**Bug Fixes**
+
+A number of minor bugs have been fixed for this release.
+
+1.     Bug 209. Map zoom level. This was zoomed right into a range of about 1m when new maps were created. This is now fixed and it starts with a default range of 10km on the display.
+
+2.     Bug 212. Decimator crashed. This only happened very rarely and only if a very large decimation factor was used, so it's unlikely to have affected anyone.
+
+3.     Bug 215. Sound acquisition dialog crashing. Could happen if there were no sound cards installed on a system.
+
+4.     Bug 216. Whistle classifier would not work offline (in viewer mode). This is now fixed.
+
+5.     Bug 217. PAMGuard viewer fails to read a configuration at startup. This would cause total loss of the PAMGuard configuration in viewer mode and has been rectified.
+
+6.     Bug 218. SAIL Acquisition card would hang the system. This has also been fixed.
+
+7.    Bug 219. Problems displaying Offline Click Events in the Viewer map have been fixed.
+
+Version 1.13.02 Beta, January 2015
+==================================
+
+**Bug Fixes**
+
+1.      Bug 208. Logger forms CHECKBOX control crashes. Fixed.
+
+Version 1.13.01 Beta, January 2015
+==================================
+
+**Bug Fixes**
+
+1.      Bug 207. Threading hydrophone error. Caused array location errors if GPS data set to read on a time. Fixed
+
+2.      Bug 205. Crash in 3D localiser if no output CSV file set.  
+
+3.      Bug 197. Click detector reporting 'Null Click with no waveform'. Fixed
+
+**Changes**
+
+Small changes made to DIFAR module.
+
+Version 1.13.00 Beta December 2014
+==================================
+
+**Configuration Changes**
+
+_Menu Layout_
+
+The PAMGuard menus have been rearranged into a more intuitive grouping which we believe will help users find functionality more easily.
+
+'Detection' menu has been renamed to 'Settings' since many menu items within this menu were not directly to do with 'Detection'.
+
+The groupings within the File / Add Modules menu have been rearranged so that they are now:
+
+'             Maps and Mapping
+
+'             Utilities
+
+'             Sensors
+
+'             Displays
+
+'             Sound Processing
+
+'             Detectors
+
+'             Classifiers
+
+'             Localisers
+
+'             Visual Methods
+
+The '_Hydrophone Array_' menu item moved from 'File' to 'Settings'
+
+'_Multi Threading_' menu item moved from 'Detection' (now 'Settings') to 'File'
+
+'_Start_' and '_Stop_' menu items removed. PAMGuard should be started and stopped using the red and black buttons.
+
+**New Modules**
+
+_DIFAR_ (Localisation Group)
+
+This module, funded by the Australian Antarctic Division allows the de-multiplexing and calculation of angles from military style DIFAR sonobuoys. See online help for details. 
+
+_MEAL Localiser_ (Localisation Group)
+
+This module, developed by Jamie Macaulay of St Andrews University estimates the 3D localisation of clicks using a variety of algorithms. It's primarily been developed to track harbour porpoise in three dimensions over scales of 10's of metres. While currently only working with output from the click detector, we hope eventually to extend its use to whistles as well.
+
+_Accelerometer Readout_ (Sensors group)
+
+This module, funded by NOAA for the South West Fisheries Science Centre (SWFSC), measures pitch and roll from analogue accelerometer sensors in a hydrophone. Data are fed real time into the updated hydrophone array manager in order that bearings from a tetrahedral tracking array are correctly calculated in real world coordinates.
+
+_Wild ArcGIS Interface_ (Maps and Mapping group)
+
+This module, developed by Michael Oswald / SWFSC, allows PAMGuard to output data in a format suitable for display in the WILD ArcGIS marine mammal survey package. See online help for details.
+
+_Alarms_ (Utilities Group)
+
+This is a general system of visual and audio alarms developed by Doug Gillespie for use on a variety of projects. The alarms can be coupled to any module or detector in PAMGuard. Where appropriate, modules can control which of their data will cause an alarm action (e.g. in the Click detector you can set which types of classified click will fire the alarm). See online help for details.  
+
+_Noise Band Monitor_ (Sound Processing Group)
+
+This module, developed by Douglas Gillespie, Measures octave of third octave noise bands. See online help for details.
+
+_Filtered Noise Measurement_ (Sound Processing Group)
+
+This module, developed by Douglas Gillespie, measures noise levels in a single frequency band using a variety of filter functions. See online help for details.
+
+_Envelope Tracing_ (Beta Only, Sound Processing Group)
+
+This module, developed by Douglas Gillespie, traces the envelope of a stream of audio data. In particular, it can be used to generate audio output from high frequency data. See online help for details.
+
+_Long Term Spectral Average_ (Sound Processing Group)
+
+This module, developed by Douglas Gillespie, calculates the long term spectral average of audio data for a spectrogram display. See online help for details.
+
+_Echo Detector and Sperm Whale IPI Computation_ (Beta only, Sound Measurements Group)
+
+These two modules, developed by Brian Miller of the Australian Antarctic Division can be used to estimate the inter pulse interval of sperm whale clicks. (No help available)
+
+**New Features**
+
+_Hydrophone Configuration_
+
+The hydrophone configuration system within PAMGuard has been substantially rewritten, partly so that it can support multiple remote buoys (e.g. DIFAR buoys) each of which needs to be localised individually. As a consequence, the layout of the Array Manager dialog will appear somewhat different. Details are available in the online help.
+
+_FLAC File Support_
+
+Can now read raw audio data direct from FLAC files. [FLAC](http://en.wikipedia.org/wiki/FLAC) is a lossless compression algorithm for audio data. Files, or folders of files are accessed in the same way as WAV and AIFF files in the Sound Acquisition module. In a future release we also hope to provide support for writing FLAC files from the sound recorder module.
+
+_Sound Recorder Module_
+
+Now supports writing 8 and 24 bit as well as 16 bit files. Also writes data to dated sub folders, starting a new folder each day (UTC). Also provides additional information on disk space on the main display panel. Millisecond time is also now included in the output file names.
+
+_Datagram Options_
+
+Datagram options in Viewer have been improved so that the user has to verify the time binning for datagrams the first time the viewer is run and can also change the time bins from the File menu (See the File/BinaryStore/Datagram options menu.
+
+_Viewer Configuration_
+
+The Viewer configuration is now saved into a separate database table from 'normal' settings so that Viewer can run at same time as normal operation, but with slightly different display settings.
+
+_Spectrogram Display_
+
+A system of sliders for setting the frequency and amplitude ranges of the spectrogram display has been implemented. Click the grey button on the top right corner of the spectrogram display ' 
+
+_Video Range Module_
+
+The video range module has been modified so that it can estimate distances based on fixed objects within a picture as well as the horizon.
+
+_Improved Filter Options_
+
+Filter options (used as stand-alone filter modules and also within many other modules, such as the click detector and the Filtered Noise Measurement module) have been improved so that the user can specify arbitrarily shaped Finite Impulse Response filters (see online help for details).
+
+_Radar Display_
+
+Can now show bearings relative to true North OR the vessel heading. Also has the option of only showing certain types of click and whistle.
+
+**Bug Fixes**
+
+1.  Reading of wav files. Modifications to the Java wav file reading code in order to read wav files between 2 and 4 GByte in size (the wav standard extends to 4 Gbyte, but Java for some reason only supports up to 2Gbyte)
+2.  Ishmael Detector configuration. It was impossible to correctly configure these detectors and configuration settings were not being saved correctly. This has now been rectified.
+3.  Logger forms input of character data. Was causing an exception when character input fields were cleared.
+4.  Click detector inter click interval display was not working in viewer mode. This has been rectified.
+5.  Configuration loading. This has been rationalised since it was often confusing to users. It is now no longer possible to change configurations once PAMGuard has been launched and pressing 'Cancel' on the select dialog causes PAMGuard to exit.
+6.  Airgun display. If this was included in the PAMGuard model before the GPS module it would hang PAMGuard. This has been rectified.
+7.  Fixed occasional exceptions in the sound output modules when playing back from files.
+8.  Fixed exceptions in spectrogram user interface.
+9.  Fixed National Instruments sound output bug which meant that it could only work with two channel data. Will now work with one to as many channels are supported by the playback device.
+10.  Fixed colour bugs in Logger forms which did not display correctly in 'night' mode.
+11.  Bug fix in simulator. No longer stops or fails to start generating sounds.
+12.  Bug in calculated spectrum levels if data were decimated ([http://sourceforge.net/p/PAMGuard/bugs/187/](http://sourceforge.net/p/PAMGuard/bugs/187/)) . Did not affect band level calculations.
+13.  Bug in noise band monitor. Crashed when sample rate was exactly 2kHz. Fixed
+14.  Memory leak in click detector. Severe memory leak when processing clicks in viewer mode now fixed.
+15.  Flickering of click display ([http://sourceforge.net/p/PAMGuard/bugs/191/](http://sourceforge.net/p/PAMGuard/bugs/191/)) now fixed.
+16.  Logger forms crashing in Viewer mode. Bug now fixed.
+17.  Storage options ([https://sourceforge.net/p/PAMGuard/bugs/175/](https://sourceforge.net/p/PAMGuard/bugs/175/)) whereby clicks were stored to database is now fixed.
+18.  Sound Recorder output folder is now defaulting to the User folder (Generally C:\\Users\\username\\PAMRecordings) instead of C:\\Program Files (x86)\\PamguardBeta which didn't work since the software doesn't have write access to that folder.
+
+Version 1.12.00 Beta February 2013
+----------------------------------
+
+**New Modules**
+
+Clip Generator: Saves and displays short waveform clips around detections. Can work with any detector (or indeed any other data stream within PAMGuard).  
+
+Local time display: displays the computers local time on the main display panel.
+
+WILD interface: provides the user the ability to integrate PAMGuard with the WILD ArcGIS-based marine mammal survey software package.
+
+**New Features**
+
+_Core Functionality_
+
+New storage options have been implemented which give the user greater control of where data are stored.
+
+Modules have been arranged into different groups in the configuration menus and tool tip texts have been added to these menus to provide additional information to users.  
+
+_Radar Display_
+
+Functionality has been added to the radar display so that bearings can be shown relative to either the vessel or to true North.
+
+Better control of data in viewer mode, making is easy to scroll through and view data for short time periods.
+
+_GPS_
+
+Function to import GPS data from other data sources for the PAMGuard viewer.
+
+_Database_
+
+Can now copy data from binary storage to the database offline for any module having both binary and database storage.
+
+Can create a blank MS Access database (2007 and later \*.accdb formats only).
+
+Can open MS Access from within PAMGuard to make it easier to view database content.
+
+Support for open office databases.
+
+_Sound Acquisition_
+
+National Instruments cards: Added code in support of the new x-series devices.
+
+ASIO sound cards: Added support for a new open source ASIO driver system (jasiohost). The old system has been left in place for now while we assess users response to the newer system.
+
+_AIS_
+
+Support has been added to the AIS module to read data from class B AIS stations (used by smaller vessels), Base stations and Aids To Navigation.
+
+_Spectrogram Display_
+
+Can now scroll as well as wrap the data.
+
+_Whistle Detector_
+
+Stores amplitude and bearing information correctly in the binary files.
+
+_Logger Forms_
+
+A substantial amount of work has been carried out on Logger forms, funded by the South West fisheries Science Center.
+
+_Click Detector_
+
+Two additional displays have been added to the click detector
+
+1.       Concatenated Spectrogram which enables users to view spectra for multiple clicks within the same event.
+
+2.       Inter Detection Interval Display which provides a visual interpretation of the inter-detection interval.
+
+Target Motion Analysis: Updated target motion analysis module so that it works in three (as opposed to two) dimensions.
+
+Alarm in click detector to issue audible warning when certain click types are detected.
+
+Display options have been improved making it easier to display only certain types of clicks.
+
+_Ishmael Detection Modules_
+
+We have implemented database storage for output of these modules.
+
+**Bug fixes**
+
+'         Radar Display: A bug which stopped the radar display from correctly displaying bearings to whistles from arrays containing more than two hydrophone elements has been fixed.
+
+'         Database Speed: A substantial rewriting of some of the indexing methods in the database module has led to a significant increase in the speed at which data are written to the database (orders of magnitude for large databases). This is having a significant impact on the overall reliability of the software. Other changes have increased the speed (again by orders of magnitude) at which data are read back into PAMGuard when using the viewer.
+
+'         PAMGuard start-up options have been substantially improved:
+
+1.       Pressing cancel will now exit PAMGuard
+
+2.       Clearer when a new (blank) configuration is being created
+
+3.       Can create a database for viewer mode from scratch.
+
+'         Timing calculations for simulated data have been improved.
+
+Version 1.11.02 Beta May 2012
+-----------------------------
+
+**New Features**
+
+'         Hiding side panels. The panel on the left of the display can be hidden ' this creates more space for other displays.
+
+'         Click Detector Displays. Numbers of small displays (e.g. the Wigner plot) is now remembered between runs.
+
+**Bug Fixes**
+
+'         PAMGuard Colours: Now selects correct night time colours at programme start-up.
+
+'         Bug in Noise Monitor. Version 1.11.01 would crash if only a subset of channels were selected, e.g. if you only measured noise on channel 0 of a two channel configuration. This bug is now fixed
+
+Version 1.11.01 Beta April 2012
+-------------------------------
+
+**New Modules**
+
+'         ROCCA Whistle Classifier (see online help)
+
+'         Noise Measurement (see online help)
+
+'         Logger Forms
+
+**Click Detector Updates**
+
+'         Amplitude Selector. This is a small popup window which allows you to set a minimum amplitude for clicks to be displayed on the bearing time display. Primarily useful during offline analysis using the viewer to remove clutter from the display.
+
+'         ICI of unassigned clicks. Previously ICI was only shown for clicks assigned to a click train. Can now be shown for all clicks, but note that this will be meaningless if there is > 1 animal present.
+
+'         Echo detection. Automatic detection of echoes (see online help).
+
+'         Offline event marking. Offline event marking similar to functionality in RainbowClick is now available in the PAMGuard viewer. Event summary data is stored in the database and can also be exported to text files (e.g. for importing into the Distance software). 
+
+'         Target motion analysis in two and three dimensions using a variety of models to fit the data (see help files for details).
+
+'         Toolbar with display species selection.
+
+'         Bearings can be calculated using the envelope of the waveform rather than the full waveform. The waveform or envelope can also be filtered prior to bearing calculation.
+
+'         Click species templates. Spectral templates may be generated / reloaded for different types of click.
+
+'         Click concatenated spectrogram display helps to view spectral properties of multiple clicks in an event.
+
+**Raw Data Loading**
+
+In viewer mode, use the Acquisition control dialog to select the location of wav files associated with the data. This will unlock two useful features of the display:
+
+'         The spectrogram will automatically generate and display spectrogram data.
+
+'         The spectrogram display and the click detector will both allow you to play back sound via the system sound card.
+
+**Minor Features and Bug Fixes**
+
+'         The default preamplifier gain in the acquisition module has been changed to 0dN
+
+'         The Binary store now saves a complete data map between runs of the PAMGuard viewer. This leads to significant improvements in the time the viewer takes to load large data sets.
+
+'         DataMap: The click and the  whistle and moan detectors can now also show graphs of data density as a function of frequency instead of simple bar charts of data density vs. time (datagrams). This makes it much easier to find features such encounters with animals.
+
+'         Formatting of times in scroll bars has been improved (e.g. will say 15 m instead of 900s)
+
+'         The FFT Engine can now copy with FFT hops which are greater than the FFT length.
+
+'         The filter module can now also generate finite Impulse Response (FIR) filters. Note however, that FIR filters may require considerably more execution time than IIR filters.
+
+'         Database support for MS Access 2007 and 2010 database formats.
+
+'         3D bearings from click detector using volumetric arrays. For small arrays (where the distance between elements is less than a few hundred samples) bearings are now correctly calculated in three dimensions.
+
+'         Main GUI frame no longer disappears behind other windows when viewer data are loaded.
+
+'         Toolbar with quick access to start / stop buttons.
+
+'         Filter and Decimator modules output data name. These were not unique in previous versions which made it impossible for downstream modules to connect to the correct data stream. This has been fixed.
+
+'         Whistle classifier has some new features in the classifier training panel. It is also now possible to export training data files directly from binary data files.
+
+'         The hydrophone localisation systems have been updated to better use information from true and magnetic heading sensors.
+
+'         The FFT module has been updated to ensure it finds it's correct data source, even if that data source is loaded after the FFT module is created.
+
+Version 1.10.00 Beta December 2010
+----------------------------------
+
+**New features**
+
+1\. Binary storage module.
+
+Performs a parallel role to the PAMGAURD database but uses binary files in a proprietary format which is considerably more efficient for data of unknown length such as whistle contours or small clips of click waveform. This feature is currently implemented in the following modules:
+
+'         Click Detector
+
+'         Whistle and Moan detector
+
+'         AIS
+
+2\. Improved offline viewer functionality.
+
+The offline viewer is much improved with better data scrolling and the ability to view data either stored in the database or the binary storage system. Work has stated on functions which read and use data stored in audio files. This is currently limited to re-calculating and displaying displaying spectrogram data during viewer mode operation. 
+
+3\. Heading sensor readout
+
+PAMGuard can now read true or magnetic heading data from gyro compasses, fluxgate compasses, etc. See help for details.
+
+4\. Click detector offline event marking
+
+Functionality for offline analysis, similar to that in RainbowClick is now partially incorporated into the PAMGuard click detector in viewer mode. Help files have not yet been developed for these features.
+
+5\. Better support in the Decimator module for non-integer frequency division (i.e. previous versions would convert well from 96kHz to 48kHz, but not from 500kHz to 48kHz)
+
+**Bug fixes**
+
+1\. Placement of axes on some displays (array manager and depth side panel). Problem in 1.9.01 Beta now fixed.
+
+2\. Fixed problems of NMEA read out not restarting after a serial drop out. NMEA now restarts correctly.
+
+3\. Fixed a memory leak which caused occasional crashes, particularly when large numbers of files were processed offline.
+
+4\. The correct file path separator is used in Sound recording names under Linux (which uses "/" as opposed to "\\" on Windows).
+
+Version 1.9.01 Beta May 5 2010
+------------------------------
+
+**Bug fixes**
+
+Acquisition dialog for ASIO sound cards was resetting all channel numbers to zero.
+
+Degree symbols throughout PAMGuard have been fixed so that they work on all Win64, (Mac and Linux.)
+
+An unnecessary channel warning from the seismic veto has been removed.
+
+Contour check boxes on the map dialog have now been placed in a scrolling pane so that if there are lots of contours, the dialog doesn't become too bit to fit on a screen.
+
+**New Feature**
+
+psf file name is now displayed in the title bar of the main PAMGuard display.
+
+Windows Installer now sets permissions on PAMGuard folder so that don't need to be an administrator in order to create new files in that directory. Prevents problems especially under Vista/Windows 7 when saving psfs and recording sounds to the default directory. 
+
+Version 1.9.00 Beta April 2010
+------------------------------
+
+**Channel numbering**
+
+A new internal channel numbering scheme for ASIO sound cards was released on 8 March in Alpha version 1.8.02. These changes have now been promoted to this Beta release 1.9.00. These changes were described in an email to PAMGuard User, the text of which is repeated here:
+
+Within PAMGuard, there have been constant problems with lookup tables relating hardware channel numbers to internal channel numbers. 99.9% of the time, this is not a problem since people are just reading channels 0 and 1 from a normal sound card or a list of channels 0,1,2,3, etc from an ASIO card or National Instruments card. However, when using the ASIO sound acquisition system, it is possible to read out hardware channels 2,3,4,5 say and those numbers would propagate through PAMGuard and be used by all the detectors. While this gave some clarity to  the displays, it also created a number of problems since look up tables were constantly required to relate hardware numbers and software numbers in every PAMGuard module. Since this type of channel numbering was only implemented several years into the PAMGuard project, it was never fully implemented or well supported by the different modules which resulted in a number of bugs which could cause confusion as to which hydrophones were being used during localisation or during calibrated measurement. The situation tended to only arise with a small number of ASIO sound cards such as the RME Fireface 400 on which the most useful inputs, the balanced line inputs, are hardware channels 4,5,6 and 7 on the back of the instrument. (On the Fireface 800, the balanced line inputs are channels 0 to 7). When using the National Instruments system, data were always sent into the rest of PAMGuard with sequential channel numbering starting at 0. This was required in order to support multiple NI Daq boards where it is possible to read for example channel 0 and 1 on two different devices, so to uniquely identify channels in the rest of PAMGuard, the only rational thing to do was to re-label those channels 0,1,2,3.
+
+There have been other annoyances with the ASIO channel numbering scheme. For instance, if you had a configuration which worked in real time using channels 7 and 8 of a sound card, you could not use that same configuration to analyse wav files, which would always read their data as channels 0 and 1. Similarly if you switched sound cards, you may have to reconfigure every detector and several of the displays to handle the changes in channel numbering.
+
+I have spent a considerable amount of time trying to work out a better system for handling channel numbering in PAMGuard and have decided that the only practical thing to do is to force all software channel numbering back to a zero indexed system. i.e. even if you read out hardware channels 3,4,5 and 6, within PAMGuard, everywhere apart from the Sound acquisition dialog, you will see them listed as channels 0,1,2 and 3.  The consequences of doing this are mainly very good. Most users will not notice any changes. For those who need for some reason to read channel numbers not starting at zero things will be more stable. However, when you go to a new version with this new feature, it will be necessary to reconfigure all the modules in any existing configurations. To do this, open the configuration dialog for each module in turn and select the correct, zero indexed, channel number.
+
+**Other Changes / new features**
+
+PAMGuard Viewer
+
+The way in which data are loaded for each module has changed in the PAMGuard viewer. In the scroll bar for each display, at the right hand end, there are buttons for pagingforward, backward and setting page length options.
+
+Click Detector Bearing Time display
+
+Older versions used a vertical scroller in the right hand side of the main bearing time display to control the display length. This has been removed and replaced by a small control consisting of an edit box and a spinner (up and down arrows) at the right hand end of the horizontal scroll bar. The scroll system now also enabled you to scroll back through up to one minute of data during real time operation.
+
+Whistle and Moan Detector
+
+Bearings are now written to the database.
+
+PAMGuard Viewer scrolling mechanism has changed.
+
+Each display now has a small control in the right hand end of a scroll bar or a slider which allows you to page through data. This is only well implemented for the map, but will be an increasingly important feature as more displays are set up for offline data viewing in future releases.
+
+Viewer data map
+
+When using the PAMGuard viewer an additional panel will be displayed showing an overview of data quantity (per hour) from the various database tables connected to PAMGuard.
+
+Spectrogram Display overlays
+
+The mechanism behind this has changed. Should not affect operations, but if you have problems with overlays on the spectrogram, please notify [support@PAMGuard.org](mailto:support@PAMGuard.org)
+
+All display overlays
+
+Now pick up line colours from the Display symbol manager, so it's possible to set line colours by selecting a symbol with a particular line colour from the Display menu.
+
+Database
+
+Default name for the Database module has changed from "ODBC Database" to just "Database". This will not affect existing configurations.
+
+Sound acquisition
+
+Changes made for a previous Mac build now incorporated into main Beta branch. This should allow for basic 2 channel sound acquisition using Macs.
+
+Bug Fixes
+
+Whistle and Moan Detector
+
+Was not detecting sounds when noise reduction was performed in the Whistle Moan Detector, but was OK when noise reduction ran in the FFT module. This problem has been resolved.
+
+Whistle Classifier
+
+Bug fix in database output. The first species probability column was setting to zero. This is now fixed
+
+Ishmael Detectors
+
+Better rendering of detection boxes on spectrogram display and more meaningful names in spectrogram display menu.
+
+Sound acquisition
+
+When not using NI or AISO cards PAMAGUARD acquires sound using javax.sound which only supports two channels. Max number of channels now specified as 2 rather than undefined.
+
+Serial Comms
+
+A few changes so more through tidying up of resources when a port is closed. Might prevent a few problems when using a GPS.
+
+Version 1.8.01 Beta February 2010
+---------------------------------
+
+**Bug Fixes**
+
+Crashes caused in real time or Mixed Mode if the number of software channels exceeds the number of hydrophones configured in the array manager. It is of course illogical to have software channels which are not assigned to a hydrophone, so rather than entirely prevent PAMGuard from crashing I have inserted additional checks into the hydrophone array dialog which will prevent the user from closing that dialog unless all software channels are assigned to a hydrophone.
+
+Version 1.8.01 Beta February 2010
+---------------------------------
+
+**New features**
+
+'         Play back of high frequency wav files through National Instruments (NI) cards: When analysing wav files, sound can be output at high frequency (depending on the specification of the NI card). The primary motivation for this has been to develop a test bed for high frequency sound acquisition whereby we can play 500kHz recordings of harbour porpoise out of an NI card on one machine, into NI cards on a different machine which are testing high frequency versions of the click detector.
+
+'         Note that this does not (yet) permit simultaneous acquisition and playback through
+
+'         NI data acquisition cards.
+
+**Minor features and bug fixes**
+
+'         Synchronisation of FFT functions. Prevents threads accessing the same FFT module simultaneously which was occasionally causing crashes of the click detector if multiple hydrophone groups were being used.
+
+'         Pop up menus on click detector displays: some of these were not displaying correctly when running under Linux. This has been fixed. 
+
+**Bug fixes**
+
+'         patch panel can now output channels which are not in it's input list.
+
+'         Null pointer trapped in Ishmael spectrogram correlation module.
+
+'         False buffer overflows at low sample rates stopped (size of data in individual data blocks had been increased at low sample rates, but when this exceeded 3s a false buffer overflow would occur).
+
+Version 1.8.00 Beta January 2010
+--------------------------------
+
+**New features**
+
+'         Major changes to the multi-threading model in PAMGuard.
+
+'         This results in a major speed up of data exchange between modules and can lead to a x4 improvement in overall performance.
+
+'         Additional speed improvements have been made to the click detector which results in an approximate 30% speed improvement for that one module.
+
+'         Sound playback when monitoring using a sound card (previously only possible with ASIO sound cards) but see warning in help file about sound card synchronisation.
+
+'         Wigner time-frequency plot for the click detector. Clicks are NOT automatically displayed in the Winger window as they are for the waveform and spectrum windows since the Wigner transformation is very time consuming. Clicks will be displayed if you select them with the mouse.
+
+'         New click classifier methods, which include extraction of frequency sweep parameters. (Please note that this click is not yet documented. The old classifier is still available).
+
+'         Bearing ambiguity resolution for planar and volumetric arrays. New features in array dialog for estimations of errors on array location. These feed into to a maximum likelihood estimate of angles from small 2D or 3D sub arrays to give two polar angle coordinates. this can be used to resolve left right ambiguity and is implemented for both the click and the whistle/moan detectors. As a result, the click detector bearing time display can now be set to go from -180 to 180 degrees rather than 0 - 180 degrees. In this case, clicks in the upper half of the bearing display will be to port and clicks in the right half will be to starboard. As you pass a whale which is to port, the clicks will move UP the display. In the long term, I hope to turn this display around so that time is up the screen rather than across. 
+
+**Small features and bug fixes**
+
+'         Checks on Recordings and Clicks output folders before PAMGuard starts.
+
+'         Colours in spectrogram amplitude display correctly match the user selection.
+
+'         Default parameters in the radar display are for quiet clicks to be shown further away.
+
+'         Ishmael spectrogram correlation module checks for kernel creation and no longer crashes if the kernel is not present.
+
+Version 1.7.02 Beta November 2009
+---------------------------------
+
+Bug Fixes.
+
+Airgun display occasionally crashing with a class cast exception is fixed.
+
+FFT modules, new code in 1.7.00 for interleaving FFT blocks from multiple channels now no longer crashes. 
+
+Version 1.7.00 Beta October 2009
+--------------------------------
+
+**Bug fix**. Spectrogram time and frequency scales now display correctly and amplitude scale updates after scale parameter changes.
+
+**Speed improvement**.
+
+PAMGAURD FFT calculations now use the JTransforms FFT library which gives a factor 2 speed improvement compared to previous FFT methods used in PAMGuard
+
+**New Modules**
+
+Two new modules are packaged. These are still in the final stages of development. Feedback is most welcome. See online help for further details.
+
+Whistle and Moan Detector
+
+Whistle Classifier.
+
+Version 1.6.00 Beta
+-------------------
+
+Identical to Core release 1.6.00 apart from additional modules:
+
+'         Patch panel - unstable and requires documentation
+
+'         Angle Measurement (for binocular stands) - requires documentation
+
+'         Fixed landmarks - requires documentation.
+
+**Bug fixes** since release 1.5.01
+
+'         Channel lists in output data streams of Decimator and other modules fixed, so that when channel numbers change, downstream modules configurations get the correct list of available channels.
+
+'         GPS data from the GPGGA string are now correctly unpacked (formerly, there was a bug in how times were unpacked between 1200 and 2400 GMT).
+
+'         Fixed NMEA dialog problems when no COM ports detected.  
+
+**New Modules / Features** (see help file for details)
+
+'         Aural monitoring form. Module for input of data on when you're listening and what you hear. Fully user configurable list of species. See help file for more details.
+
+'         Simulated sound sources. New sound source simulator. Accessible from within the main data acquisition dialog. The old simulator didn't work well and has been deleted.
+
+'         Copying and Printing
+
+'         New menu functionality by right clicking on any of the tabs of the main tab control will allow the user to copy the tab contents to the system clipboard from where it can be copied into other programs (e.g. Word, Powerpoint, etc.).Some modules, such as the map, have this implemented in other menus (right click) and also allow printing. 
+
+'         Installer now checks for previous versions of PAMGuard and uninstalls them before proceeding with installation.
+
+'         Installer now setting permissions on some of the default settings files so that under Vista they can still be written to without needed to be an Administrator
+
+'         When running the \*.exe launchers on a 64 bit version of Windows they now perform a check as to whether a 32bit JVM is available. (Until 64bit versions of all the relevant shared libraries are available a 32bit JVM is still required to get access to the full functionality of PAMGuard)
+
+Version 1.5.01 Beta
+-------------------
+
+Bug fix. Channel number checking for ASIO cards changed during NI support function and will always throw an error in 1.5.00. This has now been fixed.
+
+Version 1.5.00 Beta - NI Support
+--------------------------------
+
+**Bug Fixes**
+
+Decimator was calculating incorrect filter coefficients (coefficients were based on the output sample rate, not the input sample rate, so it's likely that actual filtering of data was minimal). This is now rectified. Ishmael matched filter. Would crash if template file not correctly loaded. Now issues a warning message to the terminal and does not crash.
+
+Spelling correction on user input form (Sumbit - Submit)
+
+**New Features**
+
+National Instruments DAQ support (Windows 32 bit JVM Only)
+
+The National Instruments interface has now been comprehensively rewritten and is now stable. One or more NI data acquisition devices can be used to acquire high speed data on multiple channels. See the PAMGuard help file for details.
+
+**Performance Tests**
+
+A new menu item in the Help menu provides access to some system performance tests. These are still under development but have been released to Beta at the earliest opportunity since the development team require feedback of test results verses performance on a variety of machines before the tests and the  corresponding help files can be finalised.
+
+Version 1.4.00 Beta June 2009
+-----------------------------
+
+**New Features**
+
+Details of new features are documented in the PAMGuard online help.
+
+**PAMGuard Viewer**
+
+Reloads data from a PAMGuard output database for viewing
+
+**PAMGuard Mixed Mode operation**
+
+Analyses data from wav or AIF file and synchronises it with GPS data reloaded from a database so that detected sounds may be correctly localised. Multiple display frames - enables PAMGuard GUI to be split into multiple display windows, displayed on multiple monitors if desired. Enables the operator to simultaneously view the map and the click detector for example, which is much  easier than continually moving between multiple tabs.
+
+**Documentation**
+
+The help file pages for the acquisition module have undergone major revision Minor additions and edits have been made to many other help pages
+
+**Bug Fixes**
+
+Memory leak caused by Night / Day colour manager now fixed. This would cause memory leaks when multiple files were being analysed off-line and would eventually crash PAMGuard. The way that colours are managed in PAMGuard has been rewritten. 
+
+Some issues with Swing fixed that might have been causing hang ups on startup especially on Macs/Linux machines
+
+ Some tidying up of events and default ports for serial devices to improve GPS data collection (particularly for USB-Serial GPS on Mac/Linux machines)
+
+**Click Detector**
+
+Parameters dialog shows correct channel numbers
+
+Click classifier mean filter option had a computational error which meant that classifiers using this option would not work. This has now been fixed.
+
+**Sound Recorder**
+
+Level meters are shown for the correct channels (after channel numbering has been changed). Occasional crash due to synchronisation problems when  multi-threading now fixed.
+
+**Whistle Detector**
+
+Correctly triggers recordings when whistle events are detected
+
+**Sound Playback** through ASIO sound cards Will now work with any selected channels (not just channels 0 and 1)
+
+Version 1.3.03 Beta March 2009
+------------------------------
+
+Bug fix. ASIO sound cards reporting errors if a channel list that is not 0,1,2 is used. This has been corrected so no false error messages are sent.
+
+1.3.02 Beta. February 2009
+--------------------------
+
+Beta release 1.3.02 is identical to Core release 1.3.00 apart from
+
+some modules which are known to be unstable or are new or under development.
+
+Modules which have only been included in the Beta release are:
+
+**Utilities Group**
+
+Simulator (unstable)
+
+Hydrophone Depth Readout (requires further testing and help file)
+
+Sound Processing Group
+
+Patch Panel (unstable and requires help file)
+
+Seismic Veto (requires help file and minor bug fixing)
+
+**Visual Methods Group**
+
+Angle Measurement (requires further testing and help file)
+
+Video Range (requires help file)
+
+Fixed Landmarks (requires help file)
+
+**Changes**
+
+The User Input module (for text entry of information by the user) has been moved from the Displays sub menu of the Add Modules menu, to Utilities. This will not affect how existing settings files are loaded.
+
+**Multi-screen environments.**
+
+In previous versions, if PAMGuard was configured in a multiscreen environment and is then run on a single screen, it was possible that the display would not appear. PAMGuard now checks screen dimensions at start up and ensures that the main display is visible. Consequently, program start-up takes slightly longer than previously.
+
+**Outstanding bugs**
+
+The patch panel is known to crash if output channel numbers from the patch panel a higher than the highest input channel number of the data acquisition. 
+
+**Bug fixes**
+
+Speed up of graphics, particularly regarding large quantities of gps track  data
+
+National Instruments cards with names > 20 characters long are now correctly  recognised.
+
+**Help File Updates**
+
+The help viewer has been debugged and table of contents, search and index features now all work as they should.
+
+The layout of the help content has been re-ordered into more functional groups (as laid out in the PAMGuard add modules menu).
+
+Improved help has been added for the following modules:
+
+'         NMEA and GPS connections.
+
+'         Map Display
+
+'         Hydrophone Array Manager
+
+'         New help sections have been written for
+
+'         The model viewer
+
+'         Multithreading
+
+'         Map Overlays
+
+'         AIS
+
+'         User Input
+
+'         Airgun display
+
+'         Sound Recorder
+
+'         Spectrogram Smoothing
+
+1.3.01 Beta. January 27 2009
+----------------------------
+
+**Bug Fixes**
+
+Fixed bug in serial port communication which caused crash is a serial port
+
+didn't exist.
+
+1.2.01 Beta. December 2008
+--------------------------
+
+**Bug fix** in whistle detector bearing calculation.
+
+1.3.00 Beta. January 2009
+
+**New modules**
+
+New Likelihood detector.
+
+The likelihood detector module is an implementation of a likelihood ratio test with flexible algorithms and configuration to estimate likelihood. It is
+
+suitable for detecting both short duration Odontocete clicks (Sperm, Beaked, etc.) as well as moderate duration Mysticete calls (Humpback, Bowhead, etc.).It is not suitable for detecting whistles.
+
+Note that the likelihood detector will not run with PAMGuard in multithreading mode.
+
+**Bug fixes**
+
+Click Detector - click train detector. Further synchronisation to deal with multithreading.
+
+Depth Readout - Bug fix to prevent crash when dialog is opened when no input device is installed.
+
+Localiser ' Further synchronisation of detection group localiser (affects stability of click train localiser and whistle localiser in
+
+multithread operation).
+
+1.2.0 Beta December 2008
+------------------------
+
+This release contains many bug fixes from the PAMGuard industry field trial which took place in the Gulf of Mexico on the RV New Venture in November 2008.
+
+**Bug Fixes**
+
+'         Map. Full drawing of map base (contours & grid lines) when window is resized.
+
+'         Click Detector. Display and detection continue after click detection parameter changes
+
+'         ASIO Sound acquisition. Was not returning channels in correct order.  Now fixed.
+
+'         National Instruments sound acquisition. An NI interface has now been written  for Windows.
+
+'         NMEA, AIS and GPS modules. No longer crash in response to incomplete  NMEA strings
+
+'         Spectrum display (plug in module for spectrogram). Now correctly saves  settings between runs.
+
+'         Dialogs (all modules). Have improved scaling and packing of dialogs when channels or textual content change.
+
+'         Model viewer. Have stopped it from jumping on top of the main PAMGuard  display when dialogs are closed.
+
+'         General problems with timing solved (sound cards not always running at the speed they should run at). Large improvements in overall PAMGuard reliability.
+
+'         Airgun display is now correctly updating using either GPS or AIS data.
+
+**Outstanding bugs**
+
+'         National Instruments sound acquisition. Hangs occasionally. Requires restart  of PAMGuard to get going again.
+
+'         Click Detector. Click train detector uses a lot of memory and can cause out of memory errors.
+
+'         Ishmael spectrogram plug in graphics occasionally disappear when detection parameters are adjusted.
+
+'         The vertical scale on the raw data plug in display is incorrect.
+
+'         Sound recorder. 1/10 of a second of data are occasionally lost when the  recorder stops and restarts with a new file.
+
+**New Features in existing modules**
+
+'         Window state remembered on shut down and window restored to same size  on start-up
+
+'         Show modules with no processes in viewer. This allows them to be renamed
+
+'         Better drawing of held spectrogram when putting mark rectangles on a spectrogram display. All panels are now correctly frozen. The rectangle is drawn in red on the marked panel and in green on other panels.
+
+'         Spectrogram. Frequency information displayed in a 'hover' box when the mouse is moved over the display. Choice of colour maps for display.
+
+'         Sound playback. Now supported in ASIO sound cards, so you can have sound coming in through the ASIO card and back out through its headphone socket (after passing through PAMGuard filters and other modules) at the same time.
+
+'         Operation will depend on the configuration of individual sound cards and how they are configured to mix incoming data with data from the PC. This is sometimes a physical switch on the card and sometimes a software configuration utility specific to that sound card.
+
+'         NMEA/GPS Simulator has options that set the start location, the speed, course, random course changes and whether or not AIS data are output
+
+'         (AIS Data are a fixed data set recorded in the English Channel).
+
+**Multithreading**
+
+PAMGuard now processes data in each module in a different processing thread. This allows PAMGuard to use both processor cores on dual or multi core processor machines. However, multithreading may still cause instability in some modules. An option is therefore accessible from the main Detection menu to enable and disable multithreading.
+
+**New Modules**
+
+The following new modules have been added to the Beta Release 1.2.0
+
+Sound Processing
+
+1\. Seismic Veto. A module for detecting and then cutting out very loud sounds.
+
+Utilities
+
+2\. Depth Readout. Readout for analogue depth sensors using MeasurementComputing data acquisition devices.
+
+Visual Methods
+
+3\. Video Range measurement. Will not capture video, but can open jpeg, bitmap files, etc. or you can paste in an image for video range analysis.
+
+4\. Angle Measurement. Shaft angle encoding using Autonnic Research Ltd A3030 Absolute Rotary Encoder (good for measuring the angle of binocular stands).
+
+5\. Fixed Landmarks. Enter and display fixed points for overlay on the map. 
+
+1.1.1 Beta 28 July 2008
+-----------------------
+
+**New Modules (not released to core)**
+
+'         video range tracking
+
+'         shaft angle readout using FluxgateWorld shaft encoders (used by video range and beaked whale protocols)
+
+'         Beaked Whale Protocol (protocol to lay out randomised tracks around a point  located from shore)
+
+'         Seismic veto code to detect seismic pulses and then veto out that pulse from audio and spectrogram data streams
+
+'         whistle classifier Statistical species classification of whistle detector data.
+
+'         Land marks Fixed land marks to draw on map.
+
+**Updates**
+
+'         Click detector angle vetoes (can remove all clicks from a given angle, or  sets of angles)
+
+'         Click detector pause scrolling to view individual click waveforms and spectra.
+
+'         Improved help and activation of help buttons on dialogs.
+
+'         Support for GPS GGA data
+
+'         Offline file analysis supports wider range of file name date formats
+
+'         Map has improved options to select what is drawn and how long overlays last for.
+
+'         User selectable symbols for many detectors drawing on the map.
+
+**Bug Fixes**
+
+'         Look up table fix for unpacking of AIS data.
+
+'         Force English language Locale so that dialogs don't get confused by number formats using "," instead of "."
+
+1.1Beta 22 May 2008
+-------------------
+
+'         Asio Sound Card Multiple Channel Selection
+
+'         Viewer and Mixed mode operation
+
+'         Vessel Display
+
+'         Updated online help
+
+0.5b    31 August 2007
+----------------------
+
+Requires Java 6 Update 2 (http://java.com/en/download/manual.jsp)
+
+Major new features include:
+
+'         ASIO sound card support
+
+'         MS Access database access (up to Access 2003 verified)
+
+'         Configurations can be saved and re-called using settings files
+
+'         Module dependency wizard
+
+'         Air gun display
+
+'         AIS data interface/display
+
+'         Serial port support for NMEA data
+
+'         Spectra plugin display
+
+'         Static and "threading" hydrophone array configuration
+
+1.0Beta 22 Jan 2008 - PAMGuard starts two releases, core and beta release,
+
+this is the beta release
+
+'         3D module
+
+'         Ishmael detection and localization methods
+
+'         Better display
+
+'         Multi animal click tracking with least squares fit calculation of position on map
+
+'         Whistle detector multi channel tracking and localisation.
+
+'         Sound playback
+
+'         Configuration storage to database
+
+'         Signal Patch Panel
+
+'         Default module naming and exclusive module naming
+
+'         Signal Amplifier
+
+'         IIRF (Butterworth and Chebychev) filters
+
+'         Offline file analysis
+
+'         Map (and other display) symbol keys
+
+'         Map Comments
+
+0.4b - 29 December 2006, Significant enhancements
+-------------------------------------------------
+
+A model manager and profiler, whereby users can add/remove modules as required.
+
+Modules now include configurable click and whistle detectors and Ishmael-type detectors and localisers.
+
+Information from above modules can be displayed on configurable user displays which support real time scrolling spectrograms and radar displays. Detection and localisation information can be optionally displayed on the map display.Map enhancements include improved scrolling whereby the user can click and drag to pan the area. PAMGuard can now interface with MySQL database servers and users can easily select which information is logged. (This replaces the previous 'flat-file' logging feature). A simulation module allows virtual vocalising animals to be placed on the map to assist in training and development. Extensive online user help has been added to PAMGuard Application
+
+0.03b - first version used in a real 'at sea' environment.18/08/06
+------------------------------------------------------------------
+
+0.02a - first version with significant functionality. 16/December/05
+--------------------------------------------------------------------
+
+0.01a - first public release. 18/August/05.
+-------------------------------------------

@@ -1,0 +1,19 @@
+---
+title: "PAMGuard Configuration files"
+listing: 
+  type: grid
+---
+
+PAMGuard saves it's configuration in special configuration files, ending in .psfx. 
+Each file contains the list of [modules](../coremodules.html) 
+and displays you've chosen to use and the settings for each module. 
+
+A typical user may have many configuration files, set up for different purposes. Users 
+often share configuration files and companies providing services such as
+acoustic observers to industry will typically provide the observers with the PAMGuard
+configuration they want them to use. 
+
+Here we provide a sample of simple configuration files, that might help you get started. 
+
+You should also visit the [tutorials pages](../tutorials.html) which will show
+you how to build your own configurations.

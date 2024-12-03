@@ -1,0 +1,16 @@
+---
+title: "RION Compass"
+image: images/rion.jpg
+author: Douglas Gillespie
+description: "Serial port readout of heading, pitch and roll from a RION HCM508 compass module."
+---
+
+## RION digital comass
+
+Serial port readout of heading, pitch and roll from a RION HCM508 compass module.
+
+### Downloads
+
+[Source Code](https://github.com/douggillespie/rioncompass)
+
+[Built Module](https://github.com/douggillespie/rioncompass/releases)

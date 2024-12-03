@@ -1,0 +1,23 @@
+---
+title: "Publications"
+---
+
+Below are some publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research.
+Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a>.
+
+1.  Gillespie, D. et al. Automated detection and tracking of marine mammals in the vicinity of tidal turbines using multibeam sonar. Journal of Marine Science and Engineering 11, 2095 (2023).
+
+2.  Webber, T. et al. Streamlining analysis methods for large acoustic surveys using automatic detectors with operator validation. Methods in Ecology and Evolution 13, 1765–1777 (2022).
+
+3.  Macaulay, J. D. J. et al. Implications of porpoise echolocation and dive behaviour on passive acoustic monitoring. The Journal of the Acoustical Society of America 154, 1982–1995 (2023).
+
+4.  Brinkløv, S. M. M. et al. Open‐source workflow approaches to passive acoustic monitoring of bats. Methods Ecol Evol 14, 1747–1763 (2023).
+
+5.  Macaulay, J. et al. Passive acoustic tracking of the three-dimensional movements and acoustic behaviour of toothed whales in close proximity to static nets. Methods in Ecology and Evolution In Press, (2022).
+
+6.  Palmer, L. et al. Harbour porpoise (Phocoena phocoena) presence is reduced during tidal turbine operation. Aquatic Conservation: Marine and Freshwater Ecosystems (2021).
+
+7.  Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Harbour porpoises exhibit localized evasion of a tidal turbine. Aquatic Conservation: Marine and Freshwater Ecosystems (2021) doi:https://doi.org/10.1002/aqc.3660.
+
+8.  Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures. PLoS ONE 15 (5), 16pp (2020).
+

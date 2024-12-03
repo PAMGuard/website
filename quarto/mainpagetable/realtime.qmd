@@ -1,0 +1,18 @@
+---
+title: "Real Time Monitoring"
+image: images/MCR_8345.JPG
+dispord: 1
+description: "Process data in real time using a wide range of Detection, Classification and Localisation algorithms, combined with sophisticated user displays."
+---
+
+![Real time tracking of sperm whales at sea](./images/SOTW-NC-20190508-0324.jpg)
+
+PAMGuard can process data in real time using a wide range of Detection, Classification, and Localisation algorithms, combined with sophisticated user displays.
+
+It is widely used on vessels of many sizes, from tiny vessels with a laptop in a small waterproof case, to large ships.
+
+Data input can come from a wide range of devices, from a simple computer sound card, to specialist high frequency data acquisition systems.
+
+Read in [this research article](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229058) how we built a system that was used to monitor twelve high frequency hydrophones at a sample rate of 500kHz for over a year.
+
+Next: [Read about data visualisation](offline.qmd)

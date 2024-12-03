@@ -1,0 +1,25 @@
+---
+title: "Matlab and R"
+---
+
+Many users find that they can only go so far when processing data with PAMGuard and there are often important steps that people need to take to go from PAMGuard to a published paper.
+
+We therefore provide software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">Matlab</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
+
+This allows you to conduct bespoke analysis of PAMGuard output in a more user friendly programming environment. 
+
+### Matlab
+
+MATLAB code for opening PAMGuard binary files is now on the [PAMGuard GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
+
+Clicking the green 'Code' button will allow you to download the code as a zip archive. Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
+
+### R
+
+Thanks so much to our friends at NOAA Southwest Fisheries Science Center in San Diego , there is also an R package for opening PAMGuard binary files:
+
+install.packages("PamBinaries")
+
+You can find the source files on [GitHub](https://github.com/TaikiSan21/PamBinaries).
+
+The best way to download and stay up-to-date with this is by following the installation instructions on the GitHub page. The R functions are written to work just like the MATLAB code, and there is a short tutorial on the GitHub page.
