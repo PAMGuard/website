@@ -6,7 +6,7 @@ Initial funding for the PAMGuard project came from the International Association
 
 Funding for more recent developments has come from a wide variety of sources including governments, other research organisations, offshore renewable energy companies, and NGO's.
 
-Many developments such as the [Tritech multibeam sonar module](./plugins/tritech.qmd), and the latest [ROCCA Classifiers](./rocca/rocca.qmd),  occur because we need those developments to fulfill our own research goals.
+Many developments such as the [Tritech multibeam sonar module](./plugins/tritech.qmd), and the latest [ROCCA Classifiers](./rocca/rocca.qmd), occur because we need those developments to fulfill our own research goals.
 
 While these mechanisms fund some of the developments, they do not pay for time we spend on user support, dealing with bugs, managing new releases and updating this website.
 
@@ -18,7 +18,8 @@ We are now setting up a much simpler system whereby companies can easily [donate
 
 Subject to having enough funds to employ a new programmer / assistant, important areas we want to work on in the coming 12 months are
 
-1.  Provision of updated user tutorials
-2.  Updated installers for Windows ARM Processors
-3.  Better support for Mac computers, including real time processing
-4.  Further updates to this website
+1.  Continued user support
+2.  Provision of updated user tutorials
+3.  Updated installers for Windows ARM Processors
+4.  Better support for Mac computers, including real time processing
+5.  Further updates to this website

@@ -1,16 +1,13 @@
 ---
-title: "Adding PAMGuard Modules"
+title: "Adding Core  Modules"
 ---
 
-There are two types of PAMGuard module. [Core modules](coremodules.html) which 
-are built into the main PAMGuard code and [Plugin modules](pluginmodules.html)
-which are distributed sparately. This page tells you how to add
-a  [core module](coremodules.html) to PAMGuard. 
+There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed sparately. This page tells you how to add a [core module](coremodules.html) to PAMGuard.
 
 Before reading this page, make sure you've read up on how to [develop a core module](devmodules.html)
 
-
 ## Writing PAMGUARD Plug-ins
+
 ### Adding plug-ins to the Core PAMGUARD model
 
 To make a PAMGUARD plug-in available to PAMGUARD users it is necessary to edit the java file PamModel/PamModel.java.
@@ -23,15 +20,13 @@ where className is the class name of the class PamControlledUnit and description
 
 For example
 
-PamModuleInfo myModule = PamModuleInfo.registerControlledUnit
-("GPS.GPSControl", "GPS Processing");
+PamModuleInfo myModule = PamModuleInfo.registerControlledUnit ("GPS.GPSControl", "GPS Processing");
 
 adds the GPS module.
 
 The module will now be listed in the PAMGUARD File/Add Modules menu from where the user can create instances of the module.
 
-The PAMGUARD settings manager will be aware of the new module and will automatically create the module the next time PAMGUARD is run.
-### Add the module to a menu group
+The PAMGUARD settings manager will be aware of the new module and will automatically create the module the next time PAMGUARD is run. \### Add the module to a menu group
 
 Due to the large number of PAMGUARD modules now in existence, you will want to have your module listed in one of the sub menus of the File/Add Modules menu. You can add your module to one of the existing groups or you can create a new group of your own. For example, the following code adds the GPS module to the Map menu group
 
@@ -57,9 +52,7 @@ Note that some types of data may be produced by many different modules, so here 
 
 You can use functions
 
-PamModuleInfo.setMinNumber(int minNumber)
-and
-PamModuleInfo.setMaxNumber(int maxNumber)
+PamModuleInfo.setMinNumber(int minNumber) and PamModuleInfo.setMaxNumber(int maxNumber)
 
 to set the minimum and maximum numbers of a given module type.
 

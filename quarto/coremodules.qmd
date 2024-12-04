@@ -16,36 +16,27 @@ Currently, PAMGuard contains 70 different modules.
 
 If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which will help you get going.
 
-[Maps and Mapping](#_Maps_and_Mapping),
-[Utilities](#_Utilities),
-[Sensors](#_Sensors),
-[Displays](#_Displays),
-[Sound Processing](#_Sound_Processing),
-[Detectors](#_Detectors),
-[Classifiers](#_Classifiers),
-[Localisers](#_Localisers),
-[Visual Methods](#_Visual_Methods)
+[Maps and Mapping](#_Maps_and_Mapping), [Utilities](#_Utilities), [Sensors](#_Sensors), [Displays](#_Displays), [Sound Processing](#_Sound_Processing), [Detectors](#_Detectors), [Classifiers](#_Classifiers), [Localisers](#_Localisers), [Visual Methods](#_Visual_Methods)
 
- 
 <a name="_Maps_and_Mapping"></a>
 
 ## Maps and Mapping (6 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | NMEA Data Collection | Any | Collects NMEA data from a serial port |
 | GPS Processing | Any | Interprets NMEA data to extract GPS data |
 | Map | Any | Displays a map of vessel position and detections |
 | AIS Processing | Up to 1 | Interprets NMEA data to extract AIS data |
 | Airgun Display | Any | Shows the position of airguns (or any other source) on the map |
 | Fixed Landmarks | Any | Place object symbols on the PAMGuard map |
- 
+
 <a name="_Utilities"></a>
 
 ## Utilities (11 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Database | Exactly 1 | Stores PAMGuard data in a database |
 | Binary Storage | Up to 1 | Stores PAMGuard data in files on the hard drive |
 | Data Map | Exactly 1 | Shows a summary of data density over time for large datasets |
@@ -54,41 +45,41 @@ If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which wi
 | Signal Injection and Detector Evaluation (SIDE) | Up to 1 | Signal injection and real time performance tests |
 | Alarm | Any | Alerts the operator when certain detections are made |
 | Spectrogram Annotation | Any | Offline marking on the spectrogram display |
-| Print Screen | Up to 1 | Capture PAMGuard screens to time-stamped image files and the clipboard.  Use <CTRL-P> as a shortcut |
+| Print Screen | Up to 1 | Capture PAMGuard screens to time-stamped image files and the clipboard. Use <CTRL-P> as a shortcut |
 | Scroll Effort | Up to 1 | Enables an observer to enter their name and infomation about which displays are being monitored |
 | Backup Manager | Up to 1 | Manage automated data backups |
- 
+
 <a name="_Sensors"></a>
 
 ## Sensors (6 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Analog Array Sensors | Up to 1 | Reads Depth, Heading, Pitch and Roll) using analog sensors |
 | Hydrophone Depth Readout | Any | Reads and displays hydrophone depth information |
 | Array Accelerometer | Up to 1 | Reads and accelerometer to orientate a hydrophone array |
 | Angle Measurement | Any | Reads angles from a Fluxgate World shaft angle encoder. (Can be used to read angle of binocular stands) |
 | SoundTrap Detector Import | Up to 1 | Tools for import of SoundTrap detector data |
 | CPOD Detector Import | Any | Imports CPOD data |
- 
+
 <a name="_Displays"></a>
 
 ## Displays (4 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | User Display | Any | Creates an empty display panel which the user can add spectrograms and other displays to |
 | Local Time | Any | Shows local time on the display |
 | Level Meter | Any | Shows signal level meters |
 | Array Orientation | Up to 1 | Displays array depth and orientation data |
- 
+
 <a name="_Sound_Processing"></a>
 
 ## Sound Processing (18 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
-| Sound Acquisition | Any | Controls input of sound data from sound cards, NI cards, etc.  |
+|----|----|----|
+| Sound Acquisition | Any | Controls input of sound data from sound cards, NI cards, etc. |
 | Sound Output | Exactly 1 | Controls output of sound data for listening to on headphones |
 | FFT (Spectrogram) Engine | Any | Computes spectrograms of audio data |
 | Filters (IIR and FIR) | Any | Filters audio data |
@@ -106,13 +97,13 @@ If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which wi
 | Long Term Spectral Average | Any | Make Long Term Spectral Average Measurements |
 | Envelope Tracing | Any |  |
 | Beamformer | Any | Continuous Frequency Domain Beamforming |
- 
+
 <a name="_Detectors"></a>
 
 ## Detectors (11 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Click Detector | Any | Searches for transient sounds, attempts to assign species, measure bearings to source, group into click trains, etc. |
 | Click Train Detector | Any | Searches for click trains in detected clicks. |
 | Whistle and Moan Detector | Any | Searches for tonal noises. Measures bearings and locations of source. Replaces older Whistle Detector |
@@ -124,24 +115,24 @@ If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which wi
 | Right Whale Edge Detector | Any | Detects right whale upsweep calls |
 | Generalised Power Law Detector | Any | Generalised Power Law Detector for tonal sounds |
 | SoundTrap Click Detector | Any | Click Detector module for Soundtrap detector data only |
- 
+
 <a name="_Classifiers"></a>
 
 ## Classifiers (4 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Whistle Classifier | Any | Analyses multiple whistle contours to assign to species |
 | Rocca | Any | Real-time acoustic species identification of delphinid whistles and clicks |
 | Matched Template Click Classifer | Any | Classifies clicks based on an ideal template to match and a template to reject. An example of this is to classify beaked whale clicks in an environment with dolphin clicks |
 | Deep Learning Classifier | Any | Classifies sections of raw acoustic data based on an imported deep learning classifier |
- 
+
 <a name="_Localisers"></a>
 
 ## Localisers (8 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Bearing Localiser | Any | Estimate bearing to detections or spectrogram marks from small aperture arrays |
 | Group 3D Localiser | Any | 2D and 3D Localisation for large aperture arrays |
 | Detection Grouper | Any | Groups detections and other data using manual annotations on PAMGuard displays |
@@ -150,12 +141,12 @@ If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which wi
 | DIFAR Azigram Engine | Any | (BETA) Azigram engine for multiplexed DIFAR data (BETA) |
 | DIFAR Directional Audio | Any | Audio from a DIFAR sonobuoy that has been beamformed at a user-specified single steering angle. This module can be used to reduce directional masking noise. |
 | DIFAR Localisation | Up to 1 | DIFAR Sonobuoy localisation module - takes raw data source with multiplexed directional audio data |
- 
+
 <a name="_Visual_Methods"></a>
 
 ## Visual Methods (2 modules)
- 
+
 | Module | Number | Function |
-|------|---|-------|
+|----|----|----|
 | Video Range | Any | Calculates ranges based on angles measured from video, observer height and earth radius |
 | Logger Forms | Up to 1 | Replicates the functionality of User Defined Forms in the IFAW Logger software |
