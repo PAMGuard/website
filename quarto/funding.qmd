@@ -19,7 +19,8 @@ We are now setting up a much simpler system whereby companies can easily [donate
 Subject to having enough funds to employ a new programmer / assistant, important areas we want to work on in the coming 12 months are
 
 1.  Continued user support
-2.  Provision of updated user tutorials
-3.  Updated installers for Windows ARM Processors
-4.  Better support for Mac computers, including real time processing
-5.  Further updates to this website
+2.  Improvement in pre-release testing
+3.  Updated user tutorials
+4.  New Installers for Windows ARM Processors
+5.  Better support for Mac computers, including real time processing
+6.  Further updates to this website

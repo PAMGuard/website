@@ -16,11 +16,11 @@ Sometimes, modules are developed as plugins, and if they are useful and likely t
 
 There are several reasons why people may want to create or use plugin modules:
 
-1. Developers can make a module and distribute it to users without having to get approval in any form from the PAMGuard team.
-2. By distributing the module themselves, it's easier for them to get credit for their work where credit is due. 
-3. The module may be experimental, untested, and certainly doesn't have any help, so we don't particularly want it in the main release since it won't make users happy. 
-4. The module may have such niche functionality that no one will want to use it and it just clutters the PAMGuard menus. 
-5. All of the above
+1.  Developers can make a module and distribute it to users without having to get approval in any form from the PAMGuard team.
+2.  By distributing the module themselves, it's easier for them to get credit for their work where credit is due.
+3.  The module may be experimental, untested, and certainly doesn't have any help, so we don't particularly want it in the main release since it won't make users happy.
+4.  The module may have such niche functionality that no one will want to use it and it just clutters the PAMGuard menus.
+5.  All of the above
 
 ### Installation
 

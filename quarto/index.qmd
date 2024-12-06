@@ -8,7 +8,7 @@ listing:
     - "mainpagetable/*.qmd"
 ---
 
-World leading software systems for the Detection, Classification, and Localization of marine mammal sounds.
+World leading software for the Detection, Classification, and Localization of marine mammal sounds.
 
 ::: {#threepanels}
 :::
@@ -17,5 +17,4 @@ Used to study whales and dolphins around the world and to mitigate against the p
 
 ![](./images/1334226697SpermWhaleTails.png)
 
-
-**[Download PAMGuard](downloadsurvey.qmd)**
+[**Download PAMGuard**](downloadsurvey.qmd)
