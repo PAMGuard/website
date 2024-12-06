@@ -1,0 +1,52 @@
+---
+title: "lightbox"
+lightbox: 
+  effect: fade
+  desc-position: right
+  loop: true
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+::: columns
+::: {.column width="33%"}
+
+![](images/nwa.png){.lightbox group="my-gallery" description="Sounds from different
+cetacean species vary enormously, what is less known is that the same species
+can sound different in different parts of the world. <br><br>
+Some detectors have region specific configurations to optimise their performance
+with different populations"}
+![](images/whistles.png){.lightbox group="my-gallery" description="The PAMGuard whistle
+detector automatically picks out the contours of tonal sounds such as dolphin whistles. <br><br>Although it was originally used for these higher frequency sounds, it can also
+be used to detect tonal sounds from larger baleen whale species. "}
+
+
+:::
+::: {.column width="33%"}
+![](images/Click_detector_screenshot.png){.lightbox group="my-gallery" 
+description="The PAMGuard click detector was one of the first detectors to be developed
+for PAMGuard and is used to detect transient signals, primarily from odontocete species such as sperm whales, beaked whales and harbour porpoises.<br><br>
+More recently, we've been experimenting with detecting with detecting low frequency pulses, such as 40Hz
+calls from fin whales using the click detector on a low frequency data stream."}
+![](images/SpermWhaleTails.png){.lightbox group="my-gallery" description="When these sperm whale dive
+they may be submerged for up to an hour and will not be visible to observers.<br><br>However, sperm
+whales are highly vocal and PAMGuard can detect their sounds several miles away. This enables 
+scientists can track them and be close by when they do return to the surface"}
+
+:::
+::: {.column width="33%"}
+
+
+![](images/Datamap_screenshot.png){.lightbox group="my-gallery" description="An important aspect of PAMGuard is the ability for users to explore processed data. PAMGuard allows users to visualise data at multiple different times scales, from inspecting individual waveforms microseconds long to datagrams showing detector output or soundscape metrics over days, weeks or even years.<br><br>The PAMGuard data map provides an overview of the entire processed dataset over days, weeks and even years."}
+:::
+::: {.column width="30%"}
+
+
+:::
+::: {.column width="30%"}
+
+
+:::
+:::
