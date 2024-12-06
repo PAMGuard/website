@@ -1,13 +1,14 @@
 ---
 title: "Resource Monitor"
 image: images/resourcemon.png
-author: Douglas Gillespie
+date: 2022-12-06
+author: Doug Gillespie
 description: "Provides additional monitoring of PAMGUard memory usage"
 ---
 
 ## Resource Monitor
 
-Provides additional monitoring of PAMGuard memory usage in the side bar. 
+Provides additional monitoring of PAMGuard memory usage in the side bar.
 
 ### Downloads
 

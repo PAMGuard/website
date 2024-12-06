@@ -1,7 +1,8 @@
 ---
 title: "RION Compass"
 image: images/rion.jpg
-author: Douglas Gillespie
+author: Doug Gillespie
+date: 2023-08-05
 description: "Serial port readout of heading, pitch and roll from a RION HCM508 compass module."
 ---
 

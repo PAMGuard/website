@@ -1,7 +1,8 @@
 ---
 title: "Workshop Demo Detector"
 image: images/demodetector.png
-author: Douglas Gillespie
+author: Doug Gillespie
+date: 2023-04-26
 description: "Simple detector designed to demonstrate main PAMGuard developer
       environment, using as many PAMguard features as possible, but in a
       really simple way."

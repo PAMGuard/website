@@ -1,9 +1,9 @@
 ---
 title: "Batch Processor"
 image: images/batchrun.png
+date: 2024-12-06
 author: Doug Gillespie
-description: "Allows you to run the same PAMGuard configuration on multiple datasets, running a user defined number
-  of jobs concurrently until all are complete"
+description: "Allows you to easily run the same PAMGuard configuration on multiple datasets."
 ---
 
 ## PAMGuard Batch Processor

@@ -1,7 +1,8 @@
 ---
 title: "Video Range (legacy)"
 image: images/videorange.jpg
-author: Douglas Gillespie
+author: Doug Gillespie
+date: 2022-02-17
 description: "Older and simpler version of the video range measurement module"
 ---
 
@@ -15,8 +16,7 @@ The module uses camera and video images to measure angles from the horizon in or
 
 Leaper, Russell, and Jonathan Gordon. "Application of photogrammetric methods for locating and tracking cetacean movements at sea." J. Cetacean Res. Manage. 3, no. 2 (2001): 131-141.
 
-Gillespie, Douglas, Russell Leaper, Jonathan Gordon, and Kelly Macleod.
-"An integrated data collection system for line transect surveys." *J. Cetacean Res. Manage.* 11, no. 3 (2010): 217-227.
+Gillespie, Douglas, Russell Leaper, Jonathan Gordon, and Kelly Macleod. "An integrated data collection system for line transect surveys." *J. Cetacean Res. Manage.* 11, no. 3 (2010): 217-227.
 
 ### Downloads
 

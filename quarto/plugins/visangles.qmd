@@ -1,7 +1,8 @@
 ---
 title: "Visual to Array Angles"
 image: images/visangles.png
-author: Douglas Gillespie
+author: Doug Gillespie
+date: 2024-06-17
 description: "Converts angles from observers to angles expected from an array further behind the vessel"
 ---
 
