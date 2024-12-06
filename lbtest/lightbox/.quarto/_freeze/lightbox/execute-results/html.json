@@ -1,0 +1,17 @@
+{
+  "hash": "37a3c7b35ca108e6d8d5fa19cd70cf24",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"lightbox\"\nlightbox: auto\n---\n\n\n\n## Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(1:10, rnorm(10))\n```\n\n::: {.cell-output-display}\n![Simple demo R plot](lightbox_files/figure-html/fig-basic-1.png){#fig-basic width=672}\n:::\n:::\n\n\n\n![](images/etp.png){group=\"my-gallery\"}\n\n![](images/haw.png){group=\"my-gallery\"}\n\n![](images/nea.png){group=\"my-gallery\"}\n\n![](images/nwa.png){group=\"my-gallery\"}\n\n![](images/tp.png){group=\"my-gallery\"}",
+    "supporting": [
+      "lightbox_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
