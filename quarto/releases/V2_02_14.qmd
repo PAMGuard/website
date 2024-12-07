@@ -16,7 +16,9 @@ include-in-header:
 
 Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.14). Zenodo. https://doi.org/10.5281/zenodo.13951593
 
-[Windows Installer: Setup-Pamguard_2_02_14.exe](https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.14/Setup-Pamguard_2_02_14.exe)
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.14/Setup-Pamguard_2_02_14.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_14.exe</a> 
+
 
 ### New Features
 
@@ -41,6 +43,5 @@ File processing. Sometimes only processing last file when reprocessing data (iss
 Added ability for exporter to read annotations. Added ability to export CPOD and FPOD data.
 
 Fixed various bugs in CPOD and FPOD displays and importer. Updated CPOD help file.
-
 
 [Release notes for all versions](../releasenotes.qmd)

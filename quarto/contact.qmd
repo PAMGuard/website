@@ -1,50 +1,61 @@
 ---
-title: "Contact"
+title: "Contact and Support"
 ---
 
 To contact the PAMGuard team, please email [pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk)
 
-# Bug Reporting
+## Help and Support
 
-Bug fixing is always a priority for the PAMGuard team. Known issues are listed on
-out gitHub pages [here](https://github.com/PAMGuard/PAMGuard/issues);
+There are several ways that you can get help with PAMGuard. 
 
-If you think you've found a bug, please let us know by emailing
-[pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk) including the 
-following information.
+The [Online Help](olhelp/index.html) is available on this site and is also all built into PAMGuard so it's accessible even if you're at sea and don't have Internet. 
 
-1. Operating system (windows, Mac, etc.)
-2. PAMGuard version
-3. The text from the command window (See below for more on this)
-4. Any information on what you were doing that creates the bug
-5. If possible, include the psfx file you were using
+The [User Tutorials](tutorials.qmd) are also an excellent way to familiarise yourself with PAMGuard. 
+We're hoping to expand these in the coming year.
 
+There are also several providers of training courses in PAMGuard operation. Some of these
+are listed in our [links pages](links/mmo.qmd#mmo-and-pam-training), though please be aware 
+that none of these providers are officially linked with the PAMGuard team.
 
-## Getting the command window text
-Please don't send a screenshot of this. The information we need has usually scrolled 
-off the visible window, so get us the full text. 
+If you're an MMO running equipment provided by a third party that doesn't seem to be working correctly, 
+please contact the equipment provider. 
 
-### Windows 10 or earlier
-1. Right click on the title bar
-2. Select Edit > Select All as per the picture below
-![PAMGuard command window with debug text](./images/cmdselect.png)
-3. Now the text should be highlighted
-4. Go back to the Edit and select copy.
-5. Paste the text into an email, or save and attach to email.
+There is also now a [Bioacoustics section](https://bioacoustics.stackexchange.com/) on Stack Exchange, which as a specific [PAMGuard Section](https://bioacoustics.stackexchange.com/questions/tagged/pamguard).
 
-### Windows 11
-1. Highlight text in the command window with the mouse
-2. Right click and select 'copy'
-3. Paste into an email
+If you've still got a problem that can't be answered using one of the methods above, then please get in touch. 
 
-### Or send the log file
-By default, PAMGuard will be logging all of the information written to the command 
-window in a log file in your user directory. This will be in a 
-folder something along the lines of C:\\Users\\**yourusername**\\Pamguard.
+## Bug Reporting
 
-The folder can be most easily accessed from the PAMGuard Help/Log File menu.
-Identify the correct file (note that times in the file names are in UTC) and 
-either attach the file to an email, or copy the text into the body of 
-an email to [pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk).
+Bug fixing is always a priority for the PAMGuard team. Known issues are listed on our GitHub pages [here](https://github.com/PAMGuard/PAMGuard/issues);
 
- 
+If you think you've found a bug, please let us know by emailing [pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk) including the following information.
+
+1.  Operating system (Windows, Mac, etc.)
+2.  PAMGuard version
+3.  The text from the command window (See below for more on this)
+4.  Any information on what you were doing that creates the bug
+5.  If possible, include the psfx file you were using
+
+### Getting the command window text
+
+Please don't send a screenshot of this. The information we need has usually scrolled off the visible window, so get us the full text using one of the following methods.
+
+#### Windows 10 or earlier
+
+1.  Right click on the title bar
+2.  Select Edit \> Select All as per the picture below ![PAMGuard command window with debug text](./images/cmdselect.png)
+3.  Now the text should be highlighted
+4.  Go back to the Edit and select copy.
+5.  Paste the text into an email, or save and attach to email.
+
+#### Windows 11
+
+1.  Highlight text in the command window with the mouse
+2.  Right click and select 'copy'
+3.  Paste into an email
+
+#### Or send the log file
+
+By default, PAMGuard will be logging all of the information written to the command window in a log file in your user directory. This will be in a folder something along the lines of C:\\Users\\**yourusername**\\Pamguard.
+
+The folder can be most easily accessed from the PAMGuard Help/Log File menu. Identify the correct file (note that times in the file names are in UTC) and either attach the file to an email, or copy the text into the body of an email to [pamguard\@st-andrews.ac.uk](mailto:pamguard@st-andrews.ac.uk).

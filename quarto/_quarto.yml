@@ -26,11 +26,11 @@ website:
         menu: 
           - text: About PAMGuard
             href: about.qmd
-          - text: Funding
-            href: funding.qmd
           - text: License
             href: license.qmd
-          - text: Contact
+          - text: Funding
+            href: funding.qmd
+          - text: Contact and Support
             href: contact.qmd
           - text: Meet the team
             href: ./team/team.qmd
@@ -52,6 +52,8 @@ website:
             href: systemreq.qmd
           - href: downloadsurvey.qmd
             text: PAMGuard Installers
+          - href: plugins/plugins.qmd
+            text: Download Plugins
           - href: ./configs/configs.qmd
             text: Configuration Files
           - href: ./rocca/rocca.qmd

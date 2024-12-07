@@ -1,12 +1,5 @@
 ---
 title: "Plugin PAMGuard Modules"
-listing: 
-  type: grid
-  sort-ui: true
-  filter-ui: true
-  page-size: 6
-  contents: 
-    - "plugins/*.qmd"
 ---
 
 Read [here](coremodules.html) for information about PAMGuard's modular architecture.
@@ -25,10 +18,8 @@ There are several reasons why people may want to create or use plugin modules:
 4.  The module may have such niche functionality that no one will want to use it and it just clutters the PAMGuard menus.
 5.  All of the above
 
-### Installation
 
-Usually, a plugin is distributed in the form of a .jar file (that's compiled Java, the language PAMGuard is written in). All you have to do is copy the file into the plugins folder in the PAMGuard installation directory (e.g. C:\\Program Files\\Pamguard\\plugins for most installation). In some cases, you may need to add other files, for example some additional C libraries. In this case check any instructions distributed with the plugin.
 
-### Available Plugin Modules
 
-These are modules developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites.
+<a href="plugins/plugins.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" 
+title="Click here for a list of available PAMGuard Plugins">Download Plugin Modules</a>

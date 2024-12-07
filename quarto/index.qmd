@@ -17,4 +17,5 @@ Used to study whales and dolphins around the world and to mitigate against the p
 
 ![](./images/1334226697SpermWhaleTails.png)
 
-[**Download PAMGuard**](downloadsurvey.qmd)
+
+<a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page">Download PAMGuard</a> 

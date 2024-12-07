@@ -14,13 +14,17 @@ To make a PAMGUARD plug-in available to PAMGUARD users it is necessary to edit t
 
 First you register the module with PAMGUARD using
 
+<code> 
 PamModuleInfo myModule = PamModuleInfo.registerControlledUnit (String className, String description);
+</code>
 
 where className is the class name of the class PamControlledUnit and description is the descriptive name of the module.
 
 For example
 
+<code> 
 PamModuleInfo myModule = PamModuleInfo.registerControlledUnit ("GPS.GPSControl", "GPS Processing");
+</code> 
 
 adds the GPS module.
 
@@ -38,11 +42,15 @@ It is likely that your module will be dependent on data from some other PAMGUARD
 
 You can set module dependencies using
 
+<code> 
 PamModuleInfo.addDependency(PamDependency dependancy)
+</code> 
 
 for example
 
+<code> 
 myModule.addDependency(new PamDependency(NMEADataUnit.class, "NMEA.NMEAControl"));
+</code>
 
 tells PAMGUARD that myModule is dependent on some source of NMEADataUnit and that a possible source of this type of data is the NMEA.NMEAControl module.
 
@@ -52,7 +60,9 @@ Note that some types of data may be produced by many different modules, so here 
 
 You can use functions
 
-PamModuleInfo.setMinNumber(int minNumber) and PamModuleInfo.setMaxNumber(int maxNumber)
+<code> 
+PamModuleInfo.setMinNumber(int minNumber)</code>  and <code>PamModuleInfo.setMaxNumber(int maxNumber)
+</code> 
 
 to set the minimum and maximum numbers of a given module type.
 
