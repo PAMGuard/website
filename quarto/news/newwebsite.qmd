@@ -1,0 +1,19 @@
+---
+title: "New PAMGuard Website"
+description: "We're pleased to bring you a new look PAMGuard website which 
+  will make it easier to find the PAMGuard information you want."
+date: 2024-12-07
+---
+
+We're pleased to bring you a new look PAMGuard website which 
+will be easier for us to manage and easier for you to navigate. 
+
+The new site 
+has been developed using the open source tools from 
+[Quarto](https://quarto.org/) and is being hosted on GitHub pages. 
+
+We hope that you find the new site easy to navigate and that you can get
+the [PAMGuard downloads](../downloadsurvey.qmd) and information that you want. 
+
+If there was anything on the old site that you think we've left out, please
+get in touch. 

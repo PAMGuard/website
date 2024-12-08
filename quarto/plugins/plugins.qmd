@@ -6,6 +6,7 @@ listing:
   filter-ui: true
   page-size: 12
 ---
+
 ## Available Plugin Modules
 
 These are [Plugin modules](../pluginmodules.qmd) developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites.

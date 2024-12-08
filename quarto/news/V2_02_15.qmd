@@ -1,0 +1,27 @@
+---
+title: "Version 2.02.15"
+description: "PAMGuard version 2.02.15 is now available for Windows and Mac"
+date: 2024-12-09
+---
+
+[PAMGuard version 2.02.15](../downloadsurvey.qmd) is now available for Windows and Mac. 
+
+## New Features
+
+Added ability to export click events to the exporter.
+
+Updates to deep learning module to deal with group detections.
+
+New icons and graphical user interface style for Mac.
+
+## Bug Fixes
+
+Fixed important timing bug that affected offline analysis when there was a gap in data, causing certain binary files before the gap to be closed with an incorrect end time.
+
+Fixed issue #177 with clip generator dialog always reverting to first available input source.
+
+Removed unnecessary text output from DL classifier module.
+
+Fixed units on spectrogram displays for air based measurements.
+
+Fixed bug in whistle and moan detector graphics that caused whistles with branches to not draw.

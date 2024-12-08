@@ -20,8 +20,8 @@ website:
     logo: images/PAMGuardIcon2.png
     background: rgba(72,188,213,255)
     left:
-      - href: index.qmd
-        text: Home
+#      - href: index.qmd
+#        text: Home
       - text: About
         menu: 
           - text: About PAMGuard

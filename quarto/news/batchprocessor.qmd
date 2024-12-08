@@ -1,0 +1,21 @@
+---
+title: "Batch Processing"
+description: "Batch Processing module for PAMGuard V1.6 is now available"
+date: 2024-12-08
+---
+
+The PAMGuard batch processing module V1.6 is now available for download
+on our [plugins pages](../plugins/plugins.qmd).
+
+The Batch Processing module can be used to run the same configuration file on multiple datasets using the same psfx file without having to go into the configuration for every dataset to change the location of the source files, the output database name, and the location of the binary store.
+
+It is particularly useful for processing datasets from deployments of multiple autonomous recorders, but also has application in reprocessing of any data where you want to run the same PAMGuard algorithms on multiple sets of data.
+
+The batch processing module is one of three major developments currently being funded
+by the US [Bureau of Oceans Energy Management](https://www.boem.gov/) (BOEM):
+
+1. An Interface to the [Tethys database](https://tethys.sdsu.edu/) for Passive Acoustic metadata
+2. A PAMGuard module which allows you to run Deep Learing classifiers within PAMGuard
+3. The Batch Processor module. 
+
+![](images/BOEM_Logo_Web_Header.png)
