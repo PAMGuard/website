@@ -4,13 +4,10 @@ image: ./images/jamie.jpg
 description: "PAMGuard Developer"
 ---
 
-![Jamie Macaulay](./images/jamie.jpg) 
+![Jamie Macaulay](./images/jamie.jpg)
 
-[Dr Jamie Macaulay](https://www.st-andrews.ac.uk/biology/people/jdjm/) 
-got involved in Passive Acoustic research when he was a physics undergraduate at 
-the University of St Andrews. 
+[Dr Jamie Macaulay](https://www.st-andrews.ac.uk/biology/people/jdjm/) got involved in Passive Acoustic research when he was a physics undergraduate at the University of St Andrews.
 
-He then moved over to the school of biology and 
-completed his PhD on the bahaviour of harbour porpoise in tidal rapids. 
+He then moved over to the School of Biology, completed his PhD on the behaviour of porpoises in tidal rapid environments, moved to Aarhus University in Denmark, and then came full circle back to the Sea Mammal Research Unit as a Research Fellow.
 
-
+Jamie specialises in applying the latest hardware and software technologies to study echolocating animals (porpoises dolphins, sperm whales, bats…) and in doing so kept coming back to using PAMGuard for his work, adding various features along the way. Over time he became an expert in the source code and now leads the development of several modules as well as AI integration and adapting PAMGuard to work on macOS.

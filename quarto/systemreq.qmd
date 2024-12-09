@@ -6,11 +6,7 @@ title: "System Requirements"
 
 PAMGuard is currently only fully functional on Windows 64 bit computers, ideally running and Intel processor.
 
-
-PAMGuard is mostly written in Java. While there is good cross-platform support for standard sound cards there is currently no support within PAMGuard 
-for ASIO sound cards and other data acquisition devices such as those manufactured by National Instruments except on Windows platforms. 
-
-
+PAMGuard is mostly written in Java. While there is good cross-platform support for standard sound cards there is currently no support within PAMGuard for ASIO sound cards and other data acquisition devices such as those manufactured by National Instruments except on Windows platforms.
 
 ## Installing and Running PAMGuard
 
@@ -26,10 +22,10 @@ A number of ARM processor based Windows PC's are now on the market, and more are
 
 ### Mac
 
-A Mac installer is now available for MAcs running Mac OS11+ with an ARM processor. 
+A macOS installer is now available for apple computers running  macOS + with Apple Silicon (older intel Macs are not supported).
 
 Download and run the latest .dmg installer from our [Downloads page](downloadsurvey.qmd).
 
-When you run the installer, all the files you need will be placed in a folder in your Program Files directory and a startup icon will be added to the Windows start menu.
+When you run the installer, drag the PAMGuard icon to the Applications folder shortcut - this will automatically install PAMGuard.
 
-Note that the Mac version does not provide support for some input devices so may not be suitable for real time operation. It should however be fully functional for offline analysis of recordings and use of the PAMGuard viewer. 
+Note that the Mac version does not provide support for some input devices so may not be suitable for real time operation. It should however be fully functional for offline analysis of recordings and use of the PAMGuard viewer.
