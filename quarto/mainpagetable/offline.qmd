@@ -1,6 +1,7 @@
 ---
 title: "Data Visualisation"
 image: images/Screenshot 2021-06-11 at 15.30.05.png
+theme: united
 dispord: 2
 description: "Process data back at the lab, using the same algorithms and displays that can be used for real time monitoring"
 ---
