@@ -2,7 +2,6 @@
 title: "System Requirements"
 ---
 
-# Platform support
 
 PAMGuard is currently only fully functional on Windows 64 bit computers, ideally running and Intel processor.
 
@@ -22,7 +21,7 @@ A number of ARM processor based Windows PC's are now on the market, and more are
 
 ### Mac
 
-A macOS installer is now available for apple computers running  macOS + with Apple Silicon (older intel Macs are not supported).
+A macOS installer is now available for apple computers running macOS + with Apple Silicon (older intel Macs are not supported).
 
 Download and run the latest .dmg installer from our [Downloads page](downloadsurvey.qmd).
 

@@ -29,8 +29,8 @@ The exercises can be seen as a guide, so you’re encouraged to experiment with 
 
 ### Downloads
 
-Detailed tutorial documentation is in [PAMGUARD Training Tutorial 2024.pdf](./getstartedfiles/PAMGUARD%20Training%20Tutorial%202024.pdf)
+Detailed tutorial documentation is in [PAMGUARD Training Tutorial 2024.pdf](https://github.com/PAMGuardLearning/GettingStarted/releases/download/V1.5/PAMGUARDTrainingTutorial2024.pdf)
 
 Sample audio files and map files can be downloaded at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13851130.svg)](https://doi.org/10.5281/zenodo.13851130)
 
-A Zipped archive of PAMGuard configuration files to use with the tutorial are [here](./getstartedfiles/configurationfiles.zip)
+A Zipped archive of PAMGuard configuration files to use with the tutorial are [here](https://github.com/PAMGuardLearning/GettingStarted/releases/download/V1.5/configurationfiles.zip)
