@@ -18,7 +18,7 @@ website:
   navbar:
     search: true
     logo: images/PAMGuardIcon2.png
-    background: rgba(72,188,213,255)
+    background: rgb(45, 96, 128, 255)
     left:
 #      - href: index.qmd
 #        text: Home
