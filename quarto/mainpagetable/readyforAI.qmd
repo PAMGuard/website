@@ -1,0 +1,6 @@
+---
+title: "Ready for AI"
+image: images/deep_learning_example_small.png
+dispord: 4
+description: "PAMGuard runs AI based classifiers natively."
+---

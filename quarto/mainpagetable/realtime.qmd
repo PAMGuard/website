@@ -1,8 +1,8 @@
 ---
-title: "Real Time Monitoring"
+title: "Real Time"
 image: images/MCR_8345.JPG
 dispord: 1
-description: "Process data in real time using a wide range of Detection, Classification and Localisation algorithms, combined with sophisticated user displays."
+description: "Runs in real time for mitigation and data visualisation."
 ---
 
 ![Real time tracking of sperm whales at sea](./images/SOTW-NC-20190508-0324.jpg)

@@ -1,9 +1,9 @@
 ---
 title: "Data Visualisation"
-image: images/Screenshot 2021-06-11 at 15.30.05.png
+image: images/PAMGuard_clicks_small.png
 theme: united
 dispord: 2
-description: "Process data back at the lab, using the same algorithms and displays that can be used for real time monitoring"
+description: "Powerful data visualisation tools."
 ---
 
 ![The PAMGuard datamap allows rapid navigation through large datasets](./images/datamap_screenshot.png)

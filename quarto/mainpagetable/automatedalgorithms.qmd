@@ -1,0 +1,6 @@
+---
+title: "Automated analysis"
+image: images/PAMGuard_whistles_small.png
+dispord: 6
+description: "Detect and classify using state-of-the-art algorithms"
+---

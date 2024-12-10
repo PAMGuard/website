@@ -1,9 +1,8 @@
 ---
-title: "Open Source Software"
+title: "Open Source"
 image: images/githubsmall.png
 dispord: 3
-description: "PAMGuard software is all open source meaning you're free to modify the 
-  code and to use it in any way you want."
+description: "Transparent, free and open...always"
 ---
 
 ![Our code is all on GitHub where it can freely accessed](./images/githublarge.png)
