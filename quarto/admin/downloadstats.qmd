@@ -10,41 +10,82 @@ include-in-header:
     </script>
 ---
 
-'''
-table, th, td {
-  border: 1px solid;
-}
-'''
-
 <h2>Main program</h2>
-<div class="pgdownload">https://github.com/PAMGuard/PAMGuard/</div>
 
-
+::: pgdownload
+https://github.com/PAMGuard/PAMGuard/
+:::
 
 <h2>Tutorials</h2>
-<div class="pgdownload">https://github.com/PAMGuardLearning/GettingStarted/</div>
+
+::: pgdownload
+https://github.com/PAMGuardLearning/GettingStarted/
+:::
+
 <br>
-<div class="pgdownload">hhttps://github.com/PAMGuardLearning/Intro2Pamguard/</div>
+
+::: pgdownload
+hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
+:::
+
 <br>
 
 <h2>Plugins</h2>
 
-<div class="pgdownload">https://github.com/douggillespie/PAMGuardBatch</div>
+::: pgdownload
+https://github.com/douggillespie/PAMGuardBatch
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/resourcemonitor</div>
+
+::: pgdownload
+https://github.com/douggillespie/resourcemonitor
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/VideoRange_Legacy/</div>
+
+::: pgdownload
+https://github.com/douggillespie/VideoRange_Legacy/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/resourcemonitor/</div>
+
+::: pgdownload
+https://github.com/douggillespie/resourcemonitor/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/pamguard/SpermWhaleIPI/</div>
+
+::: pgdownload
+https://github.com/pamguard/SpermWhaleIPI/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/rioncompass/</div>
+
+::: pgdownload
+https://github.com/douggillespie/rioncompass/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/TritechAcquisitionPlugin/</div>
+
+::: pgdownload
+https://github.com/douggillespie/TritechAcquisitionPlugin/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/WAMS/</div>
+
+::: pgdownload
+https://github.com/douggillespie/WAMS/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/douggillespie/ContactCollator/</div>
+
+::: pgdownload
+https://github.com/douggillespie/ContactCollator/
+:::
+
 <br>
-<div class="pgdownload">https://github.com/pamguard/VisualAngles/</div>
+
+::: pgdownload
+https://github.com/pamguard/VisualAngles/
+:::
