@@ -133,8 +133,11 @@ function countFile(aDown, account, repo, tag, file) {
     txt = aDown.textContent + ' Total Downloads = ' + nAsset;
     aDown.textContent = txt;
     //body.appendChild(table);
-    body.insertBefore(table, aDown);
-    body.insertBefore(aDown, table);
+    console.log(aDown);
+    console.log(aDown.parentNode);
+    parent = aDown.parentNode;
+    parent.insertBefore(table, aDown);
+    parent.insertBefore(aDown, table);
     //return nAsset;
   });
  // console.log('end of loopy function')

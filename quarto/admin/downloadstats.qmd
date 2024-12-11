@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+---
+title: "Download Stats"
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="../js/countdownloads.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countEverything();
+      });
+    </script>
+---
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Admin Stuff – PAMGuard</title>
-</head>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> 
-<script src="../js/countdownloads.js"></script> 
-<script type="text/javascript"> $(document).ready(function () { countEverything(); }); </script>
-
-
-<p>This page is intended only for the PAMGuard development team.</p>
-
+'''
+table, th, td {
+  border: 1px solid;
+}
+'''
 
 <h2>Main program</h2>
 <div class="pgdownload">https://github.com/PAMGuard/PAMGuard/</div>
+
+
 
 <h2>Tutorials</h2>
 <div class="pgdownload">https://github.com/PAMGuardLearning/GettingStarted/</div>
@@ -48,8 +48,3 @@
 <div class="pgdownload">https://github.com/douggillespie/ContactCollator/</div>
 <br>
 <div class="pgdownload">https://github.com/pamguard/VisualAngles/</div>
-
-
-
-
-</body></html>
