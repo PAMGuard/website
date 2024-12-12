@@ -12,9 +12,9 @@ include-in-header:
     </script>
 ---
 
-[![](https://zenodo.org/badge/DOI/10.5281/zenodo.13951593.svg)](https://doi.org/10.5281/zenodo.13951593)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14414376.svg)](https://doi.org/10.5281/zenodo.14414376)
 
-Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.14). Zenodo. https://doi.org/10.5281/zenodo.13951593
+Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.15). Zenodo. https://doi.org/10.5281/zenodo.14414376
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_15.exe</a>
 
