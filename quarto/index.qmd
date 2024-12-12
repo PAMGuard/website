@@ -4,6 +4,7 @@ format: html
 css: styles.css
 ---
 
+```{=html}
 <style>
 h1.title {
     color: rgb(45, 96, 128);
@@ -12,20 +13,25 @@ h1.title {
     font-size: 40px;"
 }
 </style>
+```
 
-<div style="text-align: center;">
-  <img src="./images/PAMGuard_icon_fullname.png" width="330" height="95">
-</div>
+::: {style="text-align: center;"}
+<img src="./images/PAMGuard_icon_fullname.png" width="330" height="95"/>
+:::
 
-<div style="text-align: center;">
- <p style="font-weight: bold; font-size: 18px;">World leading software for the Detection, Classification, and Localisation of marine mammal sounds without the need for code</p>
-</div>
+::: {style="text-align: center;"}
+<p style="font-weight: bold; font-size: 18px;">
 
-<div style="text-align: center;">
-  <img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px;"  width="810" >
-</div>
+World leading software for the Detection, Classification, and Localisation of marine mammal sounds without the need for code
 
-<div style="text-align: center;">
+</p>
+:::
+
+::: {style="text-align: center;"}
+<img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px;" width="810"/>
+:::
+
+::: {style="text-align: center;"}
 <a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50; /* Green */
         border: none;
         color: white;
@@ -36,7 +42,7 @@ h1.title {
         font-size: 18px;
         font-weight: bold;
         border-radius: 12px;">Download</a>
-</div>
+:::
 
 ---
 listing: 
@@ -57,47 +63,51 @@ listing:
 ---
 
 ::: {#threepanels}
-  
 :::
 
 <p>
-<p>
-<div style="text-align: center;">
- <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Used</span> to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas.
-</p>
-</div>
-   
-   
-<div style="background-color: lightgray; padding: 20px; border-radius: 10px; width: 100%;">
-  <h2>A Big Grey Rectangle</h2>
-  <p>This is some text inside the rectangle.</p>
-  <p>This is some text inside the rectangle.</p>
-  <p>This is some text inside the rectangle.</p>
-</div>
-    
-<p>
-<p>
-<div style="text-align: center;">
-<p style="font-weight: bold; font-size: 18px;">Comprehensive <span style="color: rgb(58, 153, 255);">integration</span> with MATLAB and R giving you complete control of your data.
-</p>
-</div>
 
-    
-::: {.panel-tabset}
+<p>
+
+::: {style="text-align: center;"}
+<p style="font-weight: bold; font-size: 18px;">
+
+[Used]{style="color: rgb(58, 153, 255);"} to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas.
+
+</p>
+:::
+
+::: {style="background-color: lightgray; padding: 20px; border-radius: 10px; width: 100%;"}
+<h2>A Big Grey Rectangle</h2>
+
+<p>This is some text inside the rectangle.</p>
+
+<p>This is some text inside the rectangle.</p>
+
+<p>This is some text inside the rectangle.</p>
+:::
+
+<p>
+
+<p>
+
+::: {style="text-align: center;"}
+<p style="font-weight: bold; font-size: 18px;">
+
+Comprehensive [integration]{style="color: rgb(58, 153, 255);"} with MATLAB and R giving you complete control of your data.
+
+</p>
+:::
+
+::: panel-tabset
 ## MATLAB
-```{r}
-% This is a MATLAB code block
-x = 1:10;
-y = sin(x);
-plot(x, y);
-x=2;
+
+\`\`\`{r} % This is a MATLAB code block x = 1:10; y = sin(x); plot(x, y); x=2;
 
 ## R
-Content for tab 2
-:::    
-  
-  
 
+Content for tab 2
+:::
 
 ::: {#newsitems}
 :::

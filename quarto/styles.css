@@ -12,11 +12,11 @@ body {
   color:  rgb(45, 96, 128);
 }
 
-table, th, td { 
+/*table, th, td { 
   border: 1px solid; 
   padding-left: 10px;
   padding-right: 10px;
-} 
+}*/ 
 
 /* Style the grid container */
 #threepanels {

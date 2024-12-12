@@ -10,6 +10,16 @@ include-in-header:
     </script>
 ---
 
+<style>
+table, th, td { 
+/*  width: 100%;*/
+  border: 1px solid; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>
+
+
 <h2>Main program</h2>
 
 ::: pgdownload
