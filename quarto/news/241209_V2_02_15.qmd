@@ -1,10 +1,10 @@
 ---
 title: "Version 2.02.15"
 description: "PAMGuard version 2.02.15 is now available for Windows and Mac"
-date: 2024-12-09
+date: 2024-12-12
 ---
 
-[PAMGuard version 2.02.15](../downloadsurvey.qmd) is now available for Windows and Mac. 
+[PAMGuard version 2.02.15](../downloadsurvey.qmd) is now available for Windows and Mac.
 
 ## New Features
 
