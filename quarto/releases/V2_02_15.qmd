@@ -1,7 +1,7 @@
 ---
 title: Version 2.02.15
-description: Windows and Mac
-date: 2024-12-03
+description: Windows Only
+date: 2024-12-12
 include-in-header: 
   text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="js/countdowns.js"></script>
@@ -17,6 +17,8 @@ include-in-header:
 Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.14). Zenodo. https://doi.org/10.5281/zenodo.13951593
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_15.exe</a>
+
+Mac installer to follow shortly
 
 ### New Features
 
