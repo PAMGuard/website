@@ -10,6 +10,7 @@ include-in-header:
     </script>
 ---
 
+```{=html}
 <style>
 table, th, td { 
 /*  width: 100%;*/
@@ -18,7 +19,7 @@ table, th, td {
   padding-right: 10px;
 }
 </style>
-
+```
 
 <h2>Main program</h2>
 
@@ -88,6 +89,10 @@ https://github.com/douggillespie/TritechAcquisitionPlugin/
 https://github.com/douggillespie/WAMS/
 :::
 
+::: pgdownloads
+https://github.com/PAMGuard/deeplearningmodels/
+:::
+
 <br>
 
 ::: pgdownload
@@ -98,4 +103,8 @@ https://github.com/douggillespie/ContactCollator/
 
 ::: pgdownload
 https://github.com/pamguard/VisualAngles/
+:::
+
+::: pgdownload
+https://github.com/PAMGuard/deeplearningmodels/
 :::

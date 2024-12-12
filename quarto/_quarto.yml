@@ -12,7 +12,7 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "**Warning** - this site is still under development please go to the official PAMGuard site at [www.pamguard.org](http://www.pamguard.org)"
+    content: "**New Release** : Version 2.02.15 is now available on our [downloads page](downloadsurvey.qmd)"
     type: primary
     position: below-navbar
   navbar:

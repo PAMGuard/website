@@ -1,7 +1,23 @@
 ---
-title: "Process passive acoustic data with"
 format: html
 css: styles.css
+
+listing: 
+  - id: threepanels
+    type: grid
+    sort: dispord
+    contents: 
+      - "mainpagetable/*.qmd"
+    page-size: 3
+    
+  - id: newsitems
+    type: grid
+    sort: date desc
+    image-height: 0px
+    contents: 
+    - "news/*.qmd"
+    page-size: 3
+#    filter-ui: true
 ---
 
 ```{=html}
@@ -15,15 +31,25 @@ h1.title {
 </style>
 ```
 
+
+<div style="font-weight: bold; font-size: 18px;"><img src="./images/PAMGuard_icon_fullname.png" width="330" height="95"/> <u>P</u>assive <u>A</u>coustic <u>M</u>onitoring <u>Guard</u>ianship</div>
 ::: {style="text-align: center;"}
-<img src="./images/PAMGuard_icon_fullname.png" width="330" height="95"/>
+:::
+
+
+::: {style="text-align: center;"}
+<p style="font-weight: bold; font-size: 18px;">
+World leading desktop software for the Detection, Classification, and Localisation of marine mammal
+and other animal sounds
+</p>
+:::
+
+::: {#threepanels}
 :::
 
 ::: {style="text-align: center;"}
 <p style="font-weight: bold; font-size: 18px;">
-
-World leading software for the Detection, Classification, and Localisation of marine mammal sounds without the need for code
-
+Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
 </p>
 :::
 
@@ -41,73 +67,17 @@ World leading software for the Detection, Classification, and Localisation of ma
         display: inline-block;
         font-size: 18px;
         font-weight: bold;
-        border-radius: 12px;">Download</a>
+        border-radius: 12px;">Download PAMGuard</a>
 :::
 
----
-listing: 
-  - id: threepanels
-    type: grid
-    sort: dispord
-    contents: 
-      - "mainpagetable/*.qmd"
-    
-  - id: newsitems
-    type: grid
-    sort: date desc
-    image-height: 0px
-    contents: 
-    - "news/*.qmd"
-    page-size: 3
-#    filter-ui: true
----
 
-::: {#threepanels}
-:::
 
-<p>
 
-<p>
 
-::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">
 
-[Used]{style="color: rgb(58, 153, 255);"} to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas.
 
-</p>
-:::
 
-::: {style="background-color: lightgray; padding: 20px; border-radius: 10px; width: 100%;"}
-<h2>A Big Grey Rectangle</h2>
-
-<p>This is some text inside the rectangle.</p>
-
-<p>This is some text inside the rectangle.</p>
-
-<p>This is some text inside the rectangle.</p>
-:::
-
-<p>
-
-<p>
-
-::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">
-
-Comprehensive [integration]{style="color: rgb(58, 153, 255);"} with MATLAB and R giving you complete control of your data.
-
-</p>
-:::
-
-::: panel-tabset
-## MATLAB
-
-\`\`\`{r} % This is a MATLAB code block x = 1:10; y = sin(x); plot(x, y); x=2;
-
-## R
-
-Content for tab 2
-:::
+Latest News
 
 ::: {#newsitems}
 :::
