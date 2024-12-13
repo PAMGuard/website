@@ -10,6 +10,12 @@ listing:
     sort: dispord
     contents: 
       - "mainpagetable/*.qmd"
+      
+  - id: hardware-grid
+    type: grid
+    sort: dispord
+    contents: 
+      - "hardwaregrid/*.qmd"
 
   - id: newsitems
     type: grid
@@ -39,7 +45,7 @@ h1.title {
 </div>
 
 <div style="text-align: center;">
-  <img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px;"  width="810" >
+  <img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px; width: 100%">
 </div>
 
 <div style="text-align: center;">
@@ -57,24 +63,88 @@ h1.title {
 
 
 <div style="text-align: center;">
- <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Comprehensive</span> suite of features for automtatic processing, visualisation and management of large acoustic datasets</p>
+ <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Comprehensive</span> suite of features for automtatic processing, visualisation and management of large acoustic datasets without the need for code</p>
 </div>
 
 
 ::: {#feature-grid}
 :::
 
-    
+
 <p>
 <p>
 <div style="text-align: center;">
-<p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Integrated</span> with MATLAB, R and Python (soon) giving you complete control of your data.
+ <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Used</span> to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+</p>
+</div>
+   
+
+<div style="background-color: rgb(241,243,245); padding: 20px; border-radius: 10px; width: 100%;">
+::: columns
+
+::: {.column width="40%"}
+
+<div style="text-align: left;">
+ <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Case study</span> - Tidal Turbines</p>
+</div>
+In 2020 a tidal turbine with 12 high frequency hydrophones was deployed in northern Scotland. Each hydrophone sampled at 500kHz streaming 6 million samples per second to shore via a fibre optic cable. PAMGuard ran on a standard desktop PC for two years in real time, detecting likley porpoise and dolphins and sampling various soundscape metrics. 
+
+:::
+::: {.column width="60%"}
+
+<img src="./images/tidal_turbine.png" alt="Description of image" style="border-radius: 10px; width: 100%;">
+:::
+:::
+</div>
+
+<p>
+<p>
+<div style="text-align: left;">
+<p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Hardware support</span> for sound cards, advanced DAQ systems and underwater recorders
+</p>
+</div>
+
+::: {#hardware-grid}
+:::
+
+<p>
+<p>
+<div style="text-align: left;">
+<p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Integrated</span> with MATLAB, R and Python (soon..ish) giving you complete control of your data
 </p>
 </div>
 
     
 ::: {.panel-tabset}
+## Export
+
+::: columns
+
+::: {.column width="60%"}
+
+<div style="text-align: left;">
+ <p style="font-weight: bold; font-size: 18px;">Export data to other platforms</p>
+</div>
+
+PAMGuard has a powerful exporter which can export detections to;
+
+* .mat files which can be opened in MATLAB.
+* .RData frames which can be open in R.
+* .wav file which can be opened in any acoustics program.
+
+The exporter allows filtering of data based on, for example, species classiifcaton, manual annotatione etc. allowing users to specify exactly what is exported. 
+
+:::
+::: {.column width="40%"}
+
+<img src="./images/export_dialog.png" alt="Description of image" style="border-radius: 10px; width: 75%; height: 75%">
+:::
+:::
+
+
 ## R
+
+Users can also take more control and import PAMGuard data files directly in R using the PamBinaries package
 
 ``` {.r}
 fizz_buzz <- function(fbnums = 1:50) {
@@ -88,51 +158,31 @@ fizz_buzz <- function(fbnums = 1:50) {
 }
 ```
 
-## Python
+## MATLAB
 
-``` {.python}
-def fizz_buzz(num):
-  if num % 15 == 0:
-    print("FizzBuzz")
-  elif num % 5 == 0:
-    print("Buzz")
-  elif num % 3 == 0:
-    print("Fizz")
-  else:
-    print(num)
+Users can also take more control and import PAMGuard data files directly in MATLAB using the PAMGuard-matlab library
+
+``` {.octave}
+%load a folder of clicks
+folder = my/pamgaud/folder
+filemask = 'Click_Detector_Clicks*.pgdf'
+
+%load the clicks into a struct array - careful not to load a hige folder or MATLAB will run out of memory
+clicks = loadPamguardBinaryFolder(folder, filemask, 2)
+
+%iterate through all clicks and calculate amplitude of the click on the first channel
+for i=1:length(clicks)
+  clicksamp(i) = 20*log(max(clicks(i).wave(:,1)) - min(20*log(max(clicks(i).wave(:,1)));
+end
+
+%plot the results
+scatter([clicks.date], clicksamp);
+datetick x
+ylabel("amplitude (dB)")
+
 ```
-
-## Export
 
 :::
   
-<p>
-<p>
-<div style="text-align: center;">
- <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Used</span> to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas.
-</p>
-</div>
-   
-
-<div style="background-color: rgb(241,243,245); padding: 20px; border-radius: 10px; width: 100%;">
-::: columns
-
-::: {.column width="40%"}
-
-<div style="text-align: left;">
- <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Case study</span> - Tidal Turbines</p>
-</div>
-In 2020 a tidal trubine with 12 optical fibre linked hydrophones was deployed in northern Scotland. Each hydrophone sampled at 500kHz streaming 6 million samples per second to shore. PAMGuard ran for two years in real time, detecting likley porpoise and dolphins and sampling various soundscape metrics. 
-
-:::
-::: {.column width="60%"}
-
-<img src="./images/tidal_turbine.png" alt="Description of image" style="border-radius: 10px; width: 100%;">
-:::
-:::
-</div>
-
-
-
 ::: {#newsitems}
 :::

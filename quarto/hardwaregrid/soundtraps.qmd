@@ -1,0 +1,6 @@
+---
+title: "SoundTraps"
+image: images/soundtraps.png
+dispord: 1
+description: "Directly reads compressed [SoundTrap](https://www.oceaninstruments.co.nz/) sud files saving TB of hard disk space"
+---
