@@ -6,3 +6,11 @@
 /docs/
 /quarto/olhelp/
 /testpages/
+.DS_Store
+quarto/.DS_Store
+quarto/configs/.DS_Store
+quarto/images/.DS_Store
+quarto/index.quarto_ipynb
+quarto/mainpagetable/.DS_Store
+quarto/mainpagetable/images/.DS_Store
+quarto/tutorials/.DS_Store

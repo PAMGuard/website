@@ -29,7 +29,7 @@ listing:
 
 <style>
 h1.title {
-    color: rgb(45, 96, 128);
+    color: var(--primary-color);
     text-align: center;
     font-weight: bold; 
     font-size: 40px;"
@@ -81,16 +81,19 @@ h1.title {
 
 <div style="background-color: rgb(241,243,245); padding: 20px; border-radius: 10px; width: 100%;">
 ::: columns
-
-::: {.column width="40%"}
+::: {.column width="45%"}
 
 <div style="text-align: left;">
  <p style="font-weight: bold; font-size: 18px;"><span style="color: rgb(58, 153, 255);">Case study</span> - Tidal Turbines</p>
 </div>
-In 2020 a tidal turbine with 12 high frequency hydrophones was deployed in northern Scotland. Each hydrophone sampled at 500kHz streaming 6 million samples per second to shore via a fibre optic cable. PAMGuard ran on a standard desktop PC for two years in real time, detecting likley porpoise and dolphins and sampling various soundscape metrics. 
+In 2020, a tidal turbine with 12 high frequency hydrophones (500kHz sample rate) was deployed in northern Scotland, streaming 6 million samples per second to shore via a fibre optic cable. For two years, PAMGuard ran continuously on a standard PC, detected porpoises and dolphins and monitored soundscape metrics in real time.
 
 :::
-::: {.column width="60%"}
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="50%"}
 
 <img src="./images/tidal_turbine.png" alt="Description of image" style="border-radius: 10px; width: 100%;">
 :::
@@ -132,7 +135,7 @@ PAMGuard has a powerful exporter which can export detections to;
 * .RData frames which can be open in R.
 * .wav file which can be opened in any acoustics program.
 
-The exporter allows filtering of data based on, for example, species classiifcaton, manual annotatione etc. allowing users to specify exactly what is exported. 
+The exporter allows filtering of data based on, for example, species classiifcaton, manual annotations etc. allowing users to specify exactly what is exported. 
 
 :::
 ::: {.column width="40%"}
@@ -147,15 +150,32 @@ The exporter allows filtering of data based on, for example, species classiifcat
 Users can also take more control and import PAMGuard data files directly in R using the PamBinaries package
 
 ``` {.r}
-fizz_buzz <- function(fbnums = 1:50) {
-  output <- dplyr::case_when(
-    fbnums %% 15 == 0 ~ "FizzBuzz",
-    fbnums %% 3 == 0 ~ "Fizz",
-    fbnums %% 5 == 0 ~ "Buzz",
-    TRUE ~ as.character(fbnums)
-  )
-  print(output)
+library(PamBinaries)
+
+#count the number of classified clicks in a folder of pamguard files. 
+#folder to a set of binary files. 
+
+folder='my/folder/of/pamguard/click/files'
+
+# list all the file names of the
+# specified pattern
+fnames <- list.files(folder, pattern = "Click_Detector_Clicks.*\\.pgdf$")
+
+count =0; #the classified click counter. 
+for (val in fnames) {
+  print(val)
+  
+  #load each click file.
+  clickfile <- loadPamguardBinaryFile(file.path(folder, val))
+  
+  #iterate through the click files to count the classified clicks. 
+  for (aclick in clickfile$data) {
+    if (aclick$type==1){
+      count=count+1
+    }
+  }
 }
+
 ```
 
 ## MATLAB
@@ -163,23 +183,33 @@ fizz_buzz <- function(fbnums = 1:50) {
 Users can also take more control and import PAMGuard data files directly in MATLAB using the PAMGuard-matlab library
 
 ``` {.octave}
-%load a folder of clicks
-folder = my/pamgaud/folder
-filemask = 'Click_Detector_Clicks*.pgdf'
+% count the number of classified clicks in a binary file folder of clicks. 
 
-%load the clicks into a struct array - careful not to load a hige folder or MATLAB will run out of memory
-clicks = loadPamguardBinaryFolder(folder, filemask, 2)
+clear
+% the path to the binary file foldeer
+folder='/my/binary/file/folder';
+ 
+binaryFiles = dir(fullfile(folder, 'Click_Detector_Clicks*.pgdf'));
+ 
+count=0; 
+for i=1:length(binaryFiles)
+    %print progress
+    disp(['Loading files: ' num2str(i) ...
+        ' of ' num2str(length(binaryFiles))])
 
-%iterate through all clicks and calculate amplitude of the click on the first channel
-for i=1:length(clicks)
-  clicksamp(i) = 20*log(max(clicks(i).wave(:,1)) - min(20*log(max(clicks(i).wave(:,1)));
+   %create filepath from dir dtruct
+    filePath=fullfile(folder, binaryFiles(i).name);
+
+    %load the clicks
+    clicks=loadPamguardBinaryFile(filePath);
+
+    %iterate through all clicks and count how many are classified 
+    for j=1:length(clicks)
+         if (clicks(j).type==1) 
+            count=count+1;
+         end
+    end
 end
-
-%plot the results
-scatter([clicks.date], clicksamp);
-datetick x
-ylabel("amplitude (dB)")
-
 ```
 
 :::

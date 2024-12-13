@@ -1,5 +1,6 @@
 ---
 title: "And much more"
+image: images/Devices.png
 dispord: 3
-description: "Import CPOD data <br> Read flac files <br> Real time depth sensors <br> ..."
+description: "Import CPOD/FPOD data <br> Read flac files <br> Real time depth sensors <br> ..."
 ---
