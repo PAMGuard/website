@@ -90,8 +90,13 @@ website:
             href: https://github.com/PAMGuard/PAMGuard/issues
             target: pggitpage
       - icon: facebook
-        href: https://www.facebook.com/pamguard
-        target: pgfbpage
+        menu:
+          - text: Facebook
+            href: https://www.facebook.com/pamguard
+            target: pgfbpage
+          - text: BlueSky
+            href: https://bsky.app/profile/pamguard.org
+            target: pgbspage
 
 format:
   html:

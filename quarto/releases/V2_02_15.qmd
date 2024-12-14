@@ -12,7 +12,7 @@ include-in-header:
     </script>
 ---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14414376.svg)](https://doi.org/10.5281/zenodo.14414376)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14414376.svg)](https://doi.org/10.5281/zenodo.14414376)
 
 Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.15). Zenodo. https://doi.org/10.5281/zenodo.14414376
 
