@@ -92,6 +92,8 @@ function countFile(aDown, account, repo, tag, file) {
     table.setAttribute('border', '1');
     var th = table.insertRow();
     var td = th.insertCell();
+    td.appendChild(document.createTextNode("Tag Name"));
+    var td = th.insertCell();
     td.appendChild(document.createTextNode("Asset Name"));
     td = th.insertCell();
     td.appendChild(document.createTextNode("Created"));
@@ -115,6 +117,8 @@ function countFile(aDown, account, repo, tag, file) {
           //table += '<tr><td>' + asset.name + '</td><td>' + asset.download_count + '</td></tr>'
           var th = table.insertRow();
           var td = th.insertCell();
+          td.appendChild(document.createTextNode(aTag.tag_name));
+          var td = th.insertCell();
           td.appendChild(document.createTextNode(asset.name));
           td = th.insertCell();
           var dateStr = asset.created_at;
@@ -131,6 +135,8 @@ function countFile(aDown, account, repo, tag, file) {
     var th = table.insertRow();
     var td = th.insertCell();
     td.appendChild(document.createTextNode("Total Downloads"));
+    td = th.insertCell();
+    td.appendChild(document.createTextNode(""));
     td = th.insertCell();
     td.appendChild(document.createTextNode(""));
     td = th.insertCell();
