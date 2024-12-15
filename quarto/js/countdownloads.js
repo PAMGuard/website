@@ -117,7 +117,12 @@ function countFile(aDown, account, repo, tag, file) {
           var td = th.insertCell();
           td.appendChild(document.createTextNode(asset.name));
           td = th.insertCell();
-          td.appendChild(document.createTextNode(asset.created_at));
+          var dateStr = asset.created_at;
+          if (dateStr != null) {
+            dateStr = dateStr.replace('T', ' ');
+            dateStr = dateStr.replace('Z', '');
+          }
+          td.appendChild(document.createTextNode(dateStr));
           td = th.insertCell();
           td.appendChild(document.createTextNode(asset.download_count));
         }

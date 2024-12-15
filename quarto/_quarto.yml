@@ -34,6 +34,8 @@ website:
             href: funding.qmd
           - text: Contact and Support
             href: contact.qmd
+          - text: Publications
+            href: ./publications.qmd
           - text: Meet the team
             href: ./team/team.qmd
       - text: Users
@@ -75,8 +77,6 @@ website:
             target: pamguardapi
       - text: Links
         menu:
-          - text: Publications
-            href: ./publications.qmd
           - text: MMO Service Providers
             href: ./links/mmo.qmd
           - text: Non Governmental Organisations (NGO's)
