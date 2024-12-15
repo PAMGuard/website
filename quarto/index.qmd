@@ -20,30 +20,18 @@ listing:
 #    filter-ui: true
 ---
 
-```{=html}
-<style>
-h1.title {
-    color: rgb(45, 96, 128);
-    text-align: center;
-    font-weight: bold; 
-    font-size: 40px;"
-}
-</style>
-```
 
-::: {style="font-weight: bold; font-size: 18px;"}
-<img src="./images/PAMGuard_icon_fullname.png" width="330" height="95"/> 
-<u>P</u>assive <u>A</u>coustic <u>M</u>onitoring <u>Guard</u>ianship
+:::::::: columns
+::: {.column width="10%"}
 :::
-
-::: {style="text-align: center;"}
+::: {.column width="80%"}
+![](./images/PAMGuard_icon_fullname.png)
 :::
+::::::::
 
 ::: {style="text-align: center;"}
 <p style="font-weight: bold; font-size: 18px;">
-
 World leading desktop software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
-
 </p>
 :::
 
@@ -52,9 +40,7 @@ World leading desktop software for the Detection, Classification, and Localisati
 
 ::: {style="text-align: center;"}
 <p style="font-weight: bold; font-size: 18px;">
-
 Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-
 </p>
 :::
 

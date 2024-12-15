@@ -7,8 +7,10 @@ website:
   favicon: images/PAMGuardIcon2.png
   google-analytics: 
     tracking-id: G-0N9ELT30EX
-    storage: none
-    image: ./images/bodybanner.jpg
+    storage: cookies
+    anonymize-ip: true
+  cookie-consent: 
+    type: implied
   announcement: 
     icon: info-circle
     dismissable: true
