@@ -58,9 +58,7 @@ Used to study whales and dolphins around the world and to mitigate against the p
 </p>
 :::
 
-::: {style="text-align: center;"}
-<img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px;" width="810"/>
-:::
+![](./images/1334226697SpermWhaleTails.png)
 
 ::: {style="text-align: center;"}
 <a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50; /* Green */
