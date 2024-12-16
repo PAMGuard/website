@@ -10,6 +10,10 @@ The PAMGuard project started in 2006, intending to address the fundamental limit
 
 The PAMGuard software provides a suite of Detection, Classification, and Localization algorithms developed specifically for the many types of sounds made by different species. The algorithms are backed up by a powerful user interface that allows a human operator to view sounds in real time, confirm the output of the automatic detectors, and mark out sounds manually when automatic detection is not possible.
 
+## The PAMGuard name
+
+PAMGuard stands for the <u>P</u>assive <u>A</u>coustic <u>M</u>onitoring <u>Guard</u>ianship
+
 ## Application
 
 PAMGuard can process data from hydrophones (under water microphones) in real time, or can process archived data stored in sound files.

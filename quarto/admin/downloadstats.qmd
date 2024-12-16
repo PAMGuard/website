@@ -1,0 +1,112 @@
+---
+title: "Download Stats"
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="../js/countdownloads.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countEverything();
+      });
+    </script>
+---
+
+```{=html}
+<style>
+table, th, td { 
+/*  width: 100%;*/
+  border: 1px solid; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>
+```
+
+<h2>Main program</h2>
+
+::: pgdownload
+https://github.com/PAMGuard/PAMGuard/
+:::
+
+<h2>Tutorials</h2>
+
+::: pgdownload
+https://github.com/PAMGuardLearning/GettingStarted/
+:::
+
+<br>
+
+::: pgdownload
+hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
+:::
+
+<br>
+
+<h2>Plugins</h2>
+
+::: pgdownload
+https://github.com/douggillespie/PAMGuardBatch
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/resourcemonitor
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/VideoRange_Legacy/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/resourcemonitor/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/pamguard/SpermWhaleIPI/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/rioncompass/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/TritechAcquisitionPlugin/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/WAMS/
+:::
+
+
+<br>
+
+::: pgdownload
+https://github.com/douggillespie/ContactCollator/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/pamguard/VisualAngles/
+:::
+
+<br>
+
+::: pgdownload
+https://github.com/PAMGuard/deeplearningmodels/
+:::
+
+<br>
+End of download stats

@@ -1,0 +1,7 @@
+---
+title: "Admin"
+---
+
+This page is intended only for the PAMGuard development team.
+
+[Download Stats](downloadstats.qmd)

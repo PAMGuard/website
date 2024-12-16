@@ -1,0 +1,9 @@
+---
+title: "PAMGuard on BlueSky"
+description: "PAMGuard now has it's own BlueSky account @pamguard.org"
+date: 2024-12-14
+---
+
+<p>PAMGuard now has it's own BlueSky account which you can follow at <a href="https://bsky.app/profile/pamguard.org" target="pgbspage">https://bsky.app/profile/pamguard.org</a>.</p>
+
+Please tag \@pamguard.org if you're posting about work that used our software.

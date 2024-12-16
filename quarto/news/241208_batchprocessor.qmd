@@ -1,6 +1,6 @@
 ---
 title: "Batch Processing"
-description: "Batch Processing module for PAMGuard V1.6 is now available"
+description: "Batch Processing module V1.6 for PAMGuard is now available"
 date: 2024-12-08
 ---
 
@@ -13,7 +13,7 @@ It is particularly useful for processing datasets from deployments of multiple a
 The batch processing module is one of three major developments currently being funded by the US [Bureau of Oceans Energy Management](https://www.boem.gov/) (BOEM):
 
 1.  An Interface to the [Tethys database](https://tethys.sdsu.edu/) for Passive Acoustic metadata
-2.  A PAMGuard module which allows you to run Deep Learing classifiers within PAMGuard
+2.  A PAMGuard module which allows you to run Deep Learning classifiers within PAMGuard
 3.  The Batch Processor module.
 
 ![](images/BOEM_Logo_Web_Header.png)

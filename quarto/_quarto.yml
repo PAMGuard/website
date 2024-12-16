@@ -6,13 +6,15 @@ website:
   title: "PAMGuard"  
   favicon: images/PAMGuardIcon2.png
   google-analytics: 
-    tracking-id: G-E42Z1E7BZT
-    storage: none
-    image: ./images/bodybanner.jpg
+    tracking-id: G-0N9ELT30EX
+    storage: cookies
+    anonymize-ip: true
+  cookie-consent: 
+    type: implied
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "**Warning** - this site is still under development please go to the official PAMGuard site at [www.pamguard.org](http://www.pamguard.org)"
+    content: "**New Release** : Version 2.02.15 is now available on our [downloads page](downloadsurvey.qmd)"
     type: primary
     position: below-navbar
   navbar:
@@ -32,6 +34,8 @@ website:
             href: funding.qmd
           - text: Contact and Support
             href: contact.qmd
+          - text: Publications
+            href: ./publications.qmd
           - text: Meet the team
             href: ./team/team.qmd
       - text: Users
@@ -73,8 +77,6 @@ website:
             target: pamguardapi
       - text: Links
         menu:
-          - text: Publications
-            href: ./publications.qmd
           - text: MMO Service Providers
             href: ./links/mmo.qmd
           - text: Non Governmental Organisations (NGO's)
@@ -90,8 +92,13 @@ website:
             href: https://github.com/PAMGuard/PAMGuard/issues
             target: pggitpage
       - icon: facebook
-        href: https://www.facebook.com/pamguard
-        target: pgfbpage
+        menu:
+          - text: Facebook
+            href: https://www.facebook.com/pamguard
+            target: pgfbpage
+          - text: BlueSky
+            href: https://bsky.app/profile/pamguard.org
+            target: pgbspage
 
 format:
   html:

@@ -16,9 +16,7 @@ include-in-header:
 
 Citation: Gillespie, D., & Macaulay, J. (2024). PAMGuard/PAMGuard: PAMGuard Version 2.02.13 (V2.02.13). Zenodo. https://doi.org/10.5281/zenodo.13378951
 
-
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.13/Setup-Pamguard_2_02_13.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_13.exe</a> 
-
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.13/Setup-Pamguard_2_02_13.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_13.exe</a>
 
 ## New Features
 
