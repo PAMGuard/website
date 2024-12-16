@@ -134,18 +134,16 @@ function countFile(aDown, account, repo, tag, file) {
     }
     var th = table.insertRow();
     var td = th.insertCell();
+    td.setAttribute('colspan', 3);
+    td.setAttribute('align', 'right')
     td.appendChild(document.createTextNode("Total Downloads"));
-    td = th.insertCell();
-    td.appendChild(document.createTextNode(""));
-    td = th.insertCell();
-    td.appendChild(document.createTextNode(""));
     td = th.insertCell();
     td.appendChild(document.createTextNode(nAsset));
     txt = aDown.textContent + ' Total Downloads = ' + nAsset;
     aDown.textContent = txt;
     //body.appendChild(table);
-    console.log(aDown);
-    console.log(aDown.parentNode);
+    //console.log(aDown);
+    //console.log(aDown.parentNode);
     parent = aDown.parentNode;
     parent.insertBefore(table, aDown);
     parent.insertBefore(aDown, table);
@@ -240,7 +238,7 @@ function findRelease(data)
     var aNode = y[0];
     var curr = aNode.textContent;
     //console.log(aNode);
-    console.log("Current content is " + curr);
+    //console.log("Current content is " + curr);
     aNode.textContent = (curr + "; " + downCount + " Downloads ")
 	}
   

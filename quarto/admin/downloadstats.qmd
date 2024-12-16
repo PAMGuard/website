@@ -89,7 +89,6 @@ https://github.com/douggillespie/TritechAcquisitionPlugin/
 https://github.com/douggillespie/WAMS/
 :::
 
-
 <br>
 
 ::: pgdownload
@@ -108,5 +107,4 @@ https://github.com/pamguard/VisualAngles/
 https://github.com/PAMGuard/deeplearningmodels/
 :::
 
-<br>
-End of download stats
+<br> End of download stats
