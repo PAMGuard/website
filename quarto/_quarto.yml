@@ -11,12 +11,12 @@ website:
     anonymize-ip: true
   cookie-consent: 
     type: implied
-  announcement: 
-    icon: info-circle
-    dismissable: true
-    content: "**New Release** : Version 2.02.15 is now available on our [downloads page](downloadsurvey.qmd)"
-    type: primary
-    position: below-navbar
+ # announcement: 
+#    icon: info-circle
+#    dismissable: true
+#    content: "**New Release** : Version 2.02.15 is now available on our [downloads page](downloadsurvey.qmd)"
+#    type: primary
+#    position: below-navbar
   navbar:
     search: true
     logo: images/PAMGuardIcon2.png
