@@ -1,6 +1,40 @@
 ---
-title: "And much more"
-image: images/Devices.png
-dispord: 3
-description: "Import CPOD/FPOD data <br> Read flac files <br> Real time depth sensors <br> ..."
+title: "PAMGuard hardware integration"
 ---
+
+PAMGuard supports a number fo hardware devices for real time operation. Therese include most [National Instrument DAQ devices](<https://www.ni.com/en/shop/data-acquisition.html?srsltid=AfmBOopwKj-Wua7rhFqYul-_llp2Eomc8iyMvniYQprwnpYBJVIoqStC>), [SAIL DAQ cards](<https://www.smruconsulting.com/daq>) and most commercial ASIO and standard sound cards. PAMGuard also has several modules for reading analogue orientation and depth data and several [plugins](../pluginmodules.html) that support more bespoke hardware devices.
+
+::: grid
+::: g-col-4
+![](images/nicard.png)
+
+:::
+
+::: g-col-4
+![](images/soundtraps.png)
+:::
+
+::: g-col-4
+![](https://mediadl.musictribe.com/media/PLM/data/images/products/P0BK0/2000Wx2000H/UMC204HD_P0BK0_Front_XL.png)
+
+:::
+
+::: g-col-4
+_National Instruments DAQ cards are high quality sound cards_
+:::
+
+::: g-col-4
+_SoundTraps produce compressed sud files that can be read directly by PAMGuard_
+:::
+
+::: g-col-4
+_ASIO soundcards are generally compatible with PAMGuard_
+:::
+
+:::
+
+
+As well as real time operation PAMGuard also supports importing numerous data formats. Flac and sud files (from [SoundTraps](<https://www.oceaninstruments.co.nz/>)) can be directly read by PAMGuard without the need for decompressing files, saving significant hard disk space. PAMGuard can also read bespoke detection devices such as data from [CPODs/FPODs](<https://www.chelonia.co.uk/>).
+
+
+Note that the Windows version of PAMGuard supports all hardware

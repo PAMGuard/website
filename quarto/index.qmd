@@ -10,12 +10,24 @@ listing:
     sort: dispord
     contents: 
       - "mainpagetable/*.qmd"
-      
-  - id: hardware-grid
+    page-size: 3
+
+  - id: hardware-grid2    
     type: grid
     sort: dispord
-    contents: 
-      - "hardwaregrid/*.qmd"
+    contents:
+      - title: "SoundTraps"
+        image: /hardwaregrid/images/soundtraps.png
+        path: /hardwaregrid/otherhardware.html
+        description: "Directly reads compressed [SoundTrap](https://www.oceaninstruments.co.nz/) sud files saving TB of hard disk space"
+      - title: "National Instruments DAQ"
+        image: /hardwaregrid/images/cRio.png
+        path: /hardwaregrid/otherhardware.html
+        description: "Reads [National Instruments](https://www.ni.com/en.html) DAQ systems"
+      - title: "And much more"
+        image: /hardwaregrid/images/Devices.png
+        path: /hardwaregrid/otherhardware.html
+        description: "Import CPOD/FPOD data <br> Read flac files <br> Real time depth sensors <br> ..."
 
   - id: newsitems
     type: grid
@@ -107,7 +119,8 @@ In 2020, a tidal turbine with 12 high frequency hydrophones (500kHz sample rate)
 </p>
 </div>
 
-::: {#hardware-grid}
+
+::: {#hardware-grid2}
 :::
 
 <p>

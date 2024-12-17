@@ -1,6 +1,10 @@
 ---
 title: "Data management"
 image: images/Tethys.png
-dispord: 5
-description: "Compliant with metadata standards and Tethys."
+dispord: 6
+description: "Compliant with metadata standards and Tethys (coming soon)."
 ---
+
+PAMGuard stores data in a .sqlite database and bespoke files called 'Binary' files - this provides a balance between some human readable data and allowing allowing us to access detection data efficiently so that uswers can reprocess result and rapidly explore and visualize large datasets.
+
+Recently we have being working hard to make PAMGuard compliant with acoustic metadata standard and to integrate the \[Tethys metadata system\](<https://tethys.sdsu.edu/>). You can find some more about the project \[here\](<https://wildlabs.net/discussion/unifying-acoustic-metadata>).

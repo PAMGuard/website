@@ -1,7 +1,7 @@
 ---
 title: "Open Source"
 image: images/githubsmall.png
-dispord: 3
+dispord: 5
 description: "Transparent, free and open...always"
 ---
 
@@ -12,5 +12,7 @@ We're proud of what we do and are quite happy for you to access all of the PAMGu
 PAMGuard is available under the [GNU GPL3 Open Souce software License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 If you want to know more about open source, and why it's important read this [blog post](https://www.turing.ac.uk/blog/open-source-software-why-it-matters-and-how-get-involved) from the Alan Turing Institute.
+
+Next: [Read about data management](datamanagement.qmd)
 
 Previous: [Read about data visualisation](offline.qmd)

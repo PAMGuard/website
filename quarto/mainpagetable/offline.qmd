@@ -2,7 +2,7 @@
 title: "Data Visualisation"
 image: images/PAMGuard_clicks_small.png
 theme: united
-dispord: 2
+dispord: 4
 description: "Powerful data visualisation tools."
 ---
 
@@ -14,4 +14,4 @@ The PAMGuard Viewer allows you to scroll through the detection data and further 
 
 Next: [Read about open source](opensource.qmd)
 
-Previous: [Read about real time operation](realtime.qmd)
+Previous: [Read about automated algorithms](automatedalgorithms.qmd)
