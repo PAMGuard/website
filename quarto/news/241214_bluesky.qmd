@@ -1,5 +1,5 @@
 ---
-title: "PAMGuard on BlueSky"
+title: "BlueSky"
 description: "PAMGuard now has it's own BlueSky account @pamguard.org"
 date: 2024-12-14
 ---
