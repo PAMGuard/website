@@ -1,7 +1,7 @@
 ---
 title: "Open Source Software"
 image: images/githubsmall.png
-dispord: 3
+dispord: 40
 description: "PAMGuard software is all open source meaning you're free to modify the 
   code and to use it in any way you want."
 ---

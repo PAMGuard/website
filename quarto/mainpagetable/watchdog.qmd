@@ -1,0 +1,14 @@
+---
+title: "WatchDog"
+image: images/watchdog.png
+dispord: 60
+description: "The PAMGuard watchdog program *PAMDog* will keep PAMGuard running and restart it whatever happens."
+---
+
+![](images/watchdog.png)
+
+Should PAMGuard crash, or there be a Windows restart, or a power failure at the PC, PAMDog will get PAMGuard going again.
+
+PAMDog is installed with PAMGuard on Windows machines, but you will have to enable it, but creating a shortcut in your startup menu. Read how to do this in the [help files](../olhelp/overview/PamMasterHelp/docs/PamdogHelp.html).
+
+Previous: [Read about data visualisation](offline.qmd)

@@ -46,7 +46,7 @@ website:
             href: coremodules.qmd
           - text: Plugin Modules
             href: pluginmodules.qmd
-          - text: Matlab and R
+          - text: Export Matlab and R
             href: matlabandr.qmd
           - text: Online help pages
             href: ./olhelp/index.html

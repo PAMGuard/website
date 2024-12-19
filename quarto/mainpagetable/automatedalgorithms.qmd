@@ -1,0 +1,32 @@
+---
+title: "Automated analysis"
+image: images/PAMGuard_whistles_small.png
+dispord: 25
+description: "Detect and classify using state-of-the-art algorithms"
+---
+
+::::::: grid
+::: g-col-6
+![The click detector detecting transient sounds and porpoise clicks](images/PAMGuard_clicks.png)
+:::
+
+::: g-col-6
+![PAMGuard tracing whistles on a spectrgram](images/PAMGuard_whistles_small.png)
+:::
+
+::: g-col-6
+![Using an AI model to detect right whale calls](images/deep_learning_example.png)
+:::
+
+::: g-col-6
+![GPL detector detecting baleen whale calls](images/gpl_detector.png)
+:::
+:::::::
+
+PAMGuard provides a suite of automated algorithms which allow users to process acoustic data for target species/sounds. Detectors range from simple in-band energy based detectors (e..g [Generalized Power Law (GPL) Detector](../olhelp/detectors/gpl/docs/gpldetector.html) and [Click Detector](../olhelp/detectors/clickDetectorHelp/docs/ClickDetector_clickDetector.html)) to tracking algorithms to extract tonal sounds (e.g. [Whistle and Moan detector](../olhelp/detectors/whistleMoanHelp/docs/whistleMoan_Overview.html)) and the latest AI based approaches (e.g. [deep learning module](readyforAI.qmd)).
+
+Each detector cna be tuned to the users specific needs and output data are saved to PAMGuard data management system for additional processing inside or outside PAMGuard. They also all integrate with PAMGuard visulisation tools allowing users to explore and valisate result. The approach of PAMGuard is to provide the tools to locate interesting sections of data and create an analysis workflow that suites a particular project. This might eb runnning one of the simple detection algorithms and then manually validating all results or using a sophisticated deep learning model and checking sub samples of a large dataset - it's up to the user to decide.
+
+Next: [Read about data visualisation](offline.html)
+
+Previous: [Read about using AI](readyforAI.html)

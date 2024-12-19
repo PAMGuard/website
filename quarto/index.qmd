@@ -20,18 +20,17 @@ listing:
 #    filter-ui: true
 ---
 
-
-:::::::: columns
+::::: columns
 ::: {.column width="10%"}
 :::
+
 ::: {.column width="80%"}
 ![](./images/PAMGuard_icon_fullname.png)
 :::
-::::::::
+:::::
 
 ::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">
-World leading desktop software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
+<p style="font-weight: bold; font-size: 18px;">World leading  software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
 </p>
 :::
 
@@ -39,8 +38,7 @@ World leading desktop software for the Detection, Classification, and Localisati
 :::
 
 ::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">
-Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+<p style="font-weight: bold; font-size: 18px;">Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
 </p>
 :::
 

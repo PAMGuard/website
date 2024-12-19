@@ -32,6 +32,10 @@ body {
   background-color: rgb(45, 96, 128);
 }
 
+.panel-tabset {
+  background-color: rgb(235,235,235);
+}
+
 /* Slideshow container 
 .slideshow-container {
   max-width: 1000px;
