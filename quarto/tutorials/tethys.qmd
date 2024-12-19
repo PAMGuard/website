@@ -1,0 +1,32 @@
+---
+title: "PAMGuard Tethys Interface"
+dispord: 1
+description: "This tutorial will introduce the PAMGaurd-Tethys interface, show you how to export data from PAMGuard to Tethys, and view the data with the Tethys web client."
+image: ./tethysfiles/Tethys.png
+---
+
+Tethys is a temporal-spatial database for metadata related to passive acoustic studies. Unlike the PAMGuard databases, which hold a lot of detail about a single dataset, a Tethys database can hold summary data for many projects -- that can be every project for you as an individual, your lab, or for multiple labs across a larger organisation.
+
+Tethys does not replace existing PAMGuard databases and binary storage system since it's not possible to get the level of detail PAMGuard uses during analysis into a single general database. However, the intent is that Tethys will contain enough detail for extensive meta-analysis across large temporal and spatial scales, eliminating (or at least minimising) the requirement for researchers to go back to the original PAMGuard data sets.
+
+### Learning Outcomes
+
+You will learn how to export data from PAMGuard to a Tethys database and to view the exported data both within PAMGuard and through the Tethys web interface.
+
+1.  Install Tethys and launch the Tethys Server
+2.  Add a Tethys module to PAMGuard and connect to the Tethys Server
+3.  Export data from PAMGuard to Tethys, including:
+
+-   Calibration data
+-   Deployment data
+-   Detections
+
+4.  View the exported data both from within PAMGuard and using the Tethys Web client
+
+### Downloads
+
+Detailed tutorial documentation is in [TethysTutorial_V1.1.pdf](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.1/TethysTutorial_V1.1.pdf)
+
+A Zipped archive of [processed binary data and PAMGuard database](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.1/NARWExampleDataset.zip)
+
+[Raw audio data](https://research-portal.st-andrews.ac.uk/en/datasets/dclde-2013-workshop-dataset) from the St Andrews university research portal.

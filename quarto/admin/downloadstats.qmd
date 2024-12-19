@@ -41,6 +41,12 @@ hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
 
 <br>
 
+::: pgdownload
+https://github.com/PAMGuardLearning/pamguard_tethys/
+:::
+
+<br>
+
 <h2>Plugins</h2>
 
 ::: pgdownload
