@@ -29,20 +29,20 @@ listing:
 :::
 :::::
 
-::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">World leading  software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
-</p>
+
+::: {#boldcentred}
+World leading software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
 :::
 
 ::: {#threepanels}
 :::
 
-::: {style="text-align: center;"}
-<p style="font-weight: bold; font-size: 18px;">Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-</p>
+::: {#boldcentred}
+Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
 :::
 
-![](./images/1334226697SpermWhaleTails.png)
+
+<img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px; width: 100%">
 
 ::: {style="text-align: center;"}
 <a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50; /* Green */
@@ -57,7 +57,9 @@ listing:
         border-radius: 12px;">Download PAMGuard</a>
 :::
 
+::: {#boldtext}
 Latest News
+:::
 
 ::: {#newsitems}
 :::

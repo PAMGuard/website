@@ -18,4 +18,4 @@ The detector is a very simple in-band energy detector. It will subscribe to a bl
 
 [Source Code](https://github.com/PAMGuard/PluginDemoDetector)
 
-[Built Module](https://github.com/PAMGuard/PluginDemo/releases/tag/V2.0.0)
+[Built Module](https://github.com/PAMGuard/PluginDemoDetector/releases/download/V2.0.0/plugindemoV2_0_0.jar)

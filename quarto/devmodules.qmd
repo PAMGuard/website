@@ -23,17 +23,15 @@ All classes should be contained within new packages (i.e. do not create new clas
 
 Available components of a PAMGuard module are
 
-       
-* An Interface to pass PAMGuard information about the modules
-* A Process that modifies data in some way
-* A Tab panel display
-* A Side panel display
-* A Display Menu
-* A Detection menu
-* A File menu
-* Graphic Overlays
-* Plug in display panels
-
+-   An Interface to pass PAMGuard information about the modules
+-   A Process that modifies data in some way
+-   A Tab panel display
+-   A Side panel display
+-   A Display Menu
+-   A Detection menu
+-   A File menu
+-   Graphic Overlays
+-   Plug in display panels
 
 All components of a PAMGuard module are optional except for the main PamControlledUnit class. The table shows [existing modules](coremodules.html).
 
@@ -41,15 +39,20 @@ All components of a PAMGuard module are optional except for the main PamControll
 
 Although the default constructor for PamControlledUnit is
 
-<code> 
+
+``` java
 public PamControlledUnit(String unitType, String unitName)
-</code>
+```
 
 you must provide a constructor in your sub class that takes just the unitName, e.g.
 
-<code> 
-public class MyDetectorController extends PamControlledUnit { public MyDetectorController(String unitName) { super("My detector", unitName); etc...
-</code>
+
+``` java
+public class MyDetectorController extends PamControlledUnit { 
+  public MyDetectorController(String unitName) { 
+    super("My detector", unitName); 
+    etc... 
+``` 
 
 Pamguard will search for and use this single parameter constructor when creating modules and adding them to the Pamguard data model.
 
@@ -115,11 +118,9 @@ As well as creating their own tab panel and side panels, PamProcess output can b
 
 Displays that currently support graphic overlays are (as of December 2006)
 
-       
-* The Map
-* Spectrograms
-* Radar Displays
-
+-   The Map
+-   Spectrograms
+-   Radar Displays
 
 For details of how to make graphic overlays in PAMGuard see [How to make graphic overlays](./books/HowToMakeOverlays.html)
 

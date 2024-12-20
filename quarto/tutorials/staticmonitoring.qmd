@@ -28,6 +28,6 @@ By the end of the tutorial uses will be familiar with the basic capabilities of 
 
 ### Downloads
 
-The tutorial text is in [Introduction to Sound Traps.pdf](./staticmonfiles/Introduction%20Sound%20Traps%202024-v2-02-13.pdf). You will also need to download the accompanying dataset from Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880212.svg)](https://doi.org/10.5281/zenodo.13880212)
+The tutorial text is in [Introduction to Sound Traps.pdf](https://github.com/PAMGuardLearning/Intro2Pamguard/releases/download/V2.02.13/Introduction.Sound.Traps.2024-v2-02-13.pdf). You will also need to download the accompanying dataset from Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880212.svg)](https://doi.org/10.5281/zenodo.13880212)
 
 Risch, D., Quer, S., Edwards, E., Beck, S., Macaulay, J., Calderan, S. (2018). Acoustic data from the Scottish west coast recorded with a single-element recording unit doi: 10.5281/zenodo.13880212
