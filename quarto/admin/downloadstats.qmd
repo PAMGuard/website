@@ -115,4 +115,14 @@ https://github.com/PAMGuard/PluginDemoDetector/
 https://github.com/PAMGuard/deeplearningmodels/
 :::
 
+<h2>Zenodo</h2>
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.13378950
+:::
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.13626338
+:::
+
 <br> End of download stats

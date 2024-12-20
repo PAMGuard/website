@@ -34,17 +34,25 @@ function countEverything() {
   //  txt = aDown.textContent;
 //    console.log('-' + txt + '-');
     //let count = 
-    countEntry(aDown);
+    name = new String(aDown.textContent);
+    //console.log(name);
+    if (name.indexOf('github.com')>0) {
+      countEntry(aDown);
+    }
+    else if (name.indexOf('zenodo.')>0) {
+      countZenodo(aDown);
+    }
     //txt = txt + ' Total Downloads = ' + count;
     //aDown.textContent = txt;
   }
 }
 
+
 function countEntry(aDown) {
-  name = aDown.textContent;
   //console.log('counting stuff in ' + name);
   // need to work out what we have in terms of root, user/repository/release/version/specific file 
   // typical name is https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.13/Setup-Pamguard_2_02_13.exe 
+  name = aDown.textContent;
   let nameStr = new String(name);
   let ghp = nameStr.indexOf(gitRoot);
   if (ghp<0) {
@@ -87,6 +95,7 @@ function countFile(aDown, account, repo, tag, file) {
  */
   $.getJSON(url, {}, function(data) {
     var nAsset = 0;
+    //console.log(data);
     const body = document.body;
     table = document.createElement('table')
     table.setAttribute('border', '1');
@@ -148,13 +157,96 @@ function countFile(aDown, account, repo, tag, file) {
     parent.insertBefore(table, aDown);
     parent.insertBefore(aDown, table);
     //return nAsset;
+  }).fail(function(data) {
+    errStr = getErrorString(data.status);
+    txt = aDown.textContent + ': Error ' + data.status + '. ' + errStr;
+    aDown.textContent = txt;
   });
- // console.log('end of loopy function')
-//  console.log(' set total = ' + nAsset);
-//  return nAsset;
-  //console.log(' set total = ' + nAsset);
-  //return 0;
 }
+
+function countZenodo(aDown) {
+  name = aDown.textContent;
+  let nameStr = new String(name);
+  zind = nameStr.indexOf('zenodo.');
+  zId = nameStr.substring(zind + 7);
+  zJson = 'https://zenodo.org/api/records/'+zId;
+  //console.log('Counting Zenodo entry ' + zJson);
+  $.getJSON(zJson, {}, function(data) {
+    var nAsset = 0;
+    //console.log(data);
+    const body = document.body;
+    table = document.createElement('table')
+    table.setAttribute('border', '1');
+    var th = table.insertRow();
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode("Version"));
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode("Views"));
+    td = th.insertCell();
+    td.appendChild(document.createTextNode("Downloads"));
+    
+    // try to find the data we're after in the returned json. 
+    let tit = data.title;
+    let version = data.metadata.version;
+    stats = data.stats;
+    //console.log(stats);
+    let downloads = stats.downloads;
+    let unique_downloads = stats.unique_downloads;
+    let views = stats.views;
+    let unique_views = stats.unique_views;
+    let version_downloads = stats.version_downloads;
+    let version_unique_downloads = stats.version_unique_downloads;
+    let version_unique_views = stats.version_unique_views;
+    let version_views = stats.version_views;
+    
+    var th = table.insertRow();
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode("All Versions"));
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode(views));
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode(downloads));
+    
+    var th = table.insertRow();
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode('Version ' + version));
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode(version_views));
+    var td = th.insertCell();
+    td.appendChild(document.createTextNode(version_downloads));
+    
+    parent = aDown.parentNode;
+    aDown.textContent += '\u000A'
+    
+    parent.insertBefore(table, aDown);
+    parent.insertBefore(aDown, table);
+    titnode = document.createTextNode(tit);
+    parent.insertBefore(titnode, table);
+    
+  }).fail(function(data) {
+    errStr = getErrorString(data.status);
+    txt = aDown.textContent + ': Error ' + data.status + '. ' + errStr;
+    aDown.textContent = txt;
+    //console.log('Error executing ' + zJson);
+  });
+}
+
+function getErrorString(status) {
+  switch (status) {
+    case 403:
+      return "You've exceeded GitHub's rate limit. Try again in about an hour.";
+    case 404:
+      return "Unknown project";
+    default:
+      return "Unknown error " + status;
+  }
+}
+
+/*function reportErr(aDown) {
+  console.log("Error getting json data");
+    txt = aDown.textContent + ': Error retreiving data';
+    aDown.textContent = txt;
+}*/
 /*function CallMethod() {
      $.getJSON('/website/RESTfulService.svc/LiveLocation/json', 
      {
