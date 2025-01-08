@@ -1,0 +1,25 @@
+---
+title: "Montabaranom et al. 2025"
+description: "New publication using PAMGuard to track seals around a tidal turbine"
+date: 2025-01-08
+---
+
+Another paper using PAMGuard. For this one, we took a break from Passive Acoustics and developed a [plugin module](../plugins/plugins.html) which can process data from Tritech multibeam sonars to track seals around a tidal turbine.
+
+![](images/jesspaper.jpg)
+
+<https://doi.org/10.1111/1365-2664.14844>
+
+**Seals exhibit localised avoidance of operational tidal turbines**
+
+Jessica Montabaranom, Douglas Gillespie, Emma Longden, Katie Rapson, Anhelina Holoborodko, Carol Sparling, Gordon Hastie
+
+ABSTRACT
+
+1.  Tidally energetic habitats are used by a range of marine mammals, including pinnipeds. These areas are also important to the tidal energy industry, leading to an overlap between tidal developments and important habitats used by seals. The concerns around negative ecological impacts from tidal turbines derive primarily from the potential for fatal collisions between animals and the moving parts of the turbine (i.e. blades) and habitat exclusion from important areas.
+
+2.  We quantified the number of encounters of seals within close range (10s of metres) of the turbine and estimated the likelihood of seal presence over an annual cycle. Data were collected with two multibeam sonars monitoring an operational turbine in the Pentland Firth, Scotland, between May 2022 and June 2023. There were 704 seal encounters within close range of the turbine.
+
+3.  We used generalised additive models (GAMs) to investigate the temporal patterns of seal presence at the turbine site. Results showed that the probability of seal presence was significantly higher at slack water, at night and during the winter months (November–January: mean of \~4 seals a day). When comparing seal presence between periods of turbine operation and non-operation, the model predicted a decrease in presence during turbine operation in flow speeds of ≥2.3 ms−1 (mean reduction of 77% at the highest flow speed; 95% CI: 22%–93%).
+
+4.  Synthesis and applications. The result showing that seals exhibit avoidance of the turbine during operation is important for industry developers and regulators, as lower numbers of seals close to the turbine reduces the potential for fatal collisions and injuries. The modelled reductions in presence can be used directly as avoidance rates in collision risk models to predict the impacts of future turbine arrays and de-risk the consenting process for this industry.

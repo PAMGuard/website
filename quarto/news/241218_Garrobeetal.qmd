@@ -3,14 +3,12 @@ title: "Garrobe et al. 2024"
 description: "New publication comparing existing PAMGuard detectors with new machine learning methods"
 date: 2024-12-18
 ---
-[https://doi.org/10.1121/10.0034602](https://doi.org/10.1121/10.0034602)
- 
-Comparing neural networks against click train detectors
-to reveal temporal trends in passive acoustic sperm whale
-detections
 
-Laia Garrobe Fonollosa, Thomas Webber, Jose Maria Brotons, Margalida Cerda,
-Douglas Gillespie, Enrico Pirotta, and Luke Rendell
+<https://doi.org/10.1121/10.0034602>
+
+**Comparing neural networks against click train detectors to reveal temporal trends in passive acoustic sperm whale detections**
+
+Laia Garrobe Fonollosa, Thomas Webber, Jose Maria Brotons, Margalida Cerda, Douglas Gillespie, Enrico Pirotta, and Luke Rendell
 
 ABSTRACT
 
