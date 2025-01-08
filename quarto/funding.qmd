@@ -2,7 +2,7 @@
 title: "Funding"
 ---
 
-Initial funding for the PAMGuard project came from the International Association of Geophysical Contractors [Sound and Mareine Life Joint Industry Programme](https://www.soundandmarinelife.org/)
+Initial funding for the PAMGuard project came from the International Association of Geophysical Contractors [Sound and Marine Life Joint Industry Programme](https://www.soundandmarinelife.org/)
 
 Funding for more recent developments has come from a wide variety of sources including governments, other research organisations, offshore renewable energy companies, and NGO's.
 
