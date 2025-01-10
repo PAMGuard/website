@@ -32,11 +32,19 @@ https://github.com/PAMGuard/PAMGuard/
 ::: pgdownload
 https://github.com/PAMGuardLearning/GettingStarted/
 :::
+<h4>Dataset</h4>
+::: pgdownload
+https://doi.org/10.5281/zenodo.13851130
+:::
 
 <br>
 
 ::: pgdownload
 hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
+:::
+<h4>Dataset</h4>
+::: pgdownload
+https://doi.org/10.5281/zenodo.13880212
 :::
 
 <br>
