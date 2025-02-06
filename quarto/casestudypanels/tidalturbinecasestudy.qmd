@@ -1,0 +1,57 @@
+---
+title: " PAMGuard and Tidal Turbines"
+image: images/tidal_turbine.png
+listing-description: "<div>In 2017 a tidal trubine was equiped with a 12 channel 500KHz loclaising array to track porpoise movements. PAMGuard was used in real time to;<ul>
+<li>Acquire and decompress data from passed from the trubine to shore via a fibre optic cable</li>
+<li>Detect possible porpoise echolocation clicks</li>
+<li>Measure octave noise bands across the frequency spectrum</li>
+<li>Detect dolphin whistles</li>
+<li>Manage and store the detection data</li>
+</ul></div>"
+---
+
+## Introduction
+
+In 2017, an experimental array of four tidal turbines was deployed in northern Scotland by MeyGen (https://saerenewables.com/tidal-stream/meygen/). Tidal turbines have the potential to provide clean and completely predictable renewable energy, and could form an important part of our baseline energy requirements in the future. However, they were, and are, a relatively new technology, and very little was known about their potential effects on the environment.
+
+There was concern that marine mammals might be injured by the turbine blades [(Wilson et al, 2007)](https://tethys.pnnl.gov/sites/default/files/publications/Wilson-et-al-2007.pdf) and so an experiment was devised to track the 3D underwater movements of dolphins, porpoises, and seals around one of the turbines. A 12-channel hydrophone array was deployed on one of the turbines to allow us to acoustically localize the position of vocalizing animals. This involved installing a [compact cRIO computer from National Instruments](http://www.ni.com/en/shop/compactrio) directly on the turbine, which digitized the acoustic data from the hydrophones, compressed it, and then transmitted the data down a fiber optic cable to shore.
+
+::::: grid
+::: g-col-6
+![The tidal turbine being deployed and showing hydrophone clusters (circles) and DAQ system (diamond). Each cluster contained 4 closely spaced hydrophones (\~20cm spacing) with individual pre-amplifiers connected to the DAQ system which contained a further amplifier and cRio data acquisition system. ](images/tidal_turbine.png){width="100%"}
+:::
+
+::: g-col-6
+![A diagram of the turbine and ability to localise. Each cluster of 4 hydrophones can determine a bearing to a porpoise or dolphin. If two or more clusters detect the same sound then the location of the animal is the point at which the bearings cross.](images/tidal_turbine_diagram.png){width="100%"}
+:::
+:::::
+
+## PAMGuard
+
+PAMGuard, running on a standard consumer desktop PC, was able to process 12 channels of data in real-time, detecting potential echolocation clicks, running soundscape metrics such as third-octave noise bands and a long-term spectral average, detecting potential tonal sounds, and decimating the raw sound data, saving 48 kHz files. This meant that, although we did not save the raw high-frequency files, we had the most sound files for the most complex part of the soundscape (the lower frequencies) and detected transient sounds at a high false-positive rate, along with soundscape metrics for the higher frequencies. In this way, we were able to retain most of the interesting parts of the data but reduce our dataset to about one-sixth of what it would have been if we had saved the raw data.
+
+![A diagram of the acoustic workflow used in the project. PAMGuard used automtica detectors and soundscape analysis to process data in real-time then saves the result to it's datamanagement system. this significantly reduces data volumes compared to saving raw high frequency wav files.](images/tidal_trubine_workflow.png){width="100%"}
+
+## Results
+
+PAMGuard monitored continuously for almost two years, collecting a huge dataset that was then used to track the location of porpoises in close proximity to and within the wider surrounding area of the array. Ultimately, the experiment was able to demonstrate that:
+
+1)  It was practically feasible to deploy localizing arrays on tidal turbines [(Gillespie et al., 2020)](https://dx.plos.org/10.1371/journal.pone.0229058).
+
+2)  Porpoise presence was reduced by the deployment of turbines [(Palmer et al., 2021)](https://onlinelibrary.wiley.com/doi/10.1002/aqc.3737).
+
+3)  Porpoises did not come into close proximity to turbine blades when the turbine was operating, and so the risk of collision is minimal [(Gillespie et al, 2021)](https://onlinelibrary.wiley.com/doi/10.1002/aqc.3660).
+
+## Conclusion
+
+PAMGuard's real-time and post-processing capabilities were used to streamline data collection in a complex and data-intensive project, allowing us to develop a practical acoustic workflow and ultimately answer important conservation questions.
+
+## References
+
+Gillespie, D. *et al.* (2020) ‘Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures’, *PLOS ONE*. Edited by W.D. Halliday, 15(5), p. e0229058. Available at: <https://doi.org/10.1371/journal.pone.0229058>.
+
+Gillespie, D. *et al.* (2021) ‘Harbour porpoises exhibit localized evasion of a tidal turbine’, *Aquatic Conservation: Marine and Freshwater Ecosystems*, 31(9), pp. 2459–2468. Available at: <https://doi.org/10.1002/aqc.3660>.
+
+Palmer, L. *et al.* (2021) ‘Harbour porpoise ( [*Phocoena phocoena*]{.smallcaps} ) presence is reduced during tidal turbine operation’, *Aquatic Conservation: Marine and Freshwater Ecosystems*, 31(12), pp. 3543–3553. Available at: <https://doi.org/10.1002/aqc.3737>.
+
+Wilson, B. *et al.* (2007) *Collision risks between marine renewable energy devices and mammals, fish and diving birds*, *Report to the Scottish Executive*. Scottish Association for Marine Science.

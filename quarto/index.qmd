@@ -3,13 +3,28 @@ format: html
 css: styles.css
 
 listing: 
-  - id: threepanels
+  - id: featurepanels
     type: grid
     sort: dispord
     contents: 
-      - "mainpagetable/*.qmd"
+      - "featurepanels/*.qmd"
     page-size: 3
     
+  - id: casestudypanels
+    type: grid
+    sort: dispord
+    # Set max-items to 1 to display only one item per page
+    contents: 
+      - "casestudypanels/*.qmd"
+    fields: ["title", "image", "listing-description"] 
+    field-display-names: # Optional: customize the display name in the listing
+      listing-description: "\n" # Display nothing instead of "short-description"
+    page-size: 1
+    grid-columns: 1
+    image-height: 300px
+    max-description-length: 1000
+
+
   - id: newsitems
     type: grid
     sort: date desc
@@ -29,20 +44,11 @@ listing:
 :::
 :::::
 
-
 ::: {#boldcentred}
 World leading software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
 :::
 
-::: {#threepanels}
-:::
-
-::: {#boldcentred}
-Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-:::
-
-
-<img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px; width: 100%">
+<img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px; width: 100%"/>
 
 ::: {style="text-align: center;"}
 <a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50; /* Green */
@@ -58,8 +64,34 @@ Used to study whales and dolphins around the world and to mitigate against the p
 :::
 
 ::: {#boldtext}
-Latest News
+Comprehensive suite of features for automtatic processing, visualisation and management of large acoustic datasets without the need for code
 :::
 
-::: {#newsitems}
+::: {#featurepanels .bluepanels}
+:::
+
+<p>
+
+</p>
+
+<div>
+
+Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+
+</div>
+
+::: {#casestudypanels .graypanels}
+:::
+
+<p>
+
+</p>
+
+<div>
+
+Latest News
+
+</div>
+
+::: {#newsitems .bluepanels}
 :::

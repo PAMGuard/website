@@ -12,6 +12,91 @@ body {
   color:  rgb(45, 96, 128);
 }
 
+
+/*table, th, td { 
+  border: 1px solid; 
+  padding-left: 10px;
+  padding-right: 10px;
+}*/ 
+
+
+:root {
+  /*--primary-color: rgb(45, 96, 128)*/;
+  --primary-color:  rgb(43,78, 128);
+}
+
+* {box-sizing:border-box}
+
+.theme-text {
+  color:   var(--primary-color);
+}
+
+/* General Listing Styles */
+.quarto-listing {
+  padding: 10px;
+}
+
+.listing-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Other style properties as needed */
+}
+
+.listing-author{
+      color: rgb(200,200,200);
+}
+
+.listing-date{
+      color: rgb(200,200,200);
+}
+
+
+.quarto-listing-item {
+  margin-bottom: 10px;
+}
+
+
+/* Grid Listing Styles */
+.quarto-grid-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px;
+}
+
+.quarto-grid-item  {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  /*font-weight: bold;*/
+}
+
+/* Custom style for blue panels */
+.bluepanels .quarto-grid-item  {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Custom style for gray panels */
+.graypanels .quarto-grid-item  {
+  background-color: rgb(241,243,245);
+  display: flex; /* Use flexbox for easier layout */
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: center; /* Vertically center items (optional) */
+}
+
+.graypanels .listing-title { /* Target the title specifically */
+  margin-left: 25px;
+}
+
+.graypanels .quarto-grid-item img {
+  margin-right: 5px;
+  max-width: 300px; /* Set the maximum image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+
+
 /* Style to round the corners of images */
 #roundimage {
   border-radius: 10px;  
@@ -30,30 +115,6 @@ body {
   font-weight: bold; 
   font-size: 18px;
   text-align: center;
-}
-
-/*table, th, td { 
-  border: 1px solid; 
-  padding-left: 10px;
-  padding-right: 10px;
-}*/ 
-
-/* Style the grid container */
-#threepanels {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  grid-gap: 20px; /* Gap between grid items */
-}
-
-/* Style the grid items */
-#threepanels.grid-item {
-  border: 10px solid #ccc;
-  padding: 5px;
-  background-color: rgb(45, 96, 128);
-}
-
-.panel-tabset {
-  background-color: rgb(235,235,235);
 }
 
 /* Slideshow container 
