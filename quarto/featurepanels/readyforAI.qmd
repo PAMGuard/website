@@ -5,7 +5,7 @@ dispord: 1
 description: "PAMGuard runs AI based classifiers natively allowing users to test and use the latest automated classifiers as soon as they become available ."
 ---
 
-::::: grid
+::: grid
 ::: g-col-6
 ![Right whale model running on raw sound data](images/deep_learning_example.png){width="100%"}
 :::
@@ -13,7 +13,7 @@ description: "PAMGuard runs AI based classifiers natively allowing users to test
 ::: g-col-6
 ![Detected bat calls classified to species by a deep learning model](images/deep_leanring_bat_example1.png){width="100%"}
 :::
-:::::
+:::
 
 PAMGuard has a powerful deep learning module which can run deep learning based models on your acoustic data without the need for code. Users can load a model from a file, URL or one of the default example models and run on raw sound data or classify individual detection depending on the use case.
 

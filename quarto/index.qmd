@@ -35,14 +35,14 @@ listing:
 #    filter-ui: true
 ---
 
-::::: columns
+::: columns
 ::: {.column width="10%"}
 :::
 
 ::: {.column width="80%"}
 ![](./images/PAMGuard_icon_fullname.png)
 :::
-:::::
+:::
 
 ::: {#boldcentred}
 World leading software for the Detection, Classification, and Localisation of marine mammal and other animal sounds

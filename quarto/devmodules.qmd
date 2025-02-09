@@ -39,20 +39,18 @@ All components of a PAMGuard module are optional except for the main PamControll
 
 Although the default constructor for PamControlledUnit is
 
-
 ``` java
 public PamControlledUnit(String unitType, String unitName)
 ```
 
 you must provide a constructor in your sub class that takes just the unitName, e.g.
 
-
 ``` java
 public class MyDetectorController extends PamControlledUnit { 
   public MyDetectorController(String unitName) { 
     super("My detector", unitName); 
     etc... 
-``` 
+```
 
 Pamguard will search for and use this single parameter constructor when creating modules and adding them to the Pamguard data model.
 
