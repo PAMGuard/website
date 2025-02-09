@@ -32,8 +32,7 @@ website:
             href: license.qmd
           - text: Funding
             href: funding.qmd
-          - text: Contact and Support
-            href: contact.qmd
+
           - text: Publications
             href: ./publications.qmd
           - text: Meet the team
@@ -48,6 +47,8 @@ website:
             href: pluginmodules.qmd
           - text: Export Matlab and R
             href: matlabandr.qmd
+          - text: Contact and Support
+            href: contact.qmd
           - text: Online help pages
             href: ./olhelp/index.html
       - text: Download

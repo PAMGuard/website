@@ -1,8 +1,8 @@
 ---
 title: " PAMGuard and Tidal Turbines"
 image: images/tidal_turbine.png
-listing-description: "<div>In 2017 a tidal trubine was equiped with a 12 channel 500KHz loclaising array to track porpoise movements. PAMGuard was used in real time to;<ul>
-<li>Acquire and decompress data sent from from the trubine to shore via a fibre optic cable</li>
+listing-description: "<div>In 2017 a tidal trubine was equiped with a 12 channel 500KHz localising array to track porpoise movements. PAMGuard was used in real time to;<ul>
+<li>Acquire and decompress data sent from the turbine to shore via a fibre optic cable</li>
 <li>Detect possible porpoise echolocation clicks</li>
 <li>Measure octave noise bands across the frequency spectrum</li>
 <li>Detect dolphin whistles</li>
@@ -12,7 +12,7 @@ listing-description: "<div>In 2017 a tidal trubine was equiped with a 12 channel
 
 ## Introduction
 
-In 2017, an experimental array of four tidal turbines was [deployed in northern Scotland by MeyGen](https://saerenewables.com/tidal-stream/meygen/). Tidal turbines have the potential to provide clean and  predictable renewable energy, and could form an important part of our baseline energy requirements in the future. However, they were a relatively new technology, and very little was known about their potential effects on the environment.
+In 2017, an experimental array of four tidal turbines was [deployed in northern Scotland by MeyGen](https://saerenewables.com/tidal-stream/meygen/). Tidal turbines have the potential to provide clean and predictable renewable energy, and could form an important part of our baseline energy requirements in the future. However, they were a relatively new technology, and very little was known about their potential effects on the environment.
 
 There is concern that marine mammals might be injured by the turbine blades [(Wilson et al, 2007)](https://tethys.pnnl.gov/sites/default/files/publications/Wilson-et-al-2007.pdf) and so an experiment was devised to track the 3D underwater movements of dolphins and porpoises around one of the turbines. A 12-channel hydrophone array was mounted on the turbine foundation to allow us to acoustically localize and track vocalizing animals. This involved installing a [compact cRIO computer from National Instruments](http://www.ni.com/en/shop/compactrio) directly on the turbine, which digitized the acoustic data from the hydrophones, compressed it, and then transmitted the data to shore via fiber optic cable.
 
@@ -28,7 +28,7 @@ There is concern that marine mammals might be injured by the turbine blades [(Wi
 
 ## PAMGuard
 
-PAMGuard, running on a standard consumer desktop PC back on shore,  processed the 12 channels of data in real-time, detecting potential echolocation clicks, running soundscape metrics such as octave noise bands and a long-term spectral average, detecting potential tonal sounds, and decimating the raw sound data, saving 48 kHz files. This meant that, although we did not save the raw high-frequency files, we had  sound files for the most complex part of the soundscape (the lower frequencies) and detected high frequency transient sounds at a high false-positive rate, along with soundscape metrics for the higher frequencies. In this way, we were able to retain the interesting parts of the data but reduce our dataset to about one-tenth of what it would have been if we had saved the raw data.
+PAMGuard, running on a standard consumer desktop PC back on shore, processed the 12 channels of data in real-time, detecting potential echolocation clicks, running soundscape metrics such as octave noise bands and a long-term spectral average, detecting potential tonal sounds, and decimating the raw sound data, saving 48 kHz files. This meant that, although we did not save the raw high-frequency files, we had sound files for the most complex part of the soundscape (the lower frequencies) and detected high frequency transient sounds at a high false-positive rate, along with soundscape metrics for the higher frequencies. In this way, we were able to retain the interesting parts of the data but reduce our dataset to about one-tenth of what it would have been if we had saved the raw data.
 
 ![A diagram of the acoustic workflow used in the project. PAMGuard used automatic detectors and soundscape analysis to process data in real-time then saved the result to it's data management system. This significantly reduced data volumes compared to saving raw high frequency wav files.](images/tidal_trubine_workflow.png){width="100%"}
 

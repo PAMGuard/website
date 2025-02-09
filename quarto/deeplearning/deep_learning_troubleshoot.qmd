@@ -6,82 +6,82 @@ title: "Troubleshooting the deep learning module"
 
 ### Introduction
 
-The deep learning module requires specific libraries to be downloaded which are dependent on your the type of computer you are using and deep learning models must be PAMGuard compatible.
+The deep learning module requires specific libraries to be downloaded, which are dependent on the type of computer you are using. Deep learning models must also be PAMGuard compatible.
 
 ### Deep learning engine failure
 
-You may receive a deep learning engine failure message. This is usually because the required libraries have not downloaded correctly - an more detailed explanation of how these libraries are used is [here](http://djl.ai/docs/development/cache_management.html). When you first use the module PAMGuard attempts to download the relevant libraries, and if it cannot, you will receive the *Deep learning engine failure* message. Often downloads are prevented by security settings or lack of internet connection. One way to get around this is to manually download the libraries and place them in the correct folder.
+You may receive a "deep learning engine failure" message. This is usually because the required libraries have not downloaded correctly. A more detailed explanation of how these libraries are used is available [here](http://djl.ai/docs/development/cache_management.html). When you first use the module, PAMGuard attempts to download the relevant libraries, and if it cannot, you will receive the "Deep learning engine failure" message. Often, downloads are prevented by security settings or a lack of internet connection. One way to circumvent this is to manually download the libraries and place them in the correct folder.
 
-Note: *we do not recommend this* but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
+Note: *We do not recommend this*, but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
 
-#### For Windows
+#### For Windows (x86 only)
 
-Download this zip and place the .ai.djl folder in your user folder e.g. C:\\Users\\me
+Download [this zip]() and place the hidden `.djl.ai` folder in your user folder, e.g., `C:\Users\me`.
 
-#### For MacOS
+#### For MacOS (M series only)
 
-Download this zip and place the .ai.djl folder in your user folder e.g. /Users/me/
+Download [this zip]() and place the hidden `.djl.ai` folder in your user folder, e.g., `/Users/me/`.
 
 ### Model metadata failure
 
-This indicates that the model metadata has failed. Each model contains a .v file which contains a JSON formatted metadata on how to load the model - i.e. what the model needs to run. more indformation on how all this works can be found in the help files. This error usually indicates the JSON data is incorrect or the .pgdl not present at all.
+This indicates that the model metadata has failed. Each model contains a `.pgtf` file, which contains JSON-formatted metadata on how to load the model—i.e., what the model needs to run. More information on how this works can be found in the help files. This error usually indicates that the JSON data is incorrect or the `.pgdl` file is not present at all.
 
-If you have created your own model file for PAMGuard by zipping a .pgtf file with a deep learning model this most likely user error. Check your JSON using a JSON validator, check your following the JSON schema and compare against another .pgtf file, for example - here's the JSON for a right whale model by Shiu et al, 2019
+If you have created your own model file for PAMGuard by zipping a `.pgtf` file with a deep learning model, this is most likely a user error. Check your JSON using a [JSON validator](https://jsonlint.com/), ensure you are following the [JSON schema](https://github.com/macster110/jpam/blob/master/jpam/jdl4pam/src/main/java/org/jamdev/jdl4pam/transforms/dl_transform_schema.json), and compare it against another `.pgtf` file. For example, here is the JSON for a right whale model by Shiu et al., 2019:
 
 ``` json
 {
- "framework_info": {"framework": "Bespoke"},
- "model_info": {
-  "output_shape": [
-   -1,
-   2
+  "framework_info": {"framework": "Bespoke"},
+  "model_info": {
+    "output_shape": [
+      -1,
+      2
+    ],
+    "input_shape": [
+      -1,
+      40,
+      40,
+      1
+    ]
+  },
+  "class_info": {
+    "name_class": [
+      "Noise",
+      "Right Whale"
+    ],
+    "num_class": 2
+  },
+  "transforms": [
+    {
+      "name": "load_audio",
+      "params": {"sr": 2000}
+    },
+    {
+      "name": "spectrogram",
+      "params": {
+        "fft": 256,
+        "hop": 100
+      }
+    },
+    {
+      "name": "freq_compression",
+      "params": {
+        "bins": 40,
+        "fmin": 47,
+        "fmax": 357
+      }
+    },
+    {
+      "name": "norm_row_sum",
+      "params": {}
+    }
   ],
-  "input_shape": [
-   -1,
-   40,
-   40,
-   1
-  ]
- },
- "class_info": {
-  "name_class": [
-   "Noise",
-   "Right Whale"
-  ],
-  "num_class": 2
- },
- "transforms": [
-  {
-   "name": "load_audio",
-   "params": {"sr": 2000}
-  },
-  {
-   "name": "spectrogram",
-   "params": {
-    "fft": 256,
-    "hop": 100
-   }
-  },
-  {
-   "name": "freq_compression",
-   "params": {
-    "bins": 40,
-    "fmin": 47,
-    "fmax": 357
-   }
-  },
-  {
-   "name": "norm_row_sum",
-   "params": {}
-  }
- ],
- "description": "Metadata for acoustic deep learning",
- "version_info": {"version": 1},
- "seg_size": {"size_ms": 2000}
+  "description": "Metadata for acoustic deep learning",
+  "version_info": {"version": 1},
+  "seg_size": {"size_ms": 2000}
 }
 ```
 
-If you have used a Koogu, Ketos or AnimalSpot model or downloaded a model file from the PAMGuard website then this is likely a bug in PAMGuard or support issue. Please [contact us](.contact.html) with a bug report.
+If you have used a [Koogu](https://shyamblast.github.io/Koogu/en/stable/), [Ketos](https://docs.meridian.cs.dal.ca/ketos/) or [AnimalSpot](https://github.com/ChristianBergler/ANIMAL-SPOT) model or downloaded a model file from the PAMGuard website then this is likely a bug in PAMGuard or support issue. Please [contact us](./contact.html) with a bug report.
 
 ### Model load failure
 

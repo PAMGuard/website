@@ -8,7 +8,7 @@ To contact the PAMGuard team, please email [pamguard\@st-andrews.ac.uk](mailto:p
 
 There are several ways that you can get help with PAMGuard.
 
-The [Online Help](olhelp/index.html) is available on this site and is also all built into PAMGuard so it's accessible even if you're at sea and don't have Internet.
+The [Online Help](olhelp/index.html) is available on this site and is also all built into PAMGuard so it's accessible even if you're at sea and don't have Internet. If you are having issues with the deep learning module, check out this additional [troubleshooting section](/deeplearning/deep_learning_troubleshoot.html).
 
 The [User Tutorials](tutorials.qmd) are also an excellent way to familiarise yourself with PAMGuard. We're hoping to expand these in the coming year.
 
