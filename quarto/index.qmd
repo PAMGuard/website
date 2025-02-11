@@ -70,13 +70,14 @@ Comprehensive suite of features for automtatic processing, visualisation and man
 ::: {#featurepanels .bluepanels}
 :::
 
+<p>
 
+</p>
 
 <div>
 
-
 ::: {#boldtext}
-PAMGuard is used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
 :::
 
 </div>
@@ -92,7 +93,7 @@ PAMGuard is used to study whales and dolphins around the world and to mitigate a
 
 ::: {#boldtext}
 Latest News
-::: 
+:::
 
 </div>
 
