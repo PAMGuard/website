@@ -89,7 +89,7 @@ website:
           - text: Source Code
             href: https://github.com/PAMGuard/PAMGuard
             target: pggitpage
-          - text: Report and Issue
+          - text: Report an Issue
             href: https://github.com/PAMGuard/PAMGuard/issues
             target: pggitpage
       - icon: facebook
