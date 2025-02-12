@@ -18,9 +18,9 @@ Gillespie, D., & Macaulay, J. (2024). PAMGuard (V2.02.15). Zenodo. https://doi.o
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_15.exe</a>
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.dmg" class="btn btn-primary btn-sm" role="button">Mac Installer: Setup-Pamguard_2_02_15.dmg</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.15/Setup-Pamguard_2_02_15.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard_2_02_15.dmg</a>
 
-Note that the current Mac version requires \[Amazon Coretto 21\](<https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html>) or equivalent to be installed. This will be no longer be necessary in V2.02.16.
+Note that the current the macOS version requires \[Amazon Coretto 21\](<https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html>) or equivalent to be installed. This will be no longer be necessary in V2.02.16.
 
 ### New Features
 

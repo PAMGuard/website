@@ -1,10 +1,10 @@
 ---
-title: "Matlab and R"
+title: "MATLAB and R"
 ---
 
 Many users find that they can only go so far when processing data with PAMGuard and there are often important steps that people need to take to go from PAMGuard to a published paper.
 
-We therefore provide export functions and software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">Matlab</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
+We therefore provide export functions and software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
 
 This allows you to conduct bespoke analysis of PAMGuard output in a more user friendly programming environment.
 
