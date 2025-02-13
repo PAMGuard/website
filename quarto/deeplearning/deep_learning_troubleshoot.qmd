@@ -12,15 +12,18 @@ The deep learning module requires specific libraries to be downloaded, which are
 
 You may receive a "deep learning engine failure" message. This is usually because the required libraries have not downloaded correctly. A more detailed explanation of how these libraries are used is available [here](http://djl.ai/docs/development/cache_management.html). When you first use the module, PAMGuard attempts to download the relevant libraries, and if it cannot, you will receive the "Deep learning engine failure" message. Often, downloads are prevented by security settings or a lack of internet connection. One way to circumvent this is to manually download the libraries and place them in the correct folder.
 
-Note: *We do not recommend this*, but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
+Notes: 
+
+- *We do not recommend this*, but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
+- You must enable your File browser to show _hidden files_, otherwise the folder will be invisible when you unzip.
 
 #### For Windows (x86 only)
 
-Download [this zip]() and place the hidden `.djl.ai` folder in your user folder, e.g., `C:\Users\me`.
+Download [this zip](https://www.dropbox.com/scl/fi/u5j6gufzqa5pd31z323xo/deep_learning_files_windows.djl.ai.zip?rlkey=thxalju9cfmo7ehhosbthqbpm&dl=1) and place the hidden `.djl.ai` folder in your user folder, e.g., `C:\Users\me`.
 
 #### For MacOS (M series only)
 
-Download [this zip]() and place the hidden `.djl.ai` folder in your user folder, e.g., `/Users/me/`.
+Download [this zip](https://www.dropbox.com/scl/fi/ri1tb4xrxb385ve1hj0s7/deeplearning-files.djl.ai.zip?rlkey=hvprh431xi0e5t1u9usc5vg86&st=5qy2cmwd&dl=1) and place the hidden `.djl.ai` folder in your user folder, e.g., `/Users/me/`.
 
 ### Model metadata failure
 
