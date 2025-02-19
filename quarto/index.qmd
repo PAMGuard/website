@@ -35,14 +35,14 @@ listing:
 #    filter-ui: true
 ---
 
-::: columns
+::::: columns
 ::: {.column width="10%"}
 :::
 
 ::: {.column width="80%"}
 ![](./images/PAMGuard_icon_fullname.png)
 :::
-:::
+:::::
 
 ::: {#boldcentred}
 World leading software for the Detection, Classification, and Localisation of marine mammal and other animal sounds
@@ -61,10 +61,21 @@ World leading software for the Detection, Classification, and Localisation of ma
         font-size: 18px;
         font-weight: bold;
         border-radius: 12px;">Download PAMGuard</a>
+<a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
+        style="background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 12px;" target="donate">Donate to PAMGuard</a>
 :::
 
 ::: {#boldtext}
-Comprehensive suite of features for automtatic processing, visualisation and management of large acoustic datasets without the need for code
+Comprehensive suite of features for automtatic processing, visualisation and management of large acoustic datasets without the need to code
 :::
 
 ::: {#featurepanels .bluepanels}
@@ -76,9 +87,11 @@ Comprehensive suite of features for automtatic processing, visualisation and man
 
 <div>
 
-::: {#boldtext}
+<div>
+
 Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-:::
+
+</div>
 
 </div>
 
@@ -91,9 +104,11 @@ Used to study whales and dolphins around the world and to mitigate against the p
 
 <div>
 
-::: {#boldtext}
+<div>
+
 Latest News
-:::
+
+</div>
 
 </div>
 

@@ -14,6 +14,18 @@ In 2016 we set up a system of [voluntary contributions](voluntary.qmd), whereby 
 
 We are now setting up a much simpler system whereby companies can easily [donate to PAMGuard](https://www.st-andrews.ac.uk/development/pamguard/) through the Universities Science and Medicine donation form (please ensure you select PAMGuard from the list of funding designations!).
 
+<center><a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
+        style="background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 12px;" target="donate">Donate to PAMGuard</a></center>
+
 ### How we'll spend the money
 
 Subject to having enough funds to employ a new programmer / assistant, important areas we want to work on in the coming 12 months are
