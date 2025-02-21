@@ -71,11 +71,11 @@ World leading software for the Detection, Classification, and Localisation of ma
         display: inline-block;
         font-size: 18px;
         font-weight: bold;
-        border-radius: 12px;" target="donate">Donate to PAMGuard</a>
+        border-radius: 12px;" target="donate">Contribute to PAMGuard</a>
 :::
 
 ::: {#boldtext}
-Comprehensive suite of features for automtatic processing, visualisation and management of large acoustic datasets without the need to code
+Comprehensive suite of features for automatic processing, visualisation and management of large acoustic datasets without the need to code
 :::
 
 ::: {#featurepanels .bluepanels}
