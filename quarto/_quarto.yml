@@ -63,6 +63,8 @@ website:
             text: Configuration Files
           - href: ./rocca/rocca.qmd
             text: Rocca Classifiers
+          - href: whistleclassifier.qmd
+            text: Whistle Classifiers
       - text: Developers
         menu:
           - href: sourcecode.qmd

@@ -32,7 +32,9 @@ https://github.com/PAMGuard/PAMGuard/
 ::: pgdownload
 https://github.com/PAMGuardLearning/GettingStarted/
 :::
+
 <h4>Dataset</h4>
+
 ::: pgdownload
 https://doi.org/10.5281/zenodo.13851130
 :::
@@ -42,7 +44,9 @@ https://doi.org/10.5281/zenodo.13851130
 ::: pgdownload
 hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
 :::
+
 <h4>Dataset</h4>
+
 ::: pgdownload
 https://doi.org/10.5281/zenodo.13880212
 :::
@@ -118,6 +122,10 @@ https://github.com/PAMGuard/PluginDemoDetector/
 <br>
 
 <h2>Classifier Models</h2>
+
+::: pgdownload
+https://github.com/douggillespie/whistleclassification/
+:::
 
 ::: pgdownload
 https://github.com/PAMGuard/deeplearningmodels/

@@ -2,6 +2,8 @@
 title: "Introduction to static monitoring"
 dispord: 2
 description: "This tutorial is a step by step guide for using PAMGuard to process long term recordings from a static autonomous recorder."
+pres: "None"
+shortdesc: "More advanced introduction using SoundTrap data"
 image: ./staticmonfiles/datamap_screenshot.png
 ---
 
@@ -25,6 +27,10 @@ Users will be guided step by step in how to create a workflow in PAMGuard which 
 Once users have set up their workflow the dataset contains a subset of sound files to process as an example. The dataset also contains the entire processed dataset so users can open PAMGuard viewer mode and view weeks of data as if they had processed the entire dataset. The tutorial demonstrates how to navigate through and visualise processed data, run additional species classifiers and export data to MATLAB, R and wav files.
 
 By the end of the tutorial uses will be familiar with the basic capabilities of PAMGuard and how to construct an acoustic workflow and use the processed data. This provides a foundation for using more complex automated analysis methods such as deep learning classifications, click train detector and localisation methods.
+
+### Prerequisites
+
+This tutorial is suitable for beginners with PAMGuard.
 
 ### Downloads
 

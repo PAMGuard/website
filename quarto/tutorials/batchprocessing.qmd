@@ -1,0 +1,38 @@
+---
+title: "Batch Processing"
+dispord: 3
+description: "This tutorial will teach you how to process multiple datasets using the same PAMGuard configuration using the PAMGuard batch processing plugin."
+shortdesc: "Batch processing of multiple datasets"
+pres: "Introduction to Static Monitoring"
+image: ./batchfiles/normaldiagram.png
+---
+
+The PAMGuard batch processing module allows you to run the same PAMGuard configuration on multiple sets of data. This is particularly useful if you want to process data from deployments of multiple autonomous recorders in exactly the same way. It can also be used to reprocess data from multiple old cruises with a new detector, for instance with one of the new Deep Learning detectors / classifiers that have recently been added to PAMGuard
+
+![Schematic of the batch processor configuration](./batchfiles/normaldiagram.png)
+
+
+### Learning Outcomes
+
+You will learn how to install, set-up, and run the batch processing module to process raw data and to perform offline tasks such as click-classification. 
+
+1.  Learn what we mean by batch processing
+2.  Install the Batch Processor in PAMGuard
+3.  Set up a PAMGuard configuration to run batch processes
+4.  Run a process of a multiple sets of raw data files
+5.  Run additional offline tasks on the generated PAMGuard output
+
+### Prerequisites
+
+This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already 
+familiar with PAMGuard, you should first complete the tutorial 
+[Introduction to PAMGuard](staticmonitoring.qmd). 
+
+### Downloads
+
+The Batch Processing plugin is available at [http://localhost:3295/plugins/plugins.html](http://localhost:3295/plugins/plugins.html).
+
+Detailed tutorial documentation is in [Batch_Processing_V2.0.pdf](https://github.com/PAMGuardLearning/batchprocessing/releases/download/V2.0/Batch_Processing_V2.0.pdf)
+
+Data to use with the tutorial are available on Zenodo at [https://zenodo.org/uploads/14989668](https://zenodo.org/uploads/14989668).
+

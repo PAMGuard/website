@@ -2,6 +2,8 @@
 title: "Getting Started with PAMGuard"
 dispord: 1
 description: "This tutorial will introduce some basic PAMGuard concepts, showing you how to use a range of PAMGuard detectors for clicks, whistle, and baleen whale sounds and to use PAMGuard displays."
+shortdesc: "Simple introducion to PAMGuard"
+pres: "None"
 image: ./getstartedfiles/pgclickdet1.png
 ---
 
@@ -26,6 +28,10 @@ The main learning outcomes are:
 These learning outcomes can be achieved through a series of exercises that now follow.
 
 The exercises can be seen as a guide, so you’re encouraged to experiment with PAMGuard as you work through each one.
+
+### Prerequisites
+
+This tutorial is suitable for beginners with PAMGuard.
 
 ### Downloads
 

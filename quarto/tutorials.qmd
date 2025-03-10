@@ -1,21 +1,38 @@
 ---
 title: "PAMGuard Tutorials"
 listing: 
-  type: grid
-  id: tutorial_listing
-  fields: [image, title, description]
-  sort: dispord
-  contents: 
-    - "tutorials/*.qmd"
+  - id: tutorial_listing
+    type: grid
+    field-display-names:
+      pres: "Prerequisites"
+    fields: [image, title, description]
+    sort: dispord
+    contents: 
+      - "tutorials/*.qmd"
+      
+#  - id: as_table
+#    type: table
+#    field-display-names:
+#      pres: "Prerequisites"
+#      shortdesc: "Description"
+#      Title: "Tutorial"
+#    fields: [title, pres, shortdesc, image]
+#    image-height: 80px
+#    sort: dispord
+#    contents: 
+#      - "tutorials/*.qmd"
 ---
 
 PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard.
+If you're new to PAMGuard, you should start with one of the introductory turotials, 
+[Getting Started](./tutorials/getstarted.qmd), 
+or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the 
+more advanced ones. 
 
-The tutorials all use freely available pre-recorded sound files and will run on any [compatible
-computer](systemreq.qmd) without the need for specialist equipment. 
+
+The tutorials all use freely available pre-recorded sound files and will run on any [compatible computer](systemreq.qmd) without the need for specialist equipment. 
 
 ::: {#tutorial_listing}
 :::
 
-Subject to [funding](funding.qmd), we're currently trying to expand these to cover more areas
-of what PAMGuard can do. 
+Subject to [funding](funding.qmd), we're currently trying to expand these to cover more areas of what PAMGuard can do.

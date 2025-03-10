@@ -1,7 +1,9 @@
 ---
 title: "PAMGuard Tethys Interface"
-dispord: 3
+dispord: 4
 description: "This tutorial will introduce the PAMGaurd-Tethys interface, show you how to export data from PAMGuard to Tethys, and view the data with the Tethys web client and data explorer"
+shortdesc: "PAMGuard interface to the Tethys database"
+pres: "Introduction to Static Monitoring"
 image: ./tethysfiles/Tethys.png
 ---
 
@@ -22,6 +24,12 @@ You will learn how to export data from PAMGuard to a Tethys database and to view
     -   Deployment data
     -   Detections
 4.  View the exported data both from within PAMGuard and using the Tethys Web client
+
+### Prerequisites
+
+This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already 
+familiar with PAMGuard, you should first complete the tutorial 
+[Introduction to PAMGuard](staticmonitoring.qmd). 
 
 ### Downloads
 

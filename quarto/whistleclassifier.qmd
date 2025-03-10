@@ -1,0 +1,57 @@
+---
+title: "Whistle Classifier Configurations"
+---
+
+The PAMGuard [Whistle Classifier](../olhelp/classifiers/whistleClassifierHelp/docs/whistleClassifier_Overview.html) described in [Gillespie et. al., 2013](https://doi.org/10.1121/1.4816555) examines the contour shapes of whistle detections from the PAMGuard [Whistle and Moan Detector](../olhelp/detectors/whistleMoanHelp/docs/whistleMoan_Overview.html) and classifies them to species.
+
+Because individual whistles generally don't contain sufficient information for accurate classification, the classifier generates statistics over multiple whistle detections before reporting.
+
+Users can train the classifier with recordings of their own, which is recommended, since many species are known to have regional variation in their repertoire. Since this is not always possible, below we provide links to pre-trained classifiers which can be imported into PAMGuard.
+
+If you have a trained whistle classifier for PAMGuard which you would like to share, please get in touch at [info@pamguard.org](mailto: support@pamguard.org).
+
+## Classifier models from Gillespie et. al., 2013
+
+These four models are the ones described in our [2013 paper](https://doi.org/10.1121/1.4816555) describing the classifier. The classifiers have been rebuilt to be compatible with the latest version of PAMGuard, but use the same training data as was used for the 2013 paper. Note that values in the confusion matrices will differ slightly from the 2013 versions due to different random data selections in the training process. However, since the final build of each classifier uses all training data, the actual classifier models are identical to the previously published versions.
+
+When training these classifiers, species recordings were collected from a number of locations, including the Azores, Gulf of Mexico, and the Mediterranean Sea. When making species groups for each geographic region, all available recordings of species from that region were used, assuming no regional differences between locations - something we now know to be incorrect. These classifiers may therefore not perform as well as the published values in Gillespie, et. al. 2013.
+
+
+| Region | File Name | Species | 
+| ----------- | ------------ | ------------------ |
+| Polar Atlantic | [PolarAtlantic.wcsd](https://github.com/douggillespie/whitleclassification/releases/download/V1.0/PolarAtlantic.wcsd) | BEL, LPLT, WBD, WSD |
+| Atlantic Frontier | [AtlanticFrontier.wcsd](https://github.com/douggillespie/whitleclassification/releases/download/V1.0/AtlanticFrontier.wcsd) | BD, CD, FKW, KW, LPLT, RD, WBD, WSD |
+| Gulf of Mexico | [GulfOfMexico.wcsd](https://github.com/douggillespie/whitleclassification/releases/download/V1.0/GulfOfMexico.wcsd) | BD, FKW, FRA, KW, LPLT, PKW, RD, SPIN, SPLT, SPT, STR  |
+| Tropical Atlantic | [TropicalAtlantic.wcsd](https://github.com/douggillespie/whitleclassification/releases/download/V1.0/TropicalAtlantic.wcsd) | BD, CD, FKW, KW, LPLT, PKW, RD, SPIN, SPLT, SPT, STR |
+
+| Species Code | Species Name | Scientific Name  |
+| ----------- | ------------ | ------------ |
+| BEL |  Beluga Whale   |   *Delphinapterus leucas* |
+| BD |  Bottlenose Dolphin   |  *Tursiops Truncatus* |
+| CD |  Common Dolphin   |    *Delphis Delphis* |
+| FKW | False Killer Whale    |   *Pseudorca crassidens* |
+| FRA | Fraser's Dolphin    |  *Lagenodelphis hosei* | 
+| KW |  Killer Whale   |    *Orcinus orca* |
+| LPLT | Long Finned Pilot Whale  |  *Globicephala melas* |
+| PKW | Pigmy killer whale   |   *Feresa attenuata* |
+| RD  | Risso's Dolphin    |   *Grampus griseus* |
+| SPIN |  Spinner Dolphin   |  *Stenella longirostris* |
+| SPLT |  Short Finned Pilot Whale   | *Globicephala macrorhynchus* |
+| SPT | Spotted Dolphin |  *Stenella frontalis* |
+| STR |   Striped  Dolphin  | *Stenella coeruleoalba* |
+| WBD |  White-beaked Dolphin   |  *Lagenorhynchus albirostris* | 
+| WSD | White-sided Dolphin    |   *Lagenorhynchus acutus* |
+
+
+## Related publications
+
+Douglas Gillespie, Marjolaine Caillat, Jonathan Gordon, Paul White; Automatic detection and classification of odontocete whistles. 
+J. Acoust. Soc. Am. 1 September 2013; 134 (3): 2427–2437. <a href="https://doi.org/10.1121/1.4816555">DOI 10.1121/1.4816555</a> </p>
+
+Marjolaine Caillat, Len Thomas, Douglas Gillespie; The effects of acoustic misclassification on cetacean species abundance estimation. J. Acoust. Soc. Am. 1 September 2013; 134 (3): 2469–2476. [DOI doi.org/10.1121/1.4816569](https://doi.org/10.1121/1.4816569)
+
+Florence Erbs, Simon H. Elwen, Tess Gridley; Automatic classification of whistles from coastal dolphins of the southern African subregion. J. Acoust. Soc. Am. 1 April 2017; 141 (4): 2489–2500. [DOI doi.org/10.1121/1.4978000](https://doi.org/10.1121/1.4978000)
+
+
+
+
