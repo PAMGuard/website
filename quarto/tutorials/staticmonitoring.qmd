@@ -13,7 +13,9 @@ image: ./staticmonfiles/datamap_screenshot.png
 
 ### Introduction
 
-This tutorial is a step by step guide for using PAMGuard to process long term recordings from a static autonomous recorder. The tutorial uses example data from a SoundTrap device deployed off the Scottish West Coast with plenty of dolphin and porpoise encounters. Species
+This tutorial is a step by step guide for using PAMGuard to process long term recordings from a static autonomous recorder. The tutorial uses example data from a SoundTrap device deployed off the Scottish West Coast with plenty of dolphin and porpoise encounters.
+
+### Species
 
 1.  Dolphins (multiple species)
 2.  NBHF (harbour porpoises)
