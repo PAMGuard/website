@@ -1,0 +1,55 @@
+---
+title: "Deep Learning in PAMGuard"
+format: html
+dispord: 4
+description: "Learn how to import deep learning models into PAMGuard with examples for Right whales, bats and gibbons"
+image: ./deeplearningfiles/right_whale_deep_learning1.png
+---
+
+## Introduction
+
+This tutorial is a step by step guide to on how to run deep learning models in PAMGuard. The tutorial takes users through how to set up a configuration, process data and classify to species using three examples, North Atlantic Right whales, bats in Denmark and gibbons in Borneo.
+
+::::: grid
+::: g-col-6
+![Right whale model running on raw sound data.](deeplearningfiles/right_whale_deep_learning1.png){width="100%"}
+:::
+
+::: g-col-6
+![Bat calls detected using the Click Detector module and then classified to species by a deep learning model.](deeplearningfiles/deep_leanring_bat_example1.png){width="100%"}
+:::
+:::::
+
+## Species
+
+-   North Atlantic Right whale (*Eubalaena glacialis*)
+-   Danish bat species (*Pipistrellus pygmaeus, Nyctalus noctula, Eptesicus serotinus, Myotis nattereri and Myotis daubentonii*)
+-   Northern white-cheeked gibbon (*Nomascus leucogenys*)
+
+### What you will learn
+
+#### Section 1 - Right whales
+
+In section 1, you will be shown how to process raw low frequency sound files to detect North Atlantic Right whale upsweeps using a deep learning model developed by [Shiu et al, (2020)](https://doi.org/10.1038/s41598-020-57549-y). This model was trained on a widely available dataset used to test automated classifiers for right whales and was a significant improvement on previous methods. The end of the tutorial compares the deep learning model against a more heuristic Right whale classifier built into PAMGuard. Users will also learn how to export deep learning detections to MATLAB, R and wav files.
+
+#### Section 2 - Bats
+
+Section 2 deals with much higher frequency sound files (384kHz) recorded by an [AudioMoth](https://www.openacousticdevices.info/audiomoth) near woodland in Denmark. The sound files contain a large number of bat calls from different species, primarily *Myotis daubentonii* and *Pipistrellus pygmaeus* An AnimalSpot model from [Brinkløv et al, (2023)](https://doi.org/10.1111/2041-210X.14131) has been supplied which classifies bat calls based on a segment of sound data around one thousand samples in length. However, it takes around 10-100ms to run a single segment through the classification algorithm and there are at least 384 non-overlapping chunks in one second of data. Some basic maths and that shows that this classifier will run well below real time. To address this, users will use PAMGuard to run a very simple bat detector and then run the deep learning model on the detected data rather than all the raw data.
+
+#### Section 3 - Gibbons
+
+In section 3 you will learn how to integrate the deep learning into a workflows in PAMGuard. We use some example of Gibbon calls detected by a 4 channel recorder in the Borneon rain forest. The 4 channel recorder can be determine a bearing to call - the output of the deep learning module is connected with the bearing module so that any classified call is localized. Although not part of the tutorial the end goal of this project was to use the bearings to monitor the abundance of gibbons in the forest.
+
+## Downloads
+
+The tutorial text is in [Deep Learning in PAMGuard.pdf]() You will also need to download the accompanying datasets from Zenodo.
+
+-   [Right whale dataset]()
+-   [Bat dataset]()
+-   [Gibbon dataset]()
+
+## References
+
+Shiu, Y. et al. (2020) ‘Deep neural networks for automated detection of marine mammal species’, Scientific Reports, 10(1), p. 607. Available at: https://doi.org/10.1038/s41598-020-57549-y.
+
+Brinkløv, S.M.M. et al. (2023) ‘Open‐source workflow approaches to passive acoustic monitoring of bats’, Methods in Ecology and Evolution, 14(7), pp. 1747–1763. Available at: https://doi.org/10.1111/2041-210X.14131.
