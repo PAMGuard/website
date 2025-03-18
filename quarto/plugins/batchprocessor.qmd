@@ -8,15 +8,23 @@ description: "Allows you to easily run the same PAMGuard configuration on multip
 
 ## PAMGuard Batch Processor
 
+**The batch processor module currently only works on Windows**
+
 The Batch Processing module can be used to run the same configuration file on multiple datasets using the same psfx file without having to go into the configuration for every dataset to change the location of the source files, the output database name, and the location of the binary store.
 
 It is particularly useful for processing datasets from deployments of multiple autonomous recorders, but also has application in reprocessing of any data where you want to run the same PAMGuard algorithms on multiple sets of data.
 
-Currently, it can only be used to process raw data files in normal mode. We are currently developing a version that can run viewer mode tasks on multiple datasets, such as reclassifying clicks, or running the click train detector. 
-
+Currently, it can only be used to process raw data files in normal mode. We are currently developing a version that can run viewer mode tasks on multiple datasets, such as reclassifying clicks, or running the click train detector.
 
 ### Downloads
 
 [Source Code](https://github.com/douggillespie/PAMGuardBatch)
 
-[Built Module](https://github.com/douggillespie/PAMGuardBatch/releases/download/V1.6/BatchProcessing_1_6.jar)
+[Current Version 2.0](https://github.com/douggillespie/PAMGuardBatch/releases/download/V2.0/BatchProcessing_2_0.jar)
+
+[Earlier Versions](https://github.com/douggillespie/PAMGuardBatch/releases)
+
+### Tutorial
+
+There is a tutorial on how to use the batch processor module available 
+[here](../tutorials/batchprocessing.qmd)

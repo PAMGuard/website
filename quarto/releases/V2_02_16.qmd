@@ -1,0 +1,71 @@
+---
+title: Version 2.02.16
+description: Windows and Mac
+date: 2025-03-18
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.16");
+      });
+    </script>
+---
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14414376.svg)](https://doi.org/10.5281/zenodo.14414376)
+
+Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.16). Zenodo. https://doi.org/10.5281/zenodo.14414376
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Setup-Pamguard_2_02_16.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_16.exe</a>
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Setup-Pamguard_2_02_16.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard_2_02_16.dmg</a>
+
+Note that the current the macOS version requires [Amazon Coretto 21](https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html) or equivalent to be installed. This will be no longer be necessary in V2.02.16.
+
+### New Features
+
+**Updates to Tethys Interface**
+
+Updates to compatibility with Tethys Server version 3.2 beta 2 and Nilus 3.2. PAMGuard is no longer compatible with Tethys 3.1, the pre-release version.
+
+Added Tethys functionality for the following modules: Whistle Classifier, Detection Group Localiser, Rocca, Click Train Detector, GPL Detector. If the Detection Group Localiser is used with Logger Form annotations, species codes can be taken from the logger form.
+
+Made export of data (Calibrations, Deployments, Detections, and Localisations) available as ‘offline tasks’. This is not useful when running Tethys on a single dataset, since all tasks can be easily performed using ‘Export’ buttons on the main Tethys interface. However, this change means that these export tasks become available to the batch processor (Version 2.0 or above) which can be used to export data from multiple similar datasets without having to personally go into each one individually. See Tethys online help pages and help pages for the Batch processor for details.
+
+**Deep Learning Classifier**
+
+Better error dialogs to indicate when models are incorrect and when the libraries have not been installed correctly.
+
+DelphinID Whistle classifier support now implemented.
+
+**Other**
+
+Made click detector offline click event data integrity checking available as offline task, so that this can be run prior to exporting data to Tethys.
+
+Multiple management changes to support batch processing of offline tasks. Compatible with batch processor 2.0.
+
+Added clip display for Deep Learning module.
+
+Added optional display of impulse response function to IIR Filter design dialog in place of the pole-zero diagram.
+
+Added ROCCA graphics, so ROCCA output can be displayed on the spectrogram display. 
+
+### Bug Fixes
+
+Issue 190. Array Files exported from array manager were not automatically getting the correct file end, making the exported files impossible to use. This is fixed and files will get the correct .paf end.
+
+Issue 167. File counter not resetting when restarting PAMGuard if it was paused during processing of folders of offline files. This has been updated to that a popup menu on the start button will allow you to continue from where you left off, or restart from the beginning.
+
+Issue 165. When re-opening folder selection dialog for processing folders of offline files, the folder name would be added a second time, meaning you got an invalid file path. This has been fixed.
+
+At startup FFT Module checks channel list against incoming channel list from acquisition module and automatically removes channels that were selected in the FFT module, but are not available from the acquisition.
+
+Dealt with issue in Tethys module looking up ITIS species codes where the progress dialog would not close.
+
+Project Information abstract field was not saving / reloading correctly in the configuration file. Fixed.
+
+Small bugs in FX Time display to improve settings pane.
+
+Fix offline file scanning in Acquisition when sub folder button checked / unchecked.
+
+[Release notes for all versions](../releasenotes.qmd)
