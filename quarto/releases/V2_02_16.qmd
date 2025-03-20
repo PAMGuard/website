@@ -1,7 +1,7 @@
 ---
 title: Version 2.02.16
 description: Windows and Mac
-date: 2025-03-18
+date: 2025-03-20
 include-in-header: 
   text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="js/countdowns.js"></script>
@@ -12,15 +12,14 @@ include-in-header:
     </script>
 ---
 
-[![](https://zenodo.org/badge/DOI/10.5281/zenodo.14414376.svg)](https://doi.org/10.5281/zenodo.14414376)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.15056259.svg)](https://doi.org/10.5281/zenodo.15056259)
 
-Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.16). Zenodo. https://doi.org/10.5281/zenodo.14414376
+Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.16). Zenodo. https://doi.org/10.5281/zenodo.15056259
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Setup-Pamguard_2_02_16.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_16.exe</a>
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Setup-Pamguard_2_02_16.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard_2_02_16.dmg</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Pamguard-2.02.16.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Pamguard_2_02_16.dmg</a>
 
-Note that the current the macOS version requires [Amazon Coretto 21](https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/downloads-list.html) or equivalent to be installed. This will be no longer be necessary in V2.02.16.
 
 ### New Features
 
@@ -48,7 +47,7 @@ Added clip display for Deep Learning module.
 
 Added optional display of impulse response function to IIR Filter design dialog in place of the pole-zero diagram.
 
-Added ROCCA graphics, so ROCCA output can be displayed on the spectrogram display. 
+Added ROCCA graphics, so ROCCA output can be displayed on the spectrogram display.
 
 ### Bug Fixes
 

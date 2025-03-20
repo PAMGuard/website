@@ -11,10 +11,9 @@ The PAMGuard batch processing module allows you to run the same PAMGuard configu
 
 ![Schematic of the batch processor configuration](./batchfiles/normaldiagram.png)
 
-
 ### Learning Outcomes
 
-You will learn how to install, set-up, and run the batch processing module to process raw data and to perform offline tasks such as click-classification. 
+You will learn how to install, set-up, and run the batch processing module to process raw data and to perform offline tasks such as click-classification.
 
 1.  Learn what we mean by batch processing
 2.  Install the Batch Processor in PAMGuard
@@ -24,15 +23,12 @@ You will learn how to install, set-up, and run the batch processing module to pr
 
 ### Prerequisites
 
-This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already 
-familiar with PAMGuard, you should first complete the tutorial 
-[Introduction to PAMGuard](staticmonitoring.qmd). 
+This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already familiar with PAMGuard, you should first complete the tutorial [Introduction to PAMGuard](staticmonitoring.qmd).
 
 ### Downloads
 
-The Batch Processing plugin is available at [http://localhost:3295/plugins/plugins.html](http://localhost:3295/plugins/plugins.html).
-
 Detailed tutorial documentation is in [Batch_Processing_V2.0.pdf](https://github.com/PAMGuardLearning/batchprocessing/releases/download/V2.0/Batch_Processing_V2.0.pdf)
 
-Data to use with the tutorial are available on Zenodo at [https://zenodo.org/uploads/14989668](https://zenodo.org/uploads/14989668).
+The Batch Processing plugin is available [here](../plugins/plugins.html).
 
+Data to use with the tutorial are available on Zenodo at [https://zenodo.org/uploads/14989668](https://zenodo.org/uploads/14989668).

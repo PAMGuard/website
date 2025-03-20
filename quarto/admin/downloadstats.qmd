@@ -1,5 +1,5 @@
 ---
-title: "Download Stats"
+title: "Download Stats: Software"
 include-in-header: 
   text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="../js/countdownloads.js"></script>
@@ -21,124 +21,98 @@ table, th, td {
 </style>
 ```
 
-<h2>Main program</h2>
+<h3>Main program</h3>
 
 ::: pgdownload
 https://github.com/PAMGuard/PAMGuard/
 :::
 
-<h2>Tutorials</h2>
 
-::: pgdownload
-https://github.com/PAMGuardLearning/GettingStarted/
-:::
-
-<h4>Dataset</h4>
-
-::: pgdownload
-https://doi.org/10.5281/zenodo.13851130
-:::
-
-<br>
-
-::: pgdownload
-hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
-:::
-
-<h4>Dataset</h4>
-
-::: pgdownload
-https://doi.org/10.5281/zenodo.13880212
-:::
-
-<br>
-
-::: pgdownload
-https://github.com/PAMGuardLearning/pamguard_tethys/
-:::
-
-<br>
 
 <h2>Plugins</h2>
-
+<h3>Batch Processor</h3>
 ::: pgdownload
 https://github.com/douggillespie/PAMGuardBatch
 :::
 
 <br>
 
+<h3>Resource Monitor</h3>
 ::: pgdownload
 https://github.com/douggillespie/resourcemonitor
 :::
 
 <br>
 
+<h3>Video Range (legacy)</h3>
 ::: pgdownload
 https://github.com/douggillespie/VideoRange_Legacy/
 :::
 
 <br>
 
+<h3>Sperm whale IPI</h3>
 ::: pgdownload
 https://github.com/pamguard/SpermWhaleIPI/
 :::
 
 <br>
 
+<h3>RION compass</h3>
 ::: pgdownload
 https://github.com/douggillespie/rioncompass/
 :::
 
 <br>
 
+<h3>Tritech Acquisition and Processing</h3>
 ::: pgdownload
 https://github.com/douggillespie/TritechAcquisitionPlugin/
 :::
 
 <br>
 
+<h3>WAMS</h3>
 ::: pgdownload
 https://github.com/douggillespie/WAMS/
 :::
 
 <br>
 
+<h3>Contact Collator</h3>
 ::: pgdownload
 https://github.com/douggillespie/ContactCollator/
 :::
 
 <br>
 
+<h3>Visual Angles</h3>
 ::: pgdownload
 https://github.com/pamguard/VisualAngles/
 :::
 
 <br>
 
+<h3>Plugin Demo</h3>
 ::: pgdownload
 https://github.com/PAMGuard/PluginDemoDetector/
 :::
 
 <br>
 
-<h2>Classifier Models</h2>
-
-::: pgdownload
-https://github.com/douggillespie/whistleclassification/
-:::
-
-::: pgdownload
-https://github.com/PAMGuard/deeplearningmodels/
-:::
 
 <h2>Zenodo</h2>
+<h3>PAMGuard source</h3>
 
 ::: pgdownload
 https://doi.org/10.5281/zenodo.13378950
 :::
 
+<h3>Tethys</h3>
+
 ::: pgdownload
 https://doi.org/10.5281/zenodo.13626338
 :::
 
-<br> End of download stats
+<br> 
+Next: [Tutorial Downloads](tutorialstats.qmd)

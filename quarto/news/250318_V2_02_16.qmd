@@ -1,7 +1,7 @@
 ---
 title: "Version 2.02.16"
 description: "PAMGuard version 2.02.16 is now available for Windows and Mac"
-date: 2025-03-18
+date: 2025-03-20
 ---
 
 [PAMGuard version 2.02.16](../downloadsurvey.qmd) is now available for Windows and Mac.
@@ -32,7 +32,7 @@ Added clip display for Deep Learning module.
 
 Added optional display of impulse response function to IIR Filter design dialog in place of the pole-zero diagram.
 
-Added ROCCA graphics, so ROCCA output can be displayed on the spectrogram display. 
+Added ROCCA graphics, so ROCCA output can be displayed on the spectrogram display.
 
 ## Bug Fixes
 
