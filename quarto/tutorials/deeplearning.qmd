@@ -40,13 +40,19 @@ Section 2 deals with much higher frequency sound files (384kHz) recorded by an [
 
 In section 3 you will learn how to integrate the deep learning into a workflows in PAMGuard. We use some example of Gibbon calls detected by a 4 channel recorder in Laos. The 4 channel recorder can be determine a bearing to call - the output of the deep learning module is connected with the bearing module so that any classified call is localized. Although not part of the tutorial, the end goal of this project was to use the bearings to monitor the abundance of gibbons in the forest.
 
+## Prerequisites
+
+This tutorial is suitable for beginners with PAMGuard, however, the [Getting Started with PAMGuard](getstarted.qmd) and [Introduction to static monitoring](staticmonitoring.qmd) tutorials are recomended first.
+
 ## Downloads
 
 The tutorial text is in [Deep Learning in PAMGuard.pdf]() You will also need to download the accompanying datasets from Zenodo.
 
--   [Right whale dataset]()
--   [Bat dataset]()
--   [Gibbon dataset]()
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880107.svg)](https://doi.org/10.5281/zenodo.13880107) - **Right whale data set**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15045544.svg)](https://doi.org/10.5281/zenodo.15045544) - **Bat data set**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15045966.svg)](https://doi.org/10.5281/zenodo.15045966) - **Gibbon data set**
 
 ## References
 
