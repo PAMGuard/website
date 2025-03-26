@@ -59,3 +59,7 @@ The tutorial text is in [Deep Learning in PAMGuard.pdf]() You will also need to 
 Shiu, Y. et al. (2020) ‘Deep neural networks for automated detection of marine mammal species’, Scientific Reports, 10(1), p. 607. Available at: https://doi.org/10.1038/s41598-020-57549-y.
 
 Brinkløv, S.M.M. et al. (2023) ‘Open‐source workflow approaches to passive acoustic monitoring of bats’, Methods in Ecology and Evolution, 14(7), pp. 1747–1763. Available at: https://doi.org/10.1111/2041-210X.14131.
+
+## Acknowledgements
+
+Funding for the development of the Batch Processing module was provided by the Bureau of Oceans Management (BOEM), Contract number 140M0122C0006

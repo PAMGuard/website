@@ -27,9 +27,7 @@ You will learn how to export data from PAMGuard to a Tethys database and to view
 
 ### Prerequisites
 
-This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already 
-familiar with PAMGuard, you should first complete the tutorial 
-[Introduction to PAMGuard](staticmonitoring.qmd). 
+This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already familiar with PAMGuard, you should first complete the tutorial [Introduction to PAMGuard](staticmonitoring.qmd).
 
 ### Downloads
 
