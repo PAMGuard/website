@@ -7,7 +7,7 @@ pres: "Introduction to Static Monitoring"
 image: ./tethysfiles/Tethys.png
 ---
 
-[Tethys](https://tethys.sdsu.edu/) is a temporal-spatial database for metadata related to passive acoustic studies. Unlike the PAMGuard databases, which hold a lot of detail about a single dataset, a Tethys database can hold summary data for many projects -- that can be every project for you as an individual, your lab, or for multiple labs across a larger organisation.
+Tethys is a temporal-spatial database for metadata related to passive acoustic studies. Unlike the PAMGuard databases, which hold a lot of detail about a single dataset, a Tethys database can hold summary data for many projects -- that can be every project for you as an individual, your lab, or for multiple labs across a larger organisation.
 
 ![Deployments tab of the Tethys Data Explorer showing overall deployment effort of stationary moorings (colored circles) and survey track lines (blue lines)](./tethysfiles/Tethys.png)
 
@@ -27,27 +27,12 @@ You will learn how to export data from PAMGuard to a Tethys database and to view
 
 ### Prerequisites
 
-The exercises in these tutorials are compatible with PAMGuard Version 2.02.16 and Tethys Version 3.2 beta 2. 
-
-Three slightly different tutorials are available. Which you select will depend on your level of experience. 
-All require a reasonable working knowledge of PAMGuard. If you are not already familiar with PAMGuard, you should first complete the tutorial [Introduction to PAMGuard](staticmonitoring.qmd).
-
-If you're new to Tethys, you should start with the [Full Tethys Tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/PAMGuard-Tethys-Tutorial_1.2.pdf) which will guide you on setting up Tethys and PAMGuard and will also direct you to other Tethys learning materials.
-
-If you've used Tethys in the past, then you can go to the
-[Tethys in a Hurry](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/tethys_in_a_hurry_1.2.pdf) tutorial, which will get straight into exporting data without the preamble. 
-
-If you've completed either of the above tutorials and have also completed the [Batch Processing Tutorial](batchprocessing.qmd)
- then you might want to look at the [Batch Output Tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/batch_output_to_tethys_1.2.pdf). This will teach you how to output multiple data streams from multiple PAMGuard datasets in one big batch job, without having to add a Tethys module to every PAMGuard dataset individually. 
-
-
+This tutorial assumes reasonable working knowledge of PAMGuard. If you are not already familiar with PAMGuard, you should first complete the tutorial [Introduction to PAMGuard](staticmonitoring.qmd).
 
 ### Downloads
 
-[Full Tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/PAMGuard-Tethys-Tutorial_1.2.pdf)
+Detailed tutorial documentation is in [TethysTutorial_V1.1.pdf](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.1/TethysTutorial_V1.1.pdf)
 
-[Data for full tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.1/NARWExampleDataset.zip)
+A Zipped archive of [processed binary data and PAMGuard database](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.1/NARWExampleDataset.zip)
 
-[In a Hurry Tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/tethys_in_a_hurry_1.2.pdf)
-
-[Batch Output Tutorial](https://github.com/PAMGuardLearning/pamguard_tethys/releases/download/V1.2/batch_output_to_tethys_1.2.pdf)
+Download [Raw audio data](https://research-portal.st-andrews.ac.uk/en/datasets/dclde-2013-workshop-dataset) files NOPPWavFiles.zip from the St Andrews university research portal.
