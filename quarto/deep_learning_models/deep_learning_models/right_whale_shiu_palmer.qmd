@@ -2,13 +2,13 @@
 title: "North Atlantic right whale"
 description: "A spectrogram based model for detecting North Atlantic right whale up-sweeps"
 image: ./right_whale_shiu_palmer/NERW_upcall.png
-tags: ["right whale", "spectrogram"]
+categories: [right whale]
 format: html
 ---
 
 ## Introduction
 
-This is a spectrogram based model for detecting right whale up-sweeps developed by Shiu and Palmer et al. (2020). The model was tested on a standardised dataset from the DCLDE conference in 2013 (Detection, Classification, Localisation, and Density Estimation)to quantify the performance compared to other leading automated analysis approaches. Shiu/Palmeret al.’s deep learning approach outperformed all those efforts by a very wide margin (see Figure 1 in their paper) and was an eraly deomstration of the potential of deep learning appraoched in marine bioacoustics. 
+This is a spectrogram based model for detecting right whale up-sweeps developed by Shiu and Palmer et al. (2020). The model was tested on a standardised dataset from the DCLDE conference in 2013 (Detection, Classification, Localisation, and Density Estimation)to quantify the performance compared to other leading automated analysis approaches. Shiu/Palmeret al.’s deep learning approach outperformed all those efforts by a very wide margin (see Figure 1 in their paper) and was an eraly deomstration of the potential of deep learning appraoched in marine bioacoustics.
 
 Note that this model is also available as an example model within PAMGuard.
 

@@ -2,7 +2,7 @@
 title: "DelphinID North East Atlantic"
 description: "delphinID classifier for the North East Atlantic - processes detected clicks and whistle contours to determine 7 delphinid species"
 image: ./delphinID_NEAtlantic/dolphin_whistles_clicks.png
-tags: ["dolphins", "whistles", "clicks"]
+categories: [dolphin]
 format: html
 ---
 
