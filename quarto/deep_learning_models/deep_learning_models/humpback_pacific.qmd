@@ -1,0 +1,33 @@
+---
+title: "Google Humpback Whale Pacific"
+description: "A spectrogram based model for detecting North Atlantic right whale up-sweeps"
+image: ./google_humpback_pacific/humpback_whale.png
+categories: [humpback whale]
+format: html
+---
+
+## Introduction
+
+This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA.
+
+Note that this model is also available as an example model within PAMGuard.
+
+![Google humpback whale classifier running in PAMGuard](./google_humpback_pacific/humpback_whale_google_screenshot.png)
+
+## Species
+
+1.  Humpback whale (Megaptera novaeangliae)
+
+## Geographic location of training data
+
+Pacific ocean
+
+## Reference
+
+A. N. Allen et al., ‘A Convolutional Neural Network for Automated Detection of Humpback Whale Song in a Diverse, Long-Term Passive Acoustic Dataset’, Front. Mar. Sci., vol. 8, p. 607321, Mar. 2021 https://doi.org/10.3389/fmars.2021.607321
+
+## Model
+
+The model can be found here.
+
+An example settings file can be found here.

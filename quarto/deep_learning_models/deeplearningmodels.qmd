@@ -3,9 +3,10 @@ title: "PAMGuard Deep Learning Models"
 listing: 
   - id: dl_model_listing
     type: grid
-    sort-ui: true
+   # sort-ui: true
     filter-ui: true
-    fields: [image, title, description]
+    categories: true
+    fields: [image, title, description, categories]
     contents: 
       - "deep_learning_models/*.qmd"
       
