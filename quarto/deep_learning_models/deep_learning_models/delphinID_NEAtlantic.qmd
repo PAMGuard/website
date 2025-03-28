@@ -36,6 +36,6 @@ Paper in prep.
 
 Click and whistle models can be found on Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14578299.svg)](https://doi.org/10.5281/zenodo.14578299)
 
-delphinID does not require raw sound data; instead it process detected PAMGuard whistle contours and click detections. Both whistle and click results can then be further combined in an \[R shiny app\]() to increase the accuracy of results.
+delphinID does not require raw sound data; instead it process detected PAMGuard whistle contours and click detections. Both whistle and click results can then be further combined in an [R shiny app]() to increase the accuracy of results.
 
 An example settings file is located here. As well as the usual setting the location of the database, binary store and sound files, users also need to open both deep learning modules e.g. *Settings-\>Raw deep learning classifier_clicks* and select the deep learning models on their local machine. The configuration will then detect whistle contours and clicks from raw sound data, passing the detections to both deep learning modules with results saved in the PAMGuard database. Also note that delphinID can run in viewer mode if whisltes and/or click detections are part of the data model.

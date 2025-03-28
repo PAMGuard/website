@@ -8,7 +8,7 @@ format: html
 
 ## Introduction
 
-This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA.
+This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA. 
 
 Note that this model is also available as an example model within PAMGuard.
 
@@ -20,7 +20,7 @@ Note that this model is also available as an example model within PAMGuard.
 
 ## Geographic location of training data
 
-Pacific ocean
+Hawaiian archipelago
 
 ## Reference
 
@@ -28,6 +28,8 @@ A. N. Allen et al., ‘A Convolutional Neural Network for Automated Detection of
 
 ## Model
 
-The model can be found here.
+The original model can be found on Kaggle [here](https://www.kaggle.com/models/google/humpback-whale).
 
-An example settings file can be found here.
+The PAMGuard compatible model can be found [here](https://github.com/PAMGuard/deeplearningmodels/releases/download/1.0/humpback_whale_1.zip).
+
+An example settings file can be found [here](./google_humpback_pacific/humpback_whales.psfx).
