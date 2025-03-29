@@ -1,0 +1,12 @@
+---
+title: "Wild Haggis Detector"
+description: "Detector and Classifier for the Scottish Wild Haggis"
+date: 2025-04-01
+---
+
+The PAMGuard team are pleased to announce the release of a plugin detection module for the 
+[Scottish Wild Haggis](https://haggiswildlifefoundation.com/) *Haggis Scoticus*.
+
+See [Plugin downloads](../pluginmodules.qmd) for further details. 
+
+Next year, should we be able to obtain sufficient high quality and  verified training data, we hope to build an AI classifier for the megafauna of Loch Ness.

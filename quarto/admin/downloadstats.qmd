@@ -27,10 +27,10 @@ table, th, td {
 https://github.com/PAMGuard/PAMGuard/
 :::
 
-
-
 <h2>Plugins</h2>
+
 <h3>Batch Processor</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/PAMGuardBatch
 :::
@@ -38,6 +38,7 @@ https://github.com/douggillespie/PAMGuardBatch
 <br>
 
 <h3>Resource Monitor</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/resourcemonitor
 :::
@@ -45,6 +46,7 @@ https://github.com/douggillespie/resourcemonitor
 <br>
 
 <h3>Video Range (legacy)</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/VideoRange_Legacy/
 :::
@@ -52,6 +54,7 @@ https://github.com/douggillespie/VideoRange_Legacy/
 <br>
 
 <h3>Sperm whale IPI</h3>
+
 ::: pgdownload
 https://github.com/pamguard/SpermWhaleIPI/
 :::
@@ -59,6 +62,7 @@ https://github.com/pamguard/SpermWhaleIPI/
 <br>
 
 <h3>RION compass</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/rioncompass/
 :::
@@ -66,6 +70,7 @@ https://github.com/douggillespie/rioncompass/
 <br>
 
 <h3>Tritech Acquisition and Processing</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/TritechAcquisitionPlugin/
 :::
@@ -73,6 +78,7 @@ https://github.com/douggillespie/TritechAcquisitionPlugin/
 <br>
 
 <h3>WAMS</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/WAMS/
 :::
@@ -80,6 +86,7 @@ https://github.com/douggillespie/WAMS/
 <br>
 
 <h3>Contact Collator</h3>
+
 ::: pgdownload
 https://github.com/douggillespie/ContactCollator/
 :::
@@ -87,6 +94,7 @@ https://github.com/douggillespie/ContactCollator/
 <br>
 
 <h3>Visual Angles</h3>
+
 ::: pgdownload
 https://github.com/pamguard/VisualAngles/
 :::
@@ -94,14 +102,23 @@ https://github.com/pamguard/VisualAngles/
 <br>
 
 <h3>Plugin Demo</h3>
+
 ::: pgdownload
 https://github.com/PAMGuard/PluginDemoDetector/
 :::
 
 <br>
 
+<h3>Haggis Detector</h3>
+
+::: pgdownload
+https://github.com/PAMGuard/haggis/
+:::
+
+<br>
 
 <h2>Zenodo</h2>
+
 <h3>PAMGuard source</h3>
 
 ::: pgdownload
@@ -114,5 +131,4 @@ https://doi.org/10.5281/zenodo.13378950
 https://doi.org/10.5281/zenodo.13626338
 :::
 
-<br> 
-Next: [Tutorial Downloads](tutorialstats.qmd)
+<br> Next: [Tutorial Downloads](tutorialstats.qmd)

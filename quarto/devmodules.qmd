@@ -33,7 +33,9 @@ Available components of a PAMGuard module are
 -   Graphic Overlays
 -   Plug in display panels
 
-All components of a PAMGuard module are optional except for the main PamControlledUnit class. The table shows [existing modules](coremodules.html).
+All components of a PAMGuard module are optional except for the main PamControlledUnit class. 
+A good place to start is to look at the [Wild Haggis Detector](plugins/haggis.html) which is a 
+relatively simple detector and classifier that uses most of the above features. 
 
 ### The Constructor
 

@@ -1,0 +1,36 @@
+---
+title: "Wild Haggis Detector"
+image: images/haggis.jpg
+author: Doug Gillespie
+date: 2025-04-01
+description: "A Detector for the Wild Scottish Haggis (Haggis Scoticus)"
+---
+
+![Wild Haggis](images/haggis.jpg)
+
+Image from [Haggis Wildlife Foundation](https://haggiswildlifefoundation.com/)
+
+## Wild Haggis Detector
+
+The [Scottish Wild Haggis (*Haggis Scoticus*)](https://haggiswildlifefoundation.com/what-is-wild-haggis/) may or may not be an entirely mythical beast native to the Scottish Highlands. 
+
+The primary purpose of this PAMGuard plugin module is to demonstrate how to build detectors as plugin modules for PAMGuard. 
+
+The detector itself is a simple energy sum detector, that will search for increases in energy above a user defined threshold. This is then followed by 
+a rather silly classifier that generates some random numbers, modifies them a bit based on where the data are being collected, and a few other things, then 
+makes a random classification to one of two (also entirely fictional) sub-species. 
+
+All of this has been done in order to use as many PAMGuard features as possible, including graphics overlays, data filters, symbol managers, a Tethys output module, etc. 
+
+We hope that you don't waste too much time actually searching for Haggis in the Scottish Highlands (though we do recommend visiting the area to enjoy the wonderful scenery). 
+
+We hope that you **do** find this example code useful, particularly if you're setting out on the journey of building your own PAMGuard module. 
+
+
+### Downloads
+
+[Source Code](https://github.com/PAMGuard/haggis)
+
+[Built Module](https://github.com/PAMGuard/haggis/releases/download/V1.0/Haggis_1_0.jar)
+
+[Example Configuration](https://github.com/PAMGuard/haggis/releases/download/V1.0/HaggisDemo.psfx)
