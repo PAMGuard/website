@@ -4,7 +4,8 @@ format: html
 dispord: 4
 description: "Learn how to import deep learning models into PAMGuard with examples for Right whales, bats and gibbons"
 image: ./deeplearningfiles/right_whale_deep_learning1.png
-categories: [deep learning, FFT, Spectrogram, Click detector, Beam former, MATLAB, R]
+categories: [Deep learning, FFT, Spectrogram, Click detector, Beam former, MATLAB, R]
+---
 
 ## Introduction
 

@@ -28,6 +28,6 @@ Shiu, Y., Palmer, K.J., Roch, M.A., Fleishman, E., Liu, X., Nosal, E.-M., Helble
 
 ## Model
 
-The model can be found as part of the tutorial dataset along with example wav files [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880107.svg)](https://doi.org/10.5281/zenodo.13880107)
+The model can be found as part of the tutorial data set along with example wav files [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880107.svg)](https://doi.org/10.5281/zenodo.13880107)
 
 An example settings file can be found [here](./right_whale_shiu_palmer/right_whales_DL.psfx).
