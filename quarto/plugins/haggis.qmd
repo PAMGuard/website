@@ -3,7 +3,7 @@ title: "Wild Haggis Detector"
 image: images/haggis.jpg
 author: Doug Gillespie
 date: 2025-04-01
-description: "A Detector for the Wild Scottish Haggis (Haggis Scoticus)"
+description: "A Detector for the Wild Scottish Haggis (*Haggis Scoticus*)"
 ---
 
 ![Wild Haggis](images/haggis.jpg)
