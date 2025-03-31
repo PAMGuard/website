@@ -4,6 +4,8 @@ format: html
 dispord: 4
 description: "Learn how to import deep learning models into PAMGuard with examples for Right whales, bats and gibbons"
 image: ./deeplearningfiles/right_whale_deep_learning1.png
+categories: [deep learning, FFT, Spectrogram, Click detector, Beam former, MATLAB, R]
+
 ---
 
 ## Introduction
@@ -46,7 +48,7 @@ This tutorial is suitable for beginners with PAMGuard, however, the [Getting Sta
 
 ## Downloads
 
-The tutorial text is in [Deep Learning in PAMGuard.pdf]() You will also need to download the accompanying datasets from Zenodo.
+The tutorial text is in [Deep Learning in PAMGuard.pdf](https://github.com/PAMGuardLearning/pamguard_deep_learning/releases/download/V2.02.16/Deep.learning.in.PAMGuard.2022-v1-2-12-16.pdf) You will also need to download the accompanying datasets from Zenodo.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13880107.svg)](https://doi.org/10.5281/zenodo.13880107) - **Right whale data set**
 

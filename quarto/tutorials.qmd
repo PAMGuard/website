@@ -5,6 +5,7 @@ listing:
     type: grid
     field-display-names:
       pres: "Prerequisites"
+    categories: true
     fields: [image, title, description]
     sort: dispord
     contents: 

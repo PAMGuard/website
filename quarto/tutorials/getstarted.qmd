@@ -5,6 +5,7 @@ description: "This tutorial will introduce some basic PAMGuard concepts, showing
 shortdesc: "Simple introducion to PAMGuard"
 pres: "None"
 image: ./getstartedfiles/pgclickdet1.png
+categories: [Ishmael energy sum, Ishmael spectrogram correlation, Map, Whistle and moan detector, FFT, Spectrogram, Click detector]
 ---
 
 ![It all started with Sperm Whales, so you can too](./getstartedfiles/pgclickdet1.png "It all started with Sperm Whales, so you can too")

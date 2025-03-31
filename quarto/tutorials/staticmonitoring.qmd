@@ -5,6 +5,7 @@ description: "This tutorial is a step by step guide for using PAMGuard to proces
 pres: "None"
 shortdesc: "More advanced introduction using SoundTrap data"
 image: ./staticmonfiles/datamap_screenshot.png
+categories: [LTSA, Soundtrap click detector, Click detector, Noise band monitor, Whistle and moan detector, Exporter]
 ---
 
 ![The Data Map allows you to rapidly navigate large datasets](./staticmonfiles/datamap_screenshot.png "The Data Map allows you to rapidly navigate large datasets")

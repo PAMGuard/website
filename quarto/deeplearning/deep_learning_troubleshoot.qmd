@@ -12,10 +12,10 @@ The deep learning module requires specific libraries to be downloaded, which are
 
 You may receive a "deep learning engine failure" message. This is usually because the required libraries have not downloaded correctly. A more detailed explanation of how these libraries are used is available [here](http://djl.ai/docs/development/cache_management.html). When you first use the module, PAMGuard attempts to download the relevant libraries, and if it cannot, you will receive the "Deep learning engine failure" message. Often, downloads are prevented by security settings or a lack of internet connection. One way to circumvent this is to manually download the libraries and place them in the correct folder.
 
-Notes: 
+Notes:
 
-- *We do not recommend this*, but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
-- You must enable your File browser to show _hidden files_, otherwise the folder will be invisible when you unzip.
+-   *We do not recommend this*, but it is a last resort if your system cannot be modified to allow PAMGuard to download the files.
+-   You must enable your File browser to show *hidden files*, otherwise the folder will be invisible when you unzip.
 
 #### For Windows (x86 only)
 

@@ -5,6 +5,7 @@ description: "This tutorial will introduce the PAMGaurd-Tethys interface, show y
 shortdesc: "PAMGuard interface to the Tethys database"
 pres: "Introduction to Static Monitoring"
 image: ./tethysfiles/Tethys.png
+categories: [Tethys database]
 ---
 
 Tethys is a temporal-spatial database for metadata related to passive acoustic studies. Unlike the PAMGuard databases, which hold a lot of detail about a single dataset, a Tethys database can hold summary data for many projects -- that can be every project for you as an individual, your lab, or for multiple labs across a larger organisation.
