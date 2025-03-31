@@ -8,7 +8,7 @@ format: html
 
 ## Introduction
 
-This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA.
+This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA. 
 
 Note that this model is also available as an example model within PAMGuard.
 
