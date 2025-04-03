@@ -31,6 +31,7 @@ Next, we defined three clear ways in which users could import their models into 
 
 4.  Importing a "raw" model and manually defining the metadata (difficult - experts only !).
 
+
 ![](/news/images/deep_learning_description.png)
 
 *How to import your deep learning into PAMGuard*
@@ -39,7 +40,7 @@ Next, we defined three clear ways in which users could import their models into 
 
 Major development for the deep learning module is now complete – there’s a lot more work to do compatibility-wise, but there’s not going to be any large user-facing changes from here. We now intend to focus on speed and stability. What we want now is for folks to start using the module and submit models to the PAMGuard deep learning page.
 
-If you want to start using the deep learning module, then a great place to start is our brand new user tutorial!
+If you want to start using the deep learning module, then a great place to start is our brand new [user tutorial](/tutorials/deeplearning.qmd)!
 
 For more info on how it all works, check out the [help file](https://github.com/PAMGuard/PAMGuard/blob/main/src/rawDeepLearningClassifier/deep_learning_help.md). Please send us [feedback or report any bugs or feature requests](/contact.qmd).
 
