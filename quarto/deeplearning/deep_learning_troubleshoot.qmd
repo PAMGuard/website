@@ -27,7 +27,7 @@ Download [this zip](https://www.dropbox.com/scl/fi/ri1tb4xrxb385ve1hj0s7/deeplea
 
 ### Model metadata failure
 
-This indicates that the model metadata has failed. Each model contains a `.pgtf` file, which contains JSON-formatted metadata on how to load the model—i.e., what the model needs to run. More information on how this works can be found in the help files. This error usually indicates that the JSON data is incorrect or the `.pgdl` file is not present at all.
+This indicates that the model metadata has failed. Each model contains a `.pgtf` file, which contains JSON-formatted metadata on how to load the model—i.e., what the model needs to run. More information on how this works can be found in the help files. This error usually indicates that the JSON data is incorrect or the `.pgtf` file is not present at all.
 
 If you have created your own model file for PAMGuard by zipping a `.pgtf` file with a deep learning model, this is most likely a user error. Check your JSON using a [JSON validator](https://jsonlint.com/), ensure you are following the [JSON schema](https://github.com/macster110/jpam/blob/master/jpam/jdl4pam/src/main/java/org/jamdev/jdl4pam/transforms/dl_transform_schema.json), and compare it against another `.pgtf` file. For example, here is the JSON for a right whale model by Shiu et al., (2019):
 

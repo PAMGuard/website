@@ -7,12 +7,12 @@ The idea behind the deep learning module in PAMGuard is to make published deep l
 
 If you want to make your model available there are a few things you will need to do.
 
-1.  Firstly, you will need a deep learning model that works in PAMGuard - see \[here\]() for more information on how to do that.
+1.  Firstly, you will need a deep learning model that works in PAMGuard - see [here](https://github.com/PAMGuard/PAMGuard/wiki/Deep-Learning-JSON-Format) for more information on how to do that.
 
-2.  Create a settings file which shows an example of the deep learning model running.
+2.  Create a settings file (\*\*.psfx file) which shows an example of the deep learning model running with an example sound file which must be available to share.
 
-3.  Create a Markdown document which provides an overview of your model. Use the Shiu/Palmer Right whale model as a template. Note this **must** include a link to a publication which describes your model in detail.
+3.  Create a Markdown document which provides an overview of your model. Use the [Shiu/Palmer Right whale model](./deep_learning_models/right_whale_shiu_palmer.qmd) as a template. Note this **must** include a link to a publication which describes your model in detail.
 
-4.  Archive the model, settings file and example sound file in a public repository such as Zenodo so that it has a DOI.
+4.  Archive the model, settings file and example sound file in a public repository such as [Zenodo](https://zenodo.org/) so that it has a DOI.
 
 Once that is all done, send us through everything - we will check it over and if all OK publish on the website.
