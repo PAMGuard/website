@@ -8,7 +8,9 @@ format: html
 
 ## Introduction
 
-[delphinID](https://github.com/tristankleyn/which.dolphin/tree/main) models are deep convolutional neural networks (CNNs) trained in Python Tensorflow 2.18.0 to automatically classify detections of delphinid whistles and clicks to species by latent patterns in average low-frequency power spectra calculated across groups, or frames, of detections. Separate models for classifying based on either whistle or click detections output predictions intended to used as a feature vector for an event classifier, which predicts species based on information from both whistles and clicks. Cross-validated testing estimates delphinID to classify events with average accuracy ranging from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris.
+[delphinID](https://github.com/tristankleyn/which.dolphin/tree/main) models are deep convolutional neural networks (CNNs) trained in Python Tensorflow 2.18.0 to automatically classify detections of delphinid whistles and clicks to species by latent patterns in average low-frequency power spectra calculated across groups, or frames, of detections. Separate models for classifying based on either whistle or click detections output predictions intended to used as a feature vector for an event classifier, which predicts species based on information from both whistles and clicks. Unlike many deep learning models, delphinID does not require raw sound data but instead relies only on outputs from the PAMGuard click Detector and Whistle and Moan detector modules. 
+
+Cross-validated testing estimates delphinID to classify events with average accuracy ranging from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris.
 
 ![The Shiu and Palmer right whale classifier running in PAMGuard](./delphinID_NEAtlantic/PAMGuard_delphinID_gif.gif)
 
@@ -36,6 +38,6 @@ Paper in prep.
 
 Click and whistle models can be found on Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14578299.svg)](https://doi.org/10.5281/zenodo.14578299)
 
-delphinID does not require raw sound data; instead it process detected PAMGuard whistle contours and click detections. Both whistle and click results can then be further combined in an [R shiny app]() to increase the accuracy of results.
+delphinID does not require raw sound data; instead it process detected PAMGuard whistle contours and click detections. Both whistle and click results can then be further combined in an [R shiny app](https://github.com/tristankleyn/which.dolphin/blob/main/eventClassifier/runApp.R) to increase the accuracy of results.
 
-An example settings file is located here. As well as the usual setting the location of the database, binary store and sound files, users also need to open both deep learning modules e.g. *Settings-\>Raw deep learning classifier_clicks* and select the deep learning models on their local machine. The configuration will then detect whistle contours and clicks from raw sound data, passing the detections to both deep learning modules with results saved in the PAMGuard database. Also note that delphinID can run in viewer mode if whisltes and/or click detections are part of the data model.
+An example settings file is located [here](./delphinID_NEAtlantic/pamguard_delphinID_combined_nodatabase.psfx). As well as the usual setting the location of the database, binary store and sound files, users also need to open both deep learning modules e.g. *Settings-\>Raw deep learning classifier_clicks* and select the deep learning models on their local machine. The configuration will then detect whistle contours and clicks from raw sound data, passing the detections to both deep learning modules with results saved in the PAMGuard database. Also note that delphinID can run in viewer mode if whisltes and/or click detections are part of the data model.

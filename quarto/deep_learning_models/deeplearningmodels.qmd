@@ -23,7 +23,7 @@ listing:
 #      - "tutorials/*.qmd"
 ---
 
-PAMGuard can integrate deep learning models into real time or post processing acoustic workflows. This page provides a list of third party and freely available PAMGuard compatible models but is by no means an exhaustive list. 
+PAMGuard can integrate deep learning models into real time or post processing acoustic workflows. This page provides a list of third party and freely available PAMGuard compatible models but is by no means an exhaustive list.
 
 If you are new to deep learning in PAMGuard check out the [Deep Learning Tutorial First](/tutorials/deeplearning.qmd)
 

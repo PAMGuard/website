@@ -31,7 +31,6 @@ Next, we defined three clear ways in which users could import their models into 
 
 4.  Importing a "raw" model and manually defining the metadata (difficult - experts only !).
 
-
 ![](/news/images/deep_learning_description.png)
 
 *How to import your deep learning into PAMGuard*
