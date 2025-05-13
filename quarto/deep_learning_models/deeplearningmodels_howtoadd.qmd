@@ -15,4 +15,4 @@ If you want to make your model available there are a few things you will need to
 
 4.  Archive the model, settings file and example sound file in a public repository such as [Zenodo](https://zenodo.org/) so that it has a DOI.
 
-Once that is all done, send us through everything - we will check it over and if all OK publish on the website.
+Once that is all done, send us through everything - we will check it over and, if all OK, publish on the website.
