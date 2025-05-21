@@ -11,7 +11,7 @@ categories: [Deep learning, FFT, Spectrogram, Click detector, Beam former, MATLA
 
 This tutorial is a step by step guide to on how to run deep learning models in PAMGuard. The tutorial takes users through how to set up a configuration, process data and classify to species using three examples, North Atlantic Right whales, bats in Denmark and gibbons in Laos.
 
-::: grid
+::::: grid
 ::: g-col-6
 ![Right whale model running on raw sound data.](deeplearningfiles/right_whale_deep_learning1.png){width="100%"}
 :::
@@ -19,7 +19,7 @@ This tutorial is a step by step guide to on how to run deep learning models in P
 ::: g-col-6
 ![Bat calls detected using the Click Detector module and then classified to species by a deep learning model.](deeplearningfiles/deep_leanring_bat_example1.png){width="100%"}
 :::
-:::
+:::::
 
 ## Species
 
