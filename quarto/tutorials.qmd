@@ -5,6 +5,7 @@ listing:
     type: grid
     field-display-names:
       pres: "Prerequisites"
+    categories: true
     fields: [image, title, description]
     sort: dispord
     contents: 
@@ -23,14 +24,9 @@ listing:
 #      - "tutorials/*.qmd"
 ---
 
-PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard.
-If you're new to PAMGuard, you should start with one of the introductory turotials, 
-[Getting Started](./tutorials/getstarted.qmd), 
-or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the 
-more advanced ones. 
+PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard. If you're new to PAMGuard, you should start with one of the introductory turotials, [Getting Started](./tutorials/getstarted.qmd), or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the more advanced ones.
 
-
-The tutorials all use freely available pre-recorded sound files and will run on any [compatible computer](systemreq.qmd) without the need for specialist equipment. 
+The tutorials all use freely available pre-recorded sound files and will run on any [compatible computer](systemreq.qmd) without the need for specialist equipment.
 
 ::: {#tutorial_listing}
 :::

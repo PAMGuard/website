@@ -65,6 +65,8 @@ website:
             text: Rocca Classifiers
           - href: whistleclassifier.qmd
             text: Whistle Classifiers
+          - href: ./deep_learning_models/deeplearningmodels.qmd
+            text: Deep Learning Classifiers
       - text: Developers
         menu:
           - href: sourcecode.qmd

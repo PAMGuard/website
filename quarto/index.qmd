@@ -1,5 +1,7 @@
 ---
 format: html
+include-in-header:
+  - head-includes.html
 css: styles.css
 
 listing: 
@@ -35,6 +37,8 @@ listing:
 #    filter-ui: true
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="YOUR_INTEGRITY_HASH" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 ::::: columns
 ::: {.column width="10%"}
 :::
@@ -51,27 +55,29 @@ World leading software for the Detection, Classification, and Localisation of ma
 <img src="./images/1334226697SpermWhaleTails.png" style="border-radius: 10px; width: 100%"/>
 
 ::: {style="text-align: center;"}
-<a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 12px;">Download PAMGuard</a>
-<a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
-        style="background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 12px;" target="donate">Contribute to PAMGuard</a>
+<a href="downloadsurvey.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Go straight to downloads page" style="background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 12px;
+          width: 300px; "> <i class="fas fa-download" style="margin-right: 8px;"></i> Download PAMGuard </a> <a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
+   style="background: radial-gradient(circle, #3a99ffff, #2B4E80 ); /* Gradient from blue to purple */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 12px;
+          width: 300px; /* Set a fixed width */" 
+   target="donate"> <i class="fas fa-donate" style="margin-right: 8px;"></i>Contribute to PAMGuard</a>
 :::
 
 ::: {#boldtext}
@@ -89,7 +95,9 @@ Comprehensive suite of features for automatic processing, visualisation and mana
 
 <div>
 
+::: {#boldtext}
 Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+:::
 
 </div>
 
@@ -106,7 +114,9 @@ Used to study whales and dolphins around the world and to mitigate against the p
 
 <div>
 
-Latest News
+::: {#boldtext}
+Latest News and Blog
+:::
 
 </div>
 

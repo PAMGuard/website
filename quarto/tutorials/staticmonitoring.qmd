@@ -5,6 +5,7 @@ description: "This tutorial is a step by step guide for using PAMGuard to proces
 pres: "None"
 shortdesc: "More advanced introduction using SoundTrap data"
 image: ./staticmonfiles/datamap_screenshot.png
+categories: [LTSA, Soundtrap click detector, Click detector, Noise band monitor, Whistle and moan detector, Exporter]
 ---
 
 ![The Data Map allows you to rapidly navigate large datasets](./staticmonfiles/datamap_screenshot.png "The Data Map allows you to rapidly navigate large datasets")
@@ -13,7 +14,9 @@ image: ./staticmonfiles/datamap_screenshot.png
 
 ### Introduction
 
-This tutorial is a step by step guide for using PAMGuard to process long term recordings from a static autonomous recorder. The tutorial uses example data from a SoundTrap device deployed off the Scottish West Coast with plenty of dolphin and porpoise encounters. Species
+This tutorial is a step by step guide for using PAMGuard to process long term recordings from a static autonomous recorder. The tutorial uses example data from a SoundTrap device deployed off the Scottish West Coast with plenty of dolphin and porpoise encounters.
+
+### Species
 
 1.  Dolphins (multiple species)
 2.  NBHF (harbour porpoises)

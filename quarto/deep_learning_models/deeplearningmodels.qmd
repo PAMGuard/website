@@ -1,0 +1,33 @@
+---
+title: "PAMGuard Deep Learning Models"
+listing: 
+  - id: dl_model_listing
+    type: grid
+   # sort-ui: true
+    filter-ui: true
+    categories: true
+    fields: [image, title, description, categories]
+    contents: 
+      - "deep_learning_models/*.qmd"
+      
+#  - id: as_table
+#    type: table
+#    field-display-names:
+#      pres: "Prerequisites"
+#      shortdesc: "Description"
+#      Title: "Tutorial"
+#    fields: [title, pres, shortdesc, image]
+#    image-height: 80px
+#    sort: dispord
+#    contents: 
+#      - "tutorials/*.qmd"
+---
+
+PAMGuard can integrate deep learning models into real time or post processing acoustic workflows. This page provides a list of third party and freely available PAMGuard compatible models but is by no means an exhaustive list.
+
+If you are new to deep learning in PAMGuard check out the [Deep Learning Tutorial First](/tutorials/deeplearning.qmd)
+
+::: {#dl_model_listing}
+:::
+
+Do you want your model included in this page? [Here is what you need to do](deeplearningmodels_howtoadd.qmd).

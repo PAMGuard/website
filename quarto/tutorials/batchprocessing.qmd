@@ -5,6 +5,7 @@ description: "This tutorial will teach you how to process multiple datasets usin
 shortdesc: "Batch processing of multiple datasets"
 pres: "Introduction to Static Monitoring"
 image: ./batchfiles/normaldiagram.png
+categories: [Batch processor]
 ---
 
 The PAMGuard batch processing module allows you to run the same PAMGuard configuration on multiple sets of data. This is particularly useful if you want to process data from deployments of multiple autonomous recorders in exactly the same way. It can also be used to reprocess data from multiple old cruises with a new detector, for instance with one of the new Deep Learning detectors / classifiers that have recently been added to PAMGuard
@@ -31,4 +32,4 @@ Detailed tutorial documentation is in [Batch_Processing_V2.0.pdf](https://github
 
 The Batch Processing plugin is available [here](../plugins/plugins.html).
 
-Data to use with the tutorial are available on Zenodo at [https://zenodo.org/uploads/14989668](https://zenodo.org/uploads/14989668).
+Data to use with the tutorial are available on Zenodo at <https://zenodo.org/uploads/14989668>.

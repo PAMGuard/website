@@ -1,0 +1,48 @@
+---
+title: "Deep Learning Update"
+format: html
+date: 2025-04-06
+description: "Third party Deep Learning Models"
+---
+
+## Introduction
+
+In 2021, a new module was introduced in PAMGuard V2.02.01 which allowed users to import and run their own deep learning models, integrating them into PAMGuard acoustic workflows. What we wanted to achieve was a system by which anyone could use the new generation of deep learning species classifiers by running them within a graphical user interface and, crucially, being able to validate and check results using PAMGuard's powerful data visualization tools. This would, in turn, allow the community to adopt models that were useful for their particular research context and also identify classifiers that are only useful for a particular study versus those that can cross domains and are more generally applicable to different contexts.
+
+Since we first introduced the module, many lessons have been learned, and recently we’ve updated the module extensively thanks to funding from [BOEM](https://www.boem.gov/). We are now pleased to announce that this process is feature-complete, and we are moving on to maintenance and bug fixing phase.
+
+![](/deep_learning_models/deep_learning_models/right_whale_shiu_palmer/right_whale_pamguard.png)
+
+*An example of a deep learning classifier detecting right whale calls in PAMGuard*
+
+## Changes to PAMGuard
+
+Much of the latest work is under the hood – however, users of the original module will notice a few UI changes. The original idea for the module was that we would support frameworks used to train models, such as [AnimalSpot](https://github.com/ChristianBergler/ANIMAL-SPOT), [Koogu](https://shyamblast.github.io/Koogu/en/stable/), and [Ketos](https://docs.meridian.cs.dal.ca/ketos/#). Anyone who trained their deep learning classifiers using these frameworks would have a model which would automatically be compatible with PAMGuard. What we found, though, was that most researchers did not use these frameworks and instead usually created their own bespoke models. On top of that, supporting each framework individually, including all the updates to each, was simply too much development work.
+
+To remedy this, whilst keeping some framework support, we decided to take a different approach, allowing users multiple pathways to importing their models into PAMGuard. First, we fixed some fundamentals; instead of supporting multiple formats, we [defined a metadata standard for PAMGuard compatible deep learning models](https://github.com/macster110/jpam/blob/master/jpam/jdl4pam/src/main/java/org/jamdev/jdl4pam/transforms/dl_transform_schema.json), consulting developers of the other frameworks on what it should look like. It would then be up to the different frameworks to implement this standard if they wanted to be PAMGuard compatible.
+
+Next, we defined three clear ways in which users could import their models into PAMGuard:
+
+1.  Training their model using a supported framework such as [Koogu](https://shyamblast.github.io/Koogu/en/stable/).
+
+2.  Using a model which has been zipped up with the appropriate PAMGuard standard metadata. This can be shared independently or can be a model downloaded from our [new page](/deep_learning_models/deeplearningmodels.qmd) on the website where users can [submit](/deep_learning_models/deeplearningmodels_howtoadd.qmd) their own PAMGuard compatible models.
+
+3.  Using the new example model feature. We currently have two humpback whale and right whale models which can be selected by the user and are then automatically downloaded and set up by PAMGuard. The idea here was to provide a few example models to get folks started and allow them to easily test the module. We hope to add more example models with subsequent releases.
+
+4.  Importing a "raw" model and manually defining the metadata (difficult - experts only !).
+
+![](/news/images/deep_learning_description.png)
+
+*How to import your deep learning into PAMGuard*
+
+## Moving forward
+
+Major development for the deep learning module is now complete – there’s a lot more work to do compatibility-wise, but there’s not going to be any large user-facing changes from here. We now intend to focus on speed and stability. What we want now is for folks to start using the module and submit models to the PAMGuard deep learning page.
+
+If you want to start using the deep learning module, then a great place to start is our brand new [user tutorial](/tutorials/deeplearning.qmd)!
+
+For more info on how it all works, check out the [help file](https://github.com/PAMGuard/PAMGuard/blob/main/src/rawDeepLearningClassifier/deep_learning_help.md). Please send us [feedback or report any bugs or feature requests](/contact.qmd).
+
+## Acknowledgements
+
+Funding for the development of the Batch Processing module was provided by the Bureau of Oceans Management (BOEM), Contract number 140M0122C0006
