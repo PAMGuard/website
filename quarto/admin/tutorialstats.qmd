@@ -24,6 +24,7 @@ table, th, td {
 <h2>Tutorials</h2>
 
 <h3>Getting started</h3>
+
 ::: pgdownload
 https://github.com/PAMGuardLearning/GettingStarted/
 :::
@@ -37,6 +38,7 @@ https://doi.org/10.5281/zenodo.13851130
 <br>
 
 <h3>Introduction / Sound Traps</h3>
+
 ::: pgdownload
 hhttps://github.com/PAMGuardLearning/Intro2Pamguard/
 :::
@@ -48,7 +50,9 @@ https://doi.org/10.5281/zenodo.13880212
 :::
 
 <br>
+
 <h3>Batch Processing</h3>
+
 ::: pgdownload
 hhttps://github.com/PAMGuardLearning/batchprocessing/
 :::
@@ -60,9 +64,33 @@ https://doi.org/10.5281/zenodo.14989668
 :::
 
 <h3>Tethys</h3>
+
 ::: pgdownload
 https://github.com/PAMGuardLearning/pamguard_tethys/
 :::
+
+<h3>Deep Learning in PAMGuard</h3>
+
+::: pgdownload
+https://github.com/PAMGuardLearning/pamguard_deep_learning/
+:::
+
+<h4>Datasets</h4>
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.13880107
+:::
+::: pgdownload
+https://doi.org/10.5281/zenodo.15045544
+:::
+::: pgdownload
+https://doi.org/10.5281/zenodo.15045966
+:::
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.14989668
+:::
+
 
 
 <br>

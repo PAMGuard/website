@@ -21,7 +21,6 @@ table, th, td {
 </style>
 ```
 
-
 <h3>Whistle Classifier</h3>
 
 ::: pgdownload
@@ -29,12 +28,17 @@ https://github.com/douggillespie/whistleclassification/
 :::
 
 <h3>Deep Learning Classifier</h3>
+
 ::: pgdownload
 https://github.com/PAMGuard/deeplearningmodels/
 :::
 
 
 
+<h3>Delphin ID Classifier</h3>
 
-<br> 
-Previous: [Tutorial Downloads](tutorialstats.qmd)
+::: pgdownload
+https://doi.org/10.5281/zenodo.14578299
+:::
+
+<br> Previous: [Tutorial Downloads](tutorialstats.qmd)
