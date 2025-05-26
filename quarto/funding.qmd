@@ -1,5 +1,9 @@
 ---
 title: "Funding"
+format: html
+include-in-header:
+  - head-includes.html
+css: styles.css
 ---
 
 Initial funding for the PAMGuard project came from the International Association of Geophysical Contractors [Sound and Marine Life Joint Industry Programme](https://www.soundandmarinelife.org/)
@@ -15,7 +19,7 @@ In 2016 we set up a system of [voluntary contributions](voluntary.qmd), whereby 
 We are now setting up a much simpler system whereby companies can easily [donate to PAMGuard](https://www.st-andrews.ac.uk/development/pamguard/) through the Universities Science and Medicine donation form (please ensure you select PAMGuard from the list of funding designations!).
 
 <center><a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
-        style="background-color: #4CAF50; /* Green */
+        style="background: radial-gradient(circle, #3a99ffff, #2B4E80 ); /* Gradient from blue to purple */
         border: none;
         color: white;
         padding: 15px 32px;
@@ -24,7 +28,9 @@ We are now setting up a much simpler system whereby companies can easily [donate
         display: inline-block;
         font-size: 18px;
         font-weight: bold;
-        border-radius: 12px;" target="donate">Donate to PAMGuard</a></center>
+        border-radius: 12px;
+        width: 300px; /* Set a fixed width */" 
+        target="donate"> <i class="fas fa-donate" style="margin-right: 8px;"></i>Donate to PAMGuard</a></center>
 
 ### How we'll spend the money
 

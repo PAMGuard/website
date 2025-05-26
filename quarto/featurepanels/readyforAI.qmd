@@ -17,7 +17,7 @@ description: "PAMGuard runs AI based classifiers natively allowing users to test
 
 PAMGuard has a powerful deep learning module which can run deep learning based models on your acoustic data without the need for code. Users can load a model from a file, URL or one of the default example models and run on raw sound data or classify individual detection depending on the use case.
 
-The module is fully integrated into all displays (click detector, spectrogram, time display etc.) allowing users to visualise deep learning results and integrate AI analysis methods into real time or post processing workflows. Data are saved using PAMGuard's data management systems and can be accessed for further analysis via the exporter or MATLAB/R libraries. More information on the module is available via the [help file](https://github.com/PAMGuard/PAMGuard/blob/main/src/rawDeepLearningClassifier/deep_learning_help.md).
+The module is fully integrated into all displays (click detector, spectrogram, time display etc.) allowing users to visualise deep learning results and integrate AI analysis methods into real time or post processing workflows. Data are saved using PAMGuard's data management systems and can be accessed for further analysis via the exporter or MATLAB/R libraries. More information on the module is available via the [help file](../olhelp/classifiers/rawDeepLearningHelp/docs/rawDeepLearning_overview.html).
 
 Next: [Read about other automated analysis algorithms](automatedalgorithms.html)
 

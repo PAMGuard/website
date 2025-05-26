@@ -65,7 +65,8 @@ World leading software for the Detection, Classification, and Localisation of ma
           font-size: 18px;
           font-weight: bold;
           border-radius: 12px;
-          width: 300px; "> <i class="fas fa-download" style="margin-right: 8px;"></i> Download PAMGuard </a> <a href="https://www.st-andrews.ac.uk/development/pamguard/" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
+          width: 300px; "> <i class="fas fa-download" style="margin-right: 8px;"></i> Download PAMGuard </a> 
+<a href="funding.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" title="Help support PAMGuard with a charitable donation" 
    style="background: radial-gradient(circle, #3a99ffff, #2B4E80 ); /* Gradient from blue to purple */
           border: none;
           color: white;
@@ -95,9 +96,11 @@ Comprehensive suite of features for automatic processing, visualisation and mana
 
 <div>
 
-::: {#boldtext}
+<div>
+
 Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-:::
+
+</div>
 
 </div>
 
@@ -114,9 +117,11 @@ Used to study whales and dolphins around the world and to mitigate against the p
 
 <div>
 
-::: {#boldtext}
+<div>
+
 Latest News and Blog
-:::
+
+</div>
 
 </div>
 
