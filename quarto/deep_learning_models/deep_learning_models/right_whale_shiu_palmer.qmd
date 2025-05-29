@@ -20,7 +20,7 @@ Note that this model is also available as an example model within PAMGuard.
 
 ## Geographic location of training data
 
-Cape code bay
+Cape Cod Bay
 
 ## Reference
 
