@@ -1,0 +1,13 @@
+---
+title: "Version 2.02.17 Bug blitz!"
+description: "PAMGuard version 2.02.17 is now available for Windows and Mac with multiple bug fixes for sud files"
+date: 2025-03-20
+---
+
+2.02.15 - 16 were big releases with new lots of new features. However, the invetoable trade-off with adding more stuff to PAMGuard is that we introduce or neglect bugs. Now that field season is underway we are using PAMGuard for our own data analysis and have fixed a number of issues and - 2.02.17 deals with some significant bugs in post processing of acoustic data and spectrgrams in viewer mode. Sud files, in particular, were causing significant issues and there was a bug in viewer mode that made offline spectrgrams slow and often wrong. It wasn't all bugs though - there are some really nice new features too, including the ability for the noise band monior to use decidecadal and decade bands and PAMGuard can now read xwav files.
+
+So lots of fixes and we hope that 2.02.17 is a more stable release than the previous few.
+
+::: callout-note
+We know it's frustrating if PAMGuard does not work and we are addressing the issue of buggy releases by introducing a test framework to PAMGuard. It's not going to cathch every bug but should mean thatin the coming few years releases are more stable.
+:::

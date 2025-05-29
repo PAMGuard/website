@@ -16,7 +16,7 @@ In 2017, an experimental array of four tidal turbines was [deployed in northern 
 
 There is concern that marine mammals might be injured by the turbine blades [(Wilson et al, 2007)](https://tethys.pnnl.gov/sites/default/files/publications/Wilson-et-al-2007.pdf) and so an experiment was devised to track the 3D underwater movements of dolphins and porpoises around one of the turbines. A 12-channel hydrophone array was mounted on the turbine foundation to allow us to acoustically localize and track vocalizing animals. This involved installing a [compact cRIO computer from National Instruments](http://www.ni.com/en/shop/compactrio) directly on the turbine, which digitized the acoustic data from the hydrophones, compressed it, and then transmitted the data to shore via fiber optic cable.
 
-::: grid
+::::: grid
 ::: g-col-6
 ![The turbine foundation during deployment, showing hydrophone clusters (circles) and data acquisition system (diamond). Each cluster contained 4 closely spaced hydrophones (15cm spacing) with individual pre-amplifiers connected to the DAQ system which contained further signal conditioning and the cRIO data acquisition system.](images/tidal_turbine.png){width="100%"}
 :::
@@ -24,7 +24,7 @@ There is concern that marine mammals might be injured by the turbine blades [(Wi
 ::: g-col-6
 ![A diagram of the turbine and ability to localise. Each cluster of 4 hydrophones can determine a bearing to a porpoise or dolphin. If two or more clusters detect the same sound then the location of the animal is the point at which the bearings cross.](images/tidal_turbine_diagram.png){width="100%"}
 :::
-:::
+:::::
 
 ## PAMGuard
 
