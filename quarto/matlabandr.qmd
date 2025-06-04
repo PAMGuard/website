@@ -6,7 +6,7 @@ Many users find that they can only go so far when processing data with PAMGuard 
 
 We therefore provide export functions and software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
 
-This allows you to conduct bespoke analysis of PAMGuard output in a more user friendly programming environment.
+This allows you to conduct bespoke analysis of PAMGuard output in a more flexible programming environment.
 
 ::::::: panel-tabset
 ## Export
@@ -21,13 +21,13 @@ Export data to other platforms
 </p>
 :::
 
-PAMGuard has a powerful exporter which can export detections to;
+PAMGuard has a powerful exporter which can quickly export detections to;
 
 -   .mat files which can be opened in MATLAB.
 -   .RData frames which can be open in R.
 -   .wav file which can be opened in any acoustics program.
 
-The exporter allows filtering of data based on, for example, species classiifcaton, manual annotations etc. allowing users to specify exactly what is exported.
+The exporter allows filtering of data based on, for example, species classification, manual annotations etc. allowing users to specify exactly what is exported.
 ::::
 
 ::: {.column width="40%"}
