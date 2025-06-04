@@ -1,0 +1,54 @@
+---
+title: Version 2.02.17
+description: Windows and Mac
+date: 2025-06-06
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.16");
+      });
+    </script>
+---
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.15056259.svg)](https://doi.org/10.5281/zenodo.15056259)
+
+Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. https://doi.org/10.5281/zenodo.15056259
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.17/Setup-Pamguard_2_02_17.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_17.exe</a>
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.17/Pamguard-2.02.17.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Pamguard_2_02_17.dmg</a>
+
+### New Features
+
+Improved Error Trapping and Reporting. Added features to the PAMGuard core data handling to trap any errors in each module and better log them in the PAMGuard log files. When PAMGuard starts, it will automatically analyse the log file from the previous run for errors. If errors are found, then the user will be prompted to send a report to the PAMGuard team via email. See help on log files for further details.  
+
+[Issue 211](https://github.com/PAMGuard/PAMGuard/issues/211). Noise Band Measurement module (the one that uses filter banks). Added features to support other types of frequency band as well as standard octave and third octave. PAMGuard now supports Octave, Third Octave, Deci-decade, Decade, 1/10 Octave, and 1/12 Octave bands.
+
+[Issue 211](https://github.com/PAMGuard/PAMGuard/issues/211). Noise Monitor Module (the one that used FFT data). Added 1/10 decade, Octave, and Decade bands options. Improved data selection handling.
+
+[Issue 215](https://github.com/PAMGuard/PAMGuard/issues/215). x.wav Files. Support for duty cycling with .x.wav files from SCRIPPS HARP recorders.  
+
+Export function for noise band data to Matlab, R, etc. 
+
+### Bug Fixes
+
+[Issue 207](https://github.com/PAMGuard/PAMGuard/issues/207). 
+Marked clicks in click detector not rematching when data reloaded. This was occurring when multiple clicks had the same millisecond time and has now been rectified.
+
+Tethys deployments table. Deployments table in Tethys was showing multiple lines for duty cycled data. Duty cycled data will now display as a single row of data in the Deployments table on the display.
+
+[Issue 210](https://github.com/PAMGuard/PAMGuard/issues/210). SUD Files. Fixed several issues: support for multi channel files; handling corrupt files; reloading audio data for spectrogram displays in viewer.
+
+[Issue 230](https://github.com/PAMGuard/PAMGuard/issues/230). Updated SUD reader to handle latest soundtrap firmware that supports accelerometers and magnetometers.
+
+[Issue 220](https://github.com/PAMGuard/PAMGuard/issues/220). 
+Fixed spectrogram scrolling issues in Spectrogram and FX Time display.
+
+[Issue 216](https://github.com/PAMGuard/PAMGuard/issues/216). GEBCO Raster map files not loading. Issue now fixed.
+
+[Issue 232](https://github.com/PAMGuard/PAMGuard/issues/232). Files without dates. Will now correctly process a folder of files without dates. However, you are strongly recommended to have valid dates in your file names. 
+
+
+[Release notes for all versions](../releasenotes.qmd)
