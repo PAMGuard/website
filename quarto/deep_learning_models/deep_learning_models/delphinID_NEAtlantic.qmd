@@ -1,5 +1,5 @@
 ---
-title: "DelphinID North East Atlantic"
+title: "delphinID North East Atlantic"
 description: "delphinID classifier for the North East Atlantic - processes detected clicks and whistle contours to determine 7 delphinid species"
 image: ./delphinID_NEAtlantic/dolphin_whistles_clicks.png
 categories: [dolphin]
@@ -12,7 +12,7 @@ format: html
 
 Cross-validated testing estimates delphinID to classify events with average accuracy ranging from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris.
 
-![DelphinID running in PAMGuard](./delphinID_NEAtlantic/PAMGuard_delphinID_gif.gif)
+![delphinID running in PAMGuard](./delphinID_NEAtlantic/PAMGuard_delphinID_gif.gif)
 
 ## Species
 
