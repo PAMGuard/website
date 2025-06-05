@@ -1,5 +1,5 @@
 ---
-title: "DelphinID North East Atlantic"
+title: "delphinID North East Atlantic"
 description: "delphinID classifier for the North East Atlantic - processes detected clicks and whistle contours to determine 7 delphinid species"
 image: ./delphinID_NEAtlantic/dolphin_whistles_clicks.png
 categories: [dolphin]
@@ -8,11 +8,11 @@ format: html
 
 ## Introduction
 
-[delphinID](https://github.com/tristankleyn/which.dolphin/tree/main) models are deep convolutional neural networks (CNNs) trained in Python Tensorflow 2.18.0 to automatically classify detections of delphinid whistles and clicks to species by latent patterns in average low-frequency power spectra calculated across groups, or frames, of detections. Separate models for classifying based on either whistle or click detections output predictions intended to used as a feature vector for an event classifier, which predicts species based on information from both whistles and clicks. Unlike many deep learning models, delphinID does not require raw sound data but instead relies only on outputs from the PAMGuard click Detector and Whistle and Moan detector modules. 
+[delphinID](https://github.com/tristankleyn/which.dolphin/tree/main) models are deep convolutional neural networks (CNNs) trained in Python Tensorflow 2.18.0 to automatically classify detections of delphinid whistles and clicks to species by latent patterns in average low-frequency power spectra calculated across groups, or frames, of detections. Separate models for classifying based on either whistle or click detections output predictions intended to used as a feature vector for an event classifier, which predicts species based on information from both whistles and clicks. Unlike many deep learning models, delphinID does not require raw sound data but instead relies only on outputs from the PAMGuard click Detector and Whistle and Moan detector modules.
 
 Cross-validated testing estimates delphinID to classify events with average accuracy ranging from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris.
 
-![The Shiu and Palmer right whale classifier running in PAMGuard](./delphinID_NEAtlantic/PAMGuard_delphinID_gif.gif)
+![delphinID running in PAMGuard](./delphinID_NEAtlantic/PAMGuard_delphinID_gif.gif)
 
 ## Species
 
