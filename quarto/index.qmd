@@ -96,9 +96,13 @@ Comprehensive suite of features for automatic processing, visualisation and mana
 <div>
 
 <div>
-::: {#boldtext}
+
+<div>
+
 Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
-:::
+
+</div>
+
 </div>
 
 </div>
@@ -117,9 +121,13 @@ Used to study whales and dolphins around the world and to mitigate against the p
 <div>
 
 <div>
-::: {#boldtext}
+
+<div>
+
 Latest News and Blog
-:::
+
+</div>
+
 </div>
 
 </div>
