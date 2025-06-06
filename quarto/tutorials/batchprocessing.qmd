@@ -28,7 +28,7 @@ This tutorial assumes reasonable working knowledge of PAMGuard. If you are not a
 
 ### Downloads
 
-Detailed tutorial documentation is in [Batch_Processing_V2.0.pdf](https://github.com/PAMGuardLearning/batchprocessing/releases/download/V2.0/Batch_Processing_V2.0.pdf)
+Detailed tutorial documentation is in [Batch_Processing_V2.0.pdf](https://github.com/PAMGuardLearning/batchprocessing/releases/download/V2.0/Batch_Processing_V2.0.pdf) and Help pages [here](https://www.pamguard.org/batchhelp/docs/batchoverview.html).
 
 The Batch Processing plugin is available [here](../plugins/plugins.html).
 

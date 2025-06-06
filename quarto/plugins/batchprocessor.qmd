@@ -14,8 +14,7 @@ The Batch Processing module can be used to run the same configuration file on mu
 
 It is particularly useful for processing datasets from deployments of multiple autonomous recorders, but also has application in reprocessing of any data where you want to run the same PAMGuard algorithms on multiple sets of data.
 
-The latest version can now also run Viewer Mode offline tasks, such as click reclassification, or bulk output of data to a Tethys database. 
-
+The latest version can now also run Viewer Mode offline tasks, such as click reclassification, or bulk output of data to a Tethys database.
 
 ### Downloads
 

@@ -12,13 +12,13 @@ include-in-header:
     </script>
 ---
 
-[![](https://zenodo.org/badge/DOI/10.5281/zenodo.15056259.svg)](https://doi.org/10.5281/zenodo.15056259)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15593810.svg)](https://doi.org/10.5281/zenodo.15593810)
 
-Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. https://doi.org/10.5281/zenodo.15056259
+Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. https://doi.org/10.5281/zenodo.15593810
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.17/Setup-Pamguard_2_02_17.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_17.exe</a>
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.17/Pamguard-2.02.17.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Pamguard_2_02_17.dmg</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.17/Setup-Pamguard-2.02.17.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard-2.02.17.dmg</a>
 
 ### New Features
 

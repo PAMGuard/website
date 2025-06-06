@@ -1,24 +1,30 @@
 ---
 title: "Northeast Atlantic"
 image: ./images/nea.png
-description: "This folder contains two Random Forest classifiers (one for clicks and one for whistles) for six commonly occurring northeast Atlantic delphinid species. These classifiers were trained with data collected from dipped hydrophones and towed hydrophone arrays deployed in combined visual and acoustic surveys. Only recordings of single species groups that had visual confirmation of species identity and were at least 4 nmi from any other species were included in the training dataset."
+description: "ROCCA classifiers  for the Northeast Atlantic - process clicks and whistle contours detected using PAMGuard’s Whistle & Moan Detector and Click Detector to classify seven delphinid species."
 ---
 
 ## Northeast Atlantic Classifier
 
-This folder contains two Random Forest classifiers (one for clicks and one for whistles) for six commonly occurring northeast Atlantic delphinid species. These classifiers were trained with data collected from dipped hydrophones and towed hydrophone arrays deployed in combined visual and acoustic surveys. Only recordings of single species groups that had visual confirmation of species identity and were at least 4 nmi from any other species were included in the training dataset.
+When used together to classify encounters containing multiple vocalizations, these ROCCA classifiers performed with an overall accuracy of 78%, ranging from 60% for Grampus griseus encounters to 92% for Orcinus orca encounters. The following seven species can be identified: 
 
-```         
-Delphinus delphis (Dde)
-Grampus griseus (Ggr)
-Globicephala melas (Gme)
-Lagenorhynchus albirostris (Lal)
-Orcinus orca (Oor)
-Tursiops truncatus (Ttr)
-```
+*	Atlantic white-sided dolphin (_Lagenorhynchus acutus_) 
+*	Common bottlenose dolphin (_Tursiops truncatus_) 
+*	Killer whale (_Orcinus orca_) 
+*	Long-finned pilot whale (_Globicephala melas_) 
+*	Risso’s dolphin (_Grampus griseus_) 
+*	Short-beaked common dolphin (_Delphinus delphis_) 
+*	White-beaked dolphin (_Lagenorhynchus albirostris_) 
+ 
+### Reference 
 
-Full details can be found in the pdf document contained in the zip file.
+Paper in prep. 
+ 
+### Models 
 
-<a href="https://drive.google.com/file/d/1wxxkkgMBGMfkHl-u_iY7-8gwQXHBYamP/view?usp=drive_link" target="roccadown">Download Northeast Atlantic Classifier</a>
+Northeast Atlantic ROCCA click and whistle classifiers can be found on Zenodo: [zenodo.org/records/14936662](https://zenodo.org/records/14936662).
+Separate click and whistle predictions are intended to be combined for final species classification via an R application (see README file) also accessible through the Zenodo download. Also included in the download are a PAMGuard settings file (.psfx) for ROCCA and a README file in the download containing documentation, tutorials, and extra information. 
+
+
 
 [Back to ROCCA Classifiers](rocca.html)

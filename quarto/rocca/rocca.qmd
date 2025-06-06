@@ -4,4 +4,6 @@ listing:
   type: grid
 ---
 
-Species classifier files for use with the ROCCA classifier module.
+ROCCA (Real-time Odontocete Call Classification Algorithm) classifiers are Random Forest models trained in WEKA [https://www.weka.io/](https://www.weka.io) to automatically classify whistle contours and clicks to delphinid species based on acoustic-temporal measurements automatically extracted from the vocalizations. ROCCA classifiers are designed to work with automated detections from PAMGuard's Whistle & Moan Detector and Click Detector to feed into an event classifier, which combines information from each to inform a final species classification. The whistle and click classifiers can run at speeds up to 64x real-time in PAMGuard, depending on computer specifications and file sizes, while the event classifier must be used in a separate R application to combine the predictions. All models were trained and evaluated exclusively on visually confirmed single species recordings of these species made in the Northeast Atlantic and North Sea and only evaluated on recordings spatiotemporally independent from those used to train the models.
+
+For more information about ROCCA, refer to the [ROCCA User's Manual](https://www.navymarinespeciesmonitoring.us/files/5413/9422/0614/Rocca_User_Manual_Revised_FINAL.pdf) 
