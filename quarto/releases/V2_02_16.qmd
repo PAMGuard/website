@@ -20,7 +20,6 @@ Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.16). Zenodo. https://doi.o
 
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.16/Pamguard-2.02.16.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Pamguard_2_02_16.dmg</a>
 
-
 ### New Features
 
 **Updates to Tethys Interface**

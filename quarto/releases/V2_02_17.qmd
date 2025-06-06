@@ -7,12 +7,12 @@ include-in-header:
     <script src="js/countdowns.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        countRelease("V2.02.16");
+        countRelease("V2.02.17");
       });
     </script>
 ---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15593810.svg)](https://doi.org/10.5281/zenodo.15593810)
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.15593810.svg)](https://doi.org/10.5281/zenodo.15593810)
 
 Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. https://doi.org/10.5281/zenodo.15593810
 
