@@ -9,10 +9,11 @@ listing:
 
 ## Available Plugin Modules
 
-These are [Plugin modules](../pluginmodules.qmd) developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites.
+These are [Plugin modules](../pluginmodules.qmd) developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites. If you've developed a plugin module that you'd like to share through this website, please
+get in touch. 
 
 ### Installation
 
 Usually, a plugin is distributed in the form of a .jar file (that's compiled Java, the language PAMGuard is written in). All you have to do is copy the file into the plugins folder in the PAMGuard installation directory (e.g. C:\\Program Files\\Pamguard\\plugins for most installation). In some cases, you may need to add other files, for example some additional C libraries. In this case check any instructions distributed with the plugin.
 
-We attempt to ensure that these plugins remain compatible with the latest released version of PAMGuard.
+We do out best to ensure that these plugins remain compatible with the latest released version of PAMGuard, but take no responsibility for any that were not developed directly by the PAMGuard team.

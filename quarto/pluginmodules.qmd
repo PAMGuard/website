@@ -18,5 +18,9 @@ There are several reasons why people may want to create or use plugin modules:
 4.  The module may have such niche functionality that no one will want to use it and it just clutters the PAMGuard menus.
 5.  All of the above
 
+That said, there are many great plugin modules, some developed by our team, some by others. Some of the ones
+we know about and think are useful are available for download from this site. Other developers may be hosting them 
+on their own website or GitHub pages. 
+
 <a href="plugins/plugins.html" class="btn btn-primary btn-sm" role="button" data-toggle="tooltip" 
 title="Click here for a list of available PAMGuard Plugins">Download Plugin Modules</a>
