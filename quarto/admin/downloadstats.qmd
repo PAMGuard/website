@@ -117,6 +117,15 @@ https://github.com/PAMGuard/haggis/
 
 <br>
 
+
+<h3>Windows Sound Plugin</h3>
+
+::: pgdownload
+https://github.com/douggillespie/WindowsSound/
+:::
+
+<br>
+
 <h2>Zenodo</h2>
 
 <h3>PAMGuard source</h3>
