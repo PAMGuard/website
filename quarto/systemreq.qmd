@@ -18,6 +18,13 @@ When you run the installer, all the files you need will be placed in a folder in
 
 A number of ARM processor based Windows PC's are now on the market, and more are expected. We've not yet tested PAMGuard on ARM and therefore cannot recommend it. While existing versions of PAMGuard may work with ARM, for optimal performance we'll need to build a different installer and very likely rebuild a number of libraries to external instruments (sound cards, GPS, etc.). Look for an update here towards the end of 2024.
 
+#### End of Windows 10 support
+
+Microsoft are [ending support for Windows 10](https://www.microsoft.com/en-gb/windows/end-of-support) in October 2025. 
+For security, we are no longer allowed to operate Windows 10 machines within the University of St Andrews. Therefore
+new releases of PAMGuard (> 2.02.17) will only be tested on Windows 11 computers. It is very likely that PAMGuard will continue
+to run under Windows 10 for many years to come, but be aware that it probably won't have been tested. 
+
 ### Apple Mac
 
 A macOS installer is now available for apple computers running macOS + with Apple Silicon (older intel Macs are not supported).
