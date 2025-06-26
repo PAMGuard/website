@@ -34,11 +34,27 @@ We are now setting up a much simpler system whereby companies can easily [donate
 
 ### How we'll spend the money
 
-Subject to having enough funds to employ a new programmer / assistant, important areas we want to work on in the coming 12 months are
+Subject to having enough funds to employ a new programmer / assistant, there are several important areas of PAMGuard that we want to work on. Tasks can broadly be split into maintenance tasks and new functionality.
 
-1.  Continued user support
-2.  Improvement in pre-release testing
-3.  Updated user tutorials
-4.  New Installers for Windows ARM Processors
-5.  Better support for Mac computers, including real time processing
-6.  Further updates to this website
+#### Maintenance Tasks
+
+Without code maintenance, there is a risk that PAMGuard will become unstable or inefficient on new computer hardware and new versions of operating systems. Mac have already switched to ARM processors, and Windows are heading in the same direction. Generally, this is a good thing since these processors are ore powerful, and many are now optimised for running deep learning (AI) models. However, it's also the case that to get the most out of these processors, we're going to have to rebuild parts of PAMGuard and make different installers. All of this takes time and resource.
+
+We aim to:
+
+1.  Continue user support
+2.  Improve pre-release testing
+3.  Update user tutorials
+4.  Build new Installers for Windows ARM Processors
+5.  Provide better support for Mac computers, including real time processing
+6.  Further update this website
+
+#### New Functionality
+
+The marine mammal acoustics community have become increasingly active during the lifetime of PAMGuard, particularly through the [DCLDE workshops](https://dclde2024.com/previous/) which are generally held every two years. Several of the new algorithms that have been presented at these workshops would be suitable for implementation into PAMGuard. However, taking Matlab or Python code that was written to process files offline can require a lot of work to get it running in real time.
+
+In particular, we want to:
+
+1.  Continue to integrate Machine Learning algorithms / AI throughout PAMGuard.
+2.  Implement newly developed methods for whistle extraction into PAMGuards real time framework.
+3.  Develop and implement better click train detection / tracking algorithms.
