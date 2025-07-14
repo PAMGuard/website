@@ -1,14 +1,12 @@
 ---
-title: "MATLAB and R"
+title: "Exporting and Processing"
 ---
 
-Many users find that they can only go so far when processing data with PAMGuard and there are often important steps that people need to take to go from PAMGuard to a published paper.
+PAMGuard outputs binary data files for various modules. Users that wish to further process data files in a more flexible programming environment (for example, in order to publish certain outputs), might want to use one of the software libraries we provide.
 
-We therefore provide export functions and software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
+There currently exist libraries to process PAMGuard binary files written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a>. A <a href="https://www.python.org/" target="python">Python</a> library is under active development. Read below how to install and use these libraries.
 
-This allows you to conduct bespoke analysis of PAMGuard output in a more flexible programming environment.
-
-::::::: panel-tabset
+:::::::::: panel-tabset
 ## Export
 
 :::::: columns
@@ -110,4 +108,47 @@ for i=1:length(binaryFiles)
     end
 end
 ```
-:::::::
+
+## Python
+
+PyPAMGuard is a data-processing library for PAMGuard written in Python. Access the source code on <a href='https://github.com/sullivan-james/pypamguard'>this</a> GitHub repository.
+
+::: callout-warning
+## WARNING: PyPAMGuard is still in active development.
+
+The library is made available in an **experimental state**. The code is unstable and may not produce the results you expect. The interface and methods may change between now and the production release. To use the experimental code, you can download the source code from the GitHub repository.
+:::
+
+### Experimental Installation
+
+::: callout-caution
+## Python proficiency recommended to install and use the experimental code.
+:::
+
+To install and use PyPAMGuard, ensure you have at least got Python 3.12 installed on your MacOS, Windows or Linux system. Download or clone the source code from the <a href='https://github.com/sullivan-james/pypamguard'>Git repository on GitHub</a> and extract the contents of /src into your Python project or working directory. You will need to install all the dependencies listed in requirements.txt (it is recommended you do this with a <a href='https://docs.python.org/3/library/venv.html'>virtual environment</a>).
+
+You can now process PAMGuard data files by running the code below. There are a raft of customisations that are documented in the <a href='https://sullivan-james.github.io/pypamguard/pypamguard/index.html'>API reference</a> and <a href='https://github.com/sullivan-james/pypamguard/blob/main/README.md'>README</a>.
+
+``` python
+import pypamguard
+df = pypamguard.load_binary_data_file('path/to/data/file.pgdf')
+print(df) # will print a summary of all headers, footers and data
+```
+
+The code below produced a `PGBFile` object. Attributes such as the headers, footers and data can be accessed in an object-like manner. Some examples are shown below.
+
+``` python
+df.file_header # file header
+df.module_header # module header
+df.module_header.version # module version
+df.module_footer # module footer
+df.file_footer # file footer
+df.data[0] # the first module data
+```
+
+::: callout-note
+### Coming Soon: Installation via `pip`
+
+PyPAMGuard will be available to download via the Python Package Index (PyPI) once it enters a stable production phase. Installation will as simple as running `pip install pypamguard` in your command line.
+:::
+::::::::::
