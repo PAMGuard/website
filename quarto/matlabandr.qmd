@@ -1,10 +1,14 @@
 ---
-title: "Exporting and Processing"
+title: "Data Export, R, Matlab, & Python"
 ---
 
-PAMGuard outputs binary data files for various modules. Users that wish to further process data files in a more flexible programming environment (for example, in order to publish certain outputs), might want to use one of the software libraries we provide.
+PAMGuard outputs data both to a SQL relational [database](./olhelp/utilities/generalDatabaseHelp/docs/database_database.html) and to [binary data files](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html).
 
-There currently exist libraries to process PAMGuard binary files written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a>. A <a href="https://www.python.org/" target="python">Python</a> library is under active development. Read below how to install and use these libraries.
+Users wishing to further process PAMGuard output data in a more flexible programming environment (for example, to develop or run bespoke classifiers on PAMGuard detections, or to mike nicer plots for publication), will need to read those data into their programming language of choice.
+
+Most programming languages will be able to connect to and read the database using standard libraries. However, the binary files are in a bespoke format, which requires special software libraries to read data from those files.
+
+Libraries are provided to read data from PAMGuard binary files written in <a href="https://www.r-project.org/" target="matlab">R</a> and <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a>. A <a href="https://www.python.org/" target="matlab">Python</a> library is under development. Read below how to install and use these libraries.
 
 :::::::::: panel-tabset
 ## Export
@@ -35,7 +39,7 @@ The exporter allows filtering of data based on, for example, species classificat
 
 ## R
 
-Thanks so much to our friends at NOAA Southwest Fisheries Science Center in San Diego , there is also an R package for opening PAMGuard binary files:
+Thanks to our friends at NOAA Southwest Fisheries Science Center in San Diego, there is a R package for opening PAMGuard binary files:
 
 <code> install.packages("PamBinaries") </code>
 

@@ -1,0 +1,9 @@
+---
+title: "Python Binary File Reader"
+description: "PyPAMGuard: library to read PAMGuard binary files"
+date: 2025-07-16
+---
+
+We're pleased to announce the availability of PyPAMGuard: a <a href="https://www.python.org/" target="matlab">Python</a> library to read PAMGuard binary files.
+
+This is a pre-release of the software. To the best of our knowledge it is fully functional. Further details can be found on the [data export](../matlabandr.qmd) page. Please send any feedback, bug reports, etc. to [support\@pamguard.org](mailto:support@pamguard.org) and / or log them on the PyPAMGuard GitHub page.
