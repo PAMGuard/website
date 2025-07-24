@@ -129,7 +129,7 @@ The library is made available in an **experimental state**. The code is unstable
 ## Python proficiency recommended to install and use the experimental code.
 :::
 
-To install and use PyPAMGuard, ensure you have at least got Python 3.12 installed on your MacOS, Windows or Linux system. Download or clone the source code from the <a href='https://github.com/sullivan-james/pypamguard'>Git repository on GitHub</a> and extract the contents of /src into your Python project or working directory. You will need to install all the dependencies listed in requirements.txt (it is recommended you do this with a <a href='https://docs.python.org/3/library/venv.html'>virtual environment</a>).
+To install and use PyPAMGuard, ensure you have at least got Python 3.12 installed on your MacOS, Windows or Linux system. Download the  code from the <a href='https://github.com/sullivan-james/pypamguard/releases/download/v0.0.1-alpha/pypamguard-v0.0.1-alpha.zip'>Git repository on GitHub</a> and extract the contents into your Python project or working directory. You will need to install all the dependencies listed in requirements.txt (it is recommended you do this with a <a href='https://docs.python.org/3/library/venv.html'>virtual environment</a>).
 
 You can now process PAMGuard data files by running the code below. There are a raft of customisations that are documented in the <a href='https://sullivan-james.github.io/pypamguard/pypamguard.html'>API reference</a> and <a href='https://github.com/sullivan-james/pypamguard/blob/main/README.md'>README</a>.
 
