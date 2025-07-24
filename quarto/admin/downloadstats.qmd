@@ -139,4 +139,16 @@ https://doi.org/10.5281/zenodo.13378950
 https://doi.org/10.5281/zenodo.13626338
 :::
 
+<br>
+
+<h2>Data Processing</h2>
+
+<h3>PyPAMGuard</h3>
+
+::: pgdownload
+<https://github.com/sullivan-james/pypamguard>
+:::
+
+<br>
+
 <br> Next: [Tutorial Downloads](tutorialstats.qmd)
