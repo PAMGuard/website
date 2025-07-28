@@ -146,7 +146,7 @@ https://doi.org/10.5281/zenodo.13626338
 <h3>PyPAMGuard</h3>
 
 ::: pgdownload
-<https://github.com/sullivan-james/pypamguard>
+<https://github.com/PAMGuard/pypamguard>
 :::
 
 <br>
