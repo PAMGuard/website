@@ -1,0 +1,11 @@
+---
+title: "pypamguard v1.0.0 Released"
+description: "A PAMGuard binary file reader for Python 3"
+date: 2025-08-13
+---
+
+We're pleased to announce the availability of pypamguard version 1.0.0: a <a href="https://www.python.org/" target="matlab">Python</a> library to read most binary output files produced by PAMGuard straight into Python. Python is a great choice for data processing, offering a number of native and third-party libraries to help with statistics, machine learning and much more.
+
+Further details of pypamguard, including installation and a quick-start guide, can be found on the [data export](../matlabandr.qmd) page.
+
+Please report any bugs to the [pypamguard GitHub repository](https://github.com/PAMGuard/pypamguard).
