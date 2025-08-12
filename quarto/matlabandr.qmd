@@ -115,17 +115,13 @@ end
 
 ## Python
 
-pypamguard is a package for processing PAMGuard binary file outputs in Python.
+PAMGuard [binary file](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html)
+output can be read in Python using the **pypamguard** package.
 
-* [**PyPI**](https://pypi.org/project/pypamguard/)
-* [**GitHub**](https://github.com/PAMGuard/pypamguard)
-* [**Documentation**](https://www.pamguard.org/pypamguard/)
-* [**Website**](https://www.pamguard.org/)
-* [**Zenodo**](https://doi.org/10.5281/zenodo.16789563)
 
 ### Installation
 
-```bash
+``` bash
 pip install pypamguard
 ```
 
@@ -133,21 +129,21 @@ pip install pypamguard
 
 Example of loading in a simple PAMGuard data file into Python.
 
-```python
+``` python
 import pypamguard
 df = pypamguard.load_pamguard_binary_file('path/to/data/file.pgdf')
 ```
 
 Then, for example, you can print out the file header like so.
 
-```python
+``` python
 print(df.file_info.file_header) # File header
 print(df.file_info.file_header.version) # File version
 ```
 
-Modules also have a `file_info.module_header`, `file_info.module_footer`, `file_info.file_footer`, and most importantly `data` and `background`. 
+Modules also have a `file_info.module_header`, `file_info.module_footer`, `file_info.file_footer`, and most importantly `data` and `background`.
 
-```python
+``` python
 print("File length", len(df.data)) # Number of module data chunks
 first_obj = df.data[0] # First module data chunk
 for chunk in df.data: # Looping through the data
@@ -156,16 +152,23 @@ for chunk in df.data: # Looping through the data
 
 For more information, see the [documentation](https://www.pamguard.org/pypamguard/).
 
+### Links
+
+-   [**PyPI**](https://pypi.org/project/pypamguard/)
+-   [**GitHub**](https://github.com/PAMGuard/pypamguard)
+-   [**Documentation**](https://www.pamguard.org/pypamguard/)
+-   [**Zenodo**](https://doi.org/10.5281/zenodo.16789563)
+
+
 ### Bugs/Requests
 
 Please use the [Github issue tracker](https://github.com/PAMGuard/pypamguard/issues) to submit bugs or feature requests.
 
 ### License
 
-This software is distributed under the terms of the MIT license. pypamguard is free and open source. 
+This software is distributed under the terms of the MIT license. pypamguard is free and open source.
 
 If you use this code, please cite it like so: James Sullivan. (2025). PAMGuard/pypamguard: Version 1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16789564
 
 You can find citations for other referencing styles and up-to-date pypamguard versions on [Zenodo](https://doi.org/10.5281/zenodo.16789563).
-
 :::::::
