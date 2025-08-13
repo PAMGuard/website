@@ -14,7 +14,7 @@ Cross-validated testing estimates delphinID to classify events with average accu
 
 ![delphinID running in PAMGuard in real time using both a click and whistle model](./delphinID_NEAtlantic/delphinID_demo.gif)
 
-Cross-validated testing estimates delphinID to classify recordings with an average accuracy of 86%, and ranges from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris. Species that can be classified by the Northeast Atlantic delphinID models are: 
+Cross-validated testing estimates delphinID to classify recordings with an average accuracy of 86%, and ranges from 80% for Delphinus delphis to 92% for Lagenorhynchus albirostris. Species that can be classified by the Northeast Atlantic delphinID models are:
 
 1.  Atlantic white-sided dolphin (*Lagenorhynchus acutus*)
 
@@ -38,6 +38,6 @@ Paper in prep.
 
 Northeast Atlantic delphinID click and whistle classifiers can be found on Zenodo.[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14578299.svg)](https://doi.org/10.5281/zenodo.14578299)
 
-oes not use raw audio data as its input for classification; instead, it processes detected PAMGuard whistle contours and click detections. The first step is therefore to run the WMD and the Click Detector on wav files in PAMGuard. The output is then run through the delphinID modelsloaded into the Deep Learning module in PAMGuard. The resulting click and whistle predictions can then be combined for final species classification via an R application (see README file) also accessible through the Zenodo download. Also included in the download are a PAMGuard settings file (.psfx) for delphinID and a README file containing documentation, tutorials, and extra information. 
+delphinID does not use raw audio data as its input for classification; instead, it processes detected PAMGuard whistle contours and click detections. The first step is therefore to run the WMD and the Click Detector on wav files in PAMGuard. The output is then run through the delphinID modelsloaded into the Deep Learning module in PAMGuard. The resulting click and whistle predictions can then be combined for final species classification via an R application (see README file) also accessible through the Zenodo download. Also included in the download are a PAMGuard settings file (.psfx) for delphinID and a README file containing documentation, tutorials, and extra information. 
 
 To run delphinID, users must set the location of the database, binary store and sound files, and open both of PAMGuard’s deep learning modules. To do this go to *Settings -\> Raw Deep Learning Classifier_Clicks* and select the deep learning models on their local machine. The configuration will then detect whistle contours and clicks from raw sound data, pass the detections to both deep learning modules and save the results in the PAMGuard database. Also note that delphinID can run in viewer mode if whistles and/or click detections are part of the data model. 

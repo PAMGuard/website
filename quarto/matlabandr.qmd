@@ -1,12 +1,14 @@
 ---
-title: "MATLAB and R"
+title: "Data Export, R, Matlab, & Python"
 ---
 
-Many users find that they can only go so far when processing data with PAMGuard and there are often important steps that people need to take to go from PAMGuard to a published paper.
+PAMGuard outputs data both to a SQL relational [database](./olhelp/utilities/generalDatabaseHelp/docs/database_database.html) and to [binary data files](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html).
 
-We therefore provide export functions and software libraries written in <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a> and <a href="https://www.r-project.org/" target="matlab">R</a> (a Python version is on it's way) which can access PAMGuard data files.
+Users wishing to further process PAMGuard output data in a more flexible programming environment (for example, to develop or run bespoke classifiers on PAMGuard detections, or to mike nicer plots for publication), will need to read those data into their programming language of choice.
 
-This allows you to conduct bespoke analysis of PAMGuard output in a more flexible programming environment.
+Most programming languages will be able to connect to and read the database using standard libraries. However, the binary files are in a bespoke format, which requires special software libraries to read data from those files.
+
+Libraries are provided to read data from PAMGuard binary files written in <a href="https://www.r-project.org/" target="matlab">R</a> and <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a>. A <a href="https://www.python.org/" target="matlab">Python</a> library is under development. Read below how to install and use these libraries.
 
 ::::::: panel-tabset
 ## Export
@@ -37,7 +39,7 @@ The exporter allows filtering of data based on, for example, species classificat
 
 ## R
 
-Thanks so much to our friends at NOAA Southwest Fisheries Science Center in San Diego , there is also an R package for opening PAMGuard binary files:
+Thanks to our friends at NOAA Southwest Fisheries Science Center in San Diego, there is a R package for opening PAMGuard binary files:
 
 <code> install.packages("PamBinaries") </code>
 
@@ -110,4 +112,63 @@ for i=1:length(binaryFiles)
     end
 end
 ```
+
+## Python
+
+PAMGuard [binary file](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html)
+output can be read in Python using the **pypamguard** package.
+
+
+### Installation
+
+``` bash
+pip install pypamguard
+```
+
+### Getting Started
+
+Example of loading in a simple PAMGuard data file into Python.
+
+``` python
+import pypamguard
+df = pypamguard.load_pamguard_binary_file('path/to/data/file.pgdf')
+```
+
+Then, for example, you can print out the file header like so.
+
+``` python
+print(df.file_info.file_header) # File header
+print(df.file_info.file_header.version) # File version
+```
+
+Modules also have a `file_info.module_header`, `file_info.module_footer`, `file_info.file_footer`, and most importantly `data` and `background`.
+
+``` python
+print("File length", len(df.data)) # Number of module data chunks
+first_obj = df.data[0] # First module data chunk
+for chunk in df.data: # Looping through the data
+    print(chunk.identifier)
+```
+
+For more information, see the [documentation](https://www.pamguard.org/pypamguard/).
+
+### Links
+
+-   [**PyPI**](https://pypi.org/project/pypamguard/)
+-   [**GitHub**](https://github.com/PAMGuard/pypamguard)
+-   [**Documentation**](https://www.pamguard.org/pypamguard/)
+-   [**Zenodo**](https://doi.org/10.5281/zenodo.16789563)
+
+
+### Bugs/Requests
+
+Please use the [Github issue tracker](https://github.com/PAMGuard/pypamguard/issues) to submit bugs or feature requests.
+
+### License
+
+This software is distributed under the terms of the MIT license. pypamguard is free and open source.
+
+If you use this code, please cite it like so: James Sullivan. (2025). PAMGuard/pypamguard: Version 1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.16789564
+
+You can find citations for other referencing styles and up-to-date pypamguard versions on [Zenodo](https://doi.org/10.5281/zenodo.16789563).
 :::::::

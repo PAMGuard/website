@@ -1,0 +1,50 @@
+---
+title: "Greenpeace towed array"
+format: html
+---
+
+**PAMGuard onboard Greenpeace ships**
+
+In 2019, Greenpeace deployed their first towed hydrophone from the stern of _MY Arctic Sunrise_ as part of the pole to pole campaign for ocean protection, working with researchers from the University of Exeter, UK (<https://www.greenpeace.org/international/story/23898/protect-the-oceans-pole-to-pole/>). The pole-to-pole campaign collected over 1,696 hours of acoustic recordings from the Arctic down the Atlantic, and then along to the Westen Antarctic Peninsula.
+
+Since then, ten further surveys have taken place across the globe, across three different Greenpeace vessels (_My Arctic Sunrise, SY Rainbow Warrior,_ and _SY Witness_) helping to document cetacean diversity, often in poorly studied regions or areas marked for anthropogenic exploitation.
+
+
+**Figure 1 |** Towed passive acoustic surveys running PAMGuard deployed on Greenpeace ships, including systematic surveys in the Carion-Clipperton zone and Hellenic trench, as well as opportunistic surveys for cetacean diversity assessment around the Saya de Malha bank and Vema Seamount.
+
+PAMGuard, typically running on a standard consumer laptop PC processed four-channels of data from a towed hydrophone array deployed of the stern of the vessel. Researchers onboard the ships could monitor the incoming sounds for various cetacean species. Monitoring data in real-time with PAMGuard meant some species such as sperm whales could be tracked acoustically during their foraging dives, or by listening out for codas produced at the surface, helping teams onboard find the sperm whales at the surface and take ID photos. Sharing these ID photos with local researchers helps to gain further insights into animal movements (Thompson et al., 2024). All the incoming acoustic data was recorded using PAMGuard so that the data could be reanalysed onshore for cetacean presence.
+
+
+
+**Figure 2 |** Dr. Kirsten Young deploying the towed hydrophone array from the stern of the _MY Arctic Sunrise._ Credit: Greenpeace International / D. Zalcman
+
+With over 25 TB of acoustic data collected during the first pole to pole survey, researchers developed a streamlined workflow using PAMGuard to efficiently process large quantities of data collected with a towed hydrophone array (Webber et al., 2022). Since then, this workflow, with some tweaking here and there, has been applied to all the acoustic surveys conducted onboard Greenpeace ships.
+
+Acoustic recordings which could be linked to visually verified single species sighting have been made available online to aid in the development of automated classification algorithms. For example, a Risso’s dolphin click classifier. Resulting data on cetacean occurrence and diversity from these surveys, have been and will continue to be published (e.g. Thompson et al., 2023, Webber et al., 2023, Webber et al., 2025, Young et al., 2025), increasing the pool of knowledge which can be drawn upon to implement conservation measures, or push for further systematic survey effort in poorly studied regions.
+
+
+
+**Figure 3 |** Acoustic monitoring station running PAMGuard, set up on the _SY Rainbow Warrior._
+
+Greenpeace is now also trialing the use of drifting vertical hydrophone arrays to better detect more cryptic species such as beaked whales. Beaked whale are known to be particularly sensitive to disturbance from anthropogenic activities. PAMGuard is currently being used to process the data from these drifters while they are being tested.
+
+The ability of PAMGuard to collect and process data in real-time, and it’s efficient post-processing has been crucial to aid researchers during these surveys, facilitating more complete cetacean diversity assessments to be conducted.
+
+![A view of a rope in the ocean from a window
+
+
+**Figure 3 |** The MY Arctic Sunrise towing the hydrophone array in Antarctic waters_._ Credit: Greenpeace International / A. Trayler-Smith.
+
+1. **References**
+
+Thompson, KF., Webber, T., Karantzas, L., Gordon, J., Frantzis, A. (2023). Summer and winter surveys of deep waters of the Hellenic Trench, Greece, provide insights into the spatial and temporal distribution of odontocetes. Endang Species Res 52:163-176 <https://doi.org/10.3354/esr01265>
+
+Thompson, K.F., Gordon, J., Webber, T., Zuriel, Y., Kobo, K., Tchernov, D. et al. (2024). Threatened cetaceans off the coast of Israel and long-range movement of a sperm whale. _Aquatic Conservation: Marine and Freshwater Ecosystems_, 34(5), e4155. <https://doi.org/10.1002/aqc.4155>
+
+Webber, T., Gillespie, D., Lewis, T., Gordon, J., Ruchirabha, T., & Thompson, K. F. (2022). Streamlining analysis methods for large acoustic surveys using automatic detectors with operator validation. _Methods in Ecology and Evolution_, 13, 1765–1777. <https://doi.org/10.1111/2041-210X.13907>.
+
+Webber, T., Boisseau, O., Young, K.F., Provost, F., de Vos, A. (2025). Cetaceans and threats of the Ninety East Ridge and high seas of the Indian Ocean. _Marine Environmental Research._ 107290\. <https://doi.org/10.1016/j.marenvres.2025.107290>.
+
+Webber, T., Lewis, T., Talma, S., et al. (2023). Cetaceans of the Saya de Malha bank region, Indian Ocean: A candidate important marine mammal area. _Regional Studies in Marine Science,_ _66_, 103164. <https://doi.org/10.1016/j.rsma.2023.103164>
+
+Young, K.F., Webber, T., Karantzas, L., Miteva, S., Oakes, G., Santillo, D., Johnston, P. (2025). Threatened cetaceans in a potential deep seabed mining region, Clarion Clipperton Zone, Eastern Pacific, August 2023. _Front. Mar. Sci._ 12\. <https://doi>: 10.3389/fmars.2025.1511075.

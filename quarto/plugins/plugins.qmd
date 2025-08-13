@@ -4,13 +4,12 @@ listing:
   type: grid
   sort-ui: true
   filter-ui: true
-  page-size: 12
+  page-size: 9
 ---
 
 ## Available Plugin Modules
 
-These are [Plugin modules](../pluginmodules.qmd) developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites. If you've developed a plugin module that you'd like to share through this website, please
-get in touch. 
+These are [Plugin modules](../pluginmodules.qmd) developed by the PAMGuard team, or hosted on our website. Other developers may distribute plugins from their own sites. If you've developed a plugin module that you'd like to share through this website, please get in touch.
 
 ### Installation
 

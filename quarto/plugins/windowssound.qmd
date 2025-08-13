@@ -1,0 +1,28 @@
+---
+title: "Windows Sound Plugin"
+image: images/daqdialog.png
+author: Doug Gillespie
+date: 2025-06-23
+description: "Provides native access to Windows Sound Card Drivers to support sample rates > 192kHz and 24 bit acquisition"
+---
+
+## Windows MM Sound: Windows Native Sound Card Access
+
+This is a PAMGuard DAQ plugin to acquire sound card data through low level C functions from the Windows Multimedia API.
+
+It provides better support for Windows sound cards than is available through the JavaSound library built into PAMGuard.
+
+In particular, it provides support for 24 bit sound cards and for sample rates \> 192kHz, if appropriate hardware is available.
+
+Once installed, PAMGuard will automatically add this system to the list of available DAQ systems in the PAMGuard sound acquisition module.
+
+Before using this module, read the notes in the help about 
+[correctly configuring sound cards](https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionSoundCard.html);
+
+Note that this is a new module and has only been tested on a limited number of Windows 11 computers. Please report any problems or errors to [support\@pamguard.org](mailto:support@pamguard.org){.email}, including the type of sound card you were using, the Windows version, PAMGuard version, and the error messages from the command window or [log files](https://www.pamguard.org/olhelp/overview/PamMasterHelp/docs/logfiles.html).
+
+### Downloads
+
+[Source Code](https://github.com/douggillespie/WindowsSound)
+
+[Built Module](https://github.com/douggillespie/WindowsSound/releases/download/V1.0/ReleaseV1.0.zip)

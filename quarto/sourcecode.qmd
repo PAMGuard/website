@@ -4,18 +4,12 @@ title: "Source Code"
 
 ## PAMGuard Source Code
 
-PAMGUARD is open source software licensed under the 
-[GNU General Public License V3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
-from the Free Software Foundation.
+PAMGUARD is open source software licensed under the [GNU General Public License V3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) from the Free Software Foundation.
 
-PAMGuard is mostly written in [Java](https://en.wikipedia.org/wiki/Java_(programming_language))
-which provides a good balance between speed, flexibility, and ease of development. 
+PAMGuard is mostly written in [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) which provides a good balance between speed, flexibility, and ease of development.
 
-Interfaces to external instruments, for example National Instruments data acquisition
-devices, are often written in C/C++ and accessed from the Java code using 
-the [Java Native Interface](https://en.wikipedia.org/wiki/Java_Native_Interface) or 
-use [Java Native Access](https://en.wikipedia.org/wiki/Java_Native_Access) to 
-communicate with device manufacturers C libraries. 
+Interfaces to external instruments, for example National Instruments data acquisition devices, are often written in C/C++ and accessed from the Java code using the [Java Native Interface](https://en.wikipedia.org/wiki/Java_Native_Interface) or use [Java Native Access](https://en.wikipedia.org/wiki/Java_Native_Access) to communicate with device manufacturers C libraries. These can be built using the
+Community Edition of [Visual Studio](https://visualstudio.microsoft.com/vs/community/). 
 
 All PAMGuard source code is available on [GitHub](https://github.com/PAMGuard).
 

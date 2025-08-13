@@ -1,0 +1,16 @@
+---
+title: "Windows Sound plugin"
+description: "Plugin to provide better sound card access under Windows"
+date: 2025-06-25
+---
+
+## Windows MM Sound: Windows Native Sound Card Access
+
+The Javasound system, that's been used in PAMGuard since it's start in 2013, has some annoying limitations:
+
+1.  It won't work with 24 bit sound cards
+2.  It won't work with sound card sample rates \> 192kHz.
+
+To overcome these limitations, we've developed a small plugin acquisition module that uses lower level Windows libraries and thereby provides more flexibility for accessing sound cards on Windows systems.
+
+[Click here](https://www.pamguard.org/plugins/windowssound.html) for more information and links to the download.
