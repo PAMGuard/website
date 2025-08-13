@@ -2,7 +2,7 @@
 title: "System Requirements"
 ---
 
-PAMGuard is currently only fully functional on Windows 64 bit computers, ideally running and Intel processor.
+PAMGuard is currently only fully functional on Windows 64 bit computers, ideally running and Intel processor. We support limited functionality for post processing and offline analysis using Macs, but only on ones with ARM processors (Apple Silicon). PAMGuard will not run on Macs with an Intel processor.
 
 PAMGuard is mostly written in Java. While there is good cross-platform support for standard sound cards there is currently no support within PAMGuard for ASIO sound cards and other data acquisition devices such as those manufactured by National Instruments except on Windows platforms.
 
@@ -20,17 +20,14 @@ A number of ARM processor based Windows PC's are now on the market, and more are
 
 #### End of Windows 10 support
 
-Microsoft are [ending support for Windows 10](https://www.microsoft.com/en-gb/windows/end-of-support) in October 2025. 
-For security, we are no longer allowed to operate Windows 10 machines within the University of St Andrews. Therefore
-new releases of PAMGuard (> 2.02.17) will only be tested on Windows 11 computers. It is very likely that PAMGuard will continue
-to run under Windows 10 for many years to come, but be aware that it probably won't have been tested. 
+Microsoft are [ending support for Windows 10](https://www.microsoft.com/en-gb/windows/end-of-support) in October 2025. For security, we are no longer allowed to operate Windows 10 machines within the University of St Andrews. Therefore new releases of PAMGuard (\> 2.02.17) will only be tested on Windows 11 computers. It is very likely that PAMGuard will continue to run under Windows 10 for many years to come, but be aware that it probably won't have been tested.
 
 ### Apple Mac
 
-A macOS installer is now available for apple computers running macOS + with Apple Silicon (older intel Macs are not supported).
+A macOS installer is now available for apple computers running macOS + with Apple Silicon (Macs with an Intel processor are not supported).
 
 Download and run the latest .dmg installer from our [Downloads page](downloadsurvey.qmd).
 
 When you run the installer, drag the PAMGuard icon to the Applications folder shortcut - this will automatically install PAMGuard.
 
-Note that the Mac version does not provide support for some input devices so may not be suitable for real time operation. It should however be fully functional for offline analysis of recordings and use of the PAMGuard viewer.
+Note that the Mac version does not provide support for some input devices so may not be suitable for real time operation. It should however be fully functional for data post processing and offline analysis of recordings and use of the PAMGuard viewer.
