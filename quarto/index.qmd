@@ -99,7 +99,7 @@ Comprehensive suite of features for automatic processing, visualisation and mana
 
 <div>
 
-Used to study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
+Used to hello study whales and dolphins around the world and to mitigate against the potentially harmful effects of human activities in our seas
 
 </div>
 
