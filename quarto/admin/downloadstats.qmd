@@ -143,6 +143,16 @@ https://doi.org/10.5281/zenodo.13626338
 
 <h2>Data Processing</h2>
 
+<h3>pgmatlab</h3>
+
+::: pgdownload
+https://github.com/PAMGuard/PAMGuardMatlab
+:::
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.16979862
+:::
+
 <h3>pypamguard</h3>
 
 pypamguard is hosted on the Python Package Index, which does not provide download stats. The statistics below are from files attached to GitHub releases, and not PyPI.
