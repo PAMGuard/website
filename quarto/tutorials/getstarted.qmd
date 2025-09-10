@@ -36,7 +36,7 @@ This tutorial is suitable for beginners with PAMGuard.
 
 ### Downloads
 
-Detailed tutorial documentation is in [PAMGUARD Training Tutorial 2024.pdf](https://github.com/PAMGuardLearning/GettingStarted/releases/download/V1.5/PAMGUARDTrainingTutorial2024.pdf)
+Detailed tutorial documentation is in [PAMGUARD Training Tutorial 2025.pdf](https://github.com/PAMGuardLearning/GettingStarted/releases/download/V1.5.1/PAMGUARDTrainingTutorial2025.pdf)
 
 Sample audio files and map files can be downloaded at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13851130.svg)](https://doi.org/10.5281/zenodo.13851130)
 
