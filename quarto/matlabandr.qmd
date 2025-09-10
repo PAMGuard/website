@@ -91,7 +91,8 @@ Users can also take more control and import PAMGuard data files directly in MATL
 
 MATLAB code for opening PAMGuard binary files is on the [PAMGuard GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
 
-Clicking the green 'Code' button will allow you to download the code as a zip archive. Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
+Download the [latest release](https://github.com/PAMGuard/PAMGuardMatlab/releases). 
+Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
 
 ### Getting started
 
