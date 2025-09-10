@@ -34,7 +34,7 @@ Greenpeace is now also trialing the use of drifting vertical hydrophone arrays t
 
 The ability of PAMGuard to collect and process data in real-time, and it’s efficient post-processing has been crucial to aid researchers during these surveys, facilitating more complete cetacean diversity assessments to be conducted.
 
-![The MY Arctic Sunrise towing the hydrophone array in Antarctic waters\_.\_ Credit: Greenpeace International / A. Trayler-Smith.](gptowedimages/towed_array.jpg){width="100%"}
+![The MY Arctic Sunrise towing the hydrophone array in Antarctic waters. Credit: Greenpeace International / A. Trayler-Smith.](gptowedimages/towed_array.jpg){width="100%"}
 
 ## References
 
