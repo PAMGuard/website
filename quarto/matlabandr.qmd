@@ -4,7 +4,7 @@ title: "Data Export, R, Matlab, & Python"
 
 PAMGuard outputs data both to a SQL relational [database](./olhelp/utilities/generalDatabaseHelp/docs/database_database.html) and to [binary data files](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html).
 
-Users wishing to further process PAMGuard output data in a more flexible programming environment (for example, to develop or run bespoke classifiers on PAMGuard detections, or to mike nicer plots for publication), will need to read those data into their programming language of choice.
+Users wishing to further process PAMGuard output data in a more flexible programming environment (for example, to develop or run bespoke classifiers on PAMGuard detections, or to make nicer plots for publication), will need to read those data into their programming language of choice.
 
 Most programming languages will be able to connect to and read the database using standard libraries. However, the binary files are in a bespoke format, which requires special software libraries to read data from those files.
 
@@ -23,7 +23,7 @@ Export data to other platforms
 </p>
 :::
 
-PAMGuard has a powerful exporter which can quickly export detections to;
+PAMGuard has a powerful in-built exporter which can quickly export detections to;
 
 -   .mat files which can be opened in MATLAB.
 -   .RData frames which can be open in R.
@@ -41,11 +41,14 @@ The exporter allows filtering of data based on, for example, species classificat
 
 Thanks to our friends at NOAA Southwest Fisheries Science Center in San Diego, there is a R package for opening PAMGuard binary files:
 
+### Installation
+You can install the package from CRAN using the following command:
+
 <code> install.packages("PamBinaries") </code>
 
-You can find the source files on [GitHub](https://github.com/TaikiSan21/PamBinaries).
+### Getting Started
 
-The best way to download and stay up-to-date with this is by following the installation instructions on the GitHub page. The R functions are written to work just like the MATLAB code, and there is a short tutorial on the GitHub page.
+To get started, you can load the package and read in a PAMGuard binary file like so:
 
 ``` r
 library(PamBinaries)
@@ -75,14 +78,23 @@ for (val in fnames) {
 }
 ```
 
+### Links
+
+  - [**GitHub**](https://github.com/TaikiSan21/PamBinaries).
+
+
 ## MATLAB
 
 Users can also take more control and import PAMGuard data files directly in MATLAB using the PAMGuard-matlab library
 
-MATLAB code for opening PAMGuard binary files is now on the [PAMGuard GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
+### Installation
+
+MATLAB code for opening PAMGuard binary files is on the [PAMGuard GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
 
 Download the [latest release](https://github.com/PAMGuard/PAMGuardMatlab/releases). 
 Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
+
+### Getting started
 
 ``` octave
 % count the number of classified clicks in a binary file folder of clicks. 
@@ -114,11 +126,15 @@ for i=1:length(binaryFiles)
 end
 ```
 
+### Links
+
+-   [**GitHub**](https://github.com/PAMGuard/PAMGuardMatlab)
+-   [**Zenodo**](https://github.com/PAMGuard/PAMGuardMatlab)
+
+
 ## Python
 
-PAMGuard [binary file](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html)
-output can be read in Python using the **pypamguard** package.
-
+PAMGuard [binary file](./olhelp/utilities/BinaryStore/docs/binarystore_overview.html) output can be read in Python using the **pypamguard** package.
 
 ### Installation
 
@@ -159,7 +175,6 @@ For more information, see the [documentation](https://www.pamguard.org/pypamguar
 -   [**GitHub**](https://github.com/PAMGuard/pypamguard)
 -   [**Documentation**](https://www.pamguard.org/pypamguard/)
 -   [**Zenodo**](https://doi.org/10.5281/zenodo.16789563)
-
 
 ### Bugs/Requests
 
