@@ -20,13 +20,19 @@ Since then, ten further surveys have taken place across the globe, across three 
 
 ## PAMGuard in the field
 
-PAMGuard, typically running on a standard consumer laptop PC processed four-channels of data from a towed hydrophone array deployed of the stern of the vessel. Researchers onboard the ships could monitor the incoming sounds for various cetacean species. Monitoring data in real-time with PAMGuard meant some species such as sperm whales could be tracked acoustically during their foraging dives, or by listening out for codas produced at the surface, helping teams onboard find the sperm whales at the surface and take ID photos. Sharing these ID photos with local researchers helps to gain further insights into animal movements (Thompson et al., 2024). All the incoming acoustic data was recorded using PAMGuard so that the data could be reanalysed onshore for cetacean presence.
+PAMGuard,  running on a standard consumer laptop PC, processed four-channels of data from a towed hydrophone array deployed of the stern of the vessel. Researchers onboard the ships could monitor the incoming sounds for various cetacean species. Monitoring data in real-time with PAMGuard meant some species such as sperm whales could be tracked acoustically during their foraging dives, or by listening out for codas produced at the surface, helping teams onboard find the sperm whales at the surface and take ID photos. Sharing these ID photos with local researchers helps to gain further insights into animal movements (Thompson et al., 2024). All the incoming acoustic data was recorded using PAMGuard so that the data could be reanalysed onshore for cetacean presence.
 
 ![Dr. Kirsten Young deploying the towed hydrophone array from the stern of the *MY Arctic Sunrise.* Credit: Greenpeace International / D. Zalcman](gptowedimages/kirsten_towed.jpg){width="100%"}
 
-With over 25 TB of acoustic data collected during the first pole to pole survey, researchers developed a streamlined workflow using PAMGuard to efficiently process large quantities of data collected with a towed hydrophone array (Webber et al., 2022). Since then, this workflow, with some tweaking here and there, has been applied to all the acoustic surveys conducted onboard Greenpeace ships.
+With over 25 TB of acoustic data collected during the first pole to pole survey, researchers developed a streamlined workflow using PAMGuard to efficiently process large quantities of data collected with a towed hydrophone array (Webber et al., 2022). 
+Since then, this workflow, with some tweaking here and there, has been applied to all the acoustic surveys conducted onboard Greenpeace ships.
 
-Acoustic recordings which could be linked to visually verified single species sighting have been made available online to aid in the development of automated classification algorithms. For example, a Risso’s dolphin click classifier. Resulting data on cetacean occurrence and diversity from these surveys, have been and will continue to be published (e.g. Thompson et al., 2023, Webber et al., 2023, Webber et al., 2025, Young et al., 2025), increasing the pool of knowledge which can be drawn upon to implement conservation measures, or push for further systematic survey effort in poorly studied regions.
+Acoustic recordings which could be linked to visually verified single species sighting have been made available online to aid in the development of automated classification algorithms. For example, a Risso’s dolphin click classifier. Resulting data on cetacean occurrence and diversity from these surveys, have been and will continue to be published (e.g. 
+Thompson et al., 2023, 
+Webber et al., 2023, 
+Webber et al., 2025, 
+Young et al., 2025), 
+increasing the pool of knowledge which can be drawn upon to implement conservation measures, or push for further systematic survey effort in poorly studied regions.
 
 ![Acoustic monitoring station running PAMGuard, set up on the *SY Rainbow Warrior.*](gptowedimages/acoustic_setup.jpg){width="100%"}
 
