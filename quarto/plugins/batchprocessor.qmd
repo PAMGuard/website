@@ -18,11 +18,11 @@ The latest version can now also run Viewer Mode offline tasks, such as click rec
 
 ### Downloads
 
-[Source Code](https://github.com/douggillespie/PAMGuardBatch)
+[Source Code](https://github.com/PAMGuard/PAMGuardBatch)
 
-[Current Version 2.0](https://github.com/douggillespie/PAMGuardBatch/releases/download/V2.0/BatchProcessing_2_0.jar)
+[Current Version 2.0](https://github.com/PAMGuard/PAMGuardBatch/releases/download/V2.0/BatchProcessing_2_0.jar)
 
-[Earlier Versions](https://github.com/douggillespie/PAMGuardBatch/releases)
+[Earlier Versions](https://github.com/PAMGuard/PAMGuardBatch/releases)
 
 ### Tutorial
 

@@ -21,3 +21,5 @@ For further information see the release notes on [GitHub](https://github.com/dou
 [Source Code](https://github.com/douggillespie/TritechAcquisitionPlugin)
 
 [Built Module](https://github.com/douggillespie/TritechAcquisitionPlugin/releases/tag/V1.41)
+
+[Online Help](https://douggillespie.github.io/TritechAcquisitionPlugin/docs/tritechoverview.html)
