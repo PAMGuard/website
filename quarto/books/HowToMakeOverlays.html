@@ -40,8 +40,8 @@ is capable of overlaying graphics on spectrogram displays having time and
 frequency as their axis. 
 <pre>
 	public boolean canDraw(GeneralProjector projector) {
-		if (projector.getParmeterType(0) == ParameterType.TIME
-				&& projector.getParmeterType(1) == ParameterType.FREQUENCY)
+		if (projector.getParameterType(0) == ParameterType.TIME
+				&& projector.getParameterType(1) == ParameterType.FREQUENCY)
 			return true;
 		return false;
 	}
@@ -113,11 +113,11 @@ allows drawing on both the map and spectrogram displays.
 <p>
 <pre>	public Rectangle drawDataUnit(Graphics g, PamDataUnit pamDataUnit,
 			GeneralProjector projector) {
-		if (projector.getParmeterType(0) == ParameterType.LONGITUDE
-				&& projector.getParmeterType(1) == ParameterType.LATITUDE) {
+		if (projector.getParameterType(0) == ParameterType.LONGITUDE
+				&& projector.getParameterType(1) == ParameterType.LATITUDE) {
 			return drawWhistleOnMap(g, pamDataUnit, projector);
-		} else if (projector.getParmeterType(0) == ParameterType.TIME
-				&& projector.getParmeterType(1) == ParameterType.FREQUENCY) {
+		} else if (projector.getParameterType(0) == ParameterType.TIME
+				&& projector.getParameterType(1) == ParameterType.FREQUENCY) {
 			return drawWhistleShape(g, pamDataUnit, projector);
 		}
 		return null;

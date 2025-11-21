@@ -43,7 +43,7 @@ In section 3 you will learn how to integrate the deep learning into a workflows 
 
 ## Prerequisites
 
-This tutorial is suitable for beginners with PAMGuard, however, the [Getting Started with PAMGuard](getstarted.qmd) and [Introduction to static monitoring](staticmonitoring.qmd) tutorials are recomended first.
+This tutorial is suitable for beginners with PAMGuard, however, the [Getting Started with PAMGuard](getstarted.qmd) and [Introduction to static monitoring](staticmonitoring.qmd) tutorials are recommended first.
 
 ## Downloads
 
