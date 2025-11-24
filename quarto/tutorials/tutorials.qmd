@@ -8,8 +8,10 @@ listing:
     categories: true
     fields: [image, title, description]
     sort: dispord
-    contents: 
-      - "tutorials/*.qmd"
+    exclude:
+      fileusage: notlisted
+#    contents: 
+#      - "tutorials/*.qmd"
       
 #  - id: as_table
 #    type: table

@@ -40,7 +40,7 @@ website:
       - text: Users
         menu:
           - text: User Tutorials
-            href: tutorials.qmd
+            href: ./tutorials/tutorials.qmd
           - text: Core Modules
             href: coremodules.qmd
           - text: Plugin Modules
