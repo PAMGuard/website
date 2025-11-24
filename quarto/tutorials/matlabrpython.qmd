@@ -23,15 +23,17 @@ Three language interfaces, written in Matlab, R, and Python, allow you to open P
 
 This tutorial will teach you how to install the required libraries for you language of choice and take you through some worked examples that will show you how to read and plot data from single files, or folders containing multiple files. 
 
-After that, it's up to you ! Though if you've invented something fantastic and think that it should be incorporated into the PAMGuard core functionaltiy, then please do get in touch. 
+After that, it's up to you ! Though if you've invented something fantastic and think that it should be incorporated into the PAMGuard core functionality, then please do get in touch. 
 
 ### Prerequisites
+
+These exercises assume that you're familiar with basic programming in Matlab, R, or Python. 
 
 This tutorial is not suitable for beginners with PAMGuard. The [Getting Started with PAMGuard](getstarted.qmd) and [Introduction to static monitoring](staticmonitoring.qmd) tutorials are recommended first.
 
 ### Downloads
 
-[Click here](./matlabrpython/ProcessingPGDFs.qmd) to access the tutorial web page. 
+[Click here](./matlabrpython/ProcessingPGDFs.qmd) to access the tutorial (web page). 
 
 All data used in this tutorial can be downloaded from Zenodo at [https://doi.org/10.5281/zenodo.17697843](https://doi.org/10.5281/zenodo.17697843).
 
