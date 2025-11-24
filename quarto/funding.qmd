@@ -38,7 +38,7 @@ Subject to having enough funds to employ a new programmer / assistant, there are
 
 #### Maintenance Tasks
 
-Without code maintenance, there is a risk that PAMGuard will become unstable or inefficient on new computer hardware and new versions of operating systems. Mac have already switched to ARM processors, and Windows are heading in the same direction. Generally, this is a good thing since these processors are ore powerful, and many are now optimised for running deep learning (AI) models. However, it's also the case that to get the most out of these processors, we're going to have to rebuild parts of PAMGuard and make different installers. All of this takes time and resource.
+Without code maintenance, there is a risk that PAMGuard will become unstable or inefficient on new computer hardware and new versions of operating systems. Mac have already switched to ARM processors, and Windows are heading in the same direction. Generally, this is a good thing since these processors are more powerful, and many are now optimised for running deep learning (AI) models. However, it's also the case that to get the most out of these processors, we're going to have to rebuild parts of PAMGuard and make different installers. All of this takes time and resource.
 
 We aim to:
 

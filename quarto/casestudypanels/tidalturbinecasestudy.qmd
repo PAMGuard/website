@@ -1,7 +1,7 @@
 ---
 title: " PAMGuard and Tidal Turbines"
 image: images/tidal_turbine.png
-listing-description: "<div>In 2017 a tidal trubine was equiped with a 12 channel 500KHz localising array to track porpoise movements. PAMGuard was used in real time to;<ul>
+listing-description: "<div>In 2017 a tidal trubine was equipped with a 12 channel 500KHz localising array to track porpoise movements. PAMGuard was used in real time to;<ul>
 <li>Acquire and decompress data sent from from the trubine to shore via a fibre optic cable</li>
 <li>Detect possible porpoise echolocation clicks</li>
 <li>Measure octave noise bands across the frequency spectrum</li>

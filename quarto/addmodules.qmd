@@ -2,7 +2,7 @@
 title: "Adding Core  Modules"
 ---
 
-There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed sparately. This page tells you how to add a [core module](coremodules.html) to PAMGuard.
+There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed separately. This page tells you how to add a [core module](coremodules.html) to PAMGuard.
 
 Before reading this page, make sure you've read up on how to [develop a core module](devmodules.html)
 
@@ -46,7 +46,7 @@ You can set module dependencies using
 
 
 ``` java
-PamModuleInfo.addDependency(PamDependency dependancy)
+PamModuleInfo.addDependency(PamDependency dependency)
 ```
 
 for example
