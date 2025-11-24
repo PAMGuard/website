@@ -8,7 +8,7 @@ Users wishing to further process PAMGuard output data in a more flexible program
 
 Most programming languages will be able to connect to and read the database using standard libraries. However, the binary files are in a bespoke format, which requires special software libraries to read data from those files.
 
-Libraries are provided to read data from PAMGuard binary files written in <a href="https://www.r-project.org/" target="matlab">R</a> and <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a>. A <a href="https://www.python.org/" target="matlab">Python</a> library is under development. Read below how to install and use these libraries.
+Libraries are provided to read data from PAMGuard binary files written in <a href="https://www.r-project.org/" target="matlab">R</a> and <a href="https://uk.mathworks.com/products/matlab.html" target="matlab">MATLAB</a>. A <a href="https://www.python.org/" target="matlab">Python</a> library is under development. Read below how to install and use these libraries or go to the [full tutorial](tutorials/matlabrpython.qmd).
 
 ::::::: panel-tabset
 ## Export
@@ -42,6 +42,7 @@ The exporter allows filtering of data based on, for example, species classificat
 Thanks to our friends at NOAA Southwest Fisheries Science Center in San Diego, there is a R package for opening PAMGuard binary files:
 
 ### Installation
+
 You can install the package from CRAN using the following command:
 
 <code> install.packages("PamBinaries") </code>
@@ -80,8 +81,7 @@ for (val in fnames) {
 
 ### Links
 
-  - [**GitHub**](https://github.com/TaikiSan21/PamBinaries).
-
+-   [**GitHub**](https://github.com/TaikiSan21/PamBinaries).
 
 ## MATLAB
 
@@ -91,8 +91,7 @@ Users can also take more control and import PAMGuard data files directly in MATL
 
 MATLAB code for opening PAMGuard binary files is on the [PAMGuard GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
 
-Download the [latest release](https://github.com/PAMGuard/PAMGuardMatlab/releases). 
-Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
+Download the [latest release](https://github.com/PAMGuard/PAMGuardMatlab/releases). Alternatively, you can clone the repository, which will make it easier to get updates if the code is updated.
 
 ### Getting started
 
@@ -129,8 +128,7 @@ end
 ### Links
 
 -   [**GitHub**](https://github.com/PAMGuard/PAMGuardMatlab)
--   [**Zenodo**](https://github.com/PAMGuard/PAMGuardMatlab)
-
+-   [**Zenodo**](https://doi.org/10.5281/zenodo.16979861)
 
 ## Python
 
