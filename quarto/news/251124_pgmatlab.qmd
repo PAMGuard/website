@@ -1,0 +1,11 @@
+---
+title: "pgmatlab v2.0.0 Released"
+description: "Major updates to the PAMGuard Matlab library"
+date: 2025-11-24
+---
+
+We're pleased to announce the availability of pgmatlab version 2.0.0: a library to read binary output files produced by PAMGuard into Matlab.
+
+We've also fully updated the [user tutorial](../tutorials/matlabrpython/ProcessingPGDFs.html) demonstrating how to read PAMGuard binary files using Matlab, R, or Python.
+
+Please report any bugs to the [PAMGuardMatlab GitHub repository](https://github.com/PAMGuard/PAMGuardMatlab).
