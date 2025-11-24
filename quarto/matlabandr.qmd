@@ -100,7 +100,7 @@ Alternatively, you can clone the repository, which will make it easier to get up
 % count the number of classified clicks in a binary file folder of clicks. 
 
 clear
-% the path to the binary file foldeer
+% the path to the binary file folder
 folder='/my/binary/file/folder';
  
 binaryFiles = dir(fullfile(folder, 'Click_Detector_Clicks*.pgdf'));

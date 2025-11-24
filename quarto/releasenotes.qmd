@@ -569,7 +569,7 @@ This version of PAMGuard has been bundled with Java 13 (release 13.0.1). PSFX fi
 
 3\.        Bug 435. Logger forms subtabs not working.
 
-4\.        Bug 436. Bug in Serial Port interface was occassionally causing PAMGuard to crash without error message.
+4\.        Bug 436. Bug in Serial Port interface was occasionally causing PAMGuard to crash without error message.
 
 5\.        Bug 437. Right whale detector crashing if no input was set.
 
@@ -619,7 +619,7 @@ This version of PAMGuard has been bundled with Java 13 (release 13.0.1). PSFX fi
 
 9\.        Added a few new options to the Click Detector Sweep Classifier.
 
-10\.        Add option to the Map module's Plot Overlay Options dialog, to show events occuring in the future (*look ahead*) instead of the default display of events which have already occurred. Can make it easier to match up the map with clicks seen in the Click Detector display.
+10\.        Add option to the Map module's Plot Overlay Options dialog, to show events occurring in the future (*look ahead*) instead of the default display of events which have already occurred. Can make it easier to match up the map with clicks seen in the Click Detector display.
 
 # Beta Version (with Java 12) 2.01.01 July 2019
 
@@ -819,7 +819,7 @@ PAMGuard Version 2 contains major updates. You should read and understand the no
 
 5\.        Added check for duplicate settings in the psf file when exiting PAMGuard. If duplicate settings are found, user is given the option to leave them in the psf or get rid of them. Duplicate settings are ignored by PAMGuard, but can cause the psf file to grow large over time.
 
-6\.        New features in PAMGuard Beta mean that psf files created with new versions are not compatible wth earlier versions and all configuration data may be lost if an attempt is made to open newly created psf files with older versions. We have therefore changed the file extension of psf files to .psfx in new Beta releases. Beta releases will still load the older psf files, but when the configuration is saved, the original psf file will remain untouched and data will be written to a psfx file with the same directory and name.
+6\.        New features in PAMGuard Beta mean that psf files created with new versions are not compatible with earlier versions and all configuration data may be lost if an attempt is made to open newly created psf files with older versions. We have therefore changed the file extension of psf files to .psfx in new Beta releases. Beta releases will still load the older psf files, but when the configuration is saved, the original psf file will remain untouched and data will be written to a psfx file with the same directory and name.
 
 # Beta Version 2.00.13 June 2018
 
@@ -933,9 +933,9 @@ PAMGuard Version 2 contains major updates. You should read and understand the no
 
 1.       Bug 322. Fixed problem with Log event average and click templates not showing.
 
-2.       Bug 323. Difar module. Fixed a couple of small bugs in the DIFAR system which caused it to not work if old configuratins were used.
+2.       Bug 323. Difar module. Fixed a couple of small bugs in the DIFAR system which caused it to not work if old configurations were used.
 
-3.       Bug 324. Occassional crashing in the AIS Module, as reported by user. Added warnings and more robust error handling.
+3.       Bug 324. Occasional crashing in the AIS Module, as reported by user. Added warnings and more robust error handling.
 
 4.       Bug 325. Fixed bug in complex addition/subtraction methods.
 
@@ -1952,7 +1952,7 @@ Bug fix. Channel number checking for ASIO cards changed during NI support functi
 
 Decimator was calculating incorrect filter coefficients (coefficients were based on the output sample rate, not the input sample rate, so it's likely that actual filtering of data was minimal). This is now rectified. Ishmael matched filter. Would crash if template file not correctly loaded. Now issues a warning message to the terminal and does not crash.
 
-Spelling correction on user input form (Sumbit - Submit)
+Spelling correction on user input form (Submit - Submit)
 
 **New Features**
 
