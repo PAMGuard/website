@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-Below are some recent publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research. Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a>.
+Below are some recent publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research. Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a> or [Web of Science](https://www.webofscience.com/wos/woscc/summary/65bcbaca-94e0-4fe9-b87b-b49387556e6b-018f6d325c/086f6a2a-8ebf-4563-9906-77b519f75b02-018f6d325a/relevance/1).
 
 1.  Motabaranom, J. et. al. Seals exhibit localised avoidance of operational tidal turbines. [Journal of Applied Ecology, 2025](https://doi.org/10.1111/1365-2664.14844).
 
