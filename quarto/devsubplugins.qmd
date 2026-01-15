@@ -1,0 +1,21 @@
+---
+title: "Creating Sub-module Plugins"
+---
+
+As well as [plugins that are complete PAMGuard modules](pluginmodules.qmd) is is possible to develop
+sub modules for certain PAMGuard modules. Examples are additional types of acquisition device for 
+the [Sound Acquisition Module](https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionOverview.html) and new types of analog input device for the [Array Sensor module](https://www.pamguard.org/olhelp/sensors/analogarray/docs/analogarray.html).
+
+For example, you may have a bespoke data acquisition system for audio data, or a new method for reading other sensors. 
+e.g. we've recently developed a reader for a sensor that is only available for the Raspberry Pi. It wouldn't be appropriate
+to include this in the PAMGuard core, but it's useful to us on one particular project. 
+
+The PAMGuard framework allows for easy development of additional types of sub-module plugin as required. These must all be based around a sub-class of [CommonPluginInterface](https://www.pamguard.org/api/PamModel/CommonPluginInterface.html). Any plugin module found in the PAMGuard plugins folder will be loaded when PAMGuard starts and it's help files added to the PAMGuard online help. If it's a new sub-plugin type, you'll also have to add code to the module using the plugin in oder to use that plugin. Examples modules that use sub-module plugins are 
+[AnalolgDeviceManager](https://github.com/PAMGuard/PAMGuard/blob/main/src/analoginput/AnalogDevicesManager.java)
+and
+[AcquisitionControl](https://github.com/PAMGuard/PAMGuard/blob/main/src/Acquisition/AcquisitionControl.java)
+for examples.
+
+An example analog sensor plugin is [here](https://github.com/PAMGuard/DummyAnalogDevice/tree/main) and
+a sound acquisition plugin [here](https://github.com/douggillespie/WindowsSoundJNA).
+
