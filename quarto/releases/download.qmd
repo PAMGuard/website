@@ -18,7 +18,7 @@ Built PAMGuard installers are released approximately every three to six months.
 
 Each release is tagged on [GitHub](https://github.com/PAMGuard/PAMGuard/releases) and for recent versions a snapshot copied to the [Zenodo research repository](https://doi.org/10.5281/zenodo.13378950) at [CERN](https://home.cern/about).
 
-Zenodo provides a Digital Object Identifier (DOI) to each release which can be used to cite the software. e.g. Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. https://doi.org/10.5281/zenodo.15593810
+Zenodo provides a Digital Object Identifier (DOI) to each release which can be used to cite the software. e.g. Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. [https://doi.org/10.5281/zenodo.15593810](https://doi.org/10.5281/zenodo.15593810).
 
 [Go to Zenodo](https://zenodo.org/records/13951593) for more citation styles for different releases.
 

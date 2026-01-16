@@ -101,6 +101,15 @@ https://github.com/pamguard/VisualAngles/
 
 <br>
 
+
+<h3>Goniometer (Fastloc GPS)</h3>
+
+::: pgdownload
+https://github.com/douggillespie/pamgonio/
+:::
+
+<br>
+
 <h3>Plugin Demo</h3>
 
 ::: pgdownload

@@ -4,6 +4,12 @@ title: "About PAMGuard"
 
 Marine mammals, whales and dolphins in particular, are highly vocal. This means that it's often easier to hear them, than it is to see them. This is particularly true at night or in poor weather.
 
+If you've used PAMGuard in your research, please cite our most recent paper: 
+Gillespie, D., Macaulay, J., Oswald, M., and Roch, M. (2026). “PAMGuard: Application software for passive acoustic detection, classification, and localisation of animal sounds,” The Journal of the Acoustical Society of America, 159, 437–443. [doi.org/10.1121/10.0042245](https://doi.org/10.1121/10.0042245).
+
+You may also want to cite the specific PAMGuard release you're using using it's Zenodo DOI, e.g. 
+Gillespie, D., & Macaulay, J. (2025). PAMGuard (V2.02.17). Zenodo. [https://doi.org/10.5281/zenodo.15593810](https://doi.org/10.5281/zenodo.15593810) and any papers written about specific detectors or models you're using. 
+
 ## Vision
 
 The PAMGuard project started in 2006, intending to address the fundamental limitations of existing cetacean passive acoustic monitoring (PAM) software by creating an integrated software infrastructure that is open source and available to all PAM users for the benefit of the marine environment.

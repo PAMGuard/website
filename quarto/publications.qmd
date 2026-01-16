@@ -2,24 +2,26 @@
 title: "Publications"
 ---
 
-Below are some recent publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research. Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a>.
+Below are some recent publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research. Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a> or [Web of Science](https://www.webofscience.com/wos/woscc/summary/65bcbaca-94e0-4fe9-b87b-b49387556e6b-018f6d325c/086f6a2a-8ebf-4563-9906-77b519f75b02-018f6d325a/relevance/1).
 
-1.  Motabaranom, J. et. al. Seals exhibit localised avoidance of operational tidal turbines. [Journal of Applied Ecology, 2025](https://doi.org/10.1111/1365-2664.14844).
+1. Gillespie, D., Macaulay, J., Oswald, M., and Roch, M. (2026). “PAMGuard: Application software for passive acoustic detection, classification, and localisation of animal sounds,” The Journal of the Acoustical Society of America, 159, 437–443. [doi.org/10.1121/10.0042245](https://doi.org/10.1121/10.0042245).
 
-2.  Garrobé, L, et. al. Comparing neural networks against click train detectors to reveal temporal trends in passive acoustic sperm whale detections. [J. Acoust. Soc. Am. 156, 4073–4084 (2024)](https://doi.org/10.1121/10.0034602)
+2.  Motabaranom, J. et. al. Seals exhibit localised avoidance of operational tidal turbines. [Journal of Applied Ecology, 2025](https://doi.org/10.1111/1365-2664.14844).
 
-3.  Gillespie, D. et al. Automated detection and tracking of marine mammals in the vicinity of tidal turbines using multibeam sonar. [Journal of Marine Science and Engineering 11, 2095 (2023)](https://www.mdpi.com/2077-1312/11/11/2095).
+3.  Garrobé, L, et. al. Comparing neural networks against click train detectors to reveal temporal trends in passive acoustic sperm whale detections. [J. Acoust. Soc. Am. 156, 4073–4084 (2024)](https://doi.org/10.1121/10.0034602)
 
-4.  Webber, T. et al. Streamlining analysis methods for large acoustic surveys using automatic detectors with operator validation. [Methods in Ecology and Evolution 13, 1765–1777 (2022)](https://doi.org/10.1111/2041-210X.13907).
+4.  Gillespie, D. et al. Automated detection and tracking of marine mammals in the vicinity of tidal turbines using multibeam sonar. [Journal of Marine Science and Engineering 11, 2095 (2023)](https://www.mdpi.com/2077-1312/11/11/2095).
 
-5.  Macaulay, J. D. J. et al. Implications of porpoise echolocation and dive behaviour on passive acoustic monitoring. The [Journal of the Acoustical Society of America 154, 1982–1995 (2023)](https://doi.org/10.1121/10.0021163).
+5.  Webber, T. et al. Streamlining analysis methods for large acoustic surveys using automatic detectors with operator validation. [Methods in Ecology and Evolution 13, 1765–1777 (2022)](https://doi.org/10.1111/2041-210X.13907).
 
-6.  Brinkløv, S. M. M. et al. Open‐source workflow approaches to passive acoustic monitoring of bats. [Methods Ecol Evol 14, 1747–1763 (2023)](https://doi.org/10.1111/2041-210X.14131).
+6.  Macaulay, J. D. J. et al. Implications of porpoise echolocation and dive behaviour on passive acoustic monitoring. The [Journal of the Acoustical Society of America 154, 1982–1995 (2023)](https://doi.org/10.1121/10.0021163).
 
-7.  Macaulay, J. et al. Passive acoustic tracking of the three-dimensional movements and acoustic behaviour of toothed whales in close proximity to static nets. [Methods in Ecology and Evolution In Press, (2022)](https://doi.org/10.1111/2041-210X.13828).
+7.  Brinkløv, S. M. M. et al. Open‐source workflow approaches to passive acoustic monitoring of bats. [Methods Ecol Evol 14, 1747–1763 (2023)](https://doi.org/10.1111/2041-210X.14131).
 
-8.  Palmer, L. et al. Harbour porpoise (Phocoena phocoena) presence is reduced during tidal turbine operation. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3737).
+8.  Macaulay, J. et al. Passive acoustic tracking of the three-dimensional movements and acoustic behaviour of toothed whales in close proximity to static nets. [Methods in Ecology and Evolution In Press, (2022)](https://doi.org/10.1111/2041-210X.13828).
 
-9.  Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Harbour porpoises exhibit localized evasion of a tidal turbine. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3660).
+9.  Palmer, L. et al. Harbour porpoise (Phocoena phocoena) presence is reduced during tidal turbine operation. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3737).
 
-10. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures. [PLoS ONE 15 (5), 16pp (2020)](https://doi.org/10.1371/journal.pone.0229058).
+10.  Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Harbour porpoises exhibit localized evasion of a tidal turbine. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3660).
+
+11. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures. [PLoS ONE 15 (5), 16pp (2020)](https://doi.org/10.1371/journal.pone.0229058).
