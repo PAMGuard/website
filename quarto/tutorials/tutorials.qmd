@@ -26,7 +26,11 @@ listing:
 #      - "tutorials/*.qmd"
 ---
 
-PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard. If you're new to PAMGuard, you should start with one of the introductory turotials, [Getting Started](./tutorials/getstarted.qmd), or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the more advanced ones.
+::: {#boldcentred}
+The [ECS Conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Dundee. We'll be organising a one day PAMGuard training workshop on either Monday 20th, or Tuesday 221st April. Watch this space, and keep an eye on the [conference website](https://www.europeancetaceansociety.eu/conference-2026) for updates.
+:::
+
+PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard. If you're new to PAMGuard, you should start with one of the introductory tutorials, [Getting Started](./tutorials/getstarted.qmd), or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the more advanced ones.
 
 The tutorials all use freely available pre-recorded sound files and will run on any [compatible computer](systemreq.qmd) without the need for specialist equipment.
 

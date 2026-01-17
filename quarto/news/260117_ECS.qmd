@@ -1,0 +1,13 @@
+---
+title: "PAMGuard tutorial at the ECS conference"
+description: "The PAMGuard team are organising a one day PAMGuard training workshop aimed at beginners"
+date: 2026-01-17
+---
+
+The [European Cetacean Society annual conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Dundee in the week of 20 April 2026.
+
+On the Monday or Tuesday, we'll be holding a PAMGuard training workshop at the conference centre. This will be aimed at people who are new, or relatively new, to PAMGuard.
+
+If there is sufficient demand, we may also organise something for more advanced users. Please contact the PAMGuard team if you think this would be of interest.
+
+Keep and eye on the [conference website](https://www.europeancetaceansociety.eu/conference-2026) for updates and registration details.
