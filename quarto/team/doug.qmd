@@ -2,17 +2,27 @@
 title: "Dr Doug Gillespie"
 image: ./images/dg50.jpeg
 description: "PAMGuard Developer"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ![Doug Gillespie](./images/dg50.jpeg)
 
-[Dr Douglas Gillespie](https://www.st-andrews.ac.uk/biology/people/dg50/) 
-completed a PhD in particle physics and worked at [CERN](https://home.cern/)
-before joining the IFAW research team and their vessel 
-[Song of the Whale](https://www.marineconservationresearch.co.uk/rv-song-of-the-whale/).
+[Dr Douglas
+Gillespie](https://www.st-andrews.ac.uk/biology/people/dg50/) completed
+a PhD in particle physics and worked at [CERN](https://home.cern/)
+before joining the IFAW research team and their vessel [Song of the
+Whale](https://www.marineconservationresearch.co.uk/rv-song-of-the-whale/).
 
-In the late 1990's, he wrote the [Rainbow Click and Logger software](https://www.marineconservationresearch.co.uk/downloads/logger-2000-rainbowclick-software-downloads/)
-which are very much the predecessors of modern day PAMGuard. 
+In the late 1990's, he wrote the [Rainbow Click and Logger
+software](https://www.marineconservationresearch.co.uk/downloads/logger-2000-rainbowclick-software-downloads/)
+which are very much the predecessors of modern day PAMGuard.
 
-Doug spends about half his time developing new functionality for PAMGuard and the
-other half using it to study marine mammals around the world.
+Doug is now a Principal Research Fellow in the [Sea Mammal Research
+Unit](https://www.smru.st-andrews.ac.uk/index.html) at the University of
+St Andrews, Scotland.
+
+Doug spends about half his time developing new functionality for
+PAMGuard and the other half using it to study marine mammals around the
+world.
