@@ -27,7 +27,7 @@ listing:
 ---
 
 ::: {#boldcentred}
-The [ECS Conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Dundee. We'll be organising a one day PAMGuard training workshop on either Monday 20th, or Tuesday 221st April. Watch this space, and keep an eye on the [conference website](https://www.europeancetaceansociety.eu/conference-2026) for updates.
+The [ECS Conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Scotland. We'll be organising a one day PAMGuard training workshop on either Monday 20th, or Tuesday 221st April. Watch this space, and keep an eye on the [conference website](https://www.europeancetaceansociety.eu/conference-2026) for updates.
 :::
 
 PAMGuard Tutorials are an excellent way to familiarise yourself with PAMGuard. If you're new to PAMGuard, you should start with one of the introductory tutorials, [Getting Started](./tutorials/getstarted.qmd), or [Introduction to PAMGuard](./tutorials/staticmonitoring.qmd) before trying the more advanced ones.

@@ -1,5 +1,5 @@
 ---
-title: "New PAMGuard plublication"
+title: "New PAMGuard publication"
 description: "PAMGuard: Application software for passive acoustic detection, classification, and localisation of animal sounds"
 date: 2026-01-15
 ---

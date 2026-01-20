@@ -4,7 +4,7 @@ description: "The PAMGuard team are organising a one day PAMGuard training works
 date: 2026-01-17
 ---
 
-The [European Cetacean Society annual conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Dundee in the week of 20 April 2026.
+The [European Cetacean Society annual conference](https://www.europeancetaceansociety.eu/conference-2026) is coming to Scotland in the week of 20 April 2026.
 
 On the Monday or Tuesday, we'll be holding a PAMGuard training workshop at the conference centre. This will be aimed at people who are new, or relatively new, to PAMGuard.
 
