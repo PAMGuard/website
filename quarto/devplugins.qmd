@@ -24,7 +24,9 @@ Now your plugin project will know all the classes in PAMGuard and you can start 
 -   To develop a plugin for the SoundAcquisition module (e.g. to implement new type of sound card) refer to the [Windows Sound](https://github.com/douggillespie/WindowsSound) project as an example.
 -   To develop a plugin for the AnalogSensor module (e.g. to implement new type of analog sensor) refer to the [Dummy Analog Device plugin](https://github.com/PAMGuard/DummyAnalogDevice) project.
 
-To run the plugin simply run create a Run Configuration in Eclipse that launches the PAMGuard main class (pamguard.Pamguard). Ensure that the plugin project is the selected in the *Project:* field. When PAMGuard starts it will find the plugin classes in the classpath and load them as if they were part of the core PAMGuard code.
+Note that in all these plugins you must duplicate a PAMGaurd class in your plugin project. For example, in a standard module class oyu must create PamModel class with the same package name as in PAMGuard. Copy the PamModel class from PAMGaurd and then add your new module in the plugin version of your PamModel class. When you run your project, the PamModel class from your plugin project will be used instead of the PAMGuard version and your plugin will appear as a module.
+
+To run the plugin from Eclipse simply run create a Run Configuration that launches the PAMGuard main class (pamguard.Pamguard). Ensure that the plugin project is the selected in the *Project:* field. When PAMGuard starts it will find the plugin classes in the classpath and load them as if they were part of the core PAMGuard code.
 
 ![Running the plugin prject from Eclipse](images/pamguard_plugin_eclipse_2.png) *Running a plugin project (in this called X3) from Eclipse.*
 
@@ -50,6 +52,21 @@ If you have external dependencies, you will need to build as a Maven project. Ma
     <version>2.02.18</version>
     <scope>provided</scope>
 </dependency>
+```
+
+It is also important to exclude any of the duplicate classes from your build that have been used to run the Plugin. For example, if building a standard module, ensure the PamModel class is excluded from the build.
+
+``` xml
+<plugin>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.13.0</version>
+  <configuration>
+    <release>21</release>
+    <excludes>
+      <exclude>**/PamModel/PamModel.java</exclude>
+  </excludes>
+  </configuration>
+</plugin>
 ```
 
 Run `mvn clean install` for your PAMGuard prject (not the plugin) to make sure PAMGuard is added to your local Maven repository. Maven will then build the jar. It's very import to keep `<scope>provided</scope>` as this prevents from the entire PAMGuard source code being added to the jar file. `mvn clean package` run from your plugin project will then build the plugin.
