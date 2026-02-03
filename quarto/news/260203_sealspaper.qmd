@@ -1,0 +1,17 @@
+---
+title: "PAMGuard publication"
+description: "Evaluating the Risk of Collision of Seals Swimming Within Metres of Operating Tidal Turbines"
+date: 2026-02-03
+---
+
+We are pleased to announce another PAMGuard publication using the [plugin module developed to acquire and process data from Tritech imaging sonars](../plugins/tritech.html).
+
+**Evaluating the Risk of Collision of Seals Swimming Within Metres of Operating Tidal Turbines**
+
+Jessica Montabaranom, Douglas Gillespie, Carol Sparling, Emma Longden, Gordon Hastie
+
+Aquatic Conservation: Marine and Freshwater Ecosystems 36, no. 2: e70326. <https://doi.org/10.1002/aqc.70326>.
+
+**Abstract**
+
+We used imaging sonar to continuously monitor wildlife at an operational tidal turbine in the Pentland Firth, Scotland, between May 2022 and June 2023. Of 704 detected seal tracks, 347 occurred during turbine operation and 122 of these were detected directly upstream of the rotating blades in the horizontal plane. Using a series of repeatable and objective questions in a semi-automatic assessment, we characterised factors that were associated with a higher likelihood of collision and assessed the associated risk of collision between each seal track and the rotating blades. Thirty-five tracks (10% of tracks during operation) approached the rotor swept area within 10 m and 16 of these passed through the rotor swept area in the horizontal plane. There is strong evidence to suggest that most of these high-risk tracks passed above, around or possibly through, the turbine without collision. As well as providing useful data to assist in the prediction of collision risk, this approach provides a standardised method to evaluate similar data from other tidal energy sites or species. These outcomes can help inform the consenting process and support the sustainable development of the tidal energy industry.
