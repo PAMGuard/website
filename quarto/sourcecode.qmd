@@ -8,14 +8,94 @@ PAMGUARD is open source software licensed under the [GNU General Public License 
 
 PAMGuard is mostly written in [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) which provides a good balance between speed, flexibility, and ease of development.
 
-Interfaces to external instruments, for example National Instruments data acquisition devices, are often written in C/C++ and accessed from the Java code using the [Java Native Interface](https://en.wikipedia.org/wiki/Java_Native_Interface) or use [Java Native Access](https://en.wikipedia.org/wiki/Java_Native_Access) to communicate with device manufacturers C libraries. These can be built using the
-Community Edition of [Visual Studio](https://visualstudio.microsoft.com/vs/community/). 
+Interfaces to external instruments, for example National Instruments data acquisition devices, are often written in C/C++ and accessed from the Java code using the [Java Native Interface](https://en.wikipedia.org/wiki/Java_Native_Interface) or use [Java Native Access](https://en.wikipedia.org/wiki/Java_Native_Access) to communicate with device manufacturers C libraries. These can be built using the Community Edition of [Visual Studio](https://visualstudio.microsoft.com/vs/community/).
 
 All PAMGuard source code is available on [GitHub](https://github.com/PAMGuard).
 
 ## Use of Eclipse
 
-Many PAMGuard developers use the Eclipse IDE for code development. [Click here for instructions](./pdf/Setting%20up%20with%20GIT.pdf) on how to configure Eclipse with a GIT repository.
+Many PAMGuard developers use the Eclipse IDE for code development. This guide shows users how to import PAMGuard into Eclipse and get it running. Other IDE's will follow similar lines.
+
+### Setting PAMGuard up in Eclipse
+
+There are several ways to open the code with Eclipse. The first stage is to import the project. THere are two options for this.
+
+#### Option 1: Using GitHub Desktop
+
+-   **Install**: Ensure the GitHub Desktop application is installed\[cite: 46, 49\].
+-   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**\[cite: 50\].
+-   **Local Path**: Choose a local path on your computer and press **'Clone'**\[cite: 50, 59\].
+-   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**\[cite: 68\]. Enter the repository path and click **Finish**\[cite: 69\].
+
+#### Option 2: Using EGit (Direct Import)
+
+1.  Select **File \> Import \> Projects from Git**.
+2.  Hit **Next** and select **'Clone URI'**.
+3.  Copy your repository URL into the **URI** field; other fields should auto-fill.
+4.  **Authentication**: If you have password issues, you may need to create a **Personal Access Token** on GitHub to use in place of a regular password.
+5.  **Branch**: Select the **'main'** branch.
+6.  **Local Destination**: Select your local storage directory.
+7.  **Wizard**: Select the option to **'Import existing Eclipse projects'**.
+
+### Running PAMGuard
+
+To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run COnfiguratiosn
+
+![](images/clipboard-346099819.png)
+
+*The run configuration dialog in Eclipse set up to run PAMGuard.*
+
+![](images/pamguard_eclipse.png)
+
+*The run configuration dialog in Eclipse set up to run PAMGuard.*
+
+------------------------------------------------------------------------
+
+## Maven
+
+### Building PAMGuard
+
+PAMGuard is built using Maven. The Maven pom.xml is extensive and includes code to build installers for macOS and Linux as well as packaging dependencies into a jar file, removing files that interfere with deep learning models etc. The Maven commands for building PAMGuard depends on the platform. Building a runnable jar for any platform uses the same Maven goals
+
+```         
+mvn clean package shade:shade
+```
+
+There are platform dependent commands for building installers
+
+::: panel-tabset
+### macOS
+
+Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devcies. The installer is signed but this requires a an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file.
+
+```         
+library(PamBinaries)
+```
+
+### Linux
+
+Maven builds a .deb file for Linux which can be used on Ubuntu and other Debian based systems. The .deb installer will only work if the following maven commands is used. Note that a .deb file will be created during a normal build but will not have the correct jar file with dependencies.
+
+```         
+mvnclean package shade:shade org.vafer:jdeb:jdeb
+```
+:::
+
+### Issues
+
+#### JavaFX
+
+There are issues with certain Maven repositories interfering with JavaFX
+
+-   **Locate pom.xml**: Find and edit the `pom.xml` file
+-   **The Fix**:
+    -   Find the "Repo for Jamie's code" near line 250
+    -   Comment out this repository section
+    -   Perform a **Maven update**
+    -   Uncomment the repository and update Maven again
+
+
+#### JPAM
 
 ## Assistance
 
