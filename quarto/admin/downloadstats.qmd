@@ -75,6 +75,16 @@ https://github.com/douggillespie/rioncompass/
 https://github.com/douggillespie/TritechAcquisitionPlugin/
 :::
 
+<h4>Tritech Files</h4>
+
+::: pgdownload
+https://github.com/douggillespie/TritechFiles
+:::
+
+::: pgdownload
+https://doi.org/10.5281/zenodo.18526338
+:::
+
 <br>
 
 <h3>WAMS</h3>
@@ -100,7 +110,6 @@ https://github.com/pamguard/VisualAngles/
 :::
 
 <br>
-
 
 <h3>Goniometer (Fastloc GPS)</h3>
 
@@ -169,6 +178,8 @@ pypamguard is hosted on the Python Package Index, which does not provide downloa
 ::: pgdownload
 <https://github.com/PAMGuard/pypamguard>
 :::
+
+
 
 <br>
 
