@@ -21,4 +21,4 @@ Many PAMGuard developers use the Eclipse IDE for code development. [Click here f
 
 Information on the [PAMGuard API](./api/index.html) and on how to make PAMGuard [modules](devmodules.html) and [plug-ins](devplugins.html) is available on this web site.
 
-The PAMGuard team have limited time to spend assisting developers if the development project is in line with the interests of our current sponsors.
+The PAMGuard team have limited time to spend assisting developers unless the development project is in line with the interests of our current sponsors.
