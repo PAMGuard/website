@@ -18,7 +18,7 @@ Many PAMGuard developers use the Eclipse IDE for code development. This guide sh
 
 ### Setting PAMGuard up in Eclipse
 
-There are several ways to open the code with Eclipse. The first stage is to import the project. THere are two options for this.
+There are several ways to open the code with Eclipse. The first stage is to import the project. There are two options for this.
 
 #### Option 1: Using GitHub Desktop
 
@@ -39,7 +39,7 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 
 ### Running PAMGuard
 
-To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run COnfiguratiosn
+To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run Configurations
 
 ![](images/clipboard-346099819.png)
 
@@ -55,7 +55,7 @@ To run PAMGuard in Eclipse you need to create a new Java run configuration. Clic
 
 ### Building PAMGuard
 
-PAMGuard is built using Maven. The Maven pom.xml is extensive and includes code to build installers for macOS and Linux as well as packaging dependencies into a jar file, removing files that interfere with deep learning models etc. The Maven commands for building PAMGuard depends on the platform. Building a runnable jar for any platform uses the same Maven goals
+PAMGuard is built using Maven. The Maven pom.xml is extensive and includes code to build installers for macOS and Linux as well as packaging dependencies into a jar file, removing files that interfere with deep learning models etc. The Maven commands for building PAMGuard depend on the platform. Building a runnable jar for any platform uses the same Maven goals
 
 ```         
 mvn clean package shade:shade
@@ -66,7 +66,7 @@ There are platform dependent commands for building installers
 ::: panel-tabset
 ### macOS
 
-Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devcies. The installer is signed but this requires a an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file.
+Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devices. The installer is signed but this requires an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file.
 
 ```         
 mvn clean package shade:shade macosappbundler:bundle exec:exec@sign-app
@@ -83,7 +83,7 @@ mvn clean package shade:shade macosappbundler:bundle
 Maven builds a .deb file for Linux which can be used on Ubuntu and other Debian based systems. The .deb installer will only work if the following maven commands is used. Note that a .deb file will be created during a normal build but will not have the correct jar file with dependencies.
 
 ```         
-mvnclean package shade:shade org.vafer:jdeb:jdeb
+mvn clean package shade:shade org.vafer:jdeb:jdeb
 ```
 :::
 
@@ -104,7 +104,7 @@ There are issues with certain Maven repositories interfering with JavaFX
 
 jpam is a deep learning library that PAMGuard uses. It is available on Maven Central but, the latest dev version of PAMGuard may use a version of JPam that is not yet on Maven Central. This means that to build PAMGuard you need to first build and install the correct version of jpam. The jpam code is available on GitHub [here](https://github.com/macster110/jpam).
 
-Clone the project and import the project and all the sub projects into Eclipse. Then run \``mvn clean install` to install to your local machine. PAMGuard will then be able to find the correct version of jpam when you build PAMGuard.
+Clone the project and import the project and all the sub projects into Eclipse. Then run `mvn clean install` to install to your local machine. PAMGuard will then be able to find the correct version of jpam when you build PAMGuard.
 
 ## Assistance
 
