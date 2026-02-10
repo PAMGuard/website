@@ -22,10 +22,10 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 
 #### Option 1: Using GitHub Desktop
 
--   **Install**: Ensure the GitHub Desktop application is installed\[cite: 46, 49\].
--   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**\[cite: 50\].
--   **Local Path**: Choose a local path on your computer and press **'Clone'**\[cite: 50, 59\].
--   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**\[cite: 68\]. Enter the repository path and click **Finish**\[cite: 69\].
+-   **Install**: Ensure the GitHub Desktop application is installed.
+-   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**.
+-   **Local Path**: Choose a local path on your computer and press **'Clone'**.
+-   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**. Enter the repository path and click **Finish**.
 
 #### Option 2: Using EGit (Direct Import)
 
@@ -39,15 +39,51 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 
 ### Running PAMGuard
 
-To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run COnfiguratiosn
+To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select **Run Configuration...** and this will open a new window. Select your PAMGuard project in **Project:** and then type \`\``pamguard.Pamguard`\`\` in the **Main class:** field.
 
 ![](images/clipboard-346099819.png)
 
-*The run configuration dialog in Eclipse set up to run PAMGuard.*
+*The run configuration dialog in Eclipse to set up to run PAMGuard.*
+
+The next stage is to add the Program and VM arguments. The program argument if set to nothing will open PAMGaurd in normal (real-time) mode. A `-v` will open in viewer mode and a `-c` will open a window that gives users a choice of which mode to run. The VM arguments are used to increase the amount of memory available to PAMGuard and to ensure that the correct lib folder is accessed for native libraries. The arguments to add are
+
+::: panel-tabset
+### Windows
+
+Windows requires both a maximum memory allocation and a native library to make soundcards etc work. 
+
+```     
+-mx8192m
+-Djava.library.path=lib64
+```
+
+### macOS
+
+macOS has no native libraries (only basic soundcards are supported on macOS) and so does not need a lib folder.
+
+```     
+-mx8192m
+```
+
+### Linux
+
+There are scaling issues with many Linux distributions and so extra arguments are needed. Linux also has it's own lib folder.
+
+```     
+-mx8192m
+-Djava.library.path=liblinux
+-Dsun.java2d.uiScale=2 
+-Dawt.useSystemAAFontSettings=on
+-Dswing.aatext=true
+```
+Note the ```uiScale=2``` is for higher DPI displays. If you have a lower resolution display set this to 1. 
+
+:::
+
 
 ![](images/pamguard_eclipse.png)
 
-*The run configuration dialog in Eclipse set up to run PAMGuard.*
+*The arguments to add to increase memory and access correct lib folder.*
 
 ------------------------------------------------------------------------
 
@@ -66,10 +102,10 @@ There are platform dependent commands for building installers
 ::: panel-tabset
 ### macOS
 
-Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devcies. The installer is signed but this requires a an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file.
+Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devices. The installer is signed but this requires a an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file which means building can take a long time! 
 
 ```         
-library(PamBinaries)
+mvn clean package shade:shade macosappbundler:bundle exec:exec@sign-app
 ```
 
 ### Linux
@@ -77,8 +113,10 @@ library(PamBinaries)
 Maven builds a .deb file for Linux which can be used on Ubuntu and other Debian based systems. The .deb installer will only work if the following maven commands is used. Note that a .deb file will be created during a normal build but will not have the correct jar file with dependencies.
 
 ```         
-mvnclean package shade:shade org.vafer:jdeb:jdeb
+mvn clean package shade:shade org.vafer:jdeb:jdeb
 ```
+
+There are additonal build instructions for Linux [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/COMPILE.md). 
 :::
 
 ### Issues
@@ -94,8 +132,11 @@ There are issues with certain Maven repositories interfering with JavaFX
     -   Perform a **Maven update**
     -   Uncomment the repository and update Maven again
 
+#### jpam
 
-#### JPAM
+jpam is a deep learning library that PAMgaurd uses. It is available on Maven Central but, the latest dev version of PAMGuard may use a version of JPam that is not yet on Maven Central. This means that to build PAMGuard you need to first build and install the correct version of JPam. The JPam code is available on GitHub [here](https://github.com/macster110/jpam). 
+
+Clone the project, import the project and all the sub projects into Eclipse. Then run ```-mvn clean install`` to install to your local machine. PAMGuard will then be able to find the correct version of JPam when you build PAMGuard.
 
 ## Assistance
 
