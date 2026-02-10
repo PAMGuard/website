@@ -4,7 +4,7 @@ title: "Creating Plugin Modules"
 
 ## Introduction
 
-There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed sparately. This page tells you how to prepare a [Plugin modules](pluginmodules.html) for PAMGuard.
+There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed separately. This page tells you how to prepare a [Plugin modules](pluginmodules.html) for PAMGuard.
 
 Before reading this page, make sure you've read up on how to [develop a core module](devmodules.html)
 
@@ -24,11 +24,11 @@ Now your plugin project will know all the classes in PAMGuard and you can start 
 -   To develop a plugin for the SoundAcquisition module (e.g. to implement new type of sound card) refer to the [Windows Sound](https://github.com/douggillespie/WindowsSound) project as an example.
 -   To develop a plugin for the AnalogSensor module (e.g. to implement new type of analog sensor) refer to the [Dummy Analog Device plugin](https://github.com/PAMGuard/DummyAnalogDevice) project.
 
-Note that in all these plugins you must duplicate a PAMGaurd class in your plugin project. For example, in a standard module class oyu must create PamModel class with the same package name as in PAMGuard. Copy the PamModel class from PAMGaurd and then add your new module in the plugin version of your PamModel class. When you run your project, the PamModel class from your plugin project will be used instead of the PAMGuard version and your plugin will appear as a module.
+Note that in all these plugins you must duplicate a PAMGuard class in your plugin project. For example, in a standard module class you must create PamModel class with the same package name as in PAMGuard. Copy the PamModel class from PAMGuard and then add your new module in the plugin version of your PamModel class. When you run your project, the PamModel class from your plugin project will be used instead of the PAMGuard version and your plugin will appear as a module.
 
 To run the plugin from Eclipse simply run create a Run Configuration that launches the PAMGuard main class (pamguard.Pamguard). Ensure that the plugin project is the selected in the *Project:* field. When PAMGuard starts it will find the plugin classes in the classpath and load them as if they were part of the core PAMGuard code.
 
-![Running the plugin prject from Eclipse](images/pamguard_plugin_eclipse_2.png) *Running a plugin project (in this called X3) from Eclipse.*
+![Running the plugin project from Eclipse](images/pamguard_plugin_eclipse_2.png) *Running a plugin project (in this called X3) from Eclipse.*
 
 ## Building a plugin
 
