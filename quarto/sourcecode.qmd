@@ -69,7 +69,13 @@ There are platform dependent commands for building installers
 Maven builds a signed.dmg file for macOS which can be used on Apple Silicon based devcies. The installer is signed but this requires a an Apple Developer account. PAMGuard also needs to be submitted to Apple and further signed before it can be distributed. This is all handled in the pom.xml file.
 
 ```         
-library(PamBinaries)
+mvn clean package shade:shade macosappbundler:bundle exec:exec@sign-app
+```
+
+or if you do not wish to sign the app. 
+
+```         
+mvn clean package shade:shade macosappbundler:bundle
 ```
 
 ### Linux
@@ -94,8 +100,11 @@ There are issues with certain Maven repositories interfering with JavaFX
     -   Perform a **Maven update**
     -   Uncomment the repository and update Maven again
 
-
 #### JPAM
+
+jpam is a deep learning library that PAMGuard uses. It is available on Maven Central but, the latest dev version of PAMGuard may use a version of JPam that is not yet on Maven Central. This means that to build PAMGuard you need to first build and install the correct version of jpam. The jpam code is available on GitHub [here](https://github.com/macster110/jpam).
+
+Clone the project and import the project and all the sub projects into Eclipse. Then run \``mvn clean install` to install to your local machine. PAMGuard will then be able to find the correct version of jpam when you build PAMGuard.
 
 ## Assistance
 

@@ -54,6 +54,8 @@ If you have external dependencies, you will need to build as a Maven project. Ma
 </dependency>
 ```
 
+Run `mvn clean install` for your PAMGuard project (not the plugin) to make sure PAMGuard is added to your local Maven repository. Maven will then build the jar. It's very important to keep `<scope>provided</scope>` as this prevents the entire PAMGuard source code being added to the jar file. `mvn clean package` run from your plugin project will then build the plugin.
+
 It is also important to exclude any of the duplicate classes from your build that have been used to run the Plugin. For example, if building a standard module, ensure the PamModel class is excluded from the build.
 
 ``` xml
@@ -69,9 +71,55 @@ It is also important to exclude any of the duplicate classes from your build tha
 </plugin>
 ```
 
-Run `mvn clean install` for your PAMGuard prject (not the plugin) to make sure PAMGuard is added to your local Maven repository. Maven will then build the jar. It's very import to keep `<scope>provided</scope>` as this prevents from the entire PAMGuard source code being added to the jar file. `mvn clean package` run from your plugin project will then build the plugin.
-
 Note that sometimes Eclipse can get confused between the workspace PAMGuard and Maven dependency so it's best to keep the Maven dependency commented out until you are ready to build the jar.
+
+Finally, if you have external dependencies, you will need to ensure that these are included in the jar file. This can be done using the Maven Shade plugin. Add the following to your pom.xml file.
+
+``` xml
+<!--There is an issue with PAMGuard and module.info files when we package up dependencies with the POM - have to use
+                the shade plugin to deal with this -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <version>3.6.1</version>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>shade</goal>
+            </goals>
+            <configuration>
+                <transformers>
+                    <transformer
+                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+
+                    <transformer
+                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                        <manifestEntries>
+                            <Multi-Release>false</Multi-Release>
+                        </manifestEntries>
+                    </transformer>
+                </transformers>
+
+                <filters>
+                    <filter>
+                        <artifact>*:*</artifact>
+                        <excludes>
+                            <exclude>module-info.class</exclude>
+                            <exclude>**/analoginput/AnalogDevicesManager.java</exclude>
+                            <exclude>
+                                META-INF/versions/**/module-info.class</exclude>
+                            <exclude>META-INF/*.SF</exclude>
+                            <exclude>META-INF/*.DSA</exclude>
+                            <exclude>META-INF/*.RSA</exclude>
+                        </excludes>
+                    </filter>
+                </filters>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+```
 
 ## Help files
 
