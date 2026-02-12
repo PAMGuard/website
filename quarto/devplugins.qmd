@@ -6,7 +6,8 @@ title: "Creating Plugin Modules"
 
 There are two types of PAMGuard module. [Core modules](coremodules.html) which are built into the main PAMGuard code and [Plugin modules](pluginmodules.html) which are distributed separately. This page tells you how to prepare a [Plugin modules](pluginmodules.html) for PAMGuard.
 
-Before reading this page, make sure you've read up on how to [develop a core module](devmodules.html)
+
+Before reading this page, make sure you've read up on how to [develop a core module](devmodules.html).
 
 ## Setting up a PAMGuard Plugin
 
@@ -29,6 +30,7 @@ Note that in all these plugins you must duplicate a PAMGuard class in your plugi
 To run the plugin from Eclipse simply run create a Run Configuration that launches the PAMGuard main class (pamguard.Pamguard). Ensure that the plugin project is the selected in the *Project:* field. When PAMGuard starts it will find the plugin classes in the classpath and load them as if they were part of the core PAMGuard code.
 
 ![Running the plugin project from Eclipse](images/pamguard_plugin_eclipse_2.png) *Running a plugin project (in this called X3) from Eclipse.*
+
 
 ## Building a plugin
 
@@ -125,6 +127,7 @@ Finally, if you have external dependencies, you will need to ensure that these a
 
 It is strongly recommended that help files be included with the plug-in. PAMGuard uses Oracle’s JavaHelp 2.0 system (complete details can be found here). Each page in the help file is an HTML document. Create individual HTML pages (with links and images) to describe the setup and operation of the plug-in, and save all files in the same package folder that your java program is in. Once the pages are completed, create the helpset and support files (map, TOC, index, etc.). Programs like jhelpdev can greatly simplify the process of creating these files.
 
+
 ## Testing the Plugin jar file
 
 To test the jar file, move it to the plugins subfolder in the PAMGuard installation folder. If there is no plugins folder, create one. When PAMGuard is started, it should find the jar file and use the information in the interface class to dynamically load the code. Remember to rename/delete the package in the PAMGuard code first, to ensure that you are really testing the jar file contents and not the original code.
@@ -135,10 +138,19 @@ Even if the plugin is intended as an External module, it can be more straightfor
 
 If plug-in development has been done in the core PAMGuard code and then exported to a jar, the \*.class files may still exist in the PAMGuard project’s bin subfolder (even if the original package has been deleted). If testing the plug-in jar in the IDE, first look through the bin subfolder and delete any plug-in\* .class files that are stored. If PAMGuard finds the classes in both the bin folder and the jar file, it is unclear which would get loaded at runtime. The class files are replaced in the bin folder every time a build is completed. Also, remember to remove references to the new module from the PamModel class, as this will be taken care of by the jar file.
 
-To have the help files added to an existing category (i.e. Classifiers, Detectors, etc.) in the PAMGUARDhelp table of contents, the top-level tag text attribute in the plug-in’s TOC xml file must match the category name exactly. Some category names have a space character at the end. If in doubt, check the PAMGUARDTOC.xml file found in src/help for a list of the TOC entries. If the top-level tag text attribute in the plug-in’s TOC xml file does not match any of the category names in the table of contents, the item is simply appended to the bottom of the list. To match the existing table of contents look-and-feel, each tag in the plug-in’s TOC xml file should have image=”topic” added as an attribute. Copy the image.gif file found in src/help to the plug-in package folder. Ensure the line is in the plug-in’s map.jhm file
+To have the help files added to an existing category (i.e., Classifiers, Detectors, etc.) in the PAMGUARDhelp table of contents, the top-level tag text attribute in the plug-in’s TOC XML file must match the category name exactly. Some category names have a space character at the end. If in doubt, check the PAMGUARDTOC.XML file found in src/help for a list of the TOC entries. If the top-level tag text attribute in the plug-in’s TOC XML file does not match any of the category names in the table of contents, the item is simply appended to the bottom of the list. To match the existing table of contents look-and-feel, each tag in the plug-in’s TOC XML file should have image=”topic” added as an attribute. Copy the image.gif file found in src/help to the plug-in package folder. Ensure the line is in the plug-in’s map.jhm file.
 
 Specify the name of the helpset file in the plug-in interface class. Look through the interface Javadoc documentation for the correct format to use.
 
-Follow these steps to bundle all files together into a single jar, ready for distribution. Note the following are specific to the Eclipse IDE. Other IDE’s will have similar functionality:
+Follow these steps to bundle all files together into a single JAR, ready for distribution. Note the following are specific to the Eclipse IDE. Other IDEs will have similar functionality:
 
-Right-click on the project name in the Package Explorer view and select Export In the Export window, click on the Java folder and highlight JAR file. Hit Next In the window frame on the left, make sure the package and all necessary subfolders are selected to export (sometimes subfolders created by JavaHelp - such as JavaHelpSearch – are not included in the export list by default). Click on the box beside “Export generated class files and resources” and “Export Java source files and resources”. Enter the name of the exported jar file in the text box under “Select the export destination”. You can click on the box beside “Compress the contents of the JAR file”, though this is optional. The default values for the remainder of the windows can be used. Hit Finish to export the package to the location specified.
+1. Right-click on the project name in the Package Explorer view and select Export.
+2. In the Export window, click on the Java folder and highlight JAR file. Hit Next.
+3. In the window on the left, make sure the package and all necessary subfolders are selected to export (sometimes subfolders created by JavaHelp - such as JavaHelpSearch – are not included in the export list by default).
+4. Click on the box beside "Export generated class files and resources" and "Export Java source files and resources".
+5. Enter the name of the exported JAR file in the text box under "Select the export destination". You can click on the box beside "Compress the contents of the JAR file", though this is optional.
+6. The default values for the remainder of the windows can be used. Hit Finish to export the package to the location specified.
+
+To test the JAR file, move it to the plugins subfolder in the PAMGuard installation folder. If there is no plugins folder, create one. When PAMGuard is started, it should find the JAR file and use the information in the interface class to dynamically load the code. Remember to rename/delete the package in the PAMGuard code first, to ensure that you are really testing the JAR file contents and not the original code.
+
+Final note: if plug-in development has been done in the core PAMGuard code and then exported to a JAR, the \*.class files may still exist in the PAMGuard project’s bin subfolder (even if the original package has been deleted). If testing the plug-in JAR in the IDE, first look through the bin subfolder and delete any plug-in\* .class files that are stored. If PAMGuard finds the classes in both the bin folder and the JAR file, it is unclear which would get loaded at runtime. The class files are replaced in the bin folder every time a build is completed. Also, remember to remove references to the new module from the PamModel class, as this will be taken care of by the JAR file.
