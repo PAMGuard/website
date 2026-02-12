@@ -5,7 +5,7 @@ fileusage: notlisted
 
 ## Introduction
 
-Various [modules in PAMGuard](https://www.pamguard.org/coremodules.html) produce [binary files](https://www.pamguard.org/olhelp/utilities/BinaryStore/docs/binarystore_overview.html). Custom libraries written in MATLAB, R and Python exist to help you further process these files. In this tutorial, we will process a folder of [Click Detector](https://www.pamguard.org/olhelp/detectors/clickDetectorHelp/docs/ClickDetector_clickDetector.html) binary files, count clicks per minute and create a concatenated string of porpoise detections.
+Various [modules in PAMGuard](https://www.pamguard.org/coremodules.html) produce [binary files](https://www.pamguard.org/olhelp/utilities/BinaryStore/docs/binarystore_overview.html). Custom libraries written in MATLAB, R and Python exist to help you further process these files. In this tutorial, we will process a folder of [Click Detector](https://www.pamguard.org/olhelp/detectors/clickDetectorHelp/docs/ClickDetector_clickDetector.html) binary files, count clicks in a binary file, plot [Whistle and Moan Detector](https://www.pamguard.org/olhelp/detectors/whistleMoanHelp/docs/whistleMoan_Overview.html) contours and a [long term spectral average](https://www.pamguard.org/olhelp/sound_processing/LTSA/Docs/LTSA.html), demonstrating just a small fraction of what can done with these libraries.
 
 ::: callout-note
 ### Version
@@ -183,7 +183,8 @@ R has an in-built method `plot()` that simplifies plotting the waveform data. We
 
 ``` r
 #Get the 28th click - note that R counts from one
-wave = clicks[28]$wave[,1]
+aclick = clicks[[28]];
+wave =  aclick$wave[,1]
 x <-1:length(aclick$wave[,1])
 plot(x, aclick$wave[,1], type = "l", lty = 1, col="red")
 ```
@@ -465,31 +466,31 @@ data = binaryFile$data
 
 The `data` variable produced by the code above will contain at least the following attributes. Please familiarise yourself with them, before continuing on to the next section.
 
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| R             | Meaning                                                                                                                                                                                                      |
-+===============+==============================================================================================================================================================================================================+
-| `millis`      | The start time of the whistle in milliseconds.                                                                                                                                                               |     
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `startSample` | The first sample of the whistle often used for finer-scale time delay measurements.                                                                                                                          |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `uid`         | A unique identifier for the whistle.                                                                                                                                                                         |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `channelMap`  | The channel map for this whistle (one integer, made up of 32 bits, where each bit has a value 0 or 1 specifying the existence of that channel in the `contour`.                                              |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `nSlices`     | The number of slices the whistle's `contour` is created from.                                                                                                                                                |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `amplitude`   | The amplitude of the whistle.                                                                                                                                                                                |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `minFreq`     | The minimum frequency of the contour in Hz                                                                                                                                                                   |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `maxFreq`     | The maximum frequency of the contour in Hz                                                                                                                                                                   |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `sliceData`   | An array of contour slices, with each slice `x` containing: \| \| - `sliceData[x]$sliceNumber`: book-keeping; \| \| - `sliceData[x]$nPeaks`: number of peaks; \| \| - `sliceData[x]$peakData`: peak data; \| |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `contour`     | An array of the same length as `sliceData` where each element `contour(x)` is the first frequency peak which defines the contour (`sliceData[x]$peakData[0][1]`). \|                                         |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `contWidth`   | An array of the same length as `sliceData` where each element `contWidth(x)` is the width of the first frequency peak in that contour slice (`sliceData(x)$peakData[0][2]-sliceData(x)$peakData[0][0]`). \|  |       
-+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| R                                | Meaning                                                                                                                                                                                                      |
++==================================+==============================================================================================================================================================================================================+
+| `millis`                         | The start time of the whistle in milliseconds.                                                                                                                                                               |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `startSample`                    | The first sample of the whistle often used for finer-scale time delay measurements.                                                                                                                          |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `uid`                            | A unique identifier for the whistle.                                                                                                                                                                         |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `channelMap`                     | The channel map for this whistle (one integer, made up of 32 bits, where each bit has a value 0 or 1 specifying the existence of that channel in the `contour`.                                              |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `nSlices`                        | The number of slices the whistle's `contour` is created from.                                                                                                                                                |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `amplitude`                      | The amplitude of the whistle.                                                                                                                                                                                |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `minFreq`                        | The minimum frequency of the contour in Hz                                                                                                                                                                   |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `maxFreq`                        | The maximum frequency of the contour in Hz                                                                                                                                                                   |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `sliceData`                      | An array of contour slices, with each slice `x` containing: \| \| - `sliceData[x]$sliceNumber`: book-keeping; \| \| - `sliceData[x]$nPeaks`: number of peaks; \| \| - `sliceData[x]$peakData`: peak data; \| |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `contour`                        | An array of the same length as `sliceData` where each element `contour(x)` is the first frequency peak which defines the contour (`sliceData[x]$peakData[0][1]`). \|                                         |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `contWidth`                      | An array of the same length as `sliceData` where each element `contWidth(x)` is the width of the first frequency peak in that contour slice (`sliceData(x)$peakData[0][2]-sliceData(x)$peakData[0][0]`). \|  |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ## Python
 
