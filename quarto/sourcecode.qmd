@@ -22,10 +22,10 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 
 #### Option 1: Using GitHub Desktop
 
--   **Install**: Ensure the GitHub Desktop application is installed\[cite: 46, 49\].
--   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**\[cite: 50\].
--   **Local Path**: Choose a local path on your computer and press **'Clone'**\[cite: 50, 59\].
--   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**\[cite: 68\]. Enter the repository path and click **Finish**\[cite: 69\].
+-   **Install**: Ensure the GitHub Desktop application is installed.
+-   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**.
+-   **Local Path**: Choose a local path on your computer and press **'Clone'**.
+-   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**\[cite: 68\]. Enter the repository path and click **Finish**.
 
 #### Option 2: Using EGit (Direct Import)
 
@@ -61,7 +61,7 @@ PAMGuard is built using Maven. The Maven pom.xml is extensive and includes code 
 mvn clean package shade:shade
 ```
 
-There are platform dependent commands for building installers
+There are also platform dependent commands for building installers
 
 ::: panel-tabset
 ### macOS
