@@ -25,7 +25,7 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 -   **Install**: Ensure the GitHub Desktop application is installed.
 -   **Clone**: From the GitHub webpage, click the green **'Code'** button and select **'Open with GitHub desktop'**.
 -   **Local Path**: Choose a local path on your computer and press **'Clone'**.
--   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**\[cite: 68\]. Enter the repository path and click **Finish**.
+-   **Import**: In Eclipse, select **File \> Import \> Existing Projects into workspace**. Enter the repository path and click **Finish**.
 
 #### Option 2: Using EGit (Direct Import)
 
@@ -39,11 +39,49 @@ There are several ways to open the code with Eclipse. The first stage is to impo
 
 ### Running PAMGuard
 
-To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run Configurations
+To run PAMGuard in Eclipse you need to create a new Java run configuration. Click on the drop down menu of the green run arrow in Eclipse. Select Run Configurations. In the project field select the PAMGuard project. In the main class field enter `PamGuard.PamGuard`. Next go to the arguments tab.
+
 
 ![](images/clipboard-346099819.png)
 
 *The run configuration dialog in Eclipse set up to run PAMGuard.*
+
+The arguments tab contains two fields, the program arguments and the VM arguments. The program arguments are passed to the main method of the PamGuard class and are used to specify the settings file that PAMGuard should use. For example, if you want to start PAMGuard in viewer mode you would add `-v` to the program arguments. 
+
+The VM arguments are passed to the Java Virtual Machine and are used to specify core Java settings, such as the maximum amount of memory that can be used etc. These arguments are platform specific. 
+
+::: panel-tabset
+### Windows
+For Windows, we need to define the maximum memory allowed for the Java virtual machine and point Java to a library that allows access the National Instruments data acquisition devices and other external soundcards. The VM arguments for Windows are;
+
+```
+-Xmx8192m
+-Djava.library.path=lib64
+```
+
+
+### macOS
+In macOS, only standard soundcards are supported and so there is no need for a lib folder. The VM arguments for macOS are;
+
+```
+-Xmx8192m
+```
+
+### Linux
+Linux has it's own lib folder `liblinux`and there are also various scaling issues that need to be sorted. The VM arguments for Linux are;
+
+```
+-Xmx8192m
+-Djava.library.path=liblinux
+-Dsun.java2d.uiScale=2 
+-Dawt.useSystemAAFontSettings=on 
+-Dswing.aatext=true
+```
+
+Note that `-Dsun.java2d.uiScale=2` iworks well for scaling PAMGuard on Ubuntu with a 4k screen. It may need to be changed depending on your system.
+
+:::
+
 
 ![](images/pamguard_eclipse.png)
 
