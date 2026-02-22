@@ -1,0 +1,93 @@
+---
+title: Version 2.02.18
+description: Windows, Mac, and Linux Ubuntu
+date: 2026-02-20
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.18");
+      });
+    </script>
+---
+
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.18710851.svg)](https://doi.org/10.5281/zenodo.18710851)
+
+
+Gillespie, D., & Macaulay, J. (2026). PAMGuard (V2.02.18). Zenodo. https://doi.org/10.5281/zenodo.18710851
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_18.exe</a>
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Pamguard-2.02.18-signed.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard-2.02.18-signed.dmg</a>
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Pamguard_2.02.18_all.deb" class="btn btn-primary btn-sm" role="button">Ubuntu Installer: Pamguard_2.02.18_all.deb</a>
+
+## New Features
+
+Options in internal storage management to NOT delete all data from memory each time PAMGuard starts. [See online help](https://www.pamguard.org/olhelp/overview/PamMasterHelp/docs/internalstorage.html). This can be used to stop the map from clearing whenever the acquisition resets for unknown reasons. Also updated help for internal storage options.
+
+New module to compute a [Mel spectrogram](https://www.pamguard.org/olhelp/sound_processing/mel/docs/mel_overview.html)
+
+FFT Filter option in [Filters Module](https://www.pamguard.org/olhelp/sound_processing/FiltersHelp/Docs/Filters_filters.html)
+
+[Binary Store](https://www.pamguard.org/olhelp/utilities/BinaryStore/docs/binarystore_overview.html) option to update all binary files to the latest version. This can be useful if you want to open old binary files with the latest versions of the [Matlab, R, and Python libraries](https://www.pamguard.org/matlabandr.html).
+
+Tethys output for One band Filtered noise measurements
+
+Support for DeepAcoustics AI models
+
+SoundTrap wav files now have millis time and PAMGuard starts at the start time of each file, not the sample clock
+
+DMG on macOS can now access computer's microphone but mac security requires user to accept a prompt
+
+## Bug Fixes / minor enhancements
+
+[Issue 292](https://github.com/PAMGuard/PAMGuard/issues/292): Export of click events was not including all clicks within each event. Now resolved.
+
+[Issue 286](https://github.com/PAMGuard/PAMGuard/issues/286): Soundtrap SUD time. Issue fixed, though you should generally NEVER set a time zone offset for SUD files. See [online help](https://www.pamguard.org/olhelp/detectors/clickDetectorHelp/docs/SoundTrapClickDetector.html).
+
+[Issue 285](https://github.com/PAMGuard/PAMGuard/issues/285): Fixed bugs in DelphinID, which was not working.
+
+[Issue 280](https://github.com/PAMGuard/PAMGuard/issues/280): Fix long standing bug in click detector BT display where last click was not showing
+
+[Issue 238](https://github.com/PAMGuard/PAMGuard/pull/283): Updates SUD file reader to correctly zero-pad files with missing chunks.
+
+[Issue 279](https://github.com/PAMGuard/PAMGuard/issues/279): Problems with user specified date formats. Improved help file and issue warning if a 12 hour time format is specified.
+
+[Issue 273](https://github.com/PAMGuard/PAMGuard/issues/273): Fixed (or improved) night mode display for logger forms.
+
+[Issue 272](https://github.com/PAMGuard/PAMGuard/issues/272): Bearing localiser was truncating the clicks if set to only measure bearings using first n samples.
+
+[Issue 270](https://github.com/PAMGuard/PAMGuard/issues/270): Added options on click BT display pop up menu to manually classify groups of marked clicks as well as single clicks.
+
+[Issue 266](https://github.com/PAMGuard/PAMGuard/issues/266): Tethys failing to export Deployment documents when missing sound recording data. Now fixed.
+
+[Issue 265](https://github.com/PAMGuard/PAMGuard/issues/265): Clock setting from GPS. This has not worked for a number of years due to Windows security settings. A work around has now been found and documented in the help files.
+
+[Issue 261](https://github.com/PAMGuard/PAMGuard/pull/261): Restore choseable symbols for swing spectrogram displays of DL detection data
+
+[Issue 260](https://github.com/PAMGuard/PAMGuard/issues/260): Issue popup warning in sound acquisition when no sound files are present.
+
+[Issue 258](https://github.com/PAMGuard/PAMGuard/issues/258): Improved error reporting from database and binary store modules
+
+[Issue 255](https://github.com/PAMGuard/PAMGuard/issues/255): Fixed bug causing occasional crash in click spectrum display.
+
+[Issue 254](https://github.com/PAMGuard/PAMGuard/issues/254): AIS Error. Fix bug occurring when AIS data arrive before first GPS Position
+
+[Issue 251](https://github.com/PAMGuard/PAMGuard/issues/251): ROCCA: Fixed bug that caused contour tracking to crash if the contour was close to 0Hz or close to the Nyquist frequency.
+
+[Issue 250](https://github.com/PAMGuard/PAMGuard/issues/250): Ishmael energy sum and spectrogram correlation detectors not using correct min gap between detections. Now fixed. Also added [help for Ishmael detectors](https://www.pamguard.org/olhelp/detectors/ishmael/docs/ishmael_overview.html).
+
+[Issue 249](https://github.com/PAMGuard/PAMGuard/issues/249): Error in LTSA dialog. This was only causing the dialog to fail to update to the correct data source, not affecting detection.
+
+[Issue 248](https://github.com/PAMGuard/PAMGuard/issues/248): Mapping of hydrophones. Hopefully now fixed so that hydrophone mapping changes are used in bearing localisers.
+
+[Issue 247](https://github.com/PAMGuard/PAMGuard/issues/247): Make correct interpretation of invalid speed and heading values (given as 102.3knots and 360.0 degrees in the data)
+
+Fixed some dialogs in localiser that were not showing properly on macOS.
+
+Updated to latest X3 library which fixes zero-pad bugs when processing SoundTrap data
+
+[Release notes for all versions](../releasenotes.qmd)

@@ -2,24 +2,91 @@
 title: "Release Notes"
 ---
 
+# Version 2.02.16 February 2026
+
+## New Features
+
+Options in internal storage management to NOT delete all data from memory each time PAMGuard starts. [See online help](https://www.pamguard.org/olhelp/overview/PamMasterHelp/docs/internalstorage.html). This can be used to stop the map from clearing whenever the acquisition resets for unknown reasons. Also updated help for internal storage options.
+
+New module to compute a [Mel spectrogram](https://www.pamguard.org/olhelp/sound_processing/mel/docs/mel_overview.html)
+
+FFT Filter option in [Filters Module](https://www.pamguard.org/olhelp/sound_processing/FiltersHelp/Docs/Filters_filters.html)
+
+[Binary Store](https://www.pamguard.org/olhelp/utilities/BinaryStore/docs/binarystore_overview.html) option to update all binary files to the latest version. This can be useful if you want to open old binary files with the latest versions of the [Matlab, R, and Python libraries](https://www.pamguard.org/matlabandr.html).
+
+Tethys output for One Band Filtered noise measurements
+
+Support for DeepAcoustics AI models
+
+SoundTrap wav files now have millis time and PAMGuard starts at the start time of each file, not the sample clock
+
+DMG on macOS can now access computer's microphone but mac security requires user to accept a prompt
+
+## Bug Fixes / minor enhancements
+
+[Issue 292](https://github.com/PAMGuard/PAMGuard/issues/292): Export of click events was not including all clicks within each event. Now resolved.
+
+[Issue 286](https://github.com/PAMGuard/PAMGuard/issues/286): Soundtrap SUD time. Issue fixed, though you should generally NEVER set a time zone offset for SUD files. See [online help](https://www.pamguard.org/olhelp/detectors/clickDetectorHelp/docs/SoundTrapClickDetector.html).
+
+[Issue 285](https://github.com/PAMGuard/PAMGuard/issues/285): Fixed bugs in DelphinID, which was not working.
+
+[Issue 280](https://github.com/PAMGuard/PAMGuard/issues/280): Fix long standing bug in click detector BT display where last click was not showing
+
+[Issue 238](https://github.com/PAMGuard/PAMGuard/pull/283): Updates SUD file reader to correctly zero-pad files with missing chunks.
+
+[Issue 279](https://github.com/PAMGuard/PAMGuard/issues/279): Problems with user specified date formats. Improved help file and issue warning if a 12 hour time format is specified.
+
+[Issue 273](https://github.com/PAMGuard/PAMGuard/issues/273): Fixed (or improved) night mode display for logger forms.
+
+[Issue 272](https://github.com/PAMGuard/PAMGuard/issues/272): Bearing localiser was truncating the clicks if set to only measure bearings using first n samples.
+
+[Issue 270](https://github.com/PAMGuard/PAMGuard/issues/270): Added options on click BT display pop up menu to manually classify groups of marked clicks as well as single clicks.
+
+[Issue 266](https://github.com/PAMGuard/PAMGuard/issues/266): Tethys failing to export Deployment documents when missing sound recording data. Now fixed.
+
+[Issue 265](https://github.com/PAMGuard/PAMGuard/issues/265): Clock setting from GPS. This has not worked for a number of years due to Windows security settings. A work around has now been found and documented in the help files.
+
+[Issue 261](https://github.com/PAMGuard/PAMGuard/pull/261): Restore choseable symbols for swing spectrogram displays of DL detection data
+
+[Issue 260](https://github.com/PAMGuard/PAMGuard/issues/260): Issue popup warning in sound acquisition when no sound files are present.
+
+[Issue 258](https://github.com/PAMGuard/PAMGuard/issues/258): Improved error reporting from database and binary store modules
+
+[Issue 255](https://github.com/PAMGuard/PAMGuard/issues/255): Fixed bug causing occasional crash in click spectrum display.
+
+[Issue 254](https://github.com/PAMGuard/PAMGuard/issues/254): AIS Error. Fix bug occurring when AIS data arrive before first GPS Position
+
+[Issue 251](https://github.com/PAMGuard/PAMGuard/issues/251): ROCCA: Fixed bug that caused contour tracking to crash if the contour was close to 0Hz or close to the Nyquist frequency.
+
+[Issue 250](https://github.com/PAMGuard/PAMGuard/issues/250): Ishmael energy sum and spectrogram correlation detectors not using correct min gap between detections. Now fixed. Also added [help for Ishmael detectors](https://www.pamguard.org/olhelp/detectors/ishmael/docs/ishmael_overview.html).
+
+[Issue 249](https://github.com/PAMGuard/PAMGuard/issues/249): Error in LTSA dialog. This was only causing the dialog to fail to update to the correct data source, not affecting detection.
+
+[Issue 248](https://github.com/PAMGuard/PAMGuard/issues/248): Mapping of hydrophones. Hopefully now fixed so that hydrophone mapping changes are used in bearing localisers.
+
+[Issue 247](https://github.com/PAMGuard/PAMGuard/issues/247): Make correct interpretation of invalid speed and heading values (given as 102.3knots and 360.0 degrees in the data)
+
+Fixed some dialogs in localiser that were not showing properly on macOS.
+
+Updated to latest X3 library which fixes zero-pad bugs when processing SoundTrap data
+
 # Version 2.02.17 June 2025
 
 ## New Features
 
-Improved Error Trapping and Reporting. Added features to the PAMGuard core data handling to trap any errors in each module and better log them in the PAMGuard log files. When PAMGuard starts, it will automatically analyse the log file from the previous run for errors. If errors are found, then the user will be prompted to send a report to the PAMGuard team via email. See help on log files for further details.  
+Improved Error Trapping and Reporting. Added features to the PAMGuard core data handling to trap any errors in each module and better log them in the PAMGuard log files. When PAMGuard starts, it will automatically analyse the log file from the previous run for errors. If errors are found, then the user will be prompted to send a report to the PAMGuard team via email. See help on log files for further details.
 
 [Issue 211](https://github.com/PAMGuard/PAMGuard/issues/211). Noise Band Measurement module (the one that uses filter banks). Added features to support other types of frequency band as well as standard octave and third octave. PAMGuard now supports Octave, Third Octave, Deci-decade, Decade, 1/10 Octave, and 1/12 Octave bands.
 
 [Issue 211](https://github.com/PAMGuard/PAMGuard/issues/211). Noise Monitor Module (the one that used FFT data). Added 1/10 decade, Octave, and Decade bands options. Improved data selection handling.
 
-[Issue 215](https://github.com/PAMGuard/PAMGuard/issues/215). x.wav Files. Support for duty cycling with .x.wav files from SCRIPPS HARP recorders.  
+[Issue 215](https://github.com/PAMGuard/PAMGuard/issues/215). x.wav Files. Support for duty cycling with .x.wav files from SCRIPPS HARP recorders.
 
-Export function for noise band data to Matlab, R, etc. 
+Export function for noise band data to Matlab, R, etc.
 
 ## Bug Fixes
 
-[Issue 207](https://github.com/PAMGuard/PAMGuard/issues/207). 
-Marked clicks in click detector not rematching when data reloaded. This was occurring when multiple clicks had the same millisecond time and has now been rectified.
+[Issue 207](https://github.com/PAMGuard/PAMGuard/issues/207). Marked clicks in click detector not rematching when data reloaded. This was occurring when multiple clicks had the same millisecond time and has now been rectified.
 
 Tethys deployments table. Deployments table in Tethys was showing multiple lines for duty cycled data. Duty cycled data will now display as a single row of data in the Deployments table on the display.
 
@@ -27,13 +94,11 @@ Tethys deployments table. Deployments table in Tethys was showing multiple lines
 
 [Issue 230](https://github.com/PAMGuard/PAMGuard/issues/230). Updated SUD reader to handle latest soundtrap firmware that supports accelerometers and magnetometers.
 
-[Issue 220](https://github.com/PAMGuard/PAMGuard/issues/220). 
-Fixed spectrogram scrolling issues in Spectrogram and FX Time display.
+[Issue 220](https://github.com/PAMGuard/PAMGuard/issues/220). Fixed spectrogram scrolling issues in Spectrogram and FX Time display.
 
 [Issue 216](https://github.com/PAMGuard/PAMGuard/issues/216). GEBCO Raster map files not loading. Issue now fixed.
 
-[Issue 232](https://github.com/PAMGuard/PAMGuard/issues/232). Files without dates. Will now correctly process a folder of files without dates. However, you are strongly recommended to have valid dates in your file names. 
-
+[Issue 232](https://github.com/PAMGuard/PAMGuard/issues/232). Files without dates. Will now correctly process a folder of files without dates. However, you are strongly recommended to have valid dates in your file names.
 
 # Version 2.02.16 March 2025
 
