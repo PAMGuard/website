@@ -8,7 +8,11 @@ date: 2026-02-20
 
 ## PAMGuard 2.02.18 is now available
 
-There are a few new cool features in the new release which you can check out below. We've also fixed quite a number of minor bugs and improved some of the help files. We always recommend updating to the latest version. 
+Version [2.02.18](../downloadsurvey.qmd) includes a number of minor new features and bug fixes. 
+
+We've started to distribute an installer for Debian based Linux systems - we are trialing to see how this goes. Linux is still a very fragmented ecosystem and we can't guarantee that the installer will work on all Debian based Linux distributions (it won't work on Fedora etc.), but we hope it will make installation easier for some users. There are also some instructions [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/COMPILE.md) on how to manually build PAMGuard on Linux. 
+
+We also implemented Apple's new security features and so the macOS installer should now only warn users once that PAMGaurd was downloaded from the Internet, and the app should be able to access the computer's microphone (subject to user permission) without any workarounds. Get in touch if this does not work.
 
 ::: callout-note
 We know it's frustrating if PAMGuard does not work, and (subject to [funding](../funding.qmd)) we are taking steps to make releases more stable by developing a new test framework. It's going to take time, and we won't catch every bug, but it should mean that in the coming few years PAMGuard is generally more resilient to bugs, making life easier for developers and users!

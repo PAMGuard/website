@@ -46,7 +46,7 @@ To run PAMGuard in Eclipse you need to create a new Java run configuration. Clic
 
 *The run configuration dialog in Eclipse set up to run PAMGuard.*
 
-The arguments tab contains two fields, the program arguments and the VM arguments. The program arguments are passed to the main method of the PamGuard class and are used to specify the settings file that PAMGuard should use. For example, if you want to start PAMGuard in viewer mode you would add `-v` to the program arguments. 
+The arguments tab contains two fields, the program arguments and the VM arguments. The program arguments are passed to the main method of the PamGuard class and are used to [specify the settings PAMGuard uses](https://github.com/PAMGuard/PAMGuard/wiki/Command-Line-Options). For example, if you want to start PAMGuard in viewer mode you would add `-v` to the program arguments. 
 
 The VM arguments are passed to the Java Virtual Machine and are used to specify core Java settings, such as the maximum amount of memory that can be used etc. These arguments are platform specific. 
 
@@ -78,7 +78,7 @@ Linux has it's own lib folder `liblinux`and there are also various scaling issue
 -Dswing.aatext=true
 ```
 
-Note that `-Dsun.java2d.uiScale=2` iworks well for scaling PAMGuard on Ubuntu with a 4k screen. It may need to be changed depending on your system.
+Note that `-Dsun.java2d.uiScale=2` works well for scaling PAMGuard on Ubuntu with a 4k screen. It may need to be changed depending on your system.
 
 :::
 
