@@ -2,7 +2,9 @@
 title: "Release Notes"
 ---
 
-# Version 2.02.16 February 2026
+
+
+# Version 2.02.18 February 2026
 
 ## New Features
 

@@ -1,7 +1,7 @@
 ---
 title: "Version 2.02.18"
 description: "PAMGuard version 2.02.18 is now available for Windows, Mac, and Linux"
-date: 2026-02-20
+date: 2026-02-23
 ---
 
 [PAMGuard version 2.02.18](../downloadsurvey.qmd) is now available for Windows, Mac, and Linux.

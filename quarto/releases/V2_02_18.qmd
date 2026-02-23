@@ -1,7 +1,7 @@
 ---
 title: Version 2.02.18
-description: Windows, Mac, and Linux Ubuntu
-date: 2026-02-20
+description: Windows, Mac, Linux
+date: 2026-02-23
 include-in-header: 
   text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="js/countdowns.js"></script>
@@ -18,11 +18,12 @@ include-in-header:
 
 Gillespie, D., & Macaulay, J. (2026). PAMGuard (V2.02.18). Zenodo. https://doi.org/10.5281/zenodo.18710851
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.exe" class="btn btn-primary btn-sm" role="button">Windows Installer: Setup-Pamguard_2_02_18.exe</a>
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Pamguard-2.02.18-signed.dmg" class="btn btn-primary btn-sm" role="button">macOS Installer: Setup-Pamguard-2.02.18-signed.dmg</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.exe" class="btn btn-primary btn-sm" role="button">Download for Windows</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.dmg" class="btn btn-primary btn-sm" role="button">Download for MacOS</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.deb" class="btn btn-primary btn-sm" role="button">Download for Linux</a>
 
-<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Pamguard_2.02.18_all.deb" class="btn btn-primary btn-sm" role="button">Ubuntu Installer: Pamguard_2.02.18_all.deb</a>
+We've started to distribute an installer for Debian-based Linux systems - we are trialling to see how this goes. Linux is still a very fragmented ecosystem, and we can't guarantee that the installer will work on all Debian-based Linux distributions (it won't work on Fedora, etc.), but we hope it will make installation easier for some users. There are also some instructions [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/COMPILE.md) on how to manually build PAMGuard on Linux. 
 
 ## New Features
 
