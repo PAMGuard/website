@@ -14,7 +14,7 @@ Modules are organised by groups, which correspond to menu groups for adding modu
 
 Currently, PAMGuard contains 70 different modules.
 
-If you're new to PAMGuard, start at the [Tutorials page](tutorials.qmd) which will help you get going.
+If you're new to PAMGuard, start at the [Tutorials page](./tutorials/tutorials.qmd) which will help you get going.
 
 [Maps and Mapping](#_Maps_and_Mapping), [Utilities](#_Utilities), [Sensors](#_Sensors), [Displays](#_Displays), [Sound Processing](#_Sound_Processing), [Detectors](#_Detectors), [Classifiers](#_Classifiers), [Localisers](#_Localisers), [Visual Methods](#_Visual_Methods)
 
