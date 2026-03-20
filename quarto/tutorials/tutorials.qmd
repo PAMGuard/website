@@ -10,8 +10,8 @@ listing:
     sort: dispord
     exclude:
       fileusage: notlisted
-#    contents: 
-#      - "tutorials/*.qmd"
+    contents: 
+      - "*.qmd"
       
 #  - id: as_table
 #    type: table
