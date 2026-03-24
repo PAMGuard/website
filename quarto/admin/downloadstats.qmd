@@ -75,6 +75,10 @@ https://github.com/douggillespie/rioncompass/
 https://github.com/douggillespie/TritechAcquisitionPlugin/
 :::
 
+::: pgdownload
+https://doi.org/10.5281/zenodo.17999634
+:::
+
 <h4>Tritech Files</h4>
 
 ::: pgdownload
@@ -83,6 +87,12 @@ https://github.com/douggillespie/TritechFiles
 
 ::: pgdownload
 https://doi.org/10.5281/zenodo.18526338
+:::
+
+<h4>River Trigger</h4>
+
+::: pgdownload
+https://github.com/douggillespie/RiverSealTrigger
 :::
 
 <br>
@@ -178,8 +188,6 @@ pypamguard is hosted on the Python Package Index, which does not provide downloa
 ::: pgdownload
 <https://github.com/PAMGuard/pypamguard>
 :::
-
-
 
 <br>
 
