@@ -27,3 +27,5 @@ Below are some recent publications from [the PAMGuard team](team/team.qmd) and o
 11. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Harbour porpoises exhibit localized evasion of a tidal turbine. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3660).
 
 12. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures. [PLoS ONE 15 (5), 16pp (2020)](https://doi.org/10.1371/journal.pone.0229058).
+
+13. Malinka CE, Gillespie D, Macaulay J, Joy R, & CS Sparling (2018) First in-situ passive acoustic monitoring for marine mammals during operation of a tidal turbine in Ramsey Sound, Wales” [Mar Ecol Prog Ser 590: 247-266.](https://doi.org/10.3354/meps12467)
