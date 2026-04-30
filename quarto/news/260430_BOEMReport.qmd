@@ -1,0 +1,7 @@
+---
+title: "BOEM Report 2026-018"
+description: "Integration of a Bioacoustics Detection, Classification and Localization Framework (PAMGuard) with a Bioacoustics  Archiving Database and Workbench (Tethys)"
+date: 2026-04-30
+---
+
+A report on PAMGuard development activities between 2021 and 2025, funded by the Bureau of Oceans Energy Management (BOEM), is now available at [https://espis.boem.gov/final reports/BOEM_2026-018.pdf](https://espis.boem.gov/final%20reports/BOEM_2026-018.pdf)

@@ -10,7 +10,7 @@ There are several ways that you can get help with PAMGuard.
 
 The [Online Help](olhelp/index.html) is available on this site and is also all built into PAMGuard so it's accessible even if you're at sea and don't have Internet. If you are having issues with the deep learning module, check out this additional [troubleshooting section](/deeplearning/deep_learning_troubleshoot.html).
 
-The [User Tutorials](tutorials.qmd) are also an excellent way to familiarise yourself with PAMGuard. We're hoping to expand these in the coming year.
+The [User Tutorials](tutorials/tutorials.qmd) are also an excellent way to familiarise yourself with PAMGuard. We're hoping to expand these in the coming year.
 
 There are also several providers of training courses in PAMGuard operation. Some of these are listed in our [links pages](links/mmo.qmd#mmo-and-pam-training), though please be aware that none of these providers are officially linked with the PAMGuard team.
 
