@@ -1,0 +1,23 @@
+---
+title: "It's not just about PAM !"
+description: "New paper on using PAMGuard to detect seals using high frequency imaging sonar."
+date: 2026-06-03
+---
+
+
+PAMGuard has had modules for collecting visual data for many years. More recently, we've been adding capabilities to process data from [Tritech Imaging sonars](../plugins/tritech.html).
+
+PAMGuards modular framework allowed us to take the sonar detection module we developed for [tracking seals around tidal turbines](https://doi.org/10.1002/aqc.70326) and combine this with two new plugin modules to a) determine the 
+animals swim direction and to b) trigger an acoustic deterrent.
+
+A publication about this work is now available in the ICES Journal of Marine Science.
+
+[doi.org/10.1093/icesjms/fsag098](https://doi.org/10.1093/icesjms/fsag098)
+
+# Triggered deterrence of seals from a salmon river using imaging sonar
+
+Douglas Gillespie, Robert N Harris, Carol Sparling.
+
+## Abstract
+
+Reducing pinniped predation on salmonid fish in river environments is an important conservation priority in rivers globally. In UK rivers, predation by seals on endangered Atlantic salmon is considered to be an important factor in their continuing poor conservation status. Acoustic deterrent devices (ADDs) have often been considered a useful tool in preventing seals from entering rivers, but continuous operation raises concerns about impacts on non-target wildlife and the potential for seal habituation. We developed an automated system that uses multibeam imaging sonar to detect seals in real time and triggers an ADD only when a seal is present. This targeted approach reduces the likelihood of harm to other animals and reduces the likelihood that seals will habituate to deterrent signals. The system was deployed for four months on a Scottish river, during which it successfully detected and triggered on 71 seals travelling upstream. Comparison with historical control data from previous years and from the pre-deployment period suggests an approximate 90% reduction in upstream seal movements during operation. Although river conditions occasionally resulted in elevated false-trigger rates, on most days the deterrent was only active on average for 65 s (\<0.1% of each day). These results indicate that automated, event-triggered, acoustic deterrence can substantially reduce seal incursions while minimizing acoustic exposure to other sensitive wildlife.
