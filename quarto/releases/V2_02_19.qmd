@@ -1,0 +1,70 @@
+---
+title: Version 2.02.19
+description: Windows, Mac
+date: 2026-08-11
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/countdowns.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countRelease("V2.02.18");
+      });
+    </script>
+---
+
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.21833963.svg)](https://doi.org/10.5281/zenodo.21833963)
+
+
+Gillespie, D., & Macaulay, J. (2026). PAMGuard (V2.02.19). Zenodo. https://zenodo.org/records/21833963
+
+
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.19/Setup-Pamguard_2_02_19.exe" class="btn btn-primary btn-sm" role="button">Download for Windows</a>
+<a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.19/Setup-Pamguard_2_02_19.dmg" class="btn btn-primary btn-sm" role="button">Download for MacOS</a>
+
+
+We've not been able to build a Linux version for this release. There are also some instructions [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/deb/COMPILE.md) on how to manually build PAMGuard on Linux if you wish to do this yourself. 
+
+## New Features
+
+GeoTIFF Map Layer. Can now use a geo referenced image File as a base layer on the PAMGuard Map. These can be created using many suitable GIS packages. See Help for details.
+
+Version Logging. PAMGuard version information and versions of all loaded plugin modules is written to the database table Version\_Information every time PAMGuard starts.
+
+Automatic NMEA serial port selection. New option, which will try available serial ports in turn until one is found that s returning NMEA data.
+
+[Issue 311](https://github.com/PAMGuard/PAMGuard/issues/311): Improved bearing errors from beam former bearing calculator and fix of error estimation in the crossed bearing localiser. Updates to the underlying math and display graphics.
+
+[Issue 323](https://github.com/PAMGuard/PAMGuard/issues/323): Do a database commit whenever the File menu is used to view the database.
+
+[Issue 324](https://github.com/PAMGuard/PAMGuard/issues/324): Database and binary stores automatically open configuration dialogs when added to a new configuration. 
+
+[Issue 325](https://github.com/PAMGuard/PAMGuard/issues/325): Improved NMEA input resetting, e.g. if USB GPS becomes temporarily unplugged. Also updated code to support additional NMEA sources through the plugin system for 3rd party developers.
+
+**Bug Fixes**
+
+[Issue 292](https://github.com/PAMGuard/PAMGuard/issues/296): Stop printing unnecessary wav file format warnings when they do no harm.
+
+[Issue 300](https://github.com/PAMGuard/PAMGuard/issues/300): Null pointer returned by the Ishmael Spectrogram Correlation detector. Fixed.
+
+[Issue 302](https://github.com/PAMGuard/PAMGuard/issues/302): Whistle export errors when using multiple whistle and moan detectors
+
+[Issue 306](https://github.com/PAMGuard/PAMGuard/issues/306): Tethys export. Options to limit number of items per Detections document to about 100k.
+
+[Issue 307](https://github.com/PAMGuard/PAMGuard/issues/307): Tethys not exporting correct count of data points in Detections documents.
+
+[Issues 308](https://github.com/PAMGuard/PAMGuard/issues/308) and [310](https://github.com/PAMGuard/PAMGuard/issues/310): 3D Localiser / crossed bearing localiser now correctly showing and saving settings
+
+[Issue 315](https://github.com/PAMGuard/PAMGuard/issues/315): AIS Memory leak fixed. Only occurred when a vessel was in range indefinitely, e.g. in port.
+
+[Issue 317](https://github.com/PAMGuard/PAMGuard/pull/317), [318](https://github.com/PAMGuard/PAMGuard/pull/318), and [319](https://github.com/PAMGuard/PAMGuard/pull/319): Small fixes to improve file cataloguing and error management when running headless on a server.
+
+[Issue 322](https://github.com/PAMGuard/PAMGuard/issues/322): Logger forms error if counter information is read when form output tables don t exist.
+
+[Issue 327](https://github.com/PAMGuard/PAMGuard/pull/327): Fix to Ishmeal spectrogram correlation application of changed settings.
+
+[Issue 328](https://github.com/PAMGuard/PAMGuard/issues/328): Fix to Ishmeal spectrogram correlation dialog.
+
+[Issue 329](https://github.com/PAMGuard/PAMGuard/pull/329): Fix to spectrogram noise process so that not all processes have to be run together.
+
+[Release notes for all versions](../releasenotes.qmd)

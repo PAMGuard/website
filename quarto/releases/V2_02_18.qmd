@@ -23,7 +23,7 @@ Gillespie, D., & Macaulay, J. (2026). PAMGuard (V2.02.18). Zenodo. https://doi.o
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.dmg" class="btn btn-primary btn-sm" role="button">Download for MacOS</a>
 <a href="https://github.com/PAMGuard/PAMGuard/releases/download/V2.02.18/Setup-Pamguard_2_02_18.deb" class="btn btn-primary btn-sm" role="button">Download for Linux</a>
 
-We've started to distribute an installer for Debian-based Linux systems - we are trialling to see how this goes. Linux is still a very fragmented ecosystem, and we can't guarantee that the installer will work on all Debian-based Linux distributions (it won't work on Fedora, etc.), but we hope it will make installation easier for some users. There are also some instructions [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/COMPILE.md) on how to manually build PAMGuard on Linux. 
+We've started to distribute an installer for Debian-based Linux systems - we are trialling to see how this goes. Linux is still a very fragmented ecosystem, and we can't guarantee that the installer will work on all Debian-based Linux distributions (it won't work on Fedora, etc.), but we hope it will make installation easier for some users. There are also some instructions [here](https://github.com/PAMGuard/PAMGuard/blob/main/build/deb/COMPILE.md) on how to manually build PAMGuard on Linux. 
 
 ## New Features
 

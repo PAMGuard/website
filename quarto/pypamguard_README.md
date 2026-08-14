@@ -50,4 +50,4 @@ This software is distributed under the terms of the [GNU](https://github.com/PAM
 
 ### Contributing
 
-Check [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
+Check [CONTRIBUTING.md](https://github.com/PAMGuard/pypamguard/blob/main/CONTRIBUTING.md) to get started.

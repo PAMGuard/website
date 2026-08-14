@@ -7,3 +7,5 @@
 /quarto/olhelp/
 /testpages/
 **/.DS_Store
+/.quarto/
+**/*.quarto_ipynb
