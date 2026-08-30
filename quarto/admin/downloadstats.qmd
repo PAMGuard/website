@@ -32,7 +32,7 @@ https://github.com/PAMGuard/PAMGuard/
 <h3>Batch Processor</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/PAMGuardBatch
+https://github.com/PAMGuard/PAMGuardBatch
 :::
 
 <br>
@@ -40,7 +40,7 @@ https://github.com/douggillespie/PAMGuardBatch
 <h3>Resource Monitor</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/resourcemonitor
+https://github.com/PAMGuardPlugins/resourcemonitor
 :::
 
 <br>
@@ -48,7 +48,7 @@ https://github.com/douggillespie/resourcemonitor
 <h3>Video Range (legacy)</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/VideoRange_Legacy/
+https://github.com/PAMGuardPlugins/VideoRange_Legacy/
 :::
 
 <br>
@@ -64,7 +64,7 @@ https://github.com/pamguard/SpermWhaleIPI/
 <h3>RION compass</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/rioncompass/
+https://github.com/PAMGuardPlugins/rioncompass
 :::
 
 <br>
@@ -100,7 +100,7 @@ https://github.com/douggillespie/RiverSealTrigger
 <h3>WAMS</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/WAMS/
+https://github.com/PAMGuardPlugins/WAMS
 :::
 
 <br>
@@ -148,7 +148,7 @@ https://github.com/PAMGuard/haggis/
 <h3>Windows Sound Plugin</h3>
 
 ::: pgdownload
-https://github.com/douggillespie/WindowsSound/
+https://github.com/PAMGuardPlugins/NativeSound
 :::
 
 <br>

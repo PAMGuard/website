@@ -12,6 +12,6 @@ Provides additional monitoring of PAMGuard memory usage in the side bar.
 
 ### Downloads
 
-[Source Code](https://github.com/douggillespie/resourcemonitor)
+[Source Code](https://github.com/PAMGuardPlugins/resourcemonitor)
 
-[Built Module](https://github.com/douggillespie/resourcemonitor/releases/tag/V1.0.2)
+[Built Module](https://github.com/PAMGuardPlugins/resourcemonitor/releases/tag/V1.0.2)

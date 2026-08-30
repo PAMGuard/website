@@ -20,6 +20,6 @@ Gillespie, Douglas, Russell Leaper, Jonathan Gordon, and Kelly Macleod. "An inte
 
 ### Downloads
 
-[Source Code](https://github.com/douggillespie/VideoRange_Legacy)
+[Source Code](https://github.com/PAMGuardPlugins/VideoRange_Legacy)
 
-[Built Module](https://github.com/douggillespie/VideoRange_Legacy/releases/tag/V_1_0)
+[Built Module](https://github.com/PAMGuardPlugins/VideoRange_Legacy/releases/tag/V_1_0)

@@ -16,8 +16,7 @@ In particular, it provides support for 24 bit sound cards and for sample rates \
 
 Once installed, PAMGuard will automatically add this system to the list of available DAQ systems in the PAMGuard sound acquisition module.
 
-Before using this module, read the notes in the help about 
-[correctly configuring sound cards](https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionSoundCard.html);
+Before using this module, read the notes in the help about [correctly configuring sound cards](https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionSoundCard.html);
 
 Note that this is a new module and has only been tested on a limited number of Windows 11 computers. Please report any problems or errors to [support\@pamguard.org](mailto:support@pamguard.org){.email}, including the type of sound card you were using, the Windows version, PAMGuard version, and the error messages from the command window or [log files](https://www.pamguard.org/olhelp/overview/PamMasterHelp/docs/logfiles.html).
 
