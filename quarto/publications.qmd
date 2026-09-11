@@ -4,9 +4,11 @@ title: "Publications"
 
 Below are some recent publications from [the PAMGuard team](team/team.qmd) and other researchers in St Andrews that are either about PAMGuard or used PAMGuard to conduct research. Many more articles using PAMGuard can be found by searching <a href="https://scholar.google.com/citations?hl=en&user=y2FqZcYAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="google">Google Scholar</a> or [Web of Science](https://www.webofscience.com/wos/woscc/summary/65bcbaca-94e0-4fe9-b87b-b49387556e6b-018f6d325c/086f6a2a-8ebf-4563-9906-77b519f75b02-018f6d325a/relevance/1).
 
-1.  Gillespie, D., Macaulay, J., Oswald, M., and Roch, M. (2026). “PAMGuard: Application software for passive acoustic detection, classification, and localisation of animal sounds,” The Journal of the Acoustical Society of America, 159, 437–443. [doi.org/10.1121/10.0042245](https://doi.org/10.1121/10.0042245).
+1. Gillespie, D., Harris, N., Sparling C. (2026) "Triggered deterrence of seals from a salmon river using imaging sonar" *ICES Journal of Marine Science* 83:6 <https://doi.org/10.1093/icesjms/fsag098>
 
-2.  Montabaranom, J., D. Gillespie, C. Sparling, E. Longden, and G. Hastie. 2026. “ Evaluating the Risk of Collision of Seals Swimming Within Metres of Operating Tidal Turbines.” *Aquatic Conservation: Marine and Freshwater Ecosystems* 36, no. 2: e70326. <https://doi.org/10.1002/aqc.70326>.
+2. Gillespie, D., Macaulay, J., Oswald, M., and Roch, M. (2026). “PAMGuard: Application software for passive acoustic detection, classification, and localisation of animal sounds,” The Journal of the Acoustical Society of America, 159, 437–443. [doi.org/10.1121/10.0042245](https://doi.org/10.1121/10.0042245).
+
+2.  Montabaranom, J., D. Gillespie, C. Sparling, E. Longden, and G. Hastie. 2026. “ Evaluating the Risk of Collision of Seals Swimming Within Metres of Operating Tidal Turbines” *Aquatic Conservation: Marine and Freshwater Ecosystems* 36, no. 2: e70326. <https://doi.org/10.1002/aqc.70326>.
 
 3.  Montabaranom, J., Gillespie, D., Longden, E., Rapson, K., Holoborodko, A., Sparling, C., & Hastie, G. (2025). Seals exhibit localised avoidance of operational tidal turbines. *Journal of Applied Ecology*, 62, 242–252. <https://doi.org/10.1111/1365-2664.14844>
 
@@ -27,3 +29,5 @@ Below are some recent publications from [the PAMGuard team](team/team.qmd) and o
 11. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Harbour porpoises exhibit localized evasion of a tidal turbine. [Aquatic Conservation: Marine and Freshwater Ecosystems (2021)](https://doi.org/10.1002/aqc.3660).
 
 12. Gillespie, D., Palmer, L., Macaulay, J., Sparling, C. & Hastie, G. Passive acoustic methods for tracking the 3D movements of small cetaceans around marine structures. [PLoS ONE 15 (5), 16pp (2020)](https://doi.org/10.1371/journal.pone.0229058).
+
+13. Malinka CE, Gillespie D, Macaulay J, Joy R, & CS Sparling (2018) First in-situ passive acoustic monitoring for marine mammals during operation of a tidal turbine in Ramsey Sound, Wales” [Mar Ecol Prog Ser 590: 247-266.](https://doi.org/10.3354/meps12467)

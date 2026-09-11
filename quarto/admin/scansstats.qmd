@@ -1,0 +1,83 @@
+---
+title: "Download Stats: Tutorials"
+include-in-header: 
+  text: <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="../js/countdownloads.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        countEverything();
+      });
+    </script>
+---
+
+```{=html}
+<style>
+table, th, td { 
+/*  width: 100%;*/
+  border: 1px solid; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>
+```
+
+# SCANS Survey developments
+Software for Visual survey line transect data collection (SCANS) 
+
+
+<h3>SCANS Android App</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/scansapp
+:::
+
+<h3>Logger Voices</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/loggervoices
+:::
+
+<h3>Camera Grabber</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/cameragrabber
+:::
+
+
+<h3>App NMEA</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/scansappnmea
+:::
+
+<h3>Video Controller</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/videocontrol
+:::
+
+<br>
+
+<h3>Validation</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/validation
+:::
+
+
+<br>
+
+<h3>Configurations</h3>
+
+::: pgdownload
+https://github.com/SCANS-Survey/SCANS
+:::
+
+
+
+
+<br>
+
+Previous: [software Downloads](downloadstats.qmd)
+
+Next: [Model Downloads](modelstats.qmd)

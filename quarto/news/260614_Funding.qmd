@@ -1,0 +1,16 @@
+---
+title: "Support and maintenance funding"
+description: "We’re delighted to announce we’ve received US$50k from the IOGP Sound and Marine Life JIP for continued PAMGuard support and maintenance."
+date: 2026-06-14
+---
+
+The [PAMGuard team](../team/team.qmd) in St Andrews have received US$50,000 in a donation from the [IOGP Sound & Marine Life Programme](https://www.soundandmarinelife.org) for continued PAMGuard support and maintenance.
+
+Hot on our list of tasks are: 
+
+
+* Testing PAMGuard on Windows ARM PC's and building an ARM installer
+* Further updates to PAMGuard tutorials
+* Support to developers, especially those wanting to get their AI models to run within PAMGuard
+* Continued support to users
+* Develop an improved testing framework to provide greater stability in PAMGuard releases

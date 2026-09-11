@@ -16,6 +16,6 @@ Brittany L Jones, Michael Oswald, Samantha Tufano et al. Introducing NMMF WAMS, 
 
 ### Downloads
 
-[Source Code](https://github.com/douggillespie/WAMS)
+[Source Code](https://github.com/PAMGuardPlugins/WAMS)
 
-[Built Module](https://github.com/douggillespie/WAMS/releases/tag/V3.0.0)
+[Built Module](https://github.com/PAMGuardPlugins/WAMS/releases/tag/V3.0.0)
