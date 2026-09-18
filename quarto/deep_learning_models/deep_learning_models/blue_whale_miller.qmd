@@ -1,7 +1,7 @@
 ---
 title: "Blue whale D-call detector"
 description: "A spectrogram-based deep learning model for detecting blue whale D-calls"
-image: ./right_whale_shiu_palmer/NERW_upcall.png
+image: ./blue_whale_miller/blue_whale_call.png
 categories: [right whale]
 format: html
 ---
@@ -39,5 +39,3 @@ https://doi.org/10.1002/rse2.297
 ## Model
 
 The model is provided as a trained deep learning detector compatible with the PAMGuard Deep Learning module. The detector analyses spectrogram segments derived from acoustic recordings and outputs a probability that a blue whale D-call is present within each segment.
-
-\<-- Not sure about a settings file, the way you have on the NARW page. Please delete this as appropriate --\>
