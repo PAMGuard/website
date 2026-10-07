@@ -22,7 +22,16 @@ Minke whale pulse trains are low frequency (below \~800 Hz) sequences of pulses 
 
 The model expects audio at a sample rate of 2 kHz (PAMGuard will decimate higher sample rate data automatically). Before classification, audio is converted to a dB magnitude spectrogram (0.128 s Hann window, 0.04 s step, 0-800 Hz). The spectrogram is then denoised using a median equalizer which subtracts a 60 second running median from each frequency bin and sets negative values to zero.
 
-Note that in the original Python detector the median equalizer is applied to the spectrogram of the whole recording. In PAMGuard, the deep learning module processes one segment at a time and so the median equalizer is applied to each 5 second segment instead. PAMGuard's scores match the Python model when the same per-segment denoising is used, but, because each segment has less context to estimate the background noise, the scores differ from the original Python detector for some segments. In our tests on an example recording, PAMGuard and the original detector agreed on whether a segment contained a minke whale (score threshold 0.5) for around 83% of segments.
+Note that in the original Python detector the median equalizer is computed over the spectrogram of the whole recording, so each 5 second chunk is denoised using around 30 seconds of data either side of it. PAMGuard's deep learning module processes one segment at a time, so two versions of the model are provided.
+
+| Model | Segment length | Agreement with the python detector |
+|---|---|---|
+| `model_NAMW_20240523_60s.ktpb` (recommended) | 60 s | 100% of segments agree at a 0.5 score threshold |
+| `model_NAMW_20240523.ktpb` | 5.128 s | 83% of segments agree at a 0.5 score threshold |
+
+The **60 second version** computes the spectrogram and the 60 second median equalizer over a 60 second segment and then trims the centre 5 seconds of the spectrogram for the classifier. Each classified chunk therefore has the same amount of surrounding data to estimate the background noise as in the original detector, and the scores match the python detector almost exactly. When using this model, **set the segmenter hop (segment step) to around 5 s**, otherwise only the centre 5 seconds of every 60 seconds of data is classified. The cost is that the spectrogram is recomputed for a 60 second window at every hop.
+
+The **5 second version** applies the median equalizer to each 5 second segment on its own. It is faster, but with less data to estimate the background noise the scores differ from the original detector for some segments.
 
 The original detector processes data with a 0.05 s step between segments. In PAMGuard, the hop size of the segmenter can be reduced to increase temporal resolution at the cost of processing time.
 
