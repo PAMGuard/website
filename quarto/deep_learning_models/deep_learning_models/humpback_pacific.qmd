@@ -8,7 +8,7 @@ format: html
 
 ## Introduction
 
-This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA. 
+This is a spectrogram based model for detecting humpback whales developed by a collaboration between Google and NOAA.
 
 Note that this model is also available as an example model within PAMGuard.
 
@@ -22,9 +22,20 @@ Note that this model is also available as an example model within PAMGuard.
 
 Hawaiian archipelago
 
+## Performance
+
+The model was evaluated on a held-out set of manually audited recordings from sites across the North Pacific.
+
+| Metric                             | Result |
+|------------------------------------|--------|
+| Average precision                  | 0.97   |
+| Area under the ROC curve (AUC-ROC) | 0.992  |
+
+Performance varied between recording sites. As with any deep learning classifier, performance should be checked before it is applied to a new region or recording system.
+
 ## Reference
 
-A. N. Allen et al., ‘A Convolutional Neural Network for Automated Detection of Humpback Whale Song in a Diverse, Long-Term Passive Acoustic Dataset’, Front. Mar. Sci., vol. 8, p. 607321, Mar. 2021 https://doi.org/10.3389/fmars.2021.607321
+A. N. Allen et al., ‘A Convolutional Neural Network for Automated Detection of Humpback Whale Song in a Diverse, Long-Term Passive Acoustic Dataset’, Front. Mar. Sci., vol. 8, p. 607321, Mar. 2021 <https://doi.org/10.3389/fmars.2021.607321>
 
 ## Model
 

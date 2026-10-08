@@ -30,6 +30,18 @@ Cross-validated testing estimates delphinID to classify recordings with an avera
 
 7.  White-beaked dolphin (*Lagenorhynchus albirostris*)
 
+## Performance
+
+The classifiers were evaluated using cross-validation, with each model tested only on visually confirmed single species recordings which were spatiotemporally independent from those used to train it.
+
+| Species                              | Accuracy |
+|--------------------------------------|----------|
+| All seven species (average)          | 86%      |
+| Short-beaked common dolphin (lowest) | 80%      |
+| White-beaked dolphin (highest)       | 92%      |
+
+These figures are for recording-level classifications which combine the predictions of the click and whistle models. As with any deep learning classifier, performance should be checked before it is applied to a new region or recording system.
+
 ## Reference
 
 Paper in prep.

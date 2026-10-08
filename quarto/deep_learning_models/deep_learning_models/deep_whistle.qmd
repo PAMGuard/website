@@ -28,11 +28,22 @@ Delphinid whistles (general, not species-specific)
 
 Deep Whistle: synthetic whistle data. SAM-Whistle: DCLDE 2011 dataset.
 
+## Performance
+
+Both models were evaluated on analyst-annotated common dolphin (*Delphinus* spp.) and bottlenose dolphin (*Tursiops truncatus*) whistles from the DCLDE 2011 dataset.
+
+| Model | Result |
+|----|----|
+| Deep Whistle | F1 score 0.158 higher (around a 25% improvement) than the baseline graph search whistle extraction algorithm. |
+| SAM-Whistle | F1 score of 0.897 (precision 0.920, recall 0.876) on 860 test whistles. Detections typically covered 89% of each analyst-annotated contour, with an average of 1.15 detections per whistle, so most whistles were not fragmented. |
+
+These results are for whistle contours extracted from the model output by a tracking algorithm, rather than for the mask alone, so performance in PAMGuard will also depend on the settings of the downstream detector. As with any deep learning classifier, performance should be checked before it is applied to a new region or recording system.
+
 ## Reference
 
-Li, P. et al., 2020. Learning deep models from synthetic data for extracting dolphin whistle contours. 2020 International Joint Conference on Neural Networks (IJCNN), 1–10. https://doi.org/10.1109/IJCNN48605.2020.9206992
+Li, P. et al., 2020. Learning deep models from synthetic data for extracting dolphin whistle contours. 2020 International Joint Conference on Neural Networks (IJCNN), 1–10. <https://doi.org/10.1109/IJCNN48605.2020.9206992>
 
-Zhang, X. et al., 2025. Automating time × frequency annotations of delphinid whistles by adapting a foundational transformer neural network. Scientific Reports 15, 37809. https://doi.org/10.1038/s41598-025-21642-x
+Zhang, X. et al., 2025. Automating time × frequency annotations of delphinid whistles by adapting a foundational transformer neural network. Scientific Reports 15, 37809. <https://doi.org/10.1038/s41598-025-21642-x>
 
 ## Model
 
