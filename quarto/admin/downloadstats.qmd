@@ -153,6 +153,12 @@ https://github.com/PAMGuardPlugins/NativeSound
 
 <br>
 
+<h3>Azigram plugin</h3>
+
+:::pgdownload
+https://github.com/BrianSMiller/Azigram
+:::
+
 <h2>Zenodo</h2>
 
 <h3>PAMGuard source</h3>
